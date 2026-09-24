@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BMC - Résumé 20/80</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Résumé Ultime : Biologie Moléculaire & Cellulaire</h1>
+        <p>L'essentiel pour 80% de la note (Loi de Pareto)</p>
+    </header>
+    <nav>
+        <a href="main.html">Accueil</a>
+        <a href="résumé.html">Résumé (20/80)</a>
+        <a href="notion1.html">Notion 1</a>
+        <a href="notion2.html">Notion 2</a>
+        <a href="notion3.html">Notion 3</a>
+        <a href="quiz.html">Quiz</a>
+    </nav>
+    <div class="container">
+        
+        <div class="card">
+            <h2>1. La Théorie Cellulaire & Types de Cellules</h2>
+            <ul>
+                <li><strong>3 principes :</strong> 1. La cellule est la plus petite entité vivante. 2. Tout être vivant est composé de cellules. 3. Toute cellule provient d'une cellule préexistante.</li>
+                <li><strong>Homéostasie :</strong> Capacité à maintenir le milieu interne stable.</li>
+            </ul>
+            <table class="table-custom">
+                <tr><th>Caractéristique</th><th>Procaryote (ex: Bactérie)</th><th>Eucaryote (ex: Végétal/Animal)</th></tr>
+                <tr><td>Taille / Apparition</td><td>~5 µm / Ancienne (3,5 ma)</td><td>~50 µm / Récente (2,5 ma)</td></tr>
+                <tr><td>Noyau</td><td>Absent (zone nucléoïde)</td><td>Présent (délimité par une membrane)</td></tr>
+                <tr><td>Organites membraneux</td><td>Absents</td><td>Présents (Mitochondrie, RE, Golgi, etc.)</td></tr>
+            </table>
+        </div>
+
+        <div class="card">
+            <h2>2. L'ADN : Structure & Compaction</h2>
+            <ul>
+                <li><strong>Nucléotide =</strong> Base azotée + Pentose (Désoxyribose pour ADN) + Phosphate.</li>
+                <li><strong>Bases :</strong> Purines (Adénine, Guanine) / Pyrimidines (Cytosine, Thymine, Uracile pour ARN).</li>
+                <li><strong>Double hélice (Watson & Crick) :</strong> Brins antiparallèles (5' → 3' et 3' → 5'). Appariement : A=T (2 liaisons H), G≡C (3 liaisons H).</li>
+                <li><strong>Compaction eucaryote (4 niveaux) :</strong> 
+                    1. Double hélice (2 nm) → 2. Nucléosomes "collier de perles" (11 nm, histones H2A, H2B, H3, H4 + H1) → 3. Solénoïde / Fibre 30 nm → 4. Chromosome métaphasique (1400 nm).
+                </li>
+            </ul>
+        </div>
+
+        <div class="card">
+            <h2>3. Le Dogme Central : Réplication, Transcription, Traduction</h2>
+            <h3>A. Réplication (ADN → ADN)</h3>
+            <p><strong>Propriétés :</strong> Semi-conservative, bidirectionnelle, semi-discontinue.</p>
+            <ul>
+                <li><strong>Hélicase :</strong> Ouvre la double hélice.</li>
+                <li><strong>Primase :</strong> Synthétise l'amorce ARN.</li>
+                <li><strong>ADN Polymérase III :</strong> Élongation continue (brin avancé) et discontinue (brin retardé → <strong>Fragments d'Okazaki</strong>).</li>
+                <li><strong>ADN Polymérase I :</strong> Retire les amorces ARN et comble les trous.</li>
+                <li><strong>ADN Ligase :</strong> Scelle les fragments entre eux (liaison phosphodiester).</li>
+            </ul>
+
+            <h3>B. Transcription (ADN → ARN)</h3>
+            <p>Synthèse d'ARN 5' → 3' par l'<strong>ARN Polymérase</strong> (Pol II chez les eucaryotes pour l'ARNm).</p>
+            <p><strong>Maturation de l'ARNm eucaryote (3 étapes clés) :</strong></p>
+            <ol>
+                <li><strong>Coiffe (5') :</strong> Ajout d'un 7-méthylguanosine (protection).</li>
+                <li><strong>Queue Poly-A (3') :</strong> Ajout de nombreuses adénines (stabilité, export).</li>
+                <li><strong>Épissage :</strong> Excision des <strong>introns</strong> (non codants) et soudure des <strong>exons</strong> (codants).</li>
+            </ol>
+
+            <h3>C. Traduction (ARNm → Protéine)</h3>
+            <p>Se déroule dans le cytoplasme au niveau des <strong>ribosomes</strong> (sous-unités 30S/40S et 50S/60S).</p>
+            <ul>
+                <li><strong>Code génétique :</strong> Universel, dégénéré (plusieurs codons pour un AA), non chevauchant, lu par triplets (codons).</li>
+                <li><strong>ARNt :</strong> Transporte les acides aminés. Possède un anticodon et un site d'attachement de l'AA.</li>
+                <li><strong>Sites du ribosome :</strong> Site A (arrivée ARNt), Site P (peptidyl, chaîne en croissance), Site E (sortie).</li>
+            </ul>
+        </div>
+
+        <div class="card">
+            <h2>4. Les Organites Eucaryotes Clés</h2>
+            <ul>
+                <li><strong>Noyau :</strong> Stocke l'ADN. Enveloppe à double membrane avec pores nucléaires (transport actif/passif).</li>
+                <li><strong>RE Rugueux (RER) :</strong> Synthèse, translocation et première maturation (N-glycosylation, ponts disulfure) des protéines sécrétées/membranaires.</li>
+                <li><strong>RE Lisse (REL) :</strong> Synthèse des lipides, détoxification (cytochromes P450), stockage du Ca²⁺.</li>
+                <li><strong>Appareil de Golgi :</strong> Centre de tri et de maturation finale (O-glycosylation, sulfatation, phosphorylation). Face cis (entrée) → Face trans (sortie).</li>
+                <li><strong>Lysosome :</strong> Digestion intracellulaire. pH acide (4,5-5) maintenu par des pompes à H⁺. Contient des hydrolases acides.</li>
+                <li><strong>Mitochondrie :</strong> Production d'ATP (phosphorylation oxydative). Possède son propre ADN. Double membrane (interne repliée en crêtes).</li>
+            </ul>
+        </div>
+
+        <div style="text-align: center; margin-top: 2rem;">
+            <a href="quiz.html" class="btn">Tester mes connaissances (Quiz)</a>
+        </div>
+    </div>
+    <footer>
+        <p>Révision dynamique - L1 Biologie</p>
+    </footer>
+</body>
+</html>

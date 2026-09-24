@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BMC - Quiz de Révision Interactif</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        /* Styles spécifiques au Quiz pour s'assurer qu'il est lisible même si le style.css est minimal */
+        .question-card {
+            background: white;
+            border: 1px solid #e2e8f0;
+            border-radius: 8px;
+            padding: 1.5rem;
+            margin-bottom: 1.5rem;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+            transition: all 0.3s ease;
+        }
+        .q-text {
+            font-weight: 600;
+            font-size: 1.1rem;
+            color: #2d3748;
+            margin-bottom: 1rem;
+        }
+        .options label {
+            display: block;
+            padding: 0.5rem;
+            margin: 0.3rem 0;
+            border-radius: 4px;
+            cursor: pointer;
+            transition: background 0.2s;
+        }
+        .options label:hover {
+            background: #f7fafc;
+        }
+        .options input[type="radio"] {
+            margin-right: 10px;
+            transform: scale(1.2);
+        }
+        .feedback {
+            margin-top: 1rem;
+            padding: 1rem;
+            border-radius: 4px;
+            font-size: 0.95rem;
+            display: none; /* Caché par défaut */
+        }
+        .correct {
+            background-color: #c6f6d5;
+            color: #22543d;
+            border-left: 4px solid #38a169;
+        }
+        .incorrect {
+            background-color: #fed7d7;
+            color: #742a2a;
+            border-left: 4px solid #e53e3e;
+        }
+        #score-board {
+            text-align: center;
+            padding: 2rem;
+            background: #ebf8ff;
+            border-radius: 8px;
+            margin-top: 2rem;
+            display: none;
+            border: 2px solid #3182ce;
+        }
+        #score-board h2 {
+            color: #2b6cb0;
+        }
+        .btn-submit {
+            display: block;
+            width: 100%;
+            max-width: 300px;
+            margin: 2rem auto;
+            padding: 1rem;
+            background: #3182ce;
+            color: white;
+            border: none;
+            border-radius: 8px;
+            font-size: 1.2rem;
+            font-weight: bold;
+            cursor: pointer;
+            transition: background 0.2s;
+        }
+        .btn-submit:hover {
+            background: #2c5282;
+        }
+        .highlight-wrong {
+            border-color: #e53e3e !important;
+            background: #fff5f5 !important;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Quiz de Révision : Biologie Moléculaire & Cellulaire</h1>
+        <p>Teste tes connaissances (Loi de Pareto : focus sur les concepts clés)</p>
+    </header>
+    <nav>
+        <a href="main.html">Accueil</a>
+        <a href="résumé.html">Résumé (20/80)</a>
+        <a href="notion1.html">Notion 1</a>
+        <a href="notion2.html">Notion 2</a>
+        <a href="notion3.html">Notion 3</a>
+        <a href="quiz.html">Quiz</a>
+    </nav>
+    
+    <div class="container">
+        <div class="card">
+            <p><strong>Consigne :</strong> Choisis la meilleure réponse pour chaque question. Ne te précipite pas, lis bien toutes les options. Une fois terminé, clique sur le bouton pour valider et surtout <strong>lis les explications</strong>, même pour les questions où tu as eu juste !</p>
+        </div>
+
+        <form id="quiz-form">
+            
+            <!-- Q1 -->
+            <div class="question-card" data-correct="c" data-explanation="L'octamère central du nucléosome (le 'collier de perles') est composé de 2 molécules de H2A, H2B, H3 et H4. L'histone H1 est l'histone de liaison qui se fixe à l'extérieur pour stabiliser le nucléosome, elle ne fait pas partie de l'octamère. Piège classique en QCM !">
+                <p class="q-text">1. Quelles histones composent l'octamère central du nucléosome ?</p>
+                <div class="options">
+                    <label><input type="radio" name="q1" value="a"> H1, H2A, H2B, H3</label>
+                    <label><input type="radio" name="q1" value="b"> H1, H2A, H3, H4</label>
+                    <label><input type="radio" name="q1" value="c"> H2A, H2B, H3, H4</label>
+                    <label><input type="radio" name="q1" value="d"> H2A, H2B, H4, H5</label>
+                </div>
+                <div class="feedback"></div>
+            </div>
+
+            <!-- Q2 -->
+            <div class="question-card" data-correct="b" data-explanation="Toutes les ADN et ARN polymérases synthétisent le nouveau brin UNIQUEMENT dans le sens 5' vers 3'. Elles ajoutent les nucléotides sur l'extrémité 3'-OH libre. Par contre, elles lisent le brin matrice dans le sens 3' vers 5'.">
+                <p class="q-text">2. Dans quel sens l'ADN polymérase synthétise-t-elle le nouveau brin d'ADN ?</p>
+                <div class="options">
+                    <label><input type="radio" name="q2" value="a"> 3' → 5'</label>
+                    <label><input type="radio" name="q2" value="b"> 5' → 3'</label>
+                    <label><input type="radio" name="q2" value="c"> N-term → C-term</label>
+                    <label><input type="radio" name="q2" value="d"> C-term → N-term</label>
+                </div>
+                <div class="feedback"></div>
+            </div>
+
+            <!-- Q3 -->
+            <div class="question-card" data-correct="d" data-explanation="Le brin retardé est synthétisé dans le sens inverse de la progression de la fourche de réplication. L'ADN polymérase doit donc sans cesse recommencer plus loin, créant des petits morceaux appelés fragments d'Okazaki.">
+                <p class="q-text">3. Pourquoi trouve-t-on des fragments d'Okazaki lors de la réplication ?</p>
+                <div class="options">
+                    <label><input type="radio" name="q3" value="a"> Car l'ADN polymérase III manque de processivité.</label>
+                    <label><input type="radio" name="q3" value="b"> Car le brin avancé est synthétisé de manière discontinue.</label>
+                    <label><input type="radio" name="q3" value="c"> Car l'hélicase coupe l'ADN en morceaux.</label>
+                    <label><input type="radio" name="q3" value="d"> Car la synthèse sur le brin retardé se fait en s'éloignant de la fourche de réplication.</label>
+                </div>
+                <div class="feedback"></div>
+            </div>
+
+            <!-- Q4 -->
+            <div class="question-card" data-correct="b" data-explanation="Chez les eucaryotes, l'ARN Pol I transcrit les ARNr (sauf 5S), l'ARN Pol II transcrit les ARNm (et certains petits ARN), et l'ARN Pol III transcrit les ARNt et l'ARNr 5S. Astuce : II comme 'Message' (mRNA).">
+                <p class="q-text">4. Quelle ARN polymérase est responsable de la transcription des ARN messagers (ARNm) chez les eucaryotes ?</p>
+                <div class="options">
+                    <label><input type="radio" name="q4" value="a"> ARN Polymérase I</label>
+                    <label><input type="radio" name="q4" value="b"> ARN Polymérase II</label>
+                    <label><input type="radio" name="q4" value="c"> ARN Polymérase III</label>
+                    <label><input type="radio" name="q4" value="d"> ARN Polymérase IV</label>
+                </div>
+                <div class="feedback"></div>
+            </div>
+
+            <!-- Q5 -->
+            <div class="question-card" data-correct="c" data-explanation="Le signal de polyadénylation (AAUAAA) se trouve sur le pré-ARNm et signale le clivage et l'ajout de la queue poly-A. La TATA box et la boîte de Pribnow sont des promoteurs ADN. Le codon stop signale la fin de la TRADUCTION, pas de la transcription.">
+                <p class="q-text">5. Quelle séquence sur le pré-ARNm signale la fin de la transcription et le début de la polyadénylation chez les eucaryotes ?</p>
+                <div class="options">
+                    <label><input type="radio" name="q5" value="a"> La TATA box</label>
+                    <label><input type="radio" name="q5" value="b"> Le codon stop UAA</label>
+                    <label><input type="radio" name="q5" value="c"> Le signal AAUAAA</label>
+                    <label><input type="radio" name="q5" value="d"> La séquence de Shine-Dalgarno</label>
+                </div>
+                <div class="feedback"></div>
+            </div>
+
+            <!-- Q6 -->
+            <div class="question-card" data-correct="a" data-explanation="Le code est 'dégénéré' (ou redondant) car la plupart des acides aminés sont codés par plusieurs codons synonymes (ex: 6 codons pour la Leucine). Mais il est 'non ambigu' car un codon donné ne code JAMAIS pour deux acides aminés différents.">
+                <p class="q-text">6. Que signifie le fait que le code génétique soit "dégénéré" ?</p>
+                <div class="options">
+                    <label><input type="radio" name="q6" value="a"> Un acide aminé peut être codé par plusieurs codons différents.</label>
+                    <label><input type="radio" name="q6" value="b"> Un codon peut coder pour plusieurs acides aminés différents.</label>
+                    <label><input type="radio" name="q6" value="c"> Le code génétique varie d'une espèce à l'autre.</label>
+                    <label><input type="radio" name="q6" value="d"> Les codons se chevauchent sur l'ARNm.</label>
+                </div>
+                <div class="feedback"></div>
+            </div>
+
+            <!-- Q7 -->
+            <div class="question-card" data-correct="b" data-explanation="L'épissage consiste à exciser les introns (non codants) et à recoller les exons (codants) pour former l'ARNm mature. L'épissage alternatif permet de créer plusieurs protéines différentes à partir d'un seul gène en variant la combinaison des exons.">
+                <p class="q-text">7. Lors de la maturation de l'ARNm eucaryote, que fait le spliceosome ?</p>
+                <div class="options">
+                    <label><input type="radio" name="q7" value="a"> Il ajoute la coiffe en 5' et la queue poly-A en 3'.</label>
+                    <label><input type="radio" name="q7" value="b"> Il excise les introns et lie les exons entre eux.</label>
+                    <label><input type="radio" name="q7" value="c"> Il traduit l'ARNm en protéine.</label>
+                    <label><input type="radio" name="q7" value="d"> Il exporte l'ARNm du noyau vers le cytoplasme.</label>
+                </div>
+                <div class="feedback"></div>
+            </div>
+
+            <!-- Q8 -->
+            <div class="question-card" data-correct="c" data-explanation="Chez les procaryotes, l'initiation se fait au niveau de la séquence de Shine-Dalgarno sur l'ARNm, et le premier acide aminé est la N-formylméthionine (fMet). Chez les eucaryotes, le ribosome scanne depuis la coiffe 5' jusqu'au premier AUG, et l'acide aminé est la Méthionine (Met) simple.">
+                <p class="q-text">8. Quelle est la différence majeure d'initiation de la traduction entre procaryotes et eucaryotes ?</p>
+                <div class="options">
+                    <label><input type="radio" name="q8" value="a"> Les eucaryotes utilisent la N-formylméthionine comme premier acide aminé.</label>
+                    <label><input type="radio" name="q8" value="b"> Les procaryotes reconnaissent la coiffe 5' de l'ARNm pour s'y fixer.</label>
+                    <label><input type="radio" name="q8" value="c"> Les procaryotes se fixent sur la séquence de Shine-Dalgarno, les eucaryotes scannent depuis la coiffe 5'.</label>
+                    <label><input type="radio" name="q8" value="d"> La traduction eucaryote ne nécessite pas de codon start AUG.</label>
+                </div>
+                <div class="feedback"></div>
+            </div>
+
+            <!-- Q9 -->
+            <div class="question-card" data-correct="a" data-explanation="Le site A (Aminoacyl) accueille le nouvel ARNt. Le site P (Peptidyl) porte la chaîne en croissance. Le site E (Exit) est la sortie. L'ARNt passe donc de A -> P -> E lors de la translocation.">
+                <p class="q-text">9. Dans quel ordre les ARN de transfert (ARNt) traversent-ils les sites du ribosome lors de l'élongation ?</p>
+                <div class="options">
+                    <label><input type="radio" name="q9" value="a"> Site A → Site P → Site E</label>
+                    <label><input type="radio" name="q9" value="b"> Site P → Site A → Site E</label>
+                    <label><input type="radio" name="q9" value="c"> Site E → Site P → Site A</label>
+                    <label><input type="radio" name="q9" value="d"> Site A → Site E → Site P</label>
+                </div>
+                <div class="feedback"></div>
+            </div>
+
+            <!-- Q10 -->
+            <div class="question-card" data-correct="c" data-explanation="La N-glycosylation (ajout d'un sucre sur une Asparagine) débute de manière co-traductionnelle dans la lumière du Réticulum Endoplasmique Rugueux (RER). Elle sera ensuite modifiée dans l'appareil de Golgi.">
+                <p class="q-text">10. Où débute la N-glycosylation des protéines destinées à la sécrétion ?</p>
+                <div class="options">
+                    <label><input type="radio" name="q10" value="a"> Dans l'appareil de Golgi</label>
+                    <label><input type="radio" name="q10" value="b"> Dans le cytosol, par les ribosomes libres</label>
+                    <label><input type="radio" name="q10" value="c"> Dans le Réticulum Endoplasmique Rugueux (RER)</label>
+                    <label><input type="radio" name="q10" value="d"> Dans les lysosomes</label>
+                </div>
+                <div class="feedback"></div>
+            </div>
+
+            <!-- Q11 -->
+            <div class="question-card" data-correct="b" data-explanation="Les lysosomes ont un pH très acide (environ 4.5 - 5.0) maintenu par des pompes à protons (H+-ATPases) sur leur membrane. C'est indispensable pour que leurs hydrolases acides soient actives et pour éviter qu'elles ne digèrent la cellule si le lysosome venait à fuir (le pH du cytosol étant neutre ~7.2).">
+                <p class="q-text">11. Quel est le pH caractéristique à l'intérieur d'un lysosome ?</p>
+                <div class="options">
+                    <label><input type="radio" name="q11" value="a"> Basique (environ 8.0)</label>
+                    <label><input type="radio" name="q11" value="b"> Acide (environ 4.5 - 5.0)</label>
+                    <label><input type="radio" name="q11" value="c"> Neutre (environ 7.0)</label>
+                    <label><input type="radio" name="q11" value="d"> Très basique (environ 10.0)</label>
+                </div>
+                <div class="feedback"></div>
+            </div>
+
+            <!-- Q12 -->
+            <div class="question-card" data-correct="d" data-explanation="Le signal Mannose-6-Phosphate (M6P) est ajouté dans le Golgi sur les enzymes lysosomales. Il est reconnu par des récepteurs spécifiques qui dirigent ces vésicules vers les lysosomes. Sans ce signal, les enzymes sont sécrétées par défaut hors de la cellule.">
+                <p class="q-text">12. Quel signal moléculaire permet l'adressage des hydrolases acides vers les lysosomes depuis le Golgi ?</p>
+                <div class="options">
+                    <label><input type="radio" name="q12" value="a"> Le peptide signal N-terminal</label>
+                    <label><input type="radio" name="q12" value="b"> La séquence KDEL</label>
+                    <label><input type="radio" name="q12" value="c"> La queue poly-A</label>
+                    <label><input type="radio" name="q12" value="d"> Le Mannose-6-Phosphate</label>
+                </div>
+                <div class="feedback"></div>
+            </div>
+
+            <!-- Q13 -->
+            <div class="question-card" data-correct="c" data-explanation="La théorie endosymbiotique (Lynn Margulis) postule que les mitochondries (et les chloroplastes) descendent de bactéries aérobies (ou cyanobactéries) qui ont été phagocytées par une cellule eucaryote ancestrale sans être digérées. Elles possèdent leur propre ADN circulaire et leurs propres ribosomes (70S).">
+                <p class="q-text">13. La théorie endosymbiotique explique l'origine de quel(s) organite(s) ?</p>
+                <div class="options">
+                    <label><input type="radio" name="q13" value="a"> Le noyau et le réticulum endoplasmique</label>
+                    <label><input type="radio" name="q13" value="b"> L'appareil de Golgi et les lysosomes</label>
+                    <label><input type="radio" name="q13" value="c"> Les mitochondries et les chloroplastes</label>
+                    <label><input type="radio" name="q13" value="d"> Les peroxysomes et les ribosomes</label>
+                </div>
+                <div class="feedback"></div>
+            </div>
+
+            <!-- Q14 -->
+            <div class="question-card" data-correct="a" data-explanation="La réplication est semi-conservative : chaque molécule d'ADN fille est constituée d'un brin parental (ancien) et d'un brin néosynthétisé (nouveau). Cela a été prouvé par l'expérience historique de Meselson et Stahl en 1958 avec l'azote lourd (15N).">
+                <p class="q-text">14. Que signifie le fait que la réplication de l'ADN soit "semi-conservative" ?</p>
+                <div class="options">
+                    <label><input type="radio" name="q14" value="a"> Chaque double hélice fille contient un brin parental et un brin nouveau.</label>
+                    <label><input type="radio" name="q14" value="b"> L'ADN est répliqué uniquement pendant la moitié du cycle cellulaire (phase S).</label>
+                    <label><input type="radio" name="q14" value="c"> Seule la moitié du génome est répliquée à chaque division.</label>
+                    <label><input type="radio" name="q14" value="d"> Un brin est synthétisé de façon continue et l'autre de façon discontinue.</label>
+                </div>
+                <div class="feedback"></div>
+            </div>
+
+            <!-- Q15 -->
+            <div class="question-card" data-correct="b" data-explanation="L'hétérochromatine est très condensée et donc inaccessible aux machineries de transcription : les gènes y sont silencieux (inactifs). L'euchromatine est décondensée et transcriptionnellement active.">
+                <p class="q-text">15. Quelle est la caractéristique transcriptionnelle de l'hétérochromatine ?</p>
+                <div class="options">
+                    <label><input type="radio" name="q15" value="a"> Elle est très active et riche en gènes exprimés.</label>
+                    <label><input type="radio" name="q15" value="b"> Elle est condensée et transcriptionnellement inactive.</label>
+                    <label><input type="radio" name="q15" value="c"> Elle est traduite directement en protéines dans le noyau.</label>
+                    <label><input type="radio" name="q15" value="d"> Elle n'est présente que chez les cellules procaryotes.</label>
+                </div>
+                <div class="feedback"></div>
+            </div>
+
+            <button type="button" class="btn-submit" id="submit-btn">Valider et Voir mon Score</button>
+        </form>
+
+        <div id="score-board">
+            <h2>Ton Score Final</h2>
+            <p id="score-text" style="font-size: 1.5rem; font-weight: bold;"></p>
+            <p id="score-message" style="margin-top: 1rem;"></p>
+            <button type="button" class="btn-submit" style="background: #38a169; margin-top: 1rem;" onclick="location.reload()">Recommencer le Quiz</button>
+            <a href="notion1.html" class="btn" style="display: inline-block; margin-top: 1rem;">Retourner aux Notions pour réviser mes erreurs</a>
+        </div>
+
+    </div>
+
+    <footer>
+        <p>Créé avec la méthode Pareto pour la réussite en L1 Biologie - Université Évry Paris-Saclay</p>
+    </footer>
+
+    <script>
+        document.getElementById('submit-btn').addEventListener('click', function() {
+            const questions = document.querySelectorAll('.question-card');
+            let score = 0;
+            let answeredCount = 0;
+            let totalQuestions = questions.length;
+
+            questions.forEach((q, index) => {
+                const selectedOption = q.querySelector('input[type="radio"]:checked');
+                const feedback = q.querySelector('.feedback');
+                const correctAnswer = q.getAttribute('data-correct');
+                const explanation = q.getAttribute('data-explanation');
+                const qName = 'q' + (index + 1);
+
+                if (!selectedOption) {
+                    q.classList.add('highlight-wrong');
+                    feedback.innerHTML = `<strong>⚠️ Question non répondue.</strong><br>La bonne réponse était la proposition <strong>${correctAnswer.toUpperCase()}</strong>.<br><em>Explication : ${explanation}</em>`;
+                    feedback.className = 'feedback incorrect';
+                    feedback.style.display = 'block';
+                } else {
+                    answeredCount++;
+                    if (selectedOption.value === correctAnswer) {
+                        score++;
+                        feedback.innerHTML = `<strong>✅ Bonne réponse !</strong><br><em>Explication : ${explanation}</em>`;
+                        feedback.className = 'feedback correct';
+                    } else {
+                        q.classList.add('highlight-wrong');
+                        feedback.innerHTML = `<strong>❌ Mauvaise réponse.</strong> Tu as choisi la proposition <strong>${selectedOption.value.toUpperCase()}</strong>.<br>La bonne réponse était la proposition <strong>${correctAnswer.toUpperCase()}</strong>.<br><em>Explication : ${explanation}</em>`;
+                        feedback.className = 'feedback incorrect';
+                    }
+                    feedback.style.display = 'block';
+                }
+                
+                // Désactiver les boutons radio après validation
+                const radios = q.querySelectorAll('input[type="radio"]');
+                radios.forEach(radio => radio.disabled = true);
+            });
+
+            // Afficher le tableau de score
+            const scoreBoard = document.getElementById('score-board');
+            const scoreText = document.getElementById('score-text');
+            const scoreMessage = document.getElementById('score-message');
+
+            scoreText.innerText = `${score} / ${totalQuestions}`;
+
+            const percentage = (score / totalQuestions) * 100;
+            if (percentage >= 80) {
+                scoreMessage.innerText = "Excellent ! Tu maîtrises les concepts clés de la L1. Tu es prêt pour l'examen ! 🎉";
+                scoreMessage.style.color = "#22543d";
+            } else if (percentage >= 50) {
+                scoreMessage.innerText = "C'est un bon début, mais il reste des zones d'ombre. Relis bien les explications des questions ratées dans les Notions 1, 2 et 3. 💪";
+                scoreMessage.style.color = "#744210";
+            } else {
+                scoreMessage.innerText = "Il faut reprendre les bases. Ne te décourage pas, c'est en analysant tes erreurs que tu progresseras. Relis le Résumé 20/80 et refais le quiz. 📚";
+                scoreMessage.style.color = "#742a2a";
+            }
+
+            scoreBoard.style.display = 'block';
+            
+            // Désactiver le bouton de soumission
+            this.disabled = true;
+            this.innerText = "Quiz Terminé";
+            this.style.background = "#a0aec0";
+
+            // Scroll vers le score
+            scoreBoard.scrollIntoView({ behavior: 'smooth' });
+        });
+    </script>
+</body>
+</html>

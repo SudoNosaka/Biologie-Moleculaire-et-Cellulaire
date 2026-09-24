@@ -1,0 +1,441 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BMC - Notion 2 : Réplication & Transcription</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Notion 2 : Réplication & Transcription</h1>
+        <p>Le Dogme Central de la Biologie Moléculaire - Approfondissement</p>
+    </header>
+    <nav>
+        <a href="main.html">Accueil</a>
+        <a href="résumé.html">Résumé (20/80)</a>
+        <a href="notion1.html">Notion 1</a>
+        <a href="notion2.html">Notion 2 : Réplication & Transcription</a>
+        <a href="notion3.html">Notion 3</a>
+        <a href="quiz.html">Quiz</a>
+    </nav>
+    <div class="container">
+
+        <!-- ============================================ -->
+        <!-- PARTIE A : LA RÉPLICATION                    -->
+        <!-- ============================================ -->
+        <div class="card">
+            <h2>PARTIE A : LA RÉPLICATION DE L'ADN</h2>
+            <p><strong>Définition :</strong> Synthèse de deux molécules d'ADN filles identiques à partir d'une molécule parentale, afin de transmettre l'information génétique à la descendance cellulaire. Elle a lieu pendant la <strong>phase S</strong> du cycle cellulaire (expérience de Meselson & Stahl, 1958).</p>
+        </div>
+
+        <div class="card">
+            <h2>1. Propriétés Générales de la Réplication</h2>
+            <table class="table-custom">
+                <tr>
+                    <th>Propriété</th>
+                    <th>Signification</th>
+                    <th>Conséquence</th>
+                </tr>
+                <tr>
+                    <td><strong>Semi-conservative</strong></td>
+                    <td>Chaque molécule fille conserve un brin parental et possède un brin néosynthétisé.</td>
+                    <td>Fidélité de l'information génétique (le brin parental sert de matrice).</td>
+                </tr>
+                <tr>
+                    <td><strong>Bidirectionnelle</strong></td>
+                    <td>À partir de chaque origine de réplication, deux fourches de réplication progressent en sens opposés.</td>
+                    <td>Formation d'un <strong>œil de réplication</strong> qui s'élargit.</td>
+                </tr>
+                <tr>
+                    <td><strong>Semi-discontinue</strong></td>
+                    <td>Un brin est synthétisé de façon continue (brin avancé), l'autre par fragments (brin retardé → <strong>fragments d'Okazaki</strong>).</td>
+                    <td>Conséquence directe de l'antiparallélisme de l'ADN et du sens 5'→3' obligatoire des ADN polymérases.</td>
+                </tr>
+                <tr>
+                    <td><strong>Simultanée</strong></td>
+                    <td>Plusieurs origines de réplication (réplicons) s'activent en même temps.</td>
+                    <td>Réplication rapide du génome eucaryote (plusieurs milliards de pb).</td>
+                </tr>
+            </table>
+
+            <div class="card" style="background: #e8f0fe; border-left-color: var(--primary);">
+                <h3>💡 Astuce de prof - Piège classique :</h3>
+                <p>La synthèse se fait <strong>TOUJOURS dans le sens 5'→3'</strong> sur les DEUX brins. Ce qui change, c'est la <strong>direction de progression de la fourche</strong> par rapport au sens de synthèse :</p>
+                <ul>
+                    <li><strong>Brin avancé (continu) :</strong> la polymérase avance dans le même sens que la fourche qui s'ouvre.</li>
+                    <li><strong>Brin retardé (discontinu) :</strong> la polymérase doit "reculer" par rapport à la fourche → synthèse par fragments d'Okazaki.</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="card">
+            <h2>2. Les Acteurs Enzymatiques de la Réplication</h2>
+            <p>La réplication fait intervenir de nombreuses enzymes et protéines. Voici les incontournables à connaître par cœur :</p>
+            
+            <table class="table-custom">
+                <tr>
+                    <th>Enzyme / Protéine</th>
+                    <th>Rôle</th>
+                    <th>Détails clés</th>
+                </tr>
+                <tr>
+                    <td><strong>Hélicase (DnaB chez procaryotes)</strong></td>
+                    <td>Ouvre la double hélice en rompant les liaisons hydrogène entre les bases.</td>
+                    <td>ATP-dépendante. Vitesse : ~1000 pb/sec.</td>
+                </tr>
+                <tr>
+                    <td><strong>Topoisomérase</strong></td>
+                    <td>Élimine les supertours (surenroulement) en amont et en aval de la fourche.</td>
+                    <td>Coupe temporairement les liaisons phosphodiester, puis les ressoude.</td>
+                </tr>
+                <tr>
+                    <td><strong>PSSB (procaryotes) / RPA (eucaryotes)</strong></td>
+                    <td>Stabilisent les simples brins après ouverture pour éviter leur réassociation.</td>
+                    <td>Protéines de liaison aux simples brins (SSB = Single Strand Binding).</td>
+                </tr>
+                <tr>
+                    <td><strong>Primase (ARN polymérase ADN-dépendante)</strong></td>
+                    <td>Synthétise une courte <strong>amorce ARN</strong> (~10 nt) nécessaire pour initier la synthèse.</td>
+                    <td>Fournit l'extrémité 3'-OH libre indispensable à l'ADN polymérase.</td>
+                </tr>
+                <tr>
+                    <td><strong>ADN Polymérase III (procaryotes) / Pol δ (eucaryotes)</strong></td>
+                    <td><strong>Élongation</strong> : polymérise les dNTP dans le sens 5'→3'.</td>
+                    <td>Activité exonucléasique 3'→5' = <strong>proofreading</strong> (correction d'erreurs).</td>
+                </tr>
+                <tr>
+                    <td><strong>ADN Polymérase I (procaryotes) / RNase H (eucaryotes)</strong></td>
+                    <td>Élimine les amorces ARN et comble les lacunes avec des dNTP.</td>
+                    <td>Activité exonucléasique 5'→3'. Peu processive (distributive).</td>
+                </tr>
+                <tr>
+                    <td><strong>ADN Ligase</strong></td>
+                    <td>Scelle les fragments d'Okazaki entre eux.</td>
+                    <td>Forme une liaison phosphodiester. Consomme de l'ATP (eucaryotes) ou du NAD+ (procaryotes).</td>
+                </tr>
+            </table>
+        </div>
+
+        <div class="card">
+            <h2>3. Les 3 Étapes de la Réplication</h2>
+            
+            <h3>A. L'Initiation</h3>
+            <table class="table-custom">
+                <tr>
+                    <th>Chez les Procaryotes (ex: E. coli)</th>
+                    <th>Chez les Eucaryotes</th>
+                </tr>
+                <tr>
+                    <td>
+                        <ul>
+                            <li><strong>1 seule origine</strong> par chromosome circulaire : <strong>oriC</strong> (245 pb, riche en AT).</li>
+                            <li>Protéines <strong>DnaA</strong> se fixent sur les séquences de 9 pb (utilisent ATP).</li>
+                            <li>2 hélicases <strong>DnaB</strong> ouvrent la double hélice.</li>
+                            <li>Réplication rapide : ~1000 pb/sec, 20-100 min.</li>
+                            <li>1 seule séquence de terminaison.</li>
+                        </ul>
+                    </td>
+                    <td>
+                        <ul>
+                            <li><strong>Nombreuses origines</strong> : 10⁴ à 10⁶ réplicons par génome (50-300 kb chacun).</li>
+                            <li>Les réplicons s'organisent en <strong>clusters</strong> qui démarrent simultanément en phase S.</li>
+                            <li>Réplication plus lente mais massive.</li>
+                        </ul>
+                    </td>
+                </tr>
+            </table>
+
+            <h3>B. L'Élongation</h3>
+            <p>C'est l'étape de synthèse à proprement parler. Voici le déroulement <strong>chronologique</strong> au niveau de la fourche de réplication :</p>
+            <ol>
+                <li><strong>Ouverture</strong> de la double hélice par l'hélicase + stabilisation par PSSB/RPA.</li>
+                <li><strong>Synthèse de l'amorce ARN</strong> par la primase sur chaque brin matrice.</li>
+                <li><strong>Élongation continue</strong> sur le brin avancé par l'ADN Pol III (ou Pol δ chez eucaryotes).</li>
+                <li><strong>Élongation discontinue</strong> sur le brin retardé : synthèse de <strong>fragments d'Okazaki</strong> (1000-2000 nt chez procaryotes, 100-200 nt chez eucaryotes).</li>
+                <li><strong>Élimination des amorces ARN</strong> par l'ADN Pol I (ou RNase H chez eucaryotes) grâce à son activité exonucléasique 5'→3'.</li>
+                <li><strong>Comblement des lacunes</strong> par l'ADN Pol I (ou Pol δ chez eucaryotes).</li>
+                <li><strong>Ligation</strong> des fragments par l'ADN ligase → formation de la liaison phosphodiester finale.</li>
+            </ol>
+
+            <div class="card" style="background: #e8f0fe; border-left-color: var(--primary);">
+                <h3>💡 Astuce de prof - Ordre à retenir absolument :</h3>
+                <p>Pour le brin retardé, retiens la séquence : <strong>Primase → Pol III → Pol I → Ligase</strong>. C'est l'ordre d'intervention classique qui tombe en QCM.</p>
+                <p><strong>Pourquoi l'ADN Pol I et pas la Pol III pour enlever les amorces ?</strong> Parce que la Pol III n'a <strong>PAS</strong> d'activité exonucléasique 5'→3'. Elle ne peut pas "reculer" pour enlever l'amorce en amont.</p>
+            </div>
+
+            <h3>C. La Terminaison</h3>
+            <ul>
+                <li><strong>Procaryotes :</strong> Les deux fourches de réplication se rencontrent au niveau de séquences de terminaison spécifiques (séquences <em>ter</em>).</li>
+                <li><strong>Eucaryotes :</strong> La réplication s'arrête lorsque deux fourches adjacentes (de réplicons voisins) se rencontrent. Séquences particulières (<300 pb) facilitent la <strong>décaténation</strong> (séparation des chromosomes fils entrelacés) et la partition.</li>
+            </ul>
+        </div>
+
+        <!-- ============================================ -->
+        <!-- PARTIE B : LA TRANSCRIPTION                  -->
+        <!-- ============================================ -->
+        <div class="card">
+            <h2>PARTIE B : LA TRANSCRIPTION</h2>
+            <p><strong>Définition :</strong> Transfert de l'information d'un gène (ADN double brin) vers une molécule d'ARN simple brin. C'est la première étape de l'expression des gènes (ADN → ARN → Protéine).</p>
+            <div class="formula">
+                ADN (double brin) → ARN (simple brin)<br>
+                Synthèse dans le sens 5'→3' par l'ARN Polymérase<br>
+                Substrats : rNTP (rATP, rCTP, rGTP, rUTP)
+            </div>
+            <p><strong>Vocabulaire essentiel :</strong></p>
+            <ul>
+                <li><strong>Brin matrice (antisens) :</strong> Le brin d'ADN lu par l'ARN polymérase (parcouru de 3'→5').</li>
+                <li><strong>Brin codant (sens) :</strong> Le brin non transcrit, qui a la même séquence que l'ARN (avec T à la place de U).</li>
+            </ul>
+        </div>
+
+        <div class="card">
+            <h2>1. Les ARN Polymérases</h2>
+            
+            <h3>A. Chez les Eucaryotes : 3 ARN Polymérases</h3>
+            <table class="table-custom">
+                <tr>
+                    <th>Enzyme</th>
+                    <th>Localisation</th>
+                    <th>Produit</th>
+                </tr>
+                <tr>
+                    <td><strong>ARN Polymérase I</strong></td>
+                    <td>Nucléole</td>
+                    <td>ARN ribosomiques : <strong>18S, 5.8S, 28S</strong></td>
+                </tr>
+                <tr>
+                    <td><strong>ARN Polymérase II</strong></td>
+                    <td>Nucléoplasme</td>
+                    <td><strong>ARN messagers (ARNm)</strong> + certains petits ARN</td>
+                </tr>
+                <tr>
+                    <td><strong>ARN Polymérase III</strong></td>
+                    <td>Nucléoplasme</td>
+                    <td>ARN de transfert (ARNt), ARNr 5S, petits ARN nucléaires (snARN)</td>
+                </tr>
+            </table>
+
+            <div class="card" style="background: #e8f0fe; border-left-color: var(--primary);">
+                <h3>💡 Astuce de prof - Moyen mnémotechnique :</h3>
+                <p><strong>"I pour le Ribosome, II pour le Message, III pour le Transfer"</strong></p>
+                <p>La <strong>Pol II</strong> est la plus importante car elle produit les ARNm qui seront traduits en protéines. C'est elle qui reconnaît les promoteurs complexes (TATA box, etc.).</p>
+            </div>
+
+            <h3>B. Chez les Procaryotes : 1 seule ARN Polymérase</h3>
+            <p>C'est une <strong>holoenzyme</strong> de ~500 kDa composée de 5 sous-unités : <strong>α₂ββ'σ</strong></p>
+            <ul>
+                <li><strong>α₂ :</strong> Assemblage de l'enzyme.</li>
+                <li><strong>β :</strong> Site de liaison des ribonucléotides.</li>
+                <li><strong>β' :</strong> Site de liaison à l'ADN.</li>
+                <li><strong>σ (facteur sigma) :</strong> Reconnaissance du promoteur. <strong>DétACHABLE</strong> : il se dissocie après synthèse des 10 premiers nucléotides.</li>
+            </ul>
+        </div>
+
+        <div class="card">
+            <h2>2. Les Promoteurs</h2>
+            <p>Le promoteur est une séquence d'ADN spécifique située en amont du gène, où se fixe l'ARN polymérase pour initier la transcription.</p>
+            
+            <table class="table-custom">
+                <tr>
+                    <th>Chez les Eucaryotes (Pol II)</th>
+                    <th>Chez les Procaryotes</th>
+                </tr>
+                <tr>
+                    <td>
+                        <strong>Promoteur minimum :</strong>
+                        <ul>
+                            <li><strong>TATA box</strong> (en -25 à -30) : séquence TATAAA, reconnue par le facteur TBP (TATA-Binding Protein).</li>
+                            <li><strong>INR box</strong> : autour du site d'initiation (+1).</li>
+                        </ul>
+                        <strong>Éléments proximaux (jusqu'à -200) :</strong>
+                        <ul>
+                            <li><strong>GC box</strong> et <strong>CAAT box</strong> : augmentent l'efficacité de la transcription.</li>
+                        </ul>
+                    </td>
+                    <td>
+                        <strong>Deux séquences consensus :</strong>
+                        <ul>
+                            <li><strong>Région -35</strong> : séquence TTGACA.</li>
+                            <li><strong>Boîte de Pribnow (région -10)</strong> : séquence TATAAT (riche en AT, facile à ouvrir).</li>
+                        </ul>
+                    </td>
+                </tr>
+            </table>
+        </div>
+
+        <div class="card">
+            <h2>3. Les 3 Étapes de la Transcription</h2>
+            
+            <h3>A. L'Initiation</h3>
+            <table class="table-custom">
+                <tr>
+                    <th>Procaryotes</th>
+                    <th>Eucaryotes</th>
+                </tr>
+                <tr>
+                    <td>
+                        <ol>
+                            <li>L'holoenzyme (avec facteur σ) reconnaît et se fixe sur le promoteur.</li>
+                            <li>Ouverture de la double hélice (~12 pb → "bulle de transcription").</li>
+                            <li>Synthèse des 10 premiers nucléotides.</li>
+                            <li><strong>Le facteur σ se dissocie</strong> → la polymérase "core" continue seule.</li>
+                        </ol>
+                    </td>
+                    <td>
+                        <ol>
+                            <li>Recrutement progressif de <strong>facteurs généraux de transcription</strong> (TFIID, TFIIB, etc.) sur le promoteur.</li>
+                            <li>Formation du <strong>complexe pré-initiation</strong> (PIC) avec l'ARN Pol II.</li>
+                            <li>Ouverture de l'ADN et début de la synthèse.</li>
+                        </ol>
+                    </td>
+                </tr>
+            </table>
+
+            <h3>B. L'Élongation</h3>
+            <ul>
+                <li>Synthèse de l'ARN dans le sens <strong>5'→3'</strong>.</li>
+                <li>Ajout de ribonucléotides monophosphates complémentaires à l'extrémité 3'-OH libre.</li>
+                <li>Deux topoisomérases agissent : l'une <strong>débobine</strong> l'ADN en amont, l'autre <strong>rembobine</strong> en aval.</li>
+                <li>Bulle de transcription de ~12 pb.</li>
+                <li>Vitesse : ~50 pb/sec chez les eucaryotes.</li>
+            </ul>
+
+            <h3>C. La Terminaison</h3>
+            <table class="table-custom">
+                <tr>
+                    <th>Procaryotes : 2 mécanismes</th>
+                    <th>Eucaryotes</th>
+                </tr>
+                <tr>
+                    <td>
+                        <strong>1. Terminaison Rho-indépendante (la plus fréquente) :</strong>
+                        <ul>
+                            <li>Synthèse d'une séquence <strong>autocomplémentaire</strong> → formation d'une <strong>structure en épingle à cheveux</strong> (hairpin) dans l'ARN.</li>
+                            <li>Suivie d'une série de <strong>résidus U</strong> (liaisons A-U faibles = 2 liaisons H).</li>
+                            <li>L'épingle à cheveux destabilise le complexe → libération de l'ARN.</li>
+                        </ul>
+                        <strong>2. Terminaison Rho-dépendante :</strong>
+                        <ul>
+                            <li>Nécessite le <strong>facteur Rho</strong> (protéine ATP-dépendante).</li>
+                            <li>Rho se fixe sur l'ARN en cours de synthèse, le parcourt de 5'→3' et rattrape l'ARN polymérase.</li>
+                            <li>Hydrolyse d'ATP → dissociation du complexe.</li>
+                        </ul>
+                    </td>
+                    <td>
+                        <ul>
+                            <li>L'ARN Pol II rencontre le <strong>signal de polyadénylation</strong> : <strong>5'-AAUAAA-3'</strong> dans la région 3'-UTR.</li>
+                            <li>Recrutement du complexe <strong>CPSF</strong> (Cleavage and Polyadenylation Specificity Factor).</li>
+                            <li>CPSF provoque l'arrêt de la transcription ET le clivage de l'ARN en aval du signal AAUAAA (après une séquence 5'-YA-3', Y = pyrimidine).</li>
+                            <li>La queue poly-A sera ajoutée ensuite lors de la maturation.</li>
+                        </ul>
+                    </td>
+                </tr>
+            </table>
+        </div>
+
+        <div class="card">
+            <h2>4. La Maturation de l'ARNm Eucaryote (PRÉ-ARNm → ARNm mature)</h2>
+            <p><strong>⚠️ Important :</strong> Chez les procaryotes, il n'y a PAS de maturation (transcription et traduction sont couplées). Chez les eucaryotes, le transcrit primaire (pré-ARNm) subit 3 modifications majeures dans le noyau avant export vers le cytoplasme.</p>
+
+            <h3>A. Ajout de la Coiffe en 5' (Cap)</h3>
+            <p>Apparaît très tôt, dès que 20-30 nt ont été synthétisés. Elle protège l'ARN des ribonucléases et facilite l'initiation de la traduction.</p>
+            <p><strong>3 enzymes successives :</strong></p>
+            <ol>
+                <li><strong>Phosphatase :</strong> retire un phosphate à l'extrémité 5' de l'ARN.</li>
+                <li><strong>Guanylyltransférase :</strong> ajoute un GMP en liaison inverse <strong>5'-5'</strong> (et non 5'-3').</li>
+                <li><strong>Méthyltransférase :</strong> ajoute un groupement méthyle sur l'azote N7 de la guanine → <strong>coiffe m⁷G</strong> (7-méthylguanosine).</li>
+            </ol>
+
+            <h3>B. Ajout de la Queue Poly-A en 3'</h3>
+            <ul>
+                <li>Le signal <strong>5'-AAUAAA-3'</strong> est reconnu par un complexe multiprotéique.</li>
+                <li><strong>Clivage endonucléolytique</strong> ~20 nt en aval du signal (après une région riche en G et U).</li>
+                <li>Ajout de <strong>~200 adénines</strong> à l'extrémité 3'-OH par la <strong>poly(A) polymérase</strong>.</li>
+                <li><strong>Rôles :</strong> stabilité de l'ARNm, protection contre les exonucléases, facilitation de l'export nucléaire et de la traduction.</li>
+            </ul>
+
+            <h3>C. L'Épissage (Splicing)</h3>
+            <p>La majorité des gènes eucaryotes sont <strong>fragmentés</strong> :</p>
+            <ul>
+                <li><strong>Exons :</strong> séquences codantes, conservées dans l'ARNm mature.</li>
+                <li><strong>Introns :</strong> séquences non codantes, excisées lors de l'épissage.</li>
+            </ul>
+            <p>L'épissage est réalisé par le <strong>spliceosome</strong>, un complexe ribonucléoprotéique dynamique constitué de <strong>snRNP</strong> (small nuclear ribonucleoproteins, prononcées "snurps").</p>
+            
+            <div class="card" style="background: #e8f0fe; border-left-color: var(--primary);">
+                <h3>💡 Astuce de prof - À retenir absolument :</h3>
+                <ul>
+                    <li><strong>Épissage alternatif :</strong> Un même pré-ARNm peut donner plusieurs ARNm différents selon les exons conservés → plusieurs protéines à partir d'un seul gène. C'est une source majeure de diversité protéique chez les eucaryotes.</li>
+                    <li><strong>Pas d'épissage chez les procaryotes</strong> (leurs gènes sont continus, sans introns en général).</li>
+                    <li>Les introns commencent presque toujours par <strong>GU</strong> en 5' et se terminent par <strong>AG</strong> en 3' (règle GU-AG).</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="card">
+            <h2>📊 Tableau Récapitulatif : Réplication vs Transcription</h2>
+            <table class="table-custom">
+                <tr>
+                    <th>Critère</th>
+                    <th>Réplication</th>
+                    <th>Transcription</th>
+                </tr>
+                <tr>
+                    <td><strong>Produit final</strong></td>
+                    <td>ADN double brin</td>
+                    <td>ARN simple brin</td>
+                </tr>
+                <tr>
+                    <td><strong>Enzyme principale</strong></td>
+                    <td>ADN Polymérase (III/δ)</td>
+                    <td>ARN Polymérase (I, II, III)</td>
+                </tr>
+                <tr>
+                    <td><strong>Substrats</strong></td>
+                    <td>dNTP (dATP, dTTP, dCTP, dGTP)</td>
+                    <td>rNTP (rATP, rUTP, rCTP, rGTP)</td>
+                </tr>
+                <tr>
+                    <td><strong>Sens de synthèse</strong></td>
+                    <td>5' → 3'</td>
+                    <td>5' → 3'</td>
+                </tr>
+                <tr>
+                    <td><strong>Principe de lecture</strong></td>
+                    <td>Les 2 brins servent de matrice</td>
+                    <td>Un seul brin (brin matrice/antisens)</td>
+                </tr>
+                <tr>
+                    <td><strong>Amorce nécessaire ?</strong></td>
+                    <td>OUI (amorce ARN)</td>
+                    <td>NON</td>
+                </tr>
+                <tr>
+                    <td><strong>Appariement</strong></td>
+                    <td>A-T, G-C</td>
+                    <td>A-U, T-A, G-C</td>
+                </tr>
+                <tr>
+                    <td><strong>Localisation (eucaryotes)</strong></td>
+                    <td>Noyau (phase S)</td>
+                    <td>Noyau (toute l'interphase)</td>
+                </tr>
+                <tr>
+                    <td><strong>Preuve d'erreur</strong></td>
+                    <td>OUI (proofreading par ADN Pol)</td>
+                    <td>NON (ARN moins stable, moins grave)</td>
+                </tr>
+            </table>
+        </div>
+
+        <div style="text-align: center; margin-top: 2rem;">
+            <a href="notion3.html" class="btn">Passer à la Notion 3 : Traduction & Organites →</a>
+        </div>
+
+    </div>
+    <footer>
+        <p>Créé avec la méthode Pareto pour la réussite en L1 Biologie - Université Évry Paris-Saclay</p>
+    </footer>
+</body>
+</html>

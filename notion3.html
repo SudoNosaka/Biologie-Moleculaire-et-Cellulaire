@@ -1,0 +1,532 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BMC - Notion 3 : Traduction & Organites</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Notion 3 : Traduction & Organites Eucaryotes</h1>
+        <p>Du gène à la protéine fonctionnelle - La cellule eucaryote en détail</p>
+    </header>
+    <nav>
+        <a href="main.html">Accueil</a>
+        <a href="résumé.html">Résumé (20/80)</a>
+        <a href="notion1.html">Notion 1</a>
+        <a href="notion2.html">Notion 2</a>
+        <a href="notion3.html">Notion 3 : Traduction & Organites</a>
+        <a href="quiz.html">Quiz</a>
+    </nav>
+    <div class="container">
+
+        <!-- ============================================ -->
+        <!-- PARTIE A : LA TRADUCTION                     -->
+        <!-- ============================================ -->
+        <div class="card">
+            <h2>PARTIE A : LA TRADUCTION</h2>
+            <p><strong>Définition :</strong> Décodage de l'information contenue dans l'ARNm pour synthétiser une chaîne polypeptidique (protéine). C'est la dernière étape du dogme central : <strong>ADN → ARN → Protéine</strong>.</p>
+            <div class="formula">
+                ARNm (codons 5'→3') → Protéine (acides aminés N-term → C-term)<br>
+                Lieu : Ribosomes (cytoplasme ou RE rugueux)<br>
+                Acteurs : ARNm + ARNt + Ribosomes + Facteurs protéiques
+            </div>
+        </div>
+
+        <div class="card">
+            <h2>1. Le Code Génétique</h2>
+            <p>Le code génétique est l'ensemble des règles qui définissent comment les séquences de nucléotides de l'ARNm sont traduites en séquences d'acides aminés.</p>
+
+            <h3>A. Les Codons</h3>
+            <ul>
+                <li><strong>Codon :</strong> Séquence de <strong>3 nucléotides</strong> (triplet) qui code pour un acide aminé spécifique.</li>
+                <li><strong>64 codons possibles</strong> (4³ = 64 combinaisons).</li>
+                <li><strong>61 codons</strong> codent pour des acides aminés.</li>
+                <li><strong>3 codons stop</strong> (UAA, UAG, UGA) : signalent la fin de la traduction.</li>
+                <li><strong>1 codon start</strong> : <strong>AUG</strong> (code pour la méthionine, Met) → initie la traduction.</li>
+            </ul>
+
+            <h3>B. Les 4 Propriétés du Code Génétique</h3>
+            <table class="table-custom">
+                <tr>
+                    <th>Propriété</th>
+                    <th>Signification</th>
+                    <th>Exemple / Conséquence</th>
+                </tr>
+                <tr>
+                    <td><strong>Universel</strong></td>
+                    <td>Le même codon code pour le même acide aminé chez tous les êtres vivants (bactéries, plantes, humains).</td>
+                    <td>Permet le transfert de gènes entre espèces (OGM, thérapie génique).</td>
+                </tr>
+                <tr>
+                    <td><strong>Dégénéré (ou redondant)</strong></td>
+                    <td>Plusieurs codons peuvent coder pour le même acide aminé.</td>
+                    <td>Ex: Leucine = 6 codons (UUA, UUG, CUU, CUC, CUA, CUG). Réduit l'impact des mutations.</td>
+                </tr>
+                <tr>
+                    <td><strong>Non chevauchant</strong></td>
+                    <td>Les codons sont lus les uns à la suite des autres, sans se superposer.</td>
+                    <td>Ex: AUGCCG → AUG puis CCG (et non AUG, UGC, GCC...).</td>
+                </tr>
+                <tr>
+                    <td><strong>Sans ambiguïté</strong></td>
+                    <td>Un codon donné code toujours pour le même acide aminé (jamais deux AA différents).</td>
+                    <td>AUG = toujours Méthionine (jamais autre chose).</td>
+                </tr>
+            </table>
+
+            <div class="card" style="background: #e8f0fe; border-left-color: var(--primary);">
+                <h3>💡 Astuce de prof - Piège classique :</h3>
+                <p>Le code est <strong>dégénéré</strong> mais <strong>NON ambigu</strong>. Cela signifie :</p>
+                <ul>
+                    <li>Un acide aminé peut être codé par plusieurs codons (dégénérescence).</li>
+                    <li>Mais un codon ne code JAMAIS pour deux acides aminés différents (pas d'ambiguïté).</li>
+                </ul>
+                <p><strong>Wobble (hypothèse de l'appariement oscillant) :</strong> Le 3ème nucléotide du codon (position 3') peut former des appariements non standards avec l'anticodon de l'ARNt → explique pourquoi plusieurs codons peuvent être reconnus par le même ARNt.</p>
+            </div>
+        </div>
+
+        <div class="card">
+            <h2>2. Les ARN de Transfert (ARNt)</h2>
+            <p>Les ARNt sont les adaptateurs moléculaires qui font le lien entre le langage nucléotidique (codons) et le langage protéique (acides aminés).</p>
+
+            <h3>A. Structure des ARNt</h3>
+            <ul>
+                <li><strong>Taille :</strong> 73 à 93 nucléotides.</li>
+                <li><strong>Structure secondaire en trèfle :</strong> 4 bras (accepteur, D, anticodon, TΨC).</li>
+                <li><strong>Structure tertiaire en L :</strong> Pliage 3D compact.</li>
+                <li><strong>Extrémité 3' CCA-OH :</strong> Site d'attachement de l'acide aminé (par liaison ester).</li>
+                <li><strong>Anticodon :</strong> Séquence de 3 nucléotides complémentaire au codon de l'ARNm (lu dans le sens 3'→5' sur l'ARNt).</li>
+            </ul>
+
+            <h3>B. Le Chargement des ARNt (Aminoacylation)</h3>
+            <p>Avant de participer à la traduction, chaque ARNt doit être "chargé" avec son acide aminé spécifique. Cette réaction est catalysée par une <strong>aminoacyl-ARNt synthétase</strong>.</p>
+            <div class="formula">
+                ARNt + Acide aminé + ATP → Aminoacyl-ARNt + AMP + PPi<br>
+                (Réaction en 2 étapes, catalysée par une synthétase spécifique)
+            </div>
+            <p><strong>⚠️ Important :</strong> Il existe <strong>20 aminoacyl-ARNt synthétases</strong> (une par acide aminé), mais <strong>plus de 20 ARNt différents</strong> (car plusieurs codons pour un même AA).</p>
+
+            <div class="card" style="background: #e8f0fe; border-left-color: var(--primary);">
+                <h3>💡 Astuce de prof - À retenir :</h3>
+                <p>La <strong>fidélité de la traduction</strong> dépend de DEUX étapes critiques :</p>
+                <ol>
+                    <li><strong>Chargement correct de l'ARNt</strong> par l'aminoacyl-ARNt synthétase (reconnaissance AA/ARNt).</li>
+                    <li><strong>Appariement correct codon-anticodon</strong> sur le ribosome.</li>
+                </ol>
+                <p>Si la synthétase se trompe d'AA, l'ARNt sera mal chargé → mauvais AA incorporé dans la protéine.</p>
+            </div>
+        </div>
+
+        <div class="card">
+            <h2>3. Les Ribosomes</h2>
+            <p>Les ribosomes sont les usines à protéines de la cellule. Ce sont des complexes ribonucléoprotéiques (ARNr + protéines).</p>
+
+            <h3>A. Structure des Ribosomes</h3>
+            <table class="table-custom">
+                <tr>
+                    <th>Critère</th>
+                    <th>Procaryotes (70S)</th>
+                    <th>Eucaryotes (80S)</th>
+                </tr>
+                <tr>
+                    <td><strong>Sous-unité petite</strong></td>
+                    <td>30S (ARNr 16S + 21 protéines)</td>
+                    <td>40S (ARNr 18S + 33 protéines)</td>
+                </tr>
+                <tr>
+                    <td><strong>Sous-unité grande</strong></td>
+                    <td>50S (ARNr 5S + 23S + 31 protéines)</td>
+                    <td>60S (ARNr 5S + 5.8S + 28S + 49 protéines)</td>
+                </tr>
+                <tr>
+                    <td><strong>Site de synthèse</strong></td>
+                    <td>Cytoplasme</td>
+                    <td>Nucléole (assemblage) → export vers cytoplasme</td>
+                </tr>
+            </table>
+
+            <h3>B. Les 3 Sites Fonctionnels du Ribosome</h3>
+            <p>Lors de la traduction, le ribosome possède 3 sites de liaison pour les ARNt :</p>
+            <ul>
+                <li><strong>Site A (Aminoacyl) :</strong> Site d'entrée du nouvel ARNt chargé.</li>
+                <li><strong>Site P (Peptidyl) :</strong> Site où se trouve l'ARNt portant la chaîne polypeptidique en croissance.</li>
+                <li><strong>Site E (Exit) :</strong> Site de sortie de l'ARNt déchargé (vide).</li>
+            </ul>
+
+            <div class="card" style="background: #e8f0fe; border-left-color: var(--primary);">
+                <h3>💡 Astuce de prof - Moyen mnémotechnique :</h3>
+                <p><strong>"A = Arrivée, P = Peptide (chaîne en cours), E = Exit (sortie)"</strong></p>
+                <p>L'ordre de passage des ARNt est toujours : <strong>A → P → E</strong>.</p>
+            </div>
+        </div>
+
+        <div class="card">
+            <h2>4. Les 3 Étapes de la Traduction</h2>
+
+            <h3>A. L'Initiation</h3>
+            <table class="table-custom">
+                <tr>
+                    <th>Procaryotes</th>
+                    <th>Eucaryotes</th>
+                </tr>
+                <tr>
+                    <td>
+                        <ol>
+                            <li>La sous-unité 30S se fixe sur l'ARNm au niveau de la <strong>séquence de Shine-Dalgarno</strong> (en amont du codon start AUG).</li>
+                            <li>L'ARNt initiateur (<strong>ARNt<sup>fMet</sup></strong>, chargé en <strong>N-formylméthionine</strong>) s'apparie avec le codon AUG dans le site P.</li>
+                            <li>La sous-unité 50S rejoint le complexe → ribosome 70S fonctionnel.</li>
+                            <li>Facteurs d'initiation : <strong>IF1, IF2, IF3</strong>.</li>
+                        </ol>
+                    </td>
+                    <td>
+                        <ol>
+                            <li>La sous-unité 40S reconnaît la <strong>coiffe 5'</strong> de l'ARNm et scanne jusqu'au premier codon AUG (règle de Kozak).</li>
+                            <li>L'ARNt initiateur (<strong>ARNt<sup>Met</sup></strong>, chargé en <strong>méthionine</strong> non modifiée) s'apparie avec AUG dans le site P.</li>
+                            <li>La sous-unité 60S rejoint le complexe → ribosome 80S fonctionnel.</li>
+                            <li>Facteurs d'initiation : <strong>eIF1, eIF2, eIF3, eIF4, eIF5</strong> (beaucoup plus nombreux que chez procaryotes).</li>
+                        </ol>
+                    </td>
+                </tr>
+            </table>
+
+            <div class="card" style="background: #e8f0fe; border-left-color: var(--primary);">
+                <h3>💡 Astuce de prof - Différence clé :</h3>
+                <p>Chez les procaryotes, le premier acide aminé est la <strong>N-formylméthionine (fMet)</strong>. Chez les eucaryotes, c'est la <strong>méthionine (Met)</strong> standard. La forme est retirée dans les deux cas lors de la maturation de la protéine.</p>
+            </div>
+
+            <h3>B. L'Élongation</h3>
+            <p>Cycle répétitif qui ajoute un acide aminé à la chaîne polypeptidique. Chaque cycle comprend 3 étapes :</p>
+            <ol>
+                <li><strong>Décodage (entrée de l'ARNt) :</strong> L'ARNt chargé approprié (reconnu par son anticodon) entre dans le <strong>site A</strong>. Nécessite le facteur d'élongation <strong>EF-Tu</strong> (procaryotes) ou <strong>eEF1A</strong> (eucaryotes) + GTP.</li>
+                <li><strong>Formation de la liaison peptidique :</strong> Le centre peptidyltransférase (activité catalytique de l'ARNr 23S/28S) transfère la chaîne polypeptidique de l'ARNt du site P vers l'ARNt du site A → nouvelle liaison peptidique.</li>
+                <li><strong>Translocation :</strong> Le ribosome se déplace d'un codon (3 nt) dans le sens 5'→3' sur l'ARNm. Nécessite le facteur <strong>EF-G</strong> (procaryotes) ou <strong>eEF2</strong> (eucaryotes) + GTP. Conséquence :
+                    <ul>
+                        <li>L'ARNt déchargé passe du site P au site E → sort du ribosome.</li>
+                        <li>L'ARNt portant la chaîne peptidique passe du site A au site P.</li>
+                        <li>Le site A est maintenant vide, prêt à accueillir un nouvel ARNt.</li>
+                    </ul>
+                </li>
+            </ol>
+
+            <h3>C. La Terminaison</h3>
+            <ul>
+                <li>Le ribosome rencontre un <strong>codon stop</strong> (UAA, UAG ou UGA) dans le site A.</li>
+                <li>Aucun ARNt ne reconnaît ces codons → recrutement d'un <strong>facteur de libération</strong> (<strong>RF1/RF2</strong> chez procaryotes, <strong>eRF1</strong> chez eucaryotes).</li>
+                <li>Le facteur de libération provoque l'hydrolyse de la liaison entre la chaîne polypeptidique et l'ARNt du site P → libération de la protéine.</li>
+                <li><strong>Dissociation du ribosome</strong> en ses deux sous-unités (nécessite le facteur <strong>RF3</strong> ou <strong>eRF3</strong> + GTP).</li>
+            </ul>
+        </div>
+
+        <div class="card">
+            <h2>5. Les Polysomes et la Localisation des Ribosomes</h2>
+            <p>Un <strong>polysome</strong> (ou polyribosome) est un ensemble de ribosomes traduisant simultanément le même ARNm → synthèse rapide de multiples copies d'une protéine.</p>
+            
+            <h3>Localisation des ribosomes dans la cellule eucaryote :</h3>
+            <ul>
+                <li><strong>Ribosomes libres (cytosol) :</strong> Synthétisent les protéines cytosoliques, nucléaires, mitochondriales, peroxysomales.</li>
+                <li><strong>Ribosomes liés au RE rugueux :</strong> Synthétisent les protéines destinées à la sécrétion, aux membranes plasmiques, ou aux lysosomes.</li>
+            </ul>
+
+            <div class="card" style="background: #e8f0fe; border-left-color: var(--primary);">
+                <h3>💡 Astuce de prof - Règle de localisation :</h3>
+                <p>Le premier acide aminé (signal de localisation) détermine où la protéine ira :</p>
+                <ul>
+                    <li><strong>Signal peptide N-terminal hydrophobe :</strong> → RE rugueux → voie sécrétoire.</li>
+                    <li><strong>Pas de signal :</strong> → reste dans le cytosol.</li>
+                    <li><strong>Signal spécifique (ex: séquence riche en bases basiques) :</strong> → noyau, mitochondrie, etc.</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="card">
+            <h2>6. Modifications Post-Traductionnelles</h2>
+            <p>Après sa synthèse, la protéine subit souvent des modifications pour devenir fonctionnelle :</p>
+            <ul>
+                <li><strong>Pliage (folding) :</strong> Acquisition de la structure 3D native (assisté par des chaperonnes comme les HSP).</li>
+                <li><strong>Clivage protéolytique :</strong> Retrait de séquences (ex: pro-insuline → insuline).</li>
+                <li><strong>Glycosylation :</strong> Ajout de glucides (N-glycosylation dans le RE, O-glycosylation dans le Golgi).</li>
+                <li><strong>Phosphorylation :</strong> Ajout de groupements phosphate (régulation de l'activité enzymatique).</li>
+                <li><strong>Ponts disulfure :</strong> Liaisons covalentes entre cystéines (stabilisation de la structure 3D).</li>
+                <li><strong>Prénylation, acylation, etc. :</strong> Ajout de lipides (ancrage membranaire).</li>
+            </ul>
+        </div>
+
+        <!-- ============================================ -->
+        <!-- PARTIE B : LES ORGANITES EUCARYOTES          -->
+        <!-- ============================================ -->
+        <div class="card">
+            <h2>PARTIE B : LES ORGANITES EUCARYOTES</h2>
+            <p>Les cellules eucaryotes se caractérisent par leur compartimentation interne : des organites membraneux spécialisés dans des fonctions spécifiques.</p>
+        </div>
+
+        <div class="card">
+            <h2>1. Le Noyau</h2>
+            <p>Centre de contrôle de la cellule, il contient l'ADN génomique et est le siège de la réplication et de la transcription.</p>
+
+            <h3>A. L'Enveloppe Nucléaire</h3>
+            <ul>
+                <li><strong>Double membrane :</strong> Membrane interne + Membrane externe (prolongement du RE rugueux).</li>
+                <li><strong>Espace péri-nucléaire :</strong> Entre les deux membranes (~20-40 nm).</li>
+                <li><strong>Pores nucléaires :</strong> Complexes protéiques (nucléoporines) qui permettent les échanges entre noyau et cytoplasme.
+                    <ul>
+                        <li><strong>Transport passif :</strong> Petites molécules (< 40 kDa ou < 9 nm de diamètre).</li>
+                        <li><strong>Transport actif :</strong> Grosses molécules (protéines, ARN) via des signaux de localisation nucléaire (NLS pour l'entrée, NES pour la sortie). Nécessite de l'énergie (Ran-GTPase).</li>
+                    </ul>
+                </li>
+            </ul>
+
+            <h3>B. Le Nucléole</h3>
+            <ul>
+                <li><strong>Fonction :</strong> Site de synthèse des ARNr (18S, 5.8S, 28S par la Pol I) et d'assemblage des sous-unités ribosomiques.</li>
+                <li><strong>Structure :</strong> Zone dense, non délimitée par une membrane, associée aux régions d'ADN codant pour les ARNr (ADNr).</li>
+            </ul>
+
+            <h3>C. La Chromatine</h3>
+            <ul>
+                <li><strong>Euchromatine :</strong> Décondensée, transcriptionnellement active (gènes exprimés).</li>
+                <li><strong>Hétérochromatine :</strong> Condensée, transcriptionnellement inactive (gènes silencieux, régions structurales comme centromères et télomères).</li>
+            </ul>
+        </div>
+
+        <div class="card">
+            <h2>2. Le Réticulum Endoplasmique (RE)</h2>
+            <p>Réseau de membranes interconnectées formant des citernes et des tubules. Deux domaines fonctionnellement distincts :</p>
+
+            <h3>A. Le RE Rugueux (RER)</h3>
+            <ul>
+                <li><strong>Structure :</strong> Citernes aplaties tapissées de ribosomes sur la face cytosolique.</li>
+                <li><strong>Fonctions :</strong>
+                    <ul>
+                        <li><strong>Synthèse des protéines</strong> destinées à la sécrétion, aux membranes, ou aux lysosomes.</li>
+                        <li><strong>Translocation co-traductionnelle :</strong> La protéine en cours de synthèse est injectée dans la lumière du RE via un canal (translocon Sec61).</li>
+                        <li><strong>Première maturation :</strong>
+                            <ul>
+                                <li><strong>N-glycosylation :</strong> Ajout d'un oligosaccharide préformé sur les résidus asparagine (Asn).</li>
+                                <li><strong>Formation de ponts disulfure</strong> (catalysée par la PDI : Protein Disulfide Isomerase).</li>
+                                <li><strong>Pliage assisté</strong> par des chaperonnes (BiP, calnexine, calréticuline).</li>
+                            </ul>
+                        </li>
+                        <li><strong>Contrôle qualité :</strong> Les protéines mal repliées sont rétrodans le cytosol pour dégradation (voie ERAD : ER-Associated Degradation).</li>
+                    </ul>
+                </li>
+            </ul>
+
+            <h3>B. Le RE Lisse (REL)</h3>
+            <ul>
+                <li><strong>Structure :</strong> Tubules interconnectés, sans ribosomes.</li>
+                <li><strong>Fonctions :</strong>
+                    <ul>
+                        <li><strong>Synthèse des lipides :</strong> Phospholipides, cholestérol, céramides.</li>
+                        <li><strong>Détoxification :</strong> Métabolisation des xénobiotiques (drogues, toxines) par les cytochromes P450 (surtout dans les hépatocytes).</li>
+                        <li><strong>Stockage du calcium (Ca²⁺) :</strong> Crucial pour la signalisation cellulaire (ex: contraction musculaire via le réticulum sarcoplasmique).</li>
+                        <li><strong>Métabolisme des glucides :</strong> Glycogénolyse (libération de glucose à partir du glycogène).</li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+
+        <div class="card">
+            <h2>3. L'Appareil de Golgi</h2>
+            <p>Centre de tri, de maturation finale et de distribution des protéines et lipides provenant du RE.</p>
+
+            <h3>A. Structure</h3>
+            <ul>
+                <li><strong>Empilement de saccules</strong> (citernes aplaties) délimitées par des membranes.</li>
+                <li><strong>Polarité :</strong>
+                    <ul>
+                        <li><strong>Face cis (formation) :</strong> Face d'entrée, orientée vers le RE. Reçoit les vésicules de transport du RE.</li>
+                        <li><strong>Face trans (maturation) :</strong> Face de sortie, orientée vers la membrane plasmique. Envoie des vésicules vers leurs destinations finales.</li>
+                        <li><strong>Saccules intermédiaires (médians) :</strong> Zones de maturation.</li>
+                    </ul>
+                </li>
+            </ul>
+
+            <h3>B. Fonctions</h3>
+            <ul>
+                <li><strong>Maturation des glycoprotéines :</strong>
+                    <ul>
+                        <li><strong>O-glycosylation :</strong> Ajout de sucres sur les résidus sérine (Ser) ou thréonine (Thr).</li>
+                        <li><strong>Modification des chaînes N-glycosylées</strong> (ajout/retrait de sucres spécifiques).</li>
+                    </ul>
+                </li>
+                <li><strong>Sulfatation, phosphorylation, protéolyse :</strong> Autres modifications post-traductionnelles.</li>
+                <li><strong>Tri et adressage :</strong> Les protéines sont triées selon leur signal de destination et envoyées vers :
+                    <ul>
+                        <li>La membrane plasmique (sécrétion constitutive ou régulée).</li>
+                        <li>Les lysosomes (via le signal mannose-6-phosphate).</li>
+                        <li>Le RE (rétrotransport).</li>
+                    </ul>
+                </li>
+            </ul>
+
+            <div class="card" style="background: #e8f0fe; border-left-color: var(--primary);">
+                <h3>💡 Astuce de prof - Ordre de la voie sécrétoire :</h3>
+                <p><strong>RE → Golgi (cis → médian → trans) → Membrane plasmique / Lysosomes</strong></p>
+                <p>Le transport se fait par des <strong>vésicules coated</strong> (recouvertes de protéines) :
+                    <ul>
+                        <li><strong>COPII :</strong> RE → Golgi (anterograde).</li>
+                        <li><strong>COPI :</strong> Golgi → RE (rétrograde) et entre saccules du Golgi.</li>
+                        <li><strong>Clathrine :</strong> Golgi trans → Lysosomes / Membrane plasmique (endocytose).</li>
+                    </ul>
+                </p>
+            </div>
+        </div>
+
+        <div class="card">
+            <h2>4. Les Lysosomes</h2>
+            <p>Organites de digestion intracellulaire. Ce sont les "estomacs" de la cellule.</p>
+
+            <h3>A. Structure et Propriétés</h3>
+            <ul>
+                <li><strong>Vésicules denses</strong> (0.1 à 1 µm) délimitées par une membrane simple.</li>
+                <li><strong>pH acide interne (4.5 - 5.0) :</strong> Maintenu par des <strong>pompes à protons (H⁺-ATPases)</strong> dans la membrane lysosomale.</li>
+                <li><strong>Contenu :</strong> ~50 <strong>hydrolases acides</strong> (enzymes actives à pH acide) :
+                    <ul>
+                        <li>Protéases (digestion des protéines).</li>
+                        <li>Lipases (digestion des lipides).</li>
+                        <li>Glycosidases (digestion des glucides).</li>
+                        <li>Nucléases (digestion des acides nucléiques).</li>
+                    </ul>
+                </li>
+            </ul>
+
+            <h3>B. Fonctions</h3>
+            <ul>
+                <li><strong>Hétérophagie :</strong> Digestion de matériel exogène (bactéries, particules) internalisé par phagocytose ou endocytose → formation de phagolysosomes.</li>
+                <li><strong>Autophagie :</strong> Digestion de composants cellulaires endommagés ou obsolètes (organites, protéines agrégées) → recyclage des composants.</li>
+            </ul>
+
+            <div class="card" style="background: #e8f0fe; border-left-color: var(--primary);">
+                <h3>💡 Astuce de prof - Pathologies associées :</h3>
+                <p>Les <strong>maladies lysosomales</strong> (ex: maladie de Tay-Sachs, mucopolysaccharidoses) sont causées par un déficit en une hydrolase lysosomale → accumulation de substrats non digérés dans le lysosome → dysfonction cellulaire.</p>
+            </div>
+        </div>
+
+        <div class="card">
+            <h2>5. Les Mitochondries</h2>
+            <p>Centres énergétiques de la cellule, elles produisent l'ATP par phosphorylation oxydative.</p>
+
+            <h3>A. Structure</h3>
+            <ul>
+                <li><strong>Double membrane :</strong>
+                    <ul>
+                        <li><strong>Membrane externe :</strong> Lisse, perméable aux petites molécules (porines).</li>
+                        <li><strong>Membrane interne :</strong> Repliée en <strong>crêtes mitochondriales</strong> (augmente la surface). Imperméable, contient la chaîne respiratoire et l'ATP synthase.</li>
+                    </ul>
+                </li>
+                <li><strong>Espace intermembranaire :</strong> Entre les deux membranes (pH ~7.0).</li>
+                <li><strong>Matrice mitochondriale :</strong> Compartiment interne (pH ~8.0). Contient :
+                    <ul>
+                        <li>Enzymes du cycle de Krebs et de la β-oxydation des acides gras.</li>
+                        <li>ADN mitochondrial circulaire (ADNmt).</li>
+                        <li>Ribosomes mitochondriaux (55S).</li>
+                        <li>ARNt mitochondriaux.</li>
+                    </ul>
+                </li>
+            </ul>
+
+            <h3>B. Fonctions</h3>
+            <ul>
+                <li><strong>Production d'ATP :</strong> Phosphorylation oxydative (chaîne respiratoire + ATP synthase). Consomme O₂, produit CO₂ et H₂O.</li>
+                <li><strong>Cycle de Krebs :</strong> Oxydation complète des métabolites (pyruvate, acides gras) → production de NADH et FADH₂.</li>
+                <li><strong>β-oxydation :</strong> Dégradation des acides gras en acétyl-CoA.</li>
+                <li><strong>Apoptose :</strong> Libération de cytochrome c → activation des caspases → mort cellulaire programmée.</li>
+                <li><strong>Stockage du calcium (Ca²⁺) :</strong> Rôle dans la signalisation cellulaire.</li>
+            </ul>
+
+            <div class="card" style="background: #e8f0fe; border-left-color: var(--primary);">
+                <h3>💡 Astuce de prof - Origine évolutive :</h3>
+                <p>La <strong>théorie endosymbiotique</strong> propose que les mitochondries (et les chloroplastes) proviennent de l'internalisation d'une bactérie aérobie par une cellule hôte ancestrale. Preuves :
+                    <ul>
+                        <li>Double membrane.</li>
+                        <li>ADN propre (circulaire, sans histones).</li>
+                        <li>Ribosomes propres (type procaryote).</li>
+                        <li>Réplication autonome (fission binaire).</li>
+                    </ul>
+                </p>
+            </div>
+        </div>
+
+        <div class="card">
+            <h2>6. Les Peroxysomes</h2>
+            <p>Microorganites oxydatifs impliqués dans le métabolisme des lipides et la détoxification.</p>
+            <ul>
+                <li><strong>Vésicules simples</strong> (0.1 à 1 µm) délimitées par une membrane unique.</li>
+                <li><strong>Contenu :</strong> Enzymes oxydatives (catalase, urate oxydase, D-amino acides oxydases).</li>
+                <li><strong>Fonctions :</strong>
+                    <ul>
+                        <li><strong>β-oxydation des acides gras à très longue chaîne</strong> (VLCFA, >22 carbones).</li>
+                        <li><strong>Détoxification du H₂O₂</strong> (peroxyde d'hydrogène) par la catalase : 2 H₂O₂ → 2 H₂O + O₂.</li>
+                        <li><strong>Métabolisme des purines</strong> et des acides aminés.</li>
+                        <li><strong>Biosynthèse des plasmalogènes</strong> (phospholipides membranaires, surtout dans le cerveau).</li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+
+        <div class="card">
+            <h2>📊 Tableau Récapitulatif : Les Organites Clés</h2>
+            <table class="table-custom">
+                <tr>
+                    <th>Organite</th>
+                    <th>Membrane</th>
+                    <th>Fonction principale</th>
+                    <th>Particularité</th>
+                </tr>
+                <tr>
+                    <td><strong>Noyau</strong></td>
+                    <td>Double (avec pores)</td>
+                    <td>Stockage ADN, transcription</td>
+                    <td>Contient le nucléole (synthèse ARNr)</td>
+                </tr>
+                <tr>
+                    <td><strong>RE Rugueux</strong></td>
+                    <td>Simple</td>
+                    <td>Synthèse protéines sécrétées/membranaires</td>
+                    <td>Ribosomes sur face cytosolique</td>
+                </tr>
+                <tr>
+                    <td><strong>RE Lisse</strong></td>
+                    <td>Simple</td>
+                    <td>Synthèse lipides, détox, stockage Ca²⁺</td>
+                    <td>Pas de ribosomes</td>
+                </tr>
+                <tr>
+                    <td><strong>Golgi</strong></td>
+                    <td>Simple (saccules)</td>
+                    <td>Maturation, tri, adressage</td>
+                    <td>Polarité cis → trans</td>
+                </tr>
+                <tr>
+                    <td><strong>Lysosome</strong></td>
+                    <td>Simple</td>
+                    <td>Digestion intracellulaire</td>
+                    <td>pH acide (4.5-5), hydrolases</td>
+                </tr>
+                <tr>
+                    <td><strong>Mitochondrie</strong></td>
+                    <td>Double (crêtes)</td>
+                    <td>Production ATP (phosphorylation oxydative)</td>
+                    <td>ADN propre, origine endosymbiotique</td>
+                </tr>
+                <tr>
+                    <td><strong>Peroxysome</strong></td>
+                    <td>Simple</td>
+                    <td>β-oxydation VLCFA, détox H₂O₂</td>
+                    <td>Contient de la catalase</td>
+                </tr>
+            </table>
+        </div>
+
+        <div style="text-align: center; margin-top: 2rem;">
+            <a href="quiz.html" class="btn">Passer au Quiz de Révision →</a>
+        </div>
+
+    </div>
+    <footer>
+        <p>Créé avec la méthode Pareto pour la réussite en L1 Biologie - Université Évry Paris-Saclay</p>
+    </footer>
+</body>
+</html>
