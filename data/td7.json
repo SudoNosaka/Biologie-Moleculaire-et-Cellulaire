@@ -1,0 +1,40 @@
+{
+  "titre": "TD7 - La Membrane Plasmique",
+  "donnees": [
+    "Modèle de la mosaïque fluide (Singer et Nicolson, 1972) : bicouche lipidique dans laquelle flottent des protéines.",
+    "Phospholipides : molécules amphiphiles (tête polaire hydrophile, queues d'acides gras hydrophobes).",
+    "Cholestérol : module la fluidité membranaire (la diminue à haute température, l'augmente à basse température).",
+    "Transport passif : diffusion simple ou facilitée (selon le gradient de concentration, sans énergie).",
+    "Transport actif : contre le gradient de concentration, nécessite de l'énergie (ATP) et des protéines de transport (pompes)."
+  ],
+  "exercices": [
+    {
+      "id": "7.1",
+      "titre": "Structure et composition de la membrane",
+      "enonce": "1°) Décrivez le modèle de la « mosaïque fluide » de la membrane plasmique.\n2°) Pourquoi dit-on que les phospholipides sont des molécules amphiphiles ? Comment s'organisent-ils spontanément en milieu aqueux ?\n3°) Citez les trois grandes catégories de protéines membranaires et donnez un exemple de fonction pour chacune.",
+      "aide": "Pensez à l'organisation en bicouche, aux propriétés hydrophiles/hydrophobes, et aux protéines intrinsèques/extrinsèques.",
+      "solution": "1°) Le modèle de la mosaïque fluide décrit la membrane comme une bicouche lipidique fluide dans laquelle sont insérées ou associées des protéines de manière dynamique (elles peuvent se déplacer latéralement).\n2°) Les phospholipides sont amphiphiles car ils possèdent une tête polaire hydrophile (qui aime l'eau) et deux queues d'acides gras hydrophobes (qui fuient l'eau). En milieu aqueux, ils s'organisent spontanément en bicouche : les têtes sont orientées vers l'extérieur (milieu aqueux) et les queues vers l'intérieur (loin de l'eau).\n3°) Les trois catégories :\n- Protéines transmembranaires (intrinsèques) : traversent la bicouche (ex: canaux ioniques, pompes).\n- Protéines périphériques (extrinsèques) : associées à une face de la membrane (ex: cytosquelette sous-jacent).\n- Protéines ancrées par un lipide : attachées à la membrane par une queue lipidique (ex: certaines enzymes)."
+    },
+    {
+      "id": "7.2",
+      "titre": "La fluidité membranaire",
+      "enonce": "La fluidité de la membrane est cruciale pour ses fonctions (endocytose, division cellulaire, fonctionnement des protéines).\n\n1°) Quel est le rôle du cholestérol dans la membrane plasmique des cellules animales ?\n2°) Comment la longueur et le degré de saturation des chaînes d'acides gras des phospholipides influencent-ils la fluidité membranaire ?\n3°) Citez l'expérience historique de Frye et Edidin (1970) qui a démontré la fluidité des protéines membranaires.",
+      "aide": "Pensez aux interactions entre les queues lipidiques (liaisons de Van der Waals) et au marquage fluorescent.",
+      "solution": "1°) Le cholestérol agit comme un « tampon de fluidité » : à haute température, il restreint le mouvement des phospholipides (diminue la fluidité et la perméabilité) ; à basse température, il empêche les queues lipidiques de se tasser trop étroitement (maintient la fluidité et empêche la solidification).\n2°) \n- Chaînes courtes : moins d'interactions de Van der Waals → fluidité augmentée.\n- Chaînes insaturées (avec doubles liaisons cis) : créent des coudes qui empêchent un empilement compact → fluidité augmentée.\n3°) Expérience de Frye et Edidin (1970) : fusion de cellules de souris et humaines marquées avec des anticorps fluorescents différents (vert et rouge) liés aux protéines de surface. Au début, les couleurs sont séparées. Après 40 minutes à 37°C, les couleurs se mélangent uniformément, prouvant que les protéines membranaires diffusent latéralement dans la bicouche lipidique."
+    },
+    {
+      "id": "7.3",
+      "titre": "Mécanismes de transport à travers la membrane",
+      "enonce": "Classez les substances suivantes selon leur mode de traversée de la membrane plasmique : O₂, Glucose, Na⁺, Eau (H₂O), Protéines.\n\nModes de transport disponibles : Diffusion simple, Diffusion facilitée, Transport actif, Endocytose/Exocytose.\nJustifiez brièvement chaque choix.",
+      "aide": "Pensez à la taille, la charge et la polarité des molécules, ainsi qu'au gradient de concentration.",
+      "solution": "- O₂ (gaz, petit, apolaire) : Diffusion simple à travers la bicouche lipidique.\n- Eau (H₂O) (petite, polaire) : Diffusion facilitée principalement via des canaux spécifiques appelés aquaporines (et un peu de diffusion simple).\n- Glucose (grosse molécule, polaire) : Diffusion facilitée via des transporteurs spécifiques (ex: GLUT).\n- Na⁺ (ion chargé) : Transport actif (pompe Na⁺/K⁺ ATPase) ou diffusion facilitée via des canaux ioniques (selon le gradient).\n- Protéines (macromolécules) : Endocytose (pour entrer) ou Exocytose (pour sortir), car elles sont trop grosses pour traverser la membrane directement."
+    },
+    {
+      "id": "7.4",
+      "titre": "La pompe Na⁺/K⁺ ATPase",
+      "enonce": "La pompe Na⁺/K⁺ est une protéine transmembranaire essentielle au maintien du potentiel de repos des cellules excitables (neurones, muscles).\n\n1°) S'agit-il d'un transport passif ou actif ? Justifiez.\n2°) Quel est le bilan ionique et énergétique d'un cycle de fonctionnement de cette pompe ?\n3°) Que se passerait-il pour une cellule si cette pompe était inhibée (ex: par l'ouabaïne, un poison) ?",
+      "aide": "Pensez au gradient de concentration, à l'hydrolyse de l'ATP et à l'osmose.",
+      "solution": "1°) C'est un transport actif primaire, car il déplace les ions contre leur gradient de concentration respectif (Na⁺ vers l'extérieur où il est déjà concentré, K⁺ vers l'intérieur où il est déjà concentré) et nécessite de l'énergie.\n2°) Bilan d'un cycle : La pompe hydrolyse 1 molécule d'ATP (en ADP + Pi) pour exporter 3 ions Na⁺ hors de la cellule et importer 2 ions K⁺ dans la cellule.\n3°) Conséquences de l'inhibition : Les gradients ioniques s'effondrent (Na⁺ s'accumule à l'intérieur, K⁺ sort). L'augmentation de la concentration intracellulaire en solutés (Na⁺) entraîne une entrée d'eau par osmose, provoquant un gonflement de la cellule (œdème cellulaire) pouvant aller jusqu'à la lyse (éclatement). De plus, le potentiel de membrane est perdu, bloquant toute excitabilité."
+    }
+  ]
+}

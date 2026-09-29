@@ -1,0 +1,121 @@
+{
+  "title": "La Traduction",
+  "subtitle": "De l'ARNm à la protéine : le mécanisme de synthèse",
+  "sections": [
+    {
+      "id": "intro",
+      "title": "1. Introduction et Principe Général",
+      "content": "La traduction est le processus par lequel l'information génétique portée par l'ARN messager (ARNm) est décodée pour synthétiser une chaîne polypeptidique (protéine). C'est la seconde étape de l'expression des gènes.",
+      "list": [
+        "Elle a lieu dans le cytoplasme (sur les ribosomes)",
+        "Le sens de lecture de l'ARNm est 5' → 3'",
+        "La synthèse de la protéine se fait de l'extrémité N-terminale vers l'extrémité C-terminale",
+        "Elle nécessite de l'énergie (GTP) et des facteurs protéiques"
+      ]
+    },
+    {
+      "id": "code-genetique",
+      "title": "2. Le Code Génétique",
+      "content": "Le code génétique est l'ensemble des règles qui permettent de faire correspondre la séquence des nucléotides de l'ARNm à la séquence des acides aminés de la protéine.",
+      "subsections": [
+        {
+          "title": "Caractéristiques du code génétique",
+          "list": [
+            "Il est universel (quasi-identique chez tous les êtres vivants, avec de rares exceptions mitochondriales)",
+            "Il est dégénéré (ou redondant) : 61 codons codent pour 20 acides aminés (plusieurs codons peuvent coder le même acide aminé)",
+            "Il est non chevauchant : chaque nucléotide n'appartient qu'à un seul codon",
+            "Il est sans ponctuation : la lecture se fait de manière continue, sans espace entre les codons",
+            "Il possède un codon d'initiation (AUG = Méthionine) et trois codons stop (UAA, UAG, UGA)"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "acteurs",
+      "title": "3. Les Acteurs de la Traduction",
+      "content": "La traduction fait intervenir plusieurs types de molécules :",
+      "table": [
+        {"acteur": "ARN messager (ARNm)", "role": "Porte l'information génétique sous forme de codons"},
+        {"acteur": "ARN de transfert (ARNt)", "role": "Adaptateur moléculaire : porte un acide aminé spécifique et possède un anticodon complémentaire du codon"},
+        {"acteur": "Ribosomes", "role": "Machines moléculaires (ARNr + protéines) qui catalysent la formation des liaisons peptidiques"},
+        {"acteur": "Aminoacyl-ARNt synthétases", "role": "Enzymes qui attachent l'acide aminé correct à son ARNt correspondant (chargement de l'ARNt)"},
+        {"acteur": "Facteurs protéiques", "role": "Facteurs d'initiation (IF/eIF), d'élongation (EF/eEF) et de terminaison (RF/eRF)"}
+      ],
+      "subsections": [
+        {
+          "title": "Structure de l'ARNt",
+          "content": "L'ARNt a une structure secondaire en « feuille de trèfle » et une structure tertiaire en « L ».",
+          "list": [
+            "Extrémité 3' : séquence CCA où se fixe l'acide aminé",
+            "Boucle de l'anticodon : contient 3 nucléotides complémentaires du codon de l'ARNm",
+            "Le « wobble » (balancement) : la 3ème base du codon peut former des appariements non canoniques avec la 1ère base de l'anticodon, expliquant la dégénérescence du code"
+          ]
+        },
+        {
+          "title": "Le Ribosome",
+          "content": "Composé de deux sous-unités (grande et petite). Il possède 3 sites de liaison pour les ARNt :",
+          "list": [
+            "Site A (Aminoacyl) : accueille l'aminoacyl-ARNt entrant",
+            "Site P (Peptidyl) : contient l'ARNt portant la chaîne polypeptidique en croissance",
+            "Site E (Exit) : d'où sort l'ARNt déacylé (vide)"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "etapes",
+      "title": "4. Les Étapes de la Traduction",
+      "subsections": [
+        {
+          "title": "A. L'Initiation",
+          "content": "Assemblage du complexe d'initiation sur le codon start.",
+          "list": [
+            "La petite sous-unité ribosomale se lie à l'ARNm (reconnaissance de la coiffe chez les eucaryotes, ou de la séquence de Shine-Dalgarno chez les procaryotes)",
+            "L'ARNt initiateur (portant la méthionine ou la formyl-méthionine chez les bactéries) se place sur le codon AUG au site P",
+            "La grande sous-unité ribosomale vient se fixer, complétant le ribosome fonctionnel"
+          ]
+        },
+        {
+          "title": "B. L'Élongation",
+          "content": "Cycle répétitif d'ajout d'acides aminés, consommant du GTP.",
+          "list": [
+            "1. Décodage : un aminoacyl-ARNt complémentaire du codon du site A se fixe (avec l'aide du facteur d'élongation EF-Tu/eEF1)",
+            "2. Formation de la liaison peptidique : la peptidyl transférase (activité catalytique de l'ARNr de la grande sous-unité) transfère la chaîne polypeptidique du site P vers l'acide aminé du site A",
+            "3. Translocation : le ribosome avance d'un codon (3 nucléotides) vers l'extrémité 3' de l'ARNm (catalysé par EF-G/eEF2). L'ARNt vide passe au site E et est éjecté, l'ARNt porteur de la chaîne passe au site P, libérant le site A pour le prochain ARNt"
+          ]
+        },
+        {
+          "title": "C. La Terminaison",
+          "content": "Arrêt de la synthèse lorsque le ribosome rencontre un codon stop (UAA, UAG ou UGA).",
+          "list": [
+            "Aucun ARNt ne reconnaît les codons stop",
+            "Des facteurs de libération (RF chez les procaryotes, eRF chez les eucaryotes) se lient au site A",
+            "Ils provoquent l'hydrolyse de la liaison entre la chaîne polypeptidique et l'ARNt du site P",
+            "La protéine est libérée, et les sous-unités ribosomales se dissocient de l'ARNm"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "post-traductionnel",
+      "title": "5. Modifications Post-Traductionnelles",
+      "content": "Une fois synthétisée, la chaîne polypeptidique (structure primaire) doit acquérir sa structure fonctionnelle.",
+      "list": [
+        "Repliement (folding) : acquisition de la structure secondaire, tertiaire et quaternaire, souvent aidée par des chaperonnes moléculaires",
+        "Clivage protéolytique : retrait du peptide signal ou de pro-peptides (ex: conversion du pro-insuline en insuline)",
+        "Modifications chimiques : phosphorylation, glycosylation, acétylation, ajout de groupes lipides",
+        "Ces modifications déterminent la localisation, la stabilité et l'activité de la protéine"
+      ],
+      "warning": "Un défaut de repliement (misfolding) peut entraîner l'agrégation des protéines et est impliqué dans des maladies neurodégénératives (ex: Alzheimer, Parkinson)."
+    },
+    {
+      "id": "couplage",
+      "title": "6. Couplage Transcription-Traduction",
+      "content": "Il existe une différence majeure entre procaryotes et eucaryotes concernant la synchronisation de ces deux processus.",
+      "table": [
+        {"caracteristique": "Procaryotes", "detail": "Pas de noyau. La traduction peut commencer sur l'ARNm pendant qu'il est encore en cours de transcription (polyribosomes ou polysomes)."},
+        {"caracteristique": "Eucaryotes", "detail": "Séparation spatiale et temporelle. La transcription et la maturation ont lieu dans le noyau. L'ARNm mature doit être exporté vers le cytoplasme avant que la traduction ne puisse commencer."}
+      ]
+    }
+  ]
+}

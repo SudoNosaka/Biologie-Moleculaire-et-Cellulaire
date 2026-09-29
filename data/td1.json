@@ -1,0 +1,46 @@
+{
+  "titre": "TD1 - Organisation des Cellules Procaryotes et Eucaryotes",
+  "donnees": [
+    "Cellule procaryote : ~5 µm, pas de noyau, pas d'organites membraneux",
+    "Cellule eucaryote : ~50 µm, noyau délimité par une membrane, organites membraneux",
+    "Eucaryotes : animaux, végétaux, champignons, protistes",
+    "Procaryotes : bactéries, archées"
+  ],
+  "exercices": [
+    {
+      "id": "1.1",
+      "titre": "Identification des structures cellulaires",
+      "enonce": "Observez une cellule procaryote (bactérie) au microscope électronique.\n\n1°) Citez les structures que vous pouvez observer dans une cellule procaryote.\n2°) Pour chaque structure, donnez sa fonction principale.\n3°) Quelles structures sont absentes chez les procaryotes par rapport aux eucaryotes ?",
+      "aide": "Pensez à : membrane plasmique, paroi, cytoplasme, nucléoïde, ribosomes, flagelles, pili...",
+      "solution": "1°) Structures observables chez les procaryotes :\n- Membrane plasmique : délimite la cellule, contrôle les échanges\n- Paroi cellulaire : rigidité et protection (peptidoglycane chez les bactéries)\n- Cytoplasme : milieu interne contenant les métabolites\n- Nucléoïde : zone contenant l'ADN circulaire (pas de membrane)\n- Ribosomes 70S : synthèse des protéines\n- Flagelles : mobilité\n- Pili/fimbriae : adhérence, conjugaison\n- Plasmides : petits ADN circulaires supplémentaires\n\n2°) Fonctions :\n- Membrane : échanges, respiration (chez les bactéries)\n- Paroi : protection mécanique, forme\n- Nucléoïde : information génétique\n- Ribosomes : traduction\n- Flagelles : déplacement\n\n3°) Structures absentes chez les procaryotes :\n- Pas de noyau véritable (pas d'enveloppe nucléaire)\n- Pas de mitochondries\n- Pas de réticulum endoplasmique\n- Pas d'appareil de Golgi\n- Pas de lysosomes\n- Pas de chloroplastes (sauf chez les cyanobactéries avec des thylakoïdes)"
+    },
+    {
+      "id": "1.2",
+      "titre": "Identification d'un organite spécifique",
+      "enonce": "On observe au microscope électronique un organite délimité par une double membrane, contenant des crêtes membranaires et une matrice.\n\n1°) Identifiez cet organite.\n2°) Dans quels types d'organismes le trouve-t-on ?\n3°) Quelle est sa fonction principale ?\n4°) Quelle est l'origine évolutive de cet organite selon la théorie endosymbiotique ?",
+      "aide": "Double membrane + crêtes + matrice = ?",
+      "solution": "1°) Il s'agit de la MITOCHONDRIE.\n\n2°) On la trouve dans :\n- Toutes les cellules eucaryotes (animales, végétales, fongiques, protistes)\n- Absente chez les procaryotes (bactéries, archées)\n\n3°) Fonction principale :\n- Production d'ATP par phosphorylation oxydative\n- Siège du cycle de Krebs (dans la matrice)\n- β-oxydation des acides gras\n- Centrale énergétique de la cellule\n\n4°) Origine évolutive (théorie endosymbiotique de Lynn Margulis, 1967) :\n- Les mitochondries dérivent d'une ancienne bactérie aérobie (α-protéobactérie) engulfée par une cellule hôte archéenne il y a ~2 milliards d'années\n- Preuves :\n  * ADN circulaire propre (ADNmt)\n  * Ribosomes 70S (comme les bactéries)\n  * Double membrane (membrane interne = membrane bactérienne originale)\n  * Multiplication par fission binaire indépendante de la division cellulaire\n  * Taille similaire à une bactérie (1-2 µm)"
+    },
+    {
+      "id": "1.3",
+      "titre": "Tableau comparatif Procaryotes vs Eucaryotes",
+      "enonce": "Établissez un tableau de comparaison entre les cellules eucaryotes animales et procaryotes en remplissant les critères suivants :\n\n| Critère | Procaryotes | Eucaryotes animales |\n|---------|-------------|---------------------|\n| Organismes types | ? | ? |\n| Taille typique | ? | ? |\n| Noyau | ? | ? |\n| Chromosomes/ADN | ? | ? |\n| ARN/synthèse des protéines | ? | ? |\n| Ribosomes | ? | ? |\n| Organites membraneux | ? | ? |\n| Respiration | ? | ? |\n| Division/reproduction | ? | ? |",
+      "aide": "Comparez systématiquement les deux types cellulaires pour chaque critère.",
+      "solution": "| Critère | Procaryotes | Eucaryotes animales |\n|---------|-------------|---------------------|\n| Organismes types | Bactéries, Archées | Animaux (métazoaires) |\n| Taille typique | 1-5 µm | 10-100 µm |\n| Noyau | Absent (zone nucléoïde) | Présent (enveloppe nucléaire) |\n| Chromosomes/ADN | 1 chromosome circulaire, ADN nu (pas d'histones chez bactéries) | Plusieurs chromosomes linéaires, ADN associé aux histones (chromatine) |\n| ARN/synthèse des protéines | Transcription et traduction couplées (simultanées dans le cytoplasme), ARNm polycistronique | Transcription dans le noyau, traduction dans le cytoplasme (séparées dans le temps et l'espace), ARNm monocistronique, maturation (coiffe, queue poly-A, épissage) |\n| Ribosomes | 70S (30S + 50S) | 80S (40S + 60S) dans le cytoplasme, 70S dans mitochondries |\n| Organites membraneux | Absents (sauf thylakoïdes chez cyanobactéries) | Présents : RE, Golgi, lysosomes, peroxysomes, mitochondries |\n| Respiration | Membrane plasmique (pas de mitochondries) | Mitochondries (phosphorylation oxydative) |\n| Division/reproduction | Fission binaire (asexué), pas de mitose | Mitose (division cellulaire) ou méiose (gamètes), reproduction sexuee"
+    },
+    {
+      "id": "1.4",
+      "titre": "Calcul de taille et d'échelle",
+      "enonce": "Une cellule eucaryote animale typique a un diamètre de 20 µm. Une bactérie (procaryote) typique a un diamètre de 2 µm.\n\n1°) Calculez le rapport de taille entre une cellule eucaryote et une bactérie.\n2°) Si on représente la bactérie par une bille de 1 cm de diamètre, quel serait le diamètre de la cellule eucaryote à la même échelle ?\n3°) Calculez le volume de chaque cellule (en supposant une forme sphérique) et le rapport des volumes.\n4°) Combien de bactéries pourraient théoriquement tenir dans le volume d'une cellule eucaryote ?",
+      "aide": "Volume d'une sphère : V = (4/3)πr³ | Rapport de taille = diamètre eucaryote / diamètre procaryote",
+      "solution": "1°) Rapport de taille :\nRapport = 20 µm / 2 µm = 10\nLa cellule eucaryote est 10 fois plus grande en diamètre.\n\n2°) Échelle :\nSi bactérie = 1 cm, alors eucaryote = 1 cm × 10 = 10 cm\n\n3°) Calcul des volumes :\nRayon bactérie = 2 µm / 2 = 1 µm\nRayon eucaryote = 20 µm / 2 = 10 µm\n\nV_bactérie = (4/3)π(1)³ = 4,19 µm³\nV_eucaryote = (4/3)π(10)³ = 4188,79 µm³\n\nRapport des volumes = 4188,79 / 4,19 = 1000\nLe volume de l'eucaryote est 1000 fois plus grand (car le rapport de taille est de 10, et le volume évolue au cube : 10³ = 1000).\n\n4°) Nombre de bactéries :\nEn théorie, environ 1000 bactéries pourraient tenir dans le volume d'une cellule eucaryote.\nEn pratique, ce nombre est plus faible car :\n- Les organites occupent de l'espace\n- Les bactéries ne sont pas parfaitement empilées\n- Il y a du cytosol entre les structures"
+    },
+    {
+      "id": "1.5",
+      "titre": "Localisation des processus cellulaires",
+      "enonce": "Pour chaque processus cellulaire suivant, indiquez s'il a lieu chez les procaryotes, les eucaryotes, ou les deux, et précisez où il se déroule dans la cellule :\n\n1°) Réplication de l'ADN\n2°) Transcription\n3°) Traduction\n4°) Respiration cellulaire (production d'ATP)\n5°) Photosynthèse\n6°) Glycolyse\n7°) Cycle de Krebs\n8°) Épissage de l'ARNm",
+      "aide": "Pensez à la localisation : cytoplasme, noyau, mitochondrie, membrane plasmique...",
+      "solution": "| Processus | Procaryotes | Eucaryotes | Localisation |\n|-----------|-------------|------------|---------------|\n| 1°) Réplication ADN | Oui | Oui | Procaryotes : cytoplasme (nucléoïde) / Eucaryotes : noyau |\n| 2°) Transcription | Oui | Oui | Procaryotes : cytoplasme / Eucaryotes : noyau |\n| 3°) Traduction | Oui | Oui | Procaryotes : cytoplasme (ribosomes 70S) / Eucaryotes : cytoplasme (ribosomes 80S) ou RE rugueux |\n| 4°) Respiration cellulaire | Oui | Oui | Procaryotes : membrane plasmique / Eucaryotes : mitochondries |\n| 5°) Photosynthèse | Oui (cyanobactéries) | Oui (végétaux, algues) | Procaryotes : thylakoïdes dans le cytoplasme / Eucaryotes : chloroplastes |\n| 6°) Glycolyse | Oui | Oui | Cytoplasme (dans les deux cas) |\n| 7°) Cycle de Krebs | Oui | Oui | Procaryotes : cytoplasme / Eucaryotes : matrice mitochondriale |\n| 8°) Épissage ARNm | Non (pas d'introns généralement) | Oui | Eucaryotes uniquement : noyau (spliceosome)\n\nRemarques importantes :\n- Chez les procaryotes, transcription et traduction sont COUPLÉES (simultanées)\n- Chez les eucaryotes, elles sont SÉPARÉES (transcription dans noyau, traduction dans cytoplasme)\n- La respiration et la photosynthèse utilisent des membranes dans les deux cas, mais ce sont des membranes différentes (plasmique vs organites)"
+    }
+  ]
+}

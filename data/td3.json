@@ -1,0 +1,39 @@
+{
+  "titre": "TD3 - La Réplication de l'ADN",
+  "donnees": [
+    "La réplication est semi-conservative : chaque molécule fille contient un brin parental et un brin néosynthétisé.",
+    "L'ADN polymérase synthétise uniquement dans le sens 5' → 3'.",
+    "Fragments d'Okazaki : courts fragments d'ADN synthétisés de manière discontinue sur le brin retardé.",
+    "La télomérase est une reverse transcriptase qui ajoute des séquences répétitives aux extrémités des chromosomes eucaryotes."
+  ],
+  "exercices": [
+    {
+      "id": "3.1",
+      "titre": "L'expérience de Meselson et Stahl",
+      "enonce": "Meselson et Stahl (1958) ont cultivé des bactéries E. coli dans un milieu contenant de l'azote lourd (15N) pendant plusieurs générations, puis les ont transférées dans un milieu contenant de l'azote léger (14N). Ils ont extrait l'ADN après 0, 1 et 2 générations dans le milieu léger et l'ont centrifugé en gradient de densité.\n\n1°) Décrivez le profil de densité de l'ADN attendu après 0, 1 et 2 générations dans le milieu 14N selon le modèle semi-conservatif.\n2°) Quel profil aurait-on observé si la réplication avait été conservative ?\n3°) Pourquoi l'expérience de Meselson et Stahl a-t-elle invalidé le modèle dispersif ?",
+      "aide": "Pensez à la composition des brins (15N/15N, 15N/14N, 14N/14N) et à leur densité relative (lourde, intermédiaire, légère).",
+      "solution": "1°) Modèle semi-conservatif :\n- Génération 0 : une seule bande lourde (15N/15N).\n- Génération 1 : une seule bande de densité intermédiaire (15N/14N).\n- Génération 2 : deux bandes, une intermédiaire (15N/14N) et une légère (14N/14N) en proportions égales.\n2°) Modèle conservative :\n- Génération 1 : deux bandes, une lourde (15N/15N, l'ADN original intact) et une légère (14N/14N, le nouvel ADN).\n3°) Le modèle dispersif prédisait une seule bande de densité intermédiaire qui deviendrait progressivement plus légère à chaque génération, mais sans jamais former deux bandes distinctes. L'apparition de deux bandes distinctes (intermédiaire et légère) dès la 2ème génération a invalidé ce modèle."
+    },
+    {
+      "id": "3.2",
+      "titre": "Les acteurs de la fourche de réplication",
+      "enonce": "Sur un schéma de fourche de réplication, on observe plusieurs protéines agissant de concert.\n\n1°) Quelle enzyme est responsable de l'ouverture de la double hélice d'ADN en amont de la fourche ?\n2°) Quel est le rôle des protéines SSB (Single Strand Binding) ?\n3°) Pourquoi l'ADN polymérase a-t-elle besoin d'une amorce (primer) pour commencer la synthèse ?\n4°) Quelle enzyme relie les fragments d'ADN entre eux à la fin de la réplication ?",
+      "aide": "Hélicase, SSB, Primase, ADN Polymérase, Ligase.",
+      "solution": "1°) L'ADN hélicase.\n2°) Les protéines SSB se lient aux brins simples d'ADN nouvellement exposés pour empêcher leur réappariement prématuré et les protéger des nucléases.\n3°) L'ADN polymérase ne peut ajouter des nucléotides qu'à une extrémité 3'-OH libre préexistante. Elle ne peut pas initier la synthèse de novo. La primase (une ARN polymérase) synthétise donc une courte amorce d'ARN pour fournir ce 3'-OH.\n4°) L'ADN ligase, qui catalyse la formation d'une liaison phosphodiester entre l'extrémité 3'-OH d'un fragment et l'extrémité 5'-phosphate du fragment adjacent."
+    },
+    {
+      "id": "3.3",
+      "titre": "Brin avancé et brin retardé",
+      "enonce": "Soit une fourche de réplication se déplaçant de gauche à droite.\nLe brin supérieur est orienté 3' → 5' (de gauche à droite).\nLe brin inférieur est orienté 5' → 3' (de gauche à droite).\n\n1°) Lequel de ces deux brins est synthétisé de manière continue ? Justifiez.\n2°) Comment appelle-t-on les fragments synthétisés de manière discontinue sur l'autre brin ?\n3°) Dans quel sens l'ADN polymérase se déplace-t-elle sur le brin retardé par rapport au déplacement global de la fourche de réplication ?",
+      "aide": "L'ADN polymérase synthétise toujours dans le sens 5' → 3'.",
+      "solution": "1°) Le brin supérieur (orienté 3' → 5' de gauche à droite) est le brin matrice pour le brin avancé (leading strand). Comme la synthèse se fait en 5' → 3', l'ADN polymérase peut suivre l'hélicase de manière continue dans la même direction que l'ouverture de la fourche.\n2°) Fragments d'Okazaki.\n3°) Sur le brin retardé, l'ADN polymérase se déplace dans le sens opposé au déplacement global de la fourche de réplication (elle s'éloigne de la fourche), ce qui oblige à une synthèse discontinue par fragments successifs."
+    },
+    {
+      "id": "3.4",
+      "titre": "Le problème des extrémités et la télomérase",
+      "enonce": "1°) Expliquez pourquoi la réplication du brin retardé pose un problème spécifique aux extrémités des chromosomes linéaires eucaryotes.\n2°) Quelle est la conséquence de ce problème pour les cellules somatiques qui se divisent activement ?\n3°) Comment la télomérase résout-elle ce problème ? Dans quels types de cellules est-elle principalement active ?",
+      "aide": "Pensez au retrait de l'amorce d'ARN à l'extrémité 5' du brin néosynthétisé.",
+      "solution": "1°) Lorsque la dernière amorce d'ARN du brin retardé est retirée, il n'y a pas d'extrémité 3'-OH libre en amont pour que l'ADN polymérase comble le vide. Cela entraîne une perte d'ADN à chaque cycle de réplication.\n2°) Conséquence : un raccourcissement progressif des chromosomes à chaque division cellulaire, conduisant à la sénescence réplicative (limite de Hayflick) et à la mort cellulaire lorsque les télomères deviennent trop courts.\n3°) La télomérase est une ribonucléoprotéine possédant une activité reverse transcriptase. Elle utilise son propre ARN comme matrice pour ajouter des séquences répétitives (ex: TTAGGG chez l'homme) à l'extrémité 3' du brin parental, permettant ensuite à la machinerie classique de compléter le brin retardé. Elle est principalement active dans les cellules germinales, les cellules souches et la plupart des cellules cancéreuses."
+    }
+  ]
+}

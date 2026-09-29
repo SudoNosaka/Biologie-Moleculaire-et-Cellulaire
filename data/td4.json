@@ -1,0 +1,47 @@
+{
+  "titre": "TD4 - Transcription et Traduction",
+  "donnees": [
+    "Le code génétique est universel, dégénéré, non chevauchant et sans ponctuation.",
+    "Codon start : AUG (Méthionine). Codons stop : UAA, UAG, UGA.",
+    "Chez les eucaryotes, l'ARNm subit une maturation : coiffe 5', queue poly-A 3', épissage.",
+    "Chez les procaryotes, transcription et traduction sont couplées (simultanées dans le cytoplasme).",
+    "Chez les eucaryotes, transcription dans le noyau, traduction dans le cytoplasme (séparées dans le temps et l'espace)."
+  ],
+  "exercices": [
+    {
+      "id": "4.1",
+      "titre": "Transcription d'un gène",
+      "enonce": "Voici la séquence du brin CODANT d'un gène :\n5' - ATG GCT TAC GGA TCA - 3'\n\n1°) Écrivez la séquence du brin matrice (transcrit).\n2°) Écrivez la séquence de l'ARNm transcrit (sens 5' → 3').\n3°) Combien d'acides aminés seront codés par cet ARNm ?\n4°) Si c'était le brin MATRICE qui était donné, quelle serait la séquence de l'ARNm ?",
+      "aide": "Le brin codant a la même séquence que l'ARNm (sauf T → U). Le brin matrice est le complément du brin codant.",
+      "solution": "1°) Brin matrice (complémentaire du brin codant, antiparallèle) :\n3' - TAC CGA ATG CCT AGT - 5'\n\n2°) Séquence de l'ARNm (identique au brin codant, avec U à la place de T) :\n5' - AUG GCU UAC GGA UCA - 3'\n\n3°) L'ARNm contient 15 nucléotides, soit 5 codons (15/3 = 5). Le premier codon (AUG) code pour la méthionine (start), et les 4 autres codent pour des acides aminés. Donc 5 acides aminés au total (en supposant qu'il n'y a pas de codon stop).\n\n4°) Si le brin matrice était donné (3' - TAC CGA ATG CCT AGT - 5'), l'ARNm transcrit serait le complément du brin matrice, donc identique au brin codant :\n5' - AUG GCU UAC GGA UCA - 3'"
+    },
+    {
+      "id": "4.2",
+      "titre": "Maturation de l'ARNm chez les eucaryotes",
+      "enonce": "Un gène eucaryote contient 3 exons (E1, E2, E3) séparés par 2 introns (I1, I2).\nSéquence du gène (brin codant) :\n5' - [E1] - [I1] - [E2] - [I2] - [E3] - 3'\n\n1°) Quelles sont les 3 modifications principales subies par l'ARN pré-messager avant de devenir un ARNm mature ?\n2°) Quelle est la séquence de l'ARNm mature après épissage ?\n3°) Quel est l'avantage de l'épissage alternatif pour la cellule ?\n4°) Quel complexe enzymatique réalise l'épissage et comment s'appelle-t-il ?",
+      "aide": "Pensez à la coiffe, la queue poly-A et le spliceosome.",
+      "solution": "1°) Les 3 modifications principales :\n- Ajout d'une coiffe en 5' (7-méthylguanosine) : protège l'ARNm et permet la reconnaissance par les ribosomes.\n- Ajout d'une queue poly-A en 3' (50-250 adénosines) : stabilise l'ARNm et facilite son export.\n- Épissage : élimination des introns et ligature des exons.\n\n2°) ARNm mature après épissage :\n5' - [Coiffe] - [E1] - [E2] - [E3] - [Queue poly-A] - 3'\n\n3°) L'épissage alternatif permet à un seul gène de produire plusieurs protéines différentes en combinant les exons de différentes manières. C'est une source majeure de diversité protéique chez les eucaryotes (ex: un gène peut produire 10 variants protéiques différents).\n\n4°) Le spliceosome (complexe de petits ARN nucléaires snARN et de protéines : snRNP). Il reconnaît les séquences consensus aux jonctions intron-exon (GU en 5' de l'intron, AG en 3' de l'intron) et réalise deux réactions de transestérification formant un intermédiaire en lasso (lariat)."
+    },
+    {
+      "id": "4.3",
+      "titre": "Traduction d'un ARNm en protéine",
+      "enonce": "Voici la séquence d'un ARNm mature :\n5' - AUG GCU UAC GGA UCA UAA - 3'\n\n1°) Traduisez cette séquence en acides aminés en utilisant le code génétique.\n2°) Combien d'acides aminés contient la protéine synthétisée ?\n3°) Quel est le rôle du codon AUG ?\n4°) Quel est le rôle du codon UAA ?",
+      "aide": "Utilisez la table du code génétique. AUG = Met, GCU = Ala, UAC = Tyr, GGA = Gly, UCA = Ser, UAA = Stop.",
+      "solution": "1°) Traduction codon par codon :\n- AUG → Met (Méthionine) - codon start\n- GCU → Ala (Alanine)\n- UAC → Tyr (Tyrosine)\n- GGA → Gly (Glycine)\n- UCA → Ser (Sérine)\n- UAA → Stop (fin de traduction)\n\nSéquence de la protéine : Met-Ala-Tyr-Gly-Ser\n\n2°) La protéine contient 5 acides aminés (le codon stop ne code pas pour un acide aminé).\n\n3°) AUG est le codon d'initiation (start). Il code pour la méthionine et signale le début de la traduction. C'est toujours le premier codon lu par le ribosome.\n\n4°) UAA est un codon de terminaison (stop). Il ne code pour aucun acide aminé mais signale la fin de la traduction. Les facteurs de libération (RF/eRF) se lient au site A du ribosome et provoquent la libération de la protéine."
+    },
+    {
+      "id": "4.4",
+      "titre": "Effets des mutations sur la protéine",
+      "enonce": "Reprenons l'ARNm de l'exercice précédent :\n5' - AUG GCU UAC GGA UCA UAA - 3'\n\nOn considère 3 mutations différentes :\n- Mutation 1 : substitution du 2ème nucléotide du 3ème codon (UAC → UCC)\n- Mutation 2 : substitution du 3ème nucléotide du 2ème codon (GCU → GCC)\n- Mutation 3 : insertion d'un nucléotide A après le 1er codon (décalage du cadre de lecture)\n\n1°) Traduisez chaque ARNm muté et comparez avec la protéine originale.\n2°) Quel type de mutation est le plus délétère pour la protéine ? Justifiez.\n3°) Qu'est-ce qu'une mutation silencieuse ? La mutation 2 en est-elle un exemple ?",
+      "aide": "Pensez aux types de mutations : substitution (transition/transversion), insertion, délétion, et leurs conséquences (silencieuse, faux-sens, non-sens, décalage du cadre de lecture).",
+      "solution": "1°) Traductions des ARNm mutés :\n\nMutation 1 (UAC → UCC) :\nARNm muté : 5' - AUG GCU UCC GGA UCA UAA - 3'\nProtéine : Met-Ala-Ser-Gly-Ser (Tyr → Ser)\n→ Mutation faux-sens : changement d'un acide aminé.\n\nMutation 2 (GCU → GCC) :\nARNm muté : 5' - AUG GCC UAC GGA UCA UAA - 3'\nProtéine : Met-Ala-Tyr-Gly-Ser (inchangée !)\n→ Mutation silencieuse : pas de changement d'acide aminé (GCU et GCC codent tous deux pour l'Alanine).\n\nMutation 3 (insertion d'un A après le 1er codon) :\nARNm muté : 5' - AUG A GC U UA C G G A U C A U A A - 3'\nNouveau cadre de lecture : AUG - AGC - UUA - CGG - AUC - AUA - A...\nProtéine : Met-Ser-Leu-Arg-Ile-Ile-...\n→ Mutation par décalage du cadre de lecture : tous les acides aminés après la mutation sont changés, et la protéine est probablement non fonctionnelle.\n\n2°) La mutation 3 (insertion) est la plus délétère car elle décale le cadre de lecture, changeant tous les acides aminés après le point de mutation. La protéine résultante est très probablement non fonctionnelle.\n\n3°) Une mutation silencieuse est une substitution de nucléotide qui ne change pas l'acide aminé codé, grâce à la dégénérescence du code génétique (plusieurs codons peuvent coder le même acide aminé). Oui, la mutation 2 est un exemple de mutation silencieuse : GCU et GCC codent tous deux pour l'Alanine."
+    },
+    {
+      "id": "4.5",
+      "titre": "Comparaison Procaryotes vs Eucaryotes",
+      "enonce": "Complétez le tableau comparatif suivant :\n\n| Caractéristique | Procaryotes | Eucaryotes |\n|-----------------|-------------|------------|\n| Lieu de la transcription | ? | ? |\n| Lieu de la traduction | ? | ? |\n| Couplage transcription-traduction | ? | ? |\n| Type d'ARNm | ? | ? |\n| Maturation de l'ARNm | ? | ? |\n| ARN polymérase(s) | ? | ? |\n| Promoteur | ? | ? |\n| Introns | ? | ? |",
+      "aide": "Pensez à la présence/absence de noyau et aux conséquences sur la localisation et la maturation des ARNm.",
+      "solution": "| Caractéristique | Procaryotes | Eucaryotes |\n|-----------------|-------------|------------|\n| Lieu de la transcription | Cytoplasme (pas de noyau) | Noyau |\n| Lieu de la traduction | Cytoplasme (ribosomes 70S) | Cytoplasme (ribosomes 80S) ou RE rugueux |\n| Couplage transcription-traduction | Oui (simultanées dans le cytoplasme) | Non (séparées dans le temps et l'espace) |\n| Type d'ARNm | Polycistronique (plusieurs gènes sur un même ARNm, ex: opéron lac) | Monocistronique (un gène par ARNm) |\n| Maturation de l'ARNm | Généralement aucune (ARNm directement fonctionnel) | Coiffe 5', queue poly-A 3', épissage (élimination des introns) |\n| ARN polymérase(s) | Une seule ARN polymérase (avec facteur σ) | Trois types : ARN Pol I (ARNr), ARN Pol II (ARNm), ARN Pol III (ARNt, ARNr 5S) |\n| Promoteur | Boîtes -10 (Pribnow) et -35 | Boîte TATA (-25), éléments enhancers/silencers, nombreux facteurs de transcription (TFII) |\n| Introns | Rares (sauf chez certains archaea) | Fréquents (gènes en mosaïque)"
+    }
+  ]
+}

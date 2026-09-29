@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="fr" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bases Fondamentales - BMC</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/animations.css">
+</head>
+<body>
+    <header class="fade-in">
+        <div class="header-content">
+            <h1>Bases Fondamentales</h1>
+            <p class="subtitle">Les prérequis indispensables en Biologie Moléculaire et Cellulaire</p>
+        </div>
+        <nav class="main-nav">
+            <a href="../index.html" class="nav-link">Accueil</a>
+            <a href="../parametres.html" class="nav-link settings-icon">⚙</a>
+        </nav>
+    </header>
+
+    <main class="container">
+        <div class="vertical-carousel">
+            <button class="vertical-arrow up" onclick="changeSlide(-1)" aria-label="Précédent">↑</button>
+            
+            <div class="vertical-indicator">
+                <span id="slide-current">1</span> / <span id="slide-total">5</span>
+            </div>
+            
+            <div class="vertical-track" id="vertical-track">
+                <!-- SLIDE 1 : MATHÉMATIQUES -->
+                <div class="vertical-slide active">
+                    <div class="content-section">
+                        <h2>Mathématiques</h2>
+                        
+                        <h3>Puissances de 10</h3>
+                        <div class="formula">10ⁿ × 10ᵐ = 10ⁿ⁺ᵐ</div>
+                        <div class="formula">10ⁿ / 10ᵐ = 10ⁿ⁻ᵐ</div>
+                        <div class="formula">(10ⁿ)ᵐ = 10ⁿˣᵐ</div>
+                        <div class="formula">a × 10ⁿ × b × 10ᵐ = (a×b) × 10ⁿ⁺ᵐ</div>
+
+                        <h3>Logarithmes</h3>
+                        <div class="formula">ln(2) ≈ 0,693</div>
+                        <div class="formula">ln(e) = 1 | ln(1) = 0</div>
+                        <div class="formula">ln(a × b) = ln(a) + ln(b)</div>
+                        <div class="formula">ln(a/b) = ln(a) - ln(b)</div>
+                        <div class="formula">ln(aⁿ) = n × ln(a)</div>
+
+                        <h3>Dérivées usuelles</h3>
+                        <div class="formula">d/dx (e^(kx)) = k · e^(kx)</div>
+                        <div class="formula">d/dx (xⁿ) = n · xⁿ⁻¹</div>
+
+                        <h3>Équation différentielle du 1er ordre</h3>
+                        <div class="formula">dy/dt = -k·y → y(t) = y₀ · e^(-k·t)</div>
+                        <p class="hint">Forme de la loi de désintégration radioactive (utile pour la datation au carbone 14).</p>
+                    </div>
+                </div>
+
+                <!-- SLIDE 2 : UNITÉS & CONVERSIONS -->
+                <div class="vertical-slide">
+                    <div class="content-section">
+                        <h2>Unités & Conversions</h2>
+                        
+                        <h3>Énergie</h3>
+                        <div class="formula">1 eV = 1,6 × 10⁻¹⁹ J</div>
+                        <div class="formula">1 MeV = 10⁶ eV</div>
+                        <div class="formula">1 cal = 4,184 J | 1 kcal = 4184 J</div>
+
+                        <h3>Longueur (échelle cellulaire)</h3>
+                        <div class="formula">1 Å = 10⁻¹⁰ m (taille d'un atome)</div>
+                        <div class="formula">1 nm = 10⁻⁹ m = 10 Å</div>
+                        <div class="formula">1 µm = 10⁻⁶ m (taille d'une bactérie)</div>
+                        <div class="formula">1 mm = 10⁻³ m</div>
+
+                        <h3>Temps</h3>
+                        <div class="formula">1 an ≈ 3,156 × 10⁷ s</div>
+                        <div class="formula">1 jour = 86 400 s</div>
+
+                        <h3>Masse & Masse moléculaire</h3>
+                        <div class="formula">1 u.m.a (Da) = 1,66055 × 10⁻²⁷ kg</div>
+                        <div class="formula">1 kDa = 1000 Da ≈ masse d'un petit peptide</div>
+                        <div class="formula">Masse d'un acide aminé moyen ≈ 110 Da</div>
+                        <div class="formula">Masse d'un nucléotide moyen ≈ 330 Da</div>
+
+                        <h3>Concentrations</h3>
+                        <div class="formula">1 M (molaire) = 1 mol/L</div>
+                        <div class="formula">1 mM = 10⁻³ M | 1 µM = 10⁻⁶ M</div>
+                        <div class="formula">1 nM = 10⁻⁹ M | 1 pM = 10⁻¹² M</div>
+
+                        <h3>Préfixes du SI</h3>
+                        <table class="table-custom">
+                            <tr><th>Préfixe</th><th>Symbole</th><th>Valeur</th></tr>
+                            <tr><td>Téra</td><td>T</td><td>10¹²</td></tr>
+                            <tr><td>Giga</td><td>G</td><td>10⁹</td></tr>
+                            <tr><td>Méga</td><td>M</td><td>10⁶</td></tr>
+                            <tr><td>kilo</td><td>k</td><td>10³</td></tr>
+                            <tr><td>milli</td><td>m</td><td>10⁻³</td></tr>
+                            <tr><td>micro</td><td>µ</td><td>10⁻⁶</td></tr>
+                            <tr><td>nano</td><td>n</td><td>10⁻⁹</td></tr>
+                            <tr><td>pico</td><td>p</td><td>10⁻¹²</td></tr>
+                            <tr><td>femto</td><td>f</td><td>10⁻¹⁵</td></tr>
+                        </table>
+                    </div>
+                </div>
+
+                <!-- SLIDE 3 : CONSTANTES FONDAMENTALES -->
+                <div class="vertical-slide">
+                    <div class="content-section">
+                        <h2>Constantes Fondamentales</h2>
+                        <table class="table-custom">
+                            <tr><th>Constante</th><th>Symbole</th><th>Valeur</th></tr>
+                            <tr><td>Nombre d'Avogadro</td><td>Nₐ</td><td>6,022 × 10²³ mol⁻¹</td></tr>
+                            <tr><td>Constante de Planck</td><td>h</td><td>6,626 × 10⁻³⁴ J·s</td></tr>
+                            <tr><td>Planck réduite</td><td>ħ = h/(2π)</td><td>1,055 × 10⁻³⁴ J·s</td></tr>
+                            <tr><td>Vitesse de la lumière</td><td>c</td><td>3 × 10⁸ m/s</td></tr>
+                            <tr><td>Charge élémentaire</td><td>e</td><td>1,6 × 10⁻¹⁹ C</td></tr>
+                            <tr><td>Constante de Boltzmann</td><td>k<sub>B</sub></td><td>1,38 × 10⁻²³ J/K</td></tr>
+                            <tr><td>Constante des gaz parfaits</td><td>R</td><td>8,314 J/(mol·K)</td></tr>
+                            <tr><td>Masse de l'électron</td><td>mₑ</td><td>9,1 × 10⁻³¹ kg</td></tr>
+                            <tr><td>Masse du proton</td><td>mₚ</td><td>1,67 × 10⁻²⁷ kg</td></tr>
+                            <tr><td>Permittivité du vide</td><td>ε₀</td><td>8,85 × 10⁻¹² F/m</td></tr>
+                        </table>
+                        <p class="hint">Ces constantes sont dans la majorité des cas redonnées dans le contexte de l'exercice.</p>
+                    </div>
+                </div>
+
+                <!-- SLIDE 4 : BIOLOGIE CELLULAIRE DE BASE -->
+                <div class="vertical-slide">
+                    <div class="content-section">
+                        <h2>Biologie Cellulaire de Base</h2>
+                        
+                        <h3>La Cellule : Unité du Vivant</h3>
+                        <ul>
+                            <li>Procaryotes : ~5 µm, pas de noyau (bactéries)</li>
+                            <li>Eucaryotes : ~50 µm, noyau + organites (animaux, végétaux)</li>
+                            <li>Un être humain : ~10¹⁴ cellules</li>
+                        </ul>
+
+                        <h3>Les 4 Biomolécules</h3>
+                        <table class="table-custom">
+                            <tr><th>Type</th><th>Monomère</th><th>Liaison</th><th>Fonction</th></tr>
+                            <tr><td>Protéines</td><td>Acides aminés (20)</td><td>Peptidique</td><td>Enzymes, structure, signal</td></tr>
+                            <tr><td>Acides nucléiques</td><td>Nucléotides</td><td>Phosphodiester</td><td>Information (ADN/ARN)</td></tr>
+                            <tr><td>Glucides</td><td>Monosaccharides</td><td>O-glycosidique</td><td>Énergie, structure</td></tr>
+                            <tr><td>Lipides</td><td>Acides gras + glycérol</td><td>Ester</td><td>Membranes, énergie</td></tr>
+                        </table>
+
+                        <h3>Le Dogme Central de la Biologie Moléculaire</h3>
+                        <div class="formula">ADN → (transcription) → ARN → (traduction) → Protéine</div>
+                        <ul>
+                            <li>Réplication : copie de l'ADN (avant la division)</li>
+                            <li>Transcription : ADN → ARNm (dans le noyau)</li>
+                            <li>Traduction : ARNm → Protéine (dans le cytoplasme, au ribosome)</li>
+                        </ul>
+
+                        <h3>Structure de l'ADN</h3>
+                        <div class="formula">Double hélice antiparallèle (5'→3' / 3'→5')</div>
+                        <div class="formula">A = T (2 liaisons H) | G ≡ C (3 liaisons H)</div>
+                        <ul>
+                            <li>Pas de l'hélice : 3,4 nm (10 paires de bases)</li>
+                            <li>Diamètre : 2 nm</li>
+                            <li>Compaction : nucléosomes → chromatine 30 nm → chromosome</li>
+                        </ul>
+
+                        <h3>Les Organites Principaux</h3>
+                        <table class="table-custom">
+                            <tr><th>Organite</th><th>Fonction principale</th></tr>
+                            <tr><td>Noyau</td><td>Stockage ADN, transcription</td></tr>
+                            <tr><td>RE Rugueux</td><td>Synthèse protéines sécrétées/membranaires</td></tr>
+                            <tr><td>RE Lisse</td><td>Synthèse lipides, détoxification, Ca²⁺</td></tr>
+                            <tr><td>Golgi</td><td>Tri, glycosylation, adressage</td></tr>
+                            <tr><td>Lysosome</td><td>Digestion intracellulaire (pH 4,5-5)</td></tr>
+                            <tr><td>Peroxysome</td><td>β-oxydation, détoxification H₂O₂</td></tr>
+                            <tr><td>Mitochondrie</td><td>Production ATP (respiration)</td></tr>
+                        </table>
+
+                        <h3>Le Cytosquelette</h3>
+                        <table class="table-custom">
+                            <tr><th>Type</th><th>Diamètre</th><th>Protéine</th><th>Fonction</th></tr>
+                            <tr><td>Microfilaments</td><td>7 nm</td><td>Actine</td><td>Forme, contraction, migration</td></tr>
+                            <tr><td>Filaments intermédiaires</td><td>10 nm</td><td>Kératines, vimentine...</td><td>Résistance mécanique</td></tr>
+                            <tr><td>Microtubules</td><td>25 nm</td><td>Tubuline α/β</td><td>Transport, mitose, cils</td></tr>
+                        </table>
+
+                        <h3>La Membrane Plasmique</h3>
+                        <ul>
+                            <li>Bicouche phospholipidique (modèle mosaïque fluide)</li>
+                            <li>Protéines : transmembranaires, périphériques, ancrées</li>
+                            <li>Transport passif : diffusion simple/facilitée</li>
+                            <li>Transport actif : pompes (ex: Na⁺/K⁺ ATPase)</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- SLIDE 5 : CHECKLIST -->
+                <div class="vertical-slide">
+                    <div class="content-section">
+                        <h2>Checklist : Suis-je prêt ?</h2>
+                        <ul class="checklist">
+                            <li>☐ Je manipule les puissances de 10 et les logarithmes</li>
+                            <li>☐ Je connais ln(2) ≈ 0,693</li>
+                            <li>☐ Je convertis entre µm, nm, Å, Da, kDa</li>
+                            <li>☐ Je connais Nₐ, h, c, e, k<sub>B</sub> par cœur</li>
+                            <li>☐ Je distingue procaryotes et eucaryotes</li>
+                            <li>☐ Je connais les 4 types de biomolécules</li>
+                            <li>☐ Je comprends le dogme central (ADN→ARN→Protéine)</li>
+                            <li>☐ Je connais la structure de l'ADN (double hélice, complémentarité)</li>
+                            <li>☐ Je sais nommer les principaux organites et leurs fonctions</li>
+                            <li>☐ Je connais les 3 types de filaments du cytosquelette</li>
+                            <li>☐ Je comprends la structure de la membrane plasmique</li>
+                            <li>☐ Je distingue transport passif et actif</li>
+                        </ul>
+                        <div class="slide-final-message">
+                            <p>🎯 Si tu as coché toutes les cases, tu es prêt pour le cours de BMC !</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <button class="vertical-arrow down" onclick="changeSlide(1)" aria-label="Suivant">↓</button>
+        </div>
+    </main>
+
+    <footer class="fade-in">
+        <p>Biologie Moléculaire et Cellulaire - BMC - Bases</p>
+    </footer>
+
+    <script src="../JS/config.js"></script>
+    <script src="../JS/theme.js"></script>
+    <script src="../JS/sound.js"></script>
+    <script src="../JS/bases-carousel.js"></script>
+</body>
+</html>

@@ -1,0 +1,142 @@
+{
+  "title": "La Cellule : Unité du Vivant",
+  "subtitle": "De la découverte de la cellule aux deux grands types cellulaires",
+  "sections": [
+    {
+      "id": "decouverte",
+      "title": "1. La Découverte de la Cellule",
+      "content": "L'histoire de la biologie cellulaire commence au 17ème siècle avec l'invention du microscope.",
+      "list": [
+        "Robert Hooke (1665) : observe des petits trous dans l'écorce du chêne (liège) qui lui font penser aux cellules d'une prison. Il les nomme « cellules » et croit que seul le liège présente ces structures.",
+        "Antonie Van Leeuwenhoek (1674) : premier à observer réellement des cellules vivantes. Il décrit des unicellulaires dans des gouttes d'eau, des globules rouges sanguins et des spermatozoïdes."
+      ]
+    },
+    {
+      "id": "theorie-cellulaire",
+      "title": "2. La Théorie Cellulaire",
+      "content": "Les observations de Hooke et Van Leeuwenhoek ont mené à la théorie cellulaire, formulée progressivement au 19ème siècle :",
+      "list": [
+        "1838 - Matthias Schleiden (botaniste) : tous les tissus végétaux sont faits de cellules",
+        "1839 - Théodore Schwann (zoologiste) : même hypothèse pour les animaux",
+        "1855 - Rudolf Virchow : toute cellule provient d'une autre cellule préexistante"
+      ],
+      "subsections": [
+        {
+          "title": "Les 3 principes fondamentaux",
+          "list": [
+            "La cellule est la plus petite entité vivante",
+            "Tout être vivant est composé de cellules",
+            "Toute cellule provient d'une autre cellule"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "unite-structurale",
+      "title": "3. La Cellule : Unité Structurale et Fonctionnelle",
+      "content": "La cellule est l'unité fondamentale structurale et fonctionnelle des organismes vivants.",
+      "list": [
+        "L'activité d'un organisme dépend de celle de ses cellules",
+        "Les activités biochimiques des cellules dépendent des structures spécifiques qu'elles contiennent",
+        "La continuité de vie repose sur les cellules",
+        "Un être humain contient environ 100 000 milliards de cellules (10¹⁴)",
+        "Chacune de ces cellules est un être vivant"
+      ],
+      "warning": "« En dessous » du niveau cellulaire, la vie est impossible. Ainsi, un chloroplaste ne peut vivre et fonctionner que s'il est intégré à une cellule végétale. Les plus petits organismes sont formés d'une seule cellule : ce sont des unicellulaires (ex : euglènes, paramécies)."
+    },
+    {
+      "id": "homeostasie",
+      "title": "4. Homéostasie Cellulaire",
+      "content": "Les cellules ne peuvent survivre que si le milieu dans lequel elles baignent demeure stable. Elles ne tolèrent que très peu de changement (sauf rares exceptions).",
+      "formula": "Demeurer en vie = maintenir son homéostasie",
+      "list": [
+        "Homéostasie = propriété des êtres vivants à maintenir leur milieu interne STABLE"
+      ]
+    },
+    {
+      "id": "proprietes-emergentes",
+      "title": "5. Organisation et Propriétés Émergentes",
+      "content": "À chaque niveau d'organisation supérieur apparaissent de nouvelles propriétés qui n'existaient pas au niveau inférieur. Quand on change d'échelle biologique, les performances augmentent.",
+      "subsections": [
+        {
+          "title": "Exemple de la cellule endothéliale",
+          "list": [
+            "Une cellule endothéliale seule (constituante des capillaires sanguins) a des propriétés particulières mais ne peut pas conduire le sang",
+            "Associée aux autres cellules endothéliales (tissu endothélial), elle contribue au tube qui canalise le sang, en absorbe certains produits et en déverse d'autres"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "deux-types",
+      "title": "6. Les Deux Grands Types de Cellules",
+      "content": "On distingue deux grands types de cellules selon leur organisation interne :",
+      "table": [
+        {"caracteristique": "Âge évolutif", "procaryotes": "Les plus anciennes (3,5 milliards d'années)", "eucaryotes": "Les plus récentes (2,5 milliards d'années)"},
+        {"caracteristique": "Taille", "procaryotes": "Les plus petites (~5 µm)", "eucaryotes": "Les plus grosses (~50 µm)"},
+        {"caracteristique": "Noyau", "procaryotes": "Pas de noyau, zone nucléoïde (1 chromosome replié)", "eucaryotes": "Véritable noyau délimité par une membrane"},
+        {"caracteristique": "Organites", "procaryotes": "Pas d'organites membraneux", "eucaryotes": "Organites membraneux (chloroplastes, mitochondries...)"},
+        {"caracteristique": "Exemples", "procaryotes": "Toutes les cellules de type bactérien", "eucaryotes": "Toutes les autres cellules (végétales, animales, champignons, protistes)"}
+      ]
+    },
+    {
+      "id": "constituants-procaryote",
+      "title": "7. Les Constituants de la Cellule Procaryote",
+      "content": "La cellule procaryote est la forme la plus simple de cellule vivante.",
+      "list": [
+        "Pas de noyau véritable : l'ADN est situé dans une zone appelée nucléoïde",
+        "Un seul chromosome circulaire fortement replié",
+        "Pas d'organites membraneux",
+        "Présence d'une paroi cellulaire, d'une membrane plasmique",
+        "Ribosomes libres dans le cytoplasme (plus petits que chez les eucaryotes)",
+        "Peuvent posséder des plasmides (petits ADN circulaires supplémentaires)"
+      ]
+    },
+    {
+      "id": "constituants-eucaryote",
+      "title": "8. Les Constituants de la Cellule Eucaryote",
+      "content": "La cellule eucaryote est plus complexe et compartimentée. On distingue 3 grandes régions :",
+      "subsections": [
+        {
+          "title": "I - Le Noyau",
+          "content": "Situé à peu près au centre de la cellule. Contient le matériel génétique (ADN) sous forme de chromosomes. Entouré d'une double membrane : l'enveloppe nucléaire."
+        },
+        {
+          "title": "II - Le Cytoplasme",
+          "content": "Région située entre le noyau et la membrane plasmique. Contient le cytosol (liquide intracellulaire) et les organites cellulaires (mitochondries, réticulum endoplasmique, appareil de Golgi, lysosomes, peroxysomes, cytosquelette...)."
+        },
+        {
+          "title": "III - La Membrane Plasmique",
+          "content": "Le contour de la cellule. Bicouche lipidique qui délimite la cellule et contrôle les échanges avec le milieu extérieur."
+        }
+      ]
+    },
+    {
+      "id": "adn-intro",
+      "title": "9. L'ADN : Support de l'Information Génétique",
+      "content": "La perpétuation de la vie repose sur l'information héréditaire portée par l'ADN (acide désoxyribonucléique).",
+      "list": [
+        "La matière s'édifie à partir des instructions de l'ADN",
+        "Chez les bactéries : l'ADN se loge dans la zone nucléoïde",
+        "Chez les eucaryotes : l'ADN se loge dans le noyau",
+        "Un chromosome = une seule et longue molécule d'ADN + protéines associées",
+        "L'ADN contient des centaines ou des milliers de gènes",
+        "Un gène = un « programme » permettant de fabriquer une molécule de protéine"
+      ],
+      "subsections": [
+        {
+          "title": "L'ADN est héréditaire",
+          "content": "L'ADN est transmis des parents aux enfants mais aussi de cellules à cellules grâce à la réplication.",
+          "list": [
+            "Réplication = dédoublement de l'ADN avant la division cellulaire",
+            "Génome = lot de gènes reçus des parents au moment de la conception",
+            "Chacun de nous provient d'une cellule unique (zygote) contenant l'ADN de nos parents",
+            "Le zygote contient 46 chromosomes (23 du père + 23 de la mère)",
+            "Chaque cellule de l'enfant possède les mêmes 46 chromosomes"
+          ]
+        }
+      ],
+      "warning": "La structure détaillée de l'ADN (nucléotides, double hélice, compaction) sera vue dans la Notion 2."
+    }
+  ]
+}

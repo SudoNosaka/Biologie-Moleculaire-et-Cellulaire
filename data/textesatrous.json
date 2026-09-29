@@ -1,0 +1,150 @@
+{
+  "title": "Textes à Trous - BMC",
+  "subtitle": "Rappel actif sur l'ensemble du cours de Biologie Moléculaire et Cellulaire",
+  "sections": [
+    {
+      "id": "cellule",
+      "title": "1. La Cellule : Unité du Vivant",
+      "texts": [
+        {
+          "content": "La théorie cellulaire repose sur 3 principes fondamentaux : la cellule est la plus petite {entité vivante}, tout être vivant est composé de {cellules}, et toute cellule provient d'une autre {cellule} préexistante. Un être humain contient environ {100 000 milliards} (10¹⁴) de cellules.",
+          "hint": "Pense aux 3 principes de Schleiden, Schwann et Virchow"
+        },
+        {
+          "content": "L'{homéostasie} est la propriété des êtres vivants à maintenir leur milieu interne {stable}. On distingue deux grands types de cellules : les {procaryotes} (les plus anciennes, ~5 µm, sans noyau) et les {eucaryotes} (les plus récentes, ~50 µm, avec un véritable noyau).",
+          "hint": "Bactéries vs cellules animales/végétales"
+        },
+        {
+          "content": "Chez les procaryotes, l'ADN se trouve dans une zone appelée {nucléoïde}, sans membrane. Chez les eucaryotes, la cellule est organisée en 3 grandes régions : le {noyau} (qui contient l'ADN), le {cytoplasme} (entre le noyau et la membrane), et la membrane {plasmique} (contour de la cellule).",
+          "hint": "3 régions principales de la cellule eucaryote"
+        }
+      ]
+    },
+    {
+      "id": "acides-nucleiques",
+      "title": "2. Structure des Acides Nucléiques",
+      "texts": [
+        {
+          "content": "Un nucléotide est composé de 3 éléments : un groupement {phosphate}, un ose ({désoxyribose} pour l'ADN, {ribose} pour l'ARN) et une base {azotée}. Les purines (2 cycles) sont l'{adénine} et la {guanine}. Les pyrimidines (1 cycle) sont la cytosine, la {thymine} (ADN) et l'{uracile} (ARN).",
+          "hint": "A, T, G, C pour l'ADN ; A, U, G, C pour l'ARN"
+        },
+        {
+          "content": "La double hélice de l'ADN est stabilisée par des liaisons {hydrogène} entre les bases complémentaires : A s'apparie avec {T} (2 liaisons H) et G s'apparie avec {C} (3 liaisons H). Les deux brins sont {antiparallèles}. La structure est caractérisée par un pas de {3,4} nm et un diamètre de {2} nm, avec environ {10} paires de bases par tour.",
+          "hint": "Modèle de Watson et Crick (1953)"
+        },
+        {
+          "content": "Selon la règle de {Chargaff}, dans un ADN double brin, %A = %{T} et %G = %{C}. Chez les eucaryotes, l'ADN est compacté par enroulement autour de protéines appelées {histones} pour former des {nucléosomes}. Un nucléosome = {146} paires de bases enroulées 1,75 fois autour d'un {octamère} d'histones (2x H2A, H2B, H3, H4).",
+          "hint": "Niveaux de compaction de l'ADN"
+        }
+      ]
+    },
+    {
+      "id": "replication",
+      "title": "3. La Réplication de l'ADN",
+      "texts": [
+        {
+          "content": "La réplication est un processus {semi-conservatif} : chaque molécule d'ADN fille contient un brin {parental} et un brin {néosynthétisé}. Elle est {bidirectionnelle} à partir d'une origine de réplication (oriC chez les procaryotes). L'ADN polymérase synthétise uniquement dans le sens {5' vers 3'} et nécessite une {amorce} (primer) d'ARN.",
+          "hint": "Expérience de Meselson et Stahl (1958)"
+        },
+        {
+          "content": "À la fourche de réplication, l'{hélicase} ouvre la double hélice, les protéines {SSB} stabilisent les brins simples, et la {topoisomérase} relâche la tension de superenroulement. La {primase} synthétise les amorces d'ARN, l'{ADN polymérase III} (procaryotes) allonge les brins, et l'{ADN ligase} scelle les fragments d'{Okazaki} sur le brin retardé.",
+          "hint": "Les acteurs du réplisome"
+        },
+        {
+          "content": "Le brin {avancé} (leading) est synthétisé de manière {continue}, tandis que le brin {retardé} (lagging) est synthétisé de manière {discontinue} en fragments d'Okazaki de {1000-2000} nucléotides (procaryotes) ou {100-200} nucléotides (eucaryotes). Chez les eucaryotes, les extrémités des chromosomes (télomères) sont protégées par la {télomérase}, une {reverse transcriptase}.",
+          "hint": "Synthèse semi-discontinue et problème des extrémités"
+        }
+      ]
+    },
+    {
+      "id": "transcription",
+      "title": "4. La Transcription",
+      "texts": [
+        {
+          "content": "Chez les eucaryotes, il existe 3 types d'ARN polymérases : l'ARN Pol {I} synthétise les ARN {ribosomiques} (28S, 18S, 5.8S), l'ARN Pol {II} synthétise les ARN {messagers} (ARNm), et l'ARN Pol {III} synthétise les ARN de {transfert} (ARNt) et l'ARNr 5S. Chez les procaryotes, une seule {ARN polymérase} avec un facteur {sigma} (σ) reconnaît le promoteur.",
+          "hint": "Les 3 ARN polymérases eucaryotes"
+        },
+        {
+          "content": "Chez les procaryotes, le promoteur contient deux séquences consensus : la boîte de {Pribnow} en {-10} (TATAAT) et la région en {-35} (TTGACA). Chez les eucaryotes, le facteur {TFIID} (contenant la TBP) reconnaît la boîte {TATA} (TATAAA) vers {-25}. Le facteur {TFIIH} possède une activité {hélicase} et une activité {kinase}.",
+          "hint": "Séquences promotrices et initiation"
+        },
+        {
+          "content": "La maturation de l'ARNm eucaryote comprend 3 étapes : l'ajout d'une {coiffe} en 5' (7-{méthylguanosine}), l'ajout d'une queue {poly-A} en 3' (signal {AAUAAA}), et l'{épissage} (splicing) réalisé par le {spliceosome} qui élimine les {introns} et ligature les {exons}. L'épissage {alternatif} permet à un seul gène de produire plusieurs protéines différentes.",
+          "hint": "Coiffe, poly-A, épissage"
+        }
+      ]
+    },
+    {
+      "id": "traduction",
+      "title": "5. La Traduction",
+      "texts": [
+        {
+          "content": "Le code génétique est {universel}, {dégénéré} (61 codons pour 20 acides aminés), {non chevauchant} et sans {ponctuation}. Le codon d'initiation est {AUG} (code pour la {méthionine}), et les 3 codons stop sont {UAA}, {UAG} et {UGA}. Le ribosome possède 3 sites : le site {A} (aminoacyl), le site {P} (peptidyl) et le site {E} (exit).",
+          "hint": "Caractéristiques du code génétique et sites ribosomiques"
+        },
+        {
+          "content": "L'{aminoacyl-ARNt synthétase} attache l'acide aminé correct à son ARNt. Lors de l'{initiation}, le ribosome s'assemble sur le codon start. Pendant l'{élongation}, la {peptidyl transférase} (activité de l'{ARNr}) catalyse la formation de la liaison {peptidique}. La {translocation} est catalysée par le facteur {EF-G} (procaryotes) ou {eEF2} (eucaryotes), consommant du {GTP}.",
+          "hint": "Les 3 étapes de la traduction"
+        },
+        {
+          "content": "Chez les procaryotes, la transcription et la traduction sont {couplées} (simultanées dans le cytoplasme), tandis que chez les eucaryotes, elles sont {séparées} dans le temps et l'espace (transcription dans le {noyau}, traduction dans le {cytoplasme}). Les modifications post-traductionnelles incluent le {repliement} (aidé par des {chaperonnes}), le {clivage} protéolytique, la {phosphorylation} et la {glycosylation}.",
+          "hint": "Différences procaryotes/eucaryotes et modifications"
+        }
+      ]
+    },
+    {
+      "id": "organites",
+      "title": "6. Les Organites Cellulaires",
+      "texts": [
+        {
+          "content": "Le {RER} (réticulum endoplasmique rugueux) est le siège de la synthèse des protéines {sécrétées}, {membranaires} et {lysosomales}. Le {REL} (réticulum endoplasmique lisse) est impliqué dans la synthèse des {lipides}, la {détoxification} (cytochrome P450) et le stockage du {calcium}. L'appareil de {Golgi} possède une polarité : face {cis} (réception du RE) et face {trans} (expédition).",
+          "hint": "Fonctions du RE et du Golgi"
+        },
+        {
+          "content": "Les {lysosomes} ont un pH interne {acide} (~4,5-5) maintenu par des pompes à {protons} (V-ATPases). Ils contiennent des {hydrolases} acides pour la digestion intracellulaire et l'{autophagie}. Les {peroxysomes} contiennent la {catalase} qui détoxifie le {H₂O₂} (2 H₂O₂ → 2 H₂O + {O₂}) et réalisent la {β-oxydation} des acides gras à très longue chaîne.",
+          "hint": "Lysosomes et peroxysomes"
+        },
+        {
+          "content": "Les {mitochondries} sont délimitées par une {double} membrane. La membrane {interne} forme des {crêtes} et contient la chaîne {respiratoire} et l'{ATP synthase}. La {matrice} contient le cycle de {Krebs} et l'{ADN mitochondrial} (circulaire). Selon la théorie {endosymbiotique} (Lynn Margulis, 1967), les mitochondries dérivent d'une ancienne {bactérie} aérobie engulfée.",
+          "hint": "Structure mitochondriale et origine endosymbiotique"
+        }
+      ]
+    },
+    {
+      "id": "cytosquelette",
+      "title": "7. Le Cytosquelette",
+      "texts": [
+        {
+          "content": "Les {microfilaments} d'actine ont un diamètre de {7} nm et sont polymères de {G-actine} (monomère) en {F-actine} (filament). Ils présentent une polarité : extrémité {+} (croissance rapide) et extrémité {-} (croissance lente). La dynamique de {treadmilling} correspond à l'ajout continu de monomères à l'extrémité {+} et la perte à l'extrémité {-}. Les protéines motrices associées sont les {myosines}.",
+          "hint": "Actine G vs F, polarité et treadmilling"
+        },
+        {
+          "content": "Les {filaments intermédiaires} ont un diamètre de {10} nm et sont constitués de protéines {fibreuses} (kératines, vimentine, desmine, lamines). Contrairement aux microfilaments et microtubules, ils n'ont pas de {polarité} (assemblage antiparallèle) et sont très {stables}. Les {lamines} nucléaires forment la {lamina} sous la membrane nucléaire interne. Les kératines sont spécifiques aux cellules {épithéliales}.",
+          "hint": "Caractéristiques des filaments intermédiaires"
+        },
+        {
+          "content": "Les {microtubules} ont un diamètre de {25} nm et sont polymères d'{hétérodimères} α/β-{tubuline}. Ils sont composés de {13} protofilaments. La {β-tubuline} hydrolyse le {GTP} en GDP après incorporation. L'{instabilité dynamique} alterne entre phases de {croissance} et de {raccourcissement} (catastrophe). Les {kinésines} marchent vers l'extrémité {+} (transport antérograde), les {dynéines} vers l'extrémité {-} (transport rétrograde).",
+          "hint": "Tubuline, GTP, instabilité dynamique et protéines motrices"
+        },
+        {
+          "content": "Le {centrosome} est le principal MTOC (Microtubule Organizing Center) chez les animaux. Il contient 2 {centrioles} (structure {9+0} : 9 triplets de microtubules) entourés de matériel {péricentriolaire} (contenant la γ-{tubuline}). L'{axonème} des cils et flagelles a une structure {9+2} (9 doublets périphériques + 2 microtubules centraux). Le mouvement est généré par la {dynéine} axonémique qui hydrolyse l'{ATP}.",
+          "hint": "Centrosome, centrioles et axonème 9+2"
+        }
+      ]
+    },
+    {
+      "id": "formules-cles",
+      "title": "8. Formules et Constantes Clés",
+      "texts": [
+        {
+          "content": "La constante de {Planck} h = {6,626} × 10⁻³⁴ J·s. La vitesse de la {lumière} c = {3} × 10⁸ m/s. La charge {élémentaire} e = {1,6} × 10⁻¹⁹ C. Le nombre d'{Avogadro} Nₐ = {6,022} × 10²³ mol⁻¹. 1 eV = {1,6} × 10⁻¹⁹ J. Le rayon de {Bohr} a₀ = {0,529} Å.",
+          "hint": "Constantes fondamentales à connaître par cœur"
+        },
+        {
+          "content": "Énergie d'un photon : E = {h}·ν = h·{c}/λ. Relation de de Broglie : λ = {h}/p = h/({m}·v). Principe d'{Heisenberg} : Δx·Δ{p} ≥ ħ/2. Énergie de l'atome d'hydrogène : Eₙ = -{13,6} × Z²/{n²} eV. Loi de désintégration : N(t) = N₀·{e}^(-λt). Demi-vie : T = {ln(2)}/λ ≈ {0,693}/λ.",
+          "hint": "Formules clés de physique et chimie"
+        }
+      ]
+    }
+  ]
+}

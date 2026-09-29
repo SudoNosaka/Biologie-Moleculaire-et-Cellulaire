@@ -1,0 +1,40 @@
+{
+  "titre": "TD2 - Structure des Acides Nucléiques",
+  "donnees": [
+    "Règle de Chargaff : dans un ADN double brin, %A = %T et %G = %C",
+    "Purines : Adénine (A) et Guanine (G) (2 cycles)",
+    "Pyrimidines : Cytosine (C), Thymine (T, ADN), Uracile (U, ARN) (1 cycle)",
+    "Liaison phosphodiester : relie le carbone 3' d'un ose au carbone 5' du suivant",
+    "Température de fusion (Tm) : température à laquelle 50% de l'ADN est dénaturé. Elle augmente avec la teneur en G≡C (3 liaisons H)."
+  ],
+  "exercices": [
+    {
+      "id": "2.1",
+      "titre": "Composants des acides nucléiques",
+      "enonce": "1°) Quelle est la différence structurale entre un nucléoside et un nucléotide ?\n2°) Citez les bases puriques et les bases pyrimidiques présentes dans l'ADN et dans l'ARN.\n3°) Quelle est la différence entre le sucre de l'ADN et celui de l'ARN ?\n4°) Comment s'appelle la liaison qui relie deux nucléotides consécutifs dans un brin d'ADN ?",
+      "aide": "Pensez aux 3 composants du nucléotide : base azotée, ose, phosphate.",
+      "solution": "1°) Un nucléoside = base azotée + ose. Un nucléotide = base azotée + ose + un ou plusieurs groupements phosphate(s).\n2°) Purines : Adénine (A) et Guanine (G) (dans l'ADN et l'ARN). Pyrimidines : Cytosine (C) et Thymine (T) dans l'ADN ; Cytosine (C) et Uracile (U) dans l'ARN.\n3°) Le sucre de l'ADN est le désoxyribose (pas de groupement -OH en 2'), tandis que celui de l'ARN est le ribose (possède un groupement -OH en 2').\n4°) Liaison phosphodiester (entre le carbone 3' d'un nucléotide et le carbone 5' du suivant)."
+    },
+    {
+      "id": "2.2",
+      "titre": "Règle de Chargaff et composition en bases",
+      "enonce": "On analyse la composition en bases d'un échantillon d'ADN double brin. On trouve 28% de Thymine (T).\n1°) Quel est le pourcentage d'Adénine (A) ?\n2°) Quel est le pourcentage de Guanine (G) et de Cytosine (C) ?\n3°) Si cet ADN était simple brin, pourrait-on appliquer les mêmes règles de pourcentage ? Justifiez.",
+      "aide": "Dans un ADN double brin, A s'apparie avec T, et G s'apparie avec C. La somme des pourcentages doit être égale à 100%.",
+      "solution": "1°) Selon la règle de Chargaff, A = T. Donc %A = 28%.\n2°) %A + %T = 28% + 28% = 56%. Il reste 100% - 56% = 44% pour G et C. Comme G = C, alors %G = 22% et %C = 22%.\n3°) Non. La règle de Chargaff (A=T, G=C) ne s'applique qu'à l'ADN double brin, car elle repose sur la complémentarité des bases entre les deux brins. Dans un ADN simple brin, les pourcentages de A et T (ou G et C) ne sont pas nécessairement égaux."
+    },
+    {
+      "id": "2.3",
+      "titre": "Séquence complémentaire et polarité",
+      "enonce": "Voici la séquence d'un brin d'ADN : 5' - ATG CCA TGC - 3'\n1°) Écrivez la séquence du brin complémentaire en précisant la polarité (5' → 3' ou 3' → 5').\n2°) Réécrivez cette séquence complémentaire dans le sens conventionnel de lecture (5' → 3').\n3°) Si ce brin d'ADN est transcrit en ARN, quelle sera la séquence de l'ARNm obtenu (sens 5' → 3') ?",
+      "aide": "A s'apparie avec T (ou U dans l'ARN), G s'apparie avec C. Les brins sont antiparallèles.",
+      "solution": "1°) Brin complémentaire (antiparallèle) : 3' - TAC GGT ACG - 5'\n2°) Sens conventionnel (5' → 3') : 5' - GCA TGG CAT - 3'\n3°) Séquence de l'ARNm (transcrit à partir du brin matrice, donc complémentaire du brin codant 5'-ATG...-3') : 5' - AUG CCA UGC - 3' (le T est remplacé par U)."
+    },
+    {
+      "id": "2.4",
+      "titre": "Stabilité et Température de fusion (Tm)",
+      "enonce": "On dispose de deux molécules d'ADN double brin de même longueur :\n- ADN 1 : 5' - AAAAAAAAAA - 3' (et son brin complémentaire)\n- ADN 2 : 5' - GCGCGCGCGC - 3' (et son brin complémentaire)\n1°) Lequel de ces deux ADN a la température de fusion (Tm) la plus élevée ?\n2°) Expliquez pourquoi en détaillant les types de liaisons impliqués.\n3°) Que se passe-t-il au niveau moléculaire lorsque l'ADN atteint sa Tm ?",
+      "aide": "Comparez le nombre de liaisons hydrogène entre les paires de bases A=T et G≡C.",
+      "solution": "1°) L'ADN 2 a la Tm la plus élevée.\n2°) Les paires G≡C sont maintenues par 3 liaisons hydrogène, tandis que les paires A=T n'en ont que 2. De plus, l'empilement des bases G-C est plus stable (interactions hydrophobes plus fortes). L'ADN 2, étant 100% riche en G-C, est donc beaucoup plus stable thermiquement que l'ADN 1, qui est 100% riche en A-T.\n3°) À la Tm, l'agitation thermique est suffisante pour rompre les liaisons hydrogène entre les bases complémentaires et les interactions d'empilement, provoquant la séparation des deux brins (dénaturation de la double hélice en deux brins simples)."
+    }
+  ]
+}

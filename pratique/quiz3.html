@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="fr" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz 3 - Organites & Cytosquelette</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/animations.css">
+</head>
+<body>
+    <header class="fade-in">
+        <div class="header-content">
+            <h1 id="quiz-title">Chargement...</h1>
+            <p class="subtitle" id="quiz-subtitle"></p>
+        </div>
+        <nav class="main-nav">
+            <a href="../index.html" class="nav-link">Accueil</a>
+            <a href="../parametres.html" class="nav-link settings-icon">⚙</a>
+        </nav>
+    </header>
+
+    <main class="container">
+        <div class="timer" id="timer">⏱️ 10:00</div>
+        
+        <section class="content-section fade-in">
+            <h2>Instructions</h2>
+            <ul>
+                <li>Réponds aux questions en <strong>10 minutes maximum</strong></li>
+                <li>Clique sur une réponse pour la sélectionner</li>
+                <li>Clique sur <strong>"Valider"</strong> à la fin</li>
+                <li>Objectif : <strong>80% de bonnes réponses</strong></li>
+            </ul>
+            <button class="btn-primary" onclick="startQuiz()">Commencer</button>
+        </section>
+
+        <div id="quiz-container" style="display: none;"></div>
+        
+        <div id="results" class="content-section" style="display: none;">
+            <h2>Résultat</h2>
+            <div class="score" id="score"></div>
+            <p id="message"></p>
+            <button class="btn-primary" onclick="resetQuiz()">Recommencer</button>
+        </div>
+    </main>
+
+    <footer class="fade-in">
+        <p>Biologie Moléculaire et Cellulaire - Quiz 3</p>
+    </footer>
+
+    <script src="../JS/config.js"></script>
+    <script src="../JS/theme.js"></script>
+    <script src="../JS/sound.js"></script>
+    <script src="../JS/quiz-renderer.js"></script>
+    <script>
+        loadQuiz('quiz3');
+    </script>
+</body>
+</html>

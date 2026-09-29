@@ -1,0 +1,214 @@
+{
+  "title": "Structure des Acides Nucléiques",
+  "subtitle": "ADN, ARN et leurs structures",
+  "sections": [
+    {
+      "id": "intro",
+      "title": "1. Introduction aux Acides Nucléiques",
+      "content": "Les acides nucléiques sont des macromolécules qui assurent le stockage, le transfert et l'expression de l'information génétique. Il en existe deux types :",
+      "list": [
+        "ADN (Acide DésoxyriboNucléique) : support de l'information génétique",
+        "ARN (Acide RiboNucléique) : impliqué dans l'expression des gènes"
+      ],
+      "content2": "Les acides nucléiques sont des polymères de nucléotides. Chaque nucléotide est lui-même constitué de 3 éléments :"
+    },
+    {
+      "id": "nucleotide",
+      "title": "2. Le Nucléotide : Unité de Base",
+      "content": "Un nucléotide est composé de 3 éléments :",
+      "list": [
+        "Un groupement phosphate (PO₄³⁻)",
+        "Un ose (sucre à 5 carbones) : désoxyribose (ADN) ou ribose (ARN)",
+        "Une base azotée"
+      ],
+      "subsections": [
+        {
+          "title": "Les Bases Azotées",
+          "content": "Il existe 5 bases azotées principales, réparties en 2 familles :",
+          "table": [
+            {"famille": "Purines (2 cycles)", "adn": "Adénine (A) et Guanine (G)", "arn": "Adénine (A) et Guanine (G)"},
+            {"famille": "Pyrimidines (1 cycle)", "adn": "Cytosine (C) et Thymine (T)", "arn": "Cytosine (C) et Uracile (U)"}
+          ],
+          "warning": "La Thymine (T) est spécifique à l'ADN, l'Uracile (U) est spécifique à l'ARN."
+        },
+        {
+          "title": "Nucléosides vs Nucléotides",
+          "content": "La distinction est importante :",
+          "list": [
+            "Nucléoside = Base azotée + Ose (sans phosphate)",
+            "Nucléotide = Base azotée + Ose + Phosphate(s)",
+            "On peut avoir des nucléotides mono-, di- ou tri-phosphates (ex: ATP = triphosphate)"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "liaisons",
+      "title": "3. Les Liaisons dans les Acides Nucléiques",
+      "content": "Plusieurs types de liaisons interviennent dans la structure des acides nucléiques :",
+      "list": [
+        "Liaison phosphodiester : relie les nucléotides entre eux (entre le C3' d'un nucléotide et le C5' du suivant) → forme le squelette sucre-phosphate",
+        "Liaisons hydrogène : relient les bases complémentaires entre les 2 brins (A=T avec 2 liaisons H, G≡C avec 3 liaisons H)",
+        "Empilement des bases : interactions hydrophobes entre bases successives d'un même brin"
+      ],
+      "warning": "La liaison phosphodiester est une liaison covalente forte. Les liaisons hydrogène sont faibles individuellement mais leur grand nombre confère une grande stabilité à la double hélice."
+    },
+    {
+      "id": "structure-primaire",
+      "title": "4. Structure Primaire : La Séquence",
+      "content": "La structure primaire correspond à la séquence linéaire des nucléotides dans un brin d'ADN ou d'ARN.",
+      "list": [
+        "Les nucléotides sont reliés par des liaisons phosphodiester",
+        "Le squelette est formé d'une alternance sucre-phosphate",
+        "Les bases sont orientées vers l'intérieur",
+        "Un brin d'ADN a une polarité : une extrémité 5' (phosphate libre) et une extrémité 3' (OH libre)",
+        "La lecture se fait toujours dans le sens 5' → 3'"
+      ],
+      "formula": "5'-p-p-p-p-p-OH-3' (squelette sucre-phosphate)",
+      "content2": "L'information génétique est codée dans la séquence des bases (A, T, G, C pour l'ADN)."
+    },
+    {
+      "id": "structure-secondaire-adn",
+      "title": "5. Structure Secondaire de l'ADN : La Double Hélice",
+      "content": "En 1953, Watson et Crick proposent le modèle de la double hélice de l'ADN, basé sur les travaux de Rosalind Franklin (diffraction des rayons X).",
+      "subsections": [
+        {
+          "title": "Caractéristiques de la double hélice",
+          "list": [
+            "2 brins antiparallèles (un en 5'→3', l'autre en 3'→5')",
+            "Enroulés autour d'un axe commun",
+            "Pas de l'hélice : 3,4 nm (10 paires de bases par tour)",
+            "Diamètre : 2 nm",
+            "Les bases sont perpendiculaires à l'axe",
+            "Les sucres et phosphates forment le squelette externe"
+          ]
+        },
+        {
+          "title": "Règles de complémentarité des bases",
+          "content": "Les bases des 2 brins s'apparient selon des règles strictes :",
+          "formula": "A = T (2 liaisons H) | G ≡ C (3 liaisons H)",
+          "list": [
+            "Une purine s'apparie toujours avec une pyrimidine",
+            "Avec T toujours : A=T et G≡C",
+            "Les 2 brins sont complémentaires : si on connaît la séquence d'un brin, on peut déduire celle de l'autre"
+          ]
+        },
+        {
+          "title": "Stabilité de la double hélice",
+          "content": "La stabilité repose sur :",
+          "list": [
+            "Les liaisons hydrogène entre bases complémentaires",
+            "L'empilement des bases (interactions hydrophobes)",
+            "Les interactions électrostatiques avec les ions positifs (Mg²⁺, protéines basiques)"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "denaturation",
+      "title": "6. Dénaturation et Renaturation de l'ADN",
+      "content": "La double hélice peut être séparée en 2 brins simples (dénaturation) puis se reformer (renaturation).",
+      "subsections": [
+        {
+          "title": "Dénaturation",
+          "content": "Séparation des 2 brins par rupture des liaisons hydrogène :",
+          "list": [
+            "Par la chaleur (Tm = température de fusion)",
+            "Par pH extrême (acide ou basique)",
+            "Par agents chimiques (urée, formamide)"
+          ],
+          "formula": "ADN double brin → 2 ADN simple brin"
+        },
+        {
+          "title": "Renaturation",
+          "content": "Réassociation des 2 brins complémentaires quand les conditions redeviennent favorables.",
+          "list": [
+            "Refroidissement lent après dénaturation thermique",
+            "Neutralisation du pH",
+            "Élimination des agents chimiques"
+          ],
+          "formula": "2 ADN simple brin → ADN double brin"
+        },
+        {
+          "title": "Température de fusion (Tm)",
+          "content": "Température à laquelle 50% de l'ADN est dénaturé.",
+          "list": [
+            "Dépend de la composition en bases",
+            "Plus il y a de paires G≡C (3 liaisons H), plus la Tm est élevée",
+            "Plus il y a de paires A=T (2 liaisons H), plus la Tm est basse",
+            "Tm ≈ 69,3 + 0,41 × (%G+C)"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "structure-tertiaire",
+      "title": "7. Structure Tertiaire : La Compaction de l'ADN",
+      "content": "L'ADN doit être compacté pour tenir dans le noyau. Chez les eucaryotes, 2 mètres d'ADN doivent tenir dans un noyau de 5-10 µm de diamètre !",
+      "subsections": [
+        {
+          "title": "Chez les procaryotes",
+          "content": "L'ADN circulaire est compacté par des protéines basiques (protéines HU) et par superenroulement (action des topoisomérases)."
+        },
+        {
+          "title": "Chez les eucaryotes : les nucleosomes",
+          "content": "L'ADN s'enroule autour de protéines basiques appelées histones pour former des nucleosomes.",
+          "list": [
+            "Le nucleosome = 146 paires de bases d'ADN enroulées 1,75 fois autour d'un octamère d'histones",
+            "L'octamère = 2 copies de chaque histone : H2A, H2B, H3, H4",
+            "L'ADN entre 2 nucleosomes = ADN linker (environ 50 pb)",
+            "L'histone H1 se fixe sur l'ADN linker et stabilise la structure"
+          ],
+          "formula": "ADN + histones → nucleosomes → « collier de perles »"
+        },
+        {
+          "title": "Niveaux de compaction",
+          "content": "La compaction se fait en plusieurs niveaux :",
+          "list": [
+            "Niveau 1 : nucleosome (diamètre 11 nm) → compaction × 7",
+            "Niveau 2 : fibre de chromatine de 30 nm (solenoid) → compaction × 40",
+            "Niveau 3 : boucles de chromatine attachées à une protéine scaffold → compaction × 1000",
+            "Niveau 4 : chromosome métaphasique → compaction × 10 000"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "arn",
+      "title": "8. Les Acides Ribonucléiques (ARN)",
+      "content": "Les ARN sont généralement simple brin, mais peuvent former des structures secondaires par appariements internes.",
+      "subsections": [
+        {
+          "title": "Différences avec l'ADN",
+          "table": [
+            {"caracteristique": "Sucre", "adn": "Désoxyribose", "arn": "Ribose"},
+            {"caracteristique": "Bases", "adn": "A, T, G, C", "arn": "A, U, G, C"},
+            {"caracteristique": "Structure", "adn": "Double brin (généralement)", "arn": "Simple brin (généralement)"},
+            {"caracteristique": "Stabilité", "adn": "Très stable", "arn": "Moins stable (OH en 2')"},
+            {"caracteristique": "Localisation", "adn": "Noyau", "arn": "Noyau et cytoplasme"}
+          ]
+        },
+        {
+          "title": "Les différents types d'ARN",
+          "table": [
+            {"type": "ARN messager (ARNm)", "role": "Copie d'un gène, sert de matrice pour la traduction", "pourcentage": "~5%"},
+            {"type": "ARN de transfert (ARNt)", "role": "Transporte les acides aminés vers le ribosome", "pourcentage": "~15%"},
+            {"type": "ARN ribosomal (ARNr)", "role": "Constituant majeur des ribosomes", "pourcentage": "~80%"},
+            {"type": "Petits ARN", "role": "Régulation, épissage (snARN, miRNA, siRNA)", "pourcentage": "Variable"}
+          ]
+        },
+        {
+          "title": "Structure de l'ARN",
+          "content": "L'ARN peut former des structures secondaires complexes par appariements internes :",
+          "list": [
+            "Tiges-boucles (hairpins)",
+            "Boucles internes",
+            "Jonctions",
+            "Pseudonœuds"
+          ],
+          "content2": "Ces structures sont essentielles pour la fonction des ARN (ex : forme en trèfle de l'ARNt)."
+        }
+      ]
+    }
+  ]
+}

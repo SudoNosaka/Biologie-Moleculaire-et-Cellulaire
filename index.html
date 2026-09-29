@@ -1,39 +1,156 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="fr" data-theme="light">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>BMC - L1 Biologie | Accueil</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Biologie Moléculaire et Cellulaire</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/animations.css">
 </head>
 <body>
-    <header>
-        <h1>Biologie Moléculaire & Cellulaire</h1>
-        <p>L1 Biologie - Université Évry Paris-Saclay | Méthode Pareto (20/80)</p>
-    </header>
-    <nav>
-        <a href="index.html">Accueil</a>
-        <a href="résumé.html">Résumé (20/80)</a>
-        <a href="notion1.html">Notion 1 : Cellule & ADN</a>
-        <a href="notion2.html">Notion 2 : Réplication & Transcription</a>
-        <a href="notion3.html">Notion 3 : Traduction & Organites</a>
-        <a href="quiz1.html">Quiz de Révision</a>
-    </nav>
-    <div class="container">
-        <div class="card">
-            <h2>Bienvenue dans ton espace de révision BMC</h2>
-            <p>Ce portail centralise toutes tes ressources. L'objectif est d'optimiser ton temps de révision en appliquant la loi de Pareto : 20% d'efforts ciblés pour 80% de résultats.</p>
-            <h3>📌 Comment utiliser ces fichiers ?</h3>
-            <ul>
-                <li><strong>Résumé.html :</strong> À relire absolument chaque soir (10 min max) et avant chaque examen. C'est l'essentiel absolu du cours.</li>
-                <li><strong>Notion n°x.html :</strong> À consulter pour approfondir un point précis, comprendre un mécanisme complexe ou revoir les détails du cours magistral.</li>
-                <li><strong>Quiz.html :</strong> Pour tester tes connaissances de manière active (révision dynamique).</li>
-            </ul>
-            <a href="résumé.html" class="btn">Aller au Résumé (20/80)</a>
+    <header class="fade-in">
+        <div class="header-content">
+            <h1>Biologie Moléculaire et Cellulaire</h1>
+            <p class="subtitle">LDD1 - Université Évry Paris-Saclay</p>
         </div>
-    </div>
-    <footer>
-        <p>Créé avec la méthode Pareto pour la réussite en L1 Biologie.</p>
+        <nav class="main-nav">
+            <a href="index.html" class="nav-link active">Accueil</a>
+            <a href="parametres.html" class="nav-link settings-icon" title="Paramètres">⚙</a>
+        </nav>
+    </header>
+
+    <main class="container">
+        <section class="hero fade-in-delay">
+            <h2>Maîtriser les fondamentaux</h2>
+            <p>De la cellule aux organites, en passant par le dogme central de la biologie moléculaire.</p>
+        </section>
+
+        <section id="theorie" class="fade-in">
+            <h2 class="section-title">Théorie</h2>
+            <div class="carousel-wrapper">
+                <button class="carousel-arrow left" onclick="scrollCarousel('carousel-theorie', -1)">‹</button>
+                <div class="carousel-track" id="carousel-theorie">
+                    <a href="theorie/bases.html" class="carousel-card">
+                        <h3>Bases</h3>
+                        <p>Prérequis indispensables</p>
+                    </a>
+                    <a href="theorie/resume.html" class="carousel-card">
+                        <h3>Résumé Pareto</h3>
+                        <p>20% du cours = 80% des points</p>
+                    </a>
+                    <a href="theorie/notion1.html" class="carousel-card">
+                        <h3>Notion 1</h3>
+                        <p>La Cellule : Unité du Vivant</p>
+                    </a>
+                    <a href="theorie/notion2.html" class="carousel-card">
+                        <h3>Notion 2</h3>
+                        <p>Structure des Acides Nucléiques</p>
+                    </a>
+                    <a href="theorie/notion3.html" class="carousel-card">
+                        <h3>Notion 3</h3>
+                        <p>La Réplication de l'ADN</p>
+                    </a>
+                    <a href="theorie/notion4.html" class="carousel-card">
+                        <h3>Notion 4</h3>
+                        <p>La Transcription</p>
+                    </a>
+                    <a href="theorie/notion5.html" class="carousel-card">
+                        <h3>Notion 5</h3>
+                        <p>La Traduction</p>
+                    </a>
+                    <a href="theorie/notion6.html" class="carousel-card">
+                        <h3>Notion 6</h3>
+                        <p>Les Organites Cellulaires</p>
+                    </a>
+                    <a href="theorie/notion7.html" class="carousel-card">
+                        <h3>Notion 7</h3>
+                        <p>Le Cytosquelette</p>
+                    </a>
+                </div>
+                <button class="carousel-arrow right" onclick="scrollCarousel('carousel-theorie', 1)">›</button>
+            </div>
+        </section>
+
+        <section id="pratique" class="fade-in">
+            <h2 class="section-title">Pratique</h2>
+
+            <h3 class="sub-title">Quiz</h3>
+            <div class="carousel-wrapper">
+                <button class="carousel-arrow left" onclick="scrollCarousel('carousel-quiz', -1)">‹</button>
+                <div class="carousel-track" id="carousel-quiz">
+                    <a href="pratique/quiz1.html" class="carousel-card">
+                        <h3>Quiz 1</h3>
+                        <p>Notions 1-2</p>
+                    </a>
+                    <a href="pratique/quiz2.html" class="carousel-card">
+                        <h3>Quiz 2</h3>
+                        <p>Notions 3-5</p>
+                    </a>
+                    <a href="pratique/quiz3.html" class="carousel-card">
+                        <h3>Quiz 3</h3>
+                        <p>Notions 6-7</p>
+                    </a>
+                    <a href="pratique/textesatrous.html" class="carousel-card">
+                        <h3>Textes à Trous</h3>
+                        <p>Rappel actif</p>
+                    </a>
+                </div>
+                <button class="carousel-arrow right" onclick="scrollCarousel('carousel-quiz', 1)">›</button>
+            </div>
+
+            <h3 class="sub-title">TD d'entraînement</h3>
+            <div class="carousel-wrapper">
+                <button class="carousel-arrow left" onclick="scrollCarousel('carousel-td', -1)">‹</button>
+                <div class="carousel-track" id="carousel-td">
+                    <a href="pratique/td1.html" class="carousel-card">
+                        <h3>TD1</h3>
+                        <p>Organisation Cellulaire</p>
+                    </a>
+                    <a href="pratique/td2.html" class="carousel-card">
+                        <h3>TD2</h3>
+                        <p>Acides Nucléiques</p>
+                    </a>
+                    <a href="pratique/td3.html" class="carousel-card">
+                        <h3>TD3</h3>
+                        <p>Réplication</p>
+                    </a>
+                    <a href="pratique/td4.html" class="carousel-card">
+                        <h3>TD4</h3>
+                        <p>Transcription & Traduction</p>
+                    </a>
+                    <a href="pratique/td5.html" class="carousel-card">
+                        <h3>TD5</h3>
+                        <p>Organites & Système Endomembranaire</p>
+                    </a>
+                    <a href="pratique/td6.html" class="carousel-card">
+                        <h3>TD6</h3>
+                        <p>Microscopie</p>
+                    </a>
+                    <a href="pratique/td7.html" class="carousel-card">
+                        <h3>TD7</h3>
+                        <p>Membrane Plasmique</p>
+                    </a>
+                    <a href="pratique/td8.html" class="carousel-card">
+                        <h3>TD8</h3>
+                        <p>Cytosquelette : Microtubules</p>
+                    </a>
+                    <a href="pratique/td9.html" class="carousel-card">
+                        <h3>TD9</h3>
+                        <p>Transport Intracellulaire</p>
+                    </a>
+                </div>
+                <button class="carousel-arrow right" onclick="scrollCarousel('carousel-td', 1)">›</button>
+            </div>
+        </section>
+    </main>
+
+    <footer class="fade-in">
+        <p>Biologie Moléculaire et Cellulaire - BMC - LDD1</p>
     </footer>
+
+    <script src="JS/config.js"></script>
+    <script src="JS/theme.js"></script>
+    <script src="JS/components.js"></script>
+    <script src="JS/sound.js"></script>
 </body>
 </html>

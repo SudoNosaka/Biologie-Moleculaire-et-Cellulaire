@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="fr" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Paramètres</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/animations.css">
+</head>
+<body>
+    <header class="fade-in">
+        <div class="header-content">
+            <h1>Paramètres</h1>
+        </div>
+        <nav class="main-nav">
+            <a href="index.html" class="nav-link">Accueil</a>
+            <a href="parametres.html" class="nav-link active">Paramètres</a>
+        </nav>
+    </header>
+
+    <main class="container">
+        <section class="settings-section fade-in">
+            <h2>Apparence</h2>
+            
+            <div class="setting-card">
+                <div class="setting-info">
+                    <h3>Thème</h3>
+                    <p>Choisir entre mode clair et sombre</p>
+                </div>
+                <div class="toggle-container">
+                    <button id="theme-toggle" class="toggle-btn">
+                        <span class="toggle-icon">☀</span>
+                        <span class="toggle-label">Clair</span>
+                    </button>
+                </div>
+            </div>
+
+            <div class="setting-card">
+                <div class="setting-info">
+                    <h3>Sons</h3>
+                    <p>Activer les micro-sons pour les interactions</p>
+                </div>
+                <div class="toggle-container">
+                    <button id="sound-toggle" class="toggle-btn">
+                        <span class="toggle-icon">🔊</span>
+                        <span class="toggle-label">Activé</span>
+                    </button>
+                </div>
+            </div>
+        </section>
+
+        <section class="settings-section fade-in">
+            <h2>Feedback</h2>
+            
+            <div class="setting-card">
+                <div class="setting-info">
+                    <h3>Suggestions & Commentaires</h3>
+                    <p>Une idée pour améliorer le site ? Un bug à signaler ? Un problème de contenu d'UI ou d'UX ?</p>
+                </div>
+                <a href="https://github.com/SudoNosaka/Biologie-Moleculaire-et-Cellulaire/issues/new" target="_blank" class="btn-primary">
+                    Ouvrir GitHub Issues
+                </a>
+            </div>
+        </section>
+        
+        <section class="settings-section fade-in">
+            <h2>Participer</h2>
+            
+            <div class="setting-card">
+                <div class="setting-info">
+                    <h3>Collaborer</h3>
+                    <p>Si tu souhaite m'aider à paufiner le site envoie moi un DM !</p>
+            </div>
+        </section>
+
+        <section class="settings-section fade-in">
+            <h2>À propos</h2>
+            <div class="info-card">
+                <p><strong>Biologie Moléculaire et Cellulaire</strong>- BMC - LDD1</p>
+                <p>Université Évry Paris-Saclay</p>
+                <p>Version : 2.0</p>
+                <p>Dernière mise à jour : 29 septembre 2026</p>
+                <p>Appli désigné et vibe-codée par Fuyu-kun via Qwen</p>
+            </div>
+        </section>
+    </main>
+
+    <footer class="fade-in">
+        <p>Paramètres</p>
+    </footer>
+
+    <script src="JS/config.js"></script>
+    <script src="JS/theme.js"></script>
+    <script src="JS/sound.js"></script>
+    <script>
+        // Toggle thème
+        const themeToggle = document.getElementById('theme-toggle');
+        themeToggle.addEventListener('click', () => {
+            toggleTheme();
+            updateThemeButton();
+            playSound('click');
+        });
+
+        // Toggle sons
+        const soundToggle = document.getElementById('sound-toggle');
+        soundToggle.addEventListener('click', () => {
+            toggleSound();
+            updateSoundButton();
+            if (CONFIG.sound.enabled) playSound('click');
+        });
+
+        function updateThemeButton() {
+            const isDark = document.documentElement.getAttribute('data-theme') === 'dark';
+            themeToggle.querySelector('.toggle-icon').textContent = isDark ? '☾' : '☀';
+            themeToggle.querySelector('.toggle-label').textContent = isDark ? 'Sombre' : 'Clair';
+        }
+
+        function updateSoundButton() {
+            soundToggle.querySelector('.toggle-icon').textContent = CONFIG.sound.enabled ? '🔊' : '🔇';
+            soundToggle.querySelector('.toggle-label').textContent = CONFIG.sound.enabled ? 'Activé' : 'Désactivé';
+        }
+
+        // Initialisation
+        updateThemeButton();
+        updateSoundButton();
+    </script>
+</body>
+</html>

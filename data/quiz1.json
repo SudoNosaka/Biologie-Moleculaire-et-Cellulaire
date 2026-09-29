@@ -1,0 +1,187 @@
+{
+  "title": "Quiz 1 - La Cellule & Acides Nucléiques",
+  "subtitle": "10 minutes | 15 questions | Notions 1 et 2",
+  "duration": 600,
+  "questions": [
+    {
+      "id": 1,
+      "question": "Selon la théorie cellulaire, laquelle de ces affirmations est FAUSSE ?",
+      "options": [
+        "La cellule est la plus petite entité vivante",
+        "Tout être vivant est composé de cellules",
+        "Toute cellule provient d'une autre cellule préexistante",
+        "Les virus sont des cellules procaryotes"
+      ],
+      "correct": 3,
+      "explanation": "Les virus ne sont PAS des cellules. Ils sont acellulaires et ne peuvent se reproduire qu'en infectant une cellule hôte."
+    },
+    {
+      "id": 2,
+      "question": "Quelle est la principale différence structurelle entre une cellule procaryote et une cellule eucaryote ?",
+      "options": [
+        "La présence d'ADN chez les eucaryotes",
+        "La présence d'un noyau délimité par une membrane chez les eucaryotes",
+        "La présence de ribosomes chez les eucaryotes",
+        "La présence d'une membrane plasmique chez les eucaryotes"
+      ],
+      "correct": 1,
+      "explanation": "La différence fondamentale est que les eucaryotes possèdent un véritable noyau délimité par une enveloppe nucléaire, tandis que les procaryotes ont une zone nucléoïde sans membrane."
+    },
+    {
+      "id": 3,
+      "question": "Un être humain contient environ combien de cellules ?",
+      "options": [
+        "10 millions (10⁷)",
+        "1 milliard (10⁹)",
+        "100 000 milliards (10¹⁴)",
+        "1 trillion (10¹²)"
+      ],
+      "correct": 2,
+      "explanation": "Un être humain contient environ 100 000 milliards de cellules (10¹⁴). Chacune de ces cellules est un être vivant."
+    },
+    {
+      "id": 4,
+      "question": "L'homéostasie cellulaire désigne :",
+      "options": [
+        "La capacité d'une cellule à se diviser",
+        "La propriété des êtres vivants à maintenir leur milieu interne stable",
+        "Le processus de différenciation cellulaire",
+        "La mort cellulaire programmée"
+      ],
+      "correct": 1,
+      "explanation": "L'homéostasie est la propriété des êtres vivants à maintenir leur milieu interne STABLE. Les cellules ne peuvent survivre que si le milieu dans lequel elles baignent demeure stable."
+    },
+    {
+      "id": 5,
+      "question": "Quel est le composant de base d'un nucléotide ?",
+      "options": [
+        "Base azotée + sucre + acide gras",
+        "Base azotée + ose (sucre) + groupement phosphate",
+        "Acide aminé + sucre + phosphate",
+        "Base azotée + acide aminé + phosphate"
+      ],
+      "correct": 1,
+      "explanation": "Un nucléotide est composé de 3 éléments : une base azotée, un ose (désoxyribose pour l'ADN, ribose pour l'ARN) et un ou plusieurs groupements phosphate(s)."
+    },
+    {
+      "id": 6,
+      "question": "Parmi les bases suivantes, laquelle est une purine ?",
+      "options": [
+        "Cytosine",
+        "Thymine",
+        "Guanine",
+        "Uracile"
+      ],
+      "correct": 2,
+      "explanation": "Les purines (2 cycles) sont l'Adénine (A) et la Guanine (G). Les pyrimidines (1 cycle) sont la Cytosine (C), la Thymine (T, ADN) et l'Uracile (U, ARN)."
+    },
+    {
+      "id": 7,
+      "question": "Quelle est la différence entre un nucléoside et un nucléotide ?",
+      "options": [
+        "Le nucléoside contient un phosphate, pas le nucléotide",
+        "Le nucléotide contient un phosphate, pas le nucléoside",
+        "Le nucléoside est présent dans l'ARN, le nucléotide dans l'ADN",
+        "Il n'y a aucune différence"
+      ],
+      "correct": 1,
+      "explanation": "Nucléoside = base azotée + ose. Nucléotide = base azotée + ose + phosphate(s). Le nucléotide possède donc un ou plusieurs groupements phosphate en plus."
+    },
+    {
+      "id": 8,
+      "question": "Dans une molécule d'ADN double brin, si le pourcentage de Guanine (G) est de 22%, quel est le pourcentage d'Adénine (A) ?",
+      "options": [
+        "22%",
+        "28%",
+        "44%",
+        "56%"
+      ],
+      "correct": 1,
+      "explanation": "Selon la règle de Chargaff : G = C = 22%, donc G + C = 44%. Il reste 100% - 44% = 56% pour A + T. Comme A = T, alors A = 28%."
+    },
+    {
+      "id": 9,
+      "question": "Quelle liaison stabilise la structure secondaire (double hélice) de l'ADN ?",
+      "options": [
+        "Liaison covalente",
+        "Liaison ionique",
+        "Liaison hydrogène",
+        "Liaison peptidique"
+      ],
+      "correct": 2,
+      "explanation": "Les liaisons hydrogène relient les bases complémentaires entre les deux brins : A=T (2 liaisons H) et G≡C (3 liaisons H). La liaison phosphodiester (covalente) forme le squelette sucre-phosphate."
+    },
+    {
+      "id": 10,
+      "question": "Quelle est la polarité d'un brin d'ADN synthétisé dans le sens 5' → 3' ?",
+      "options": [
+        "L'extrémité 5' possède un groupement OH libre",
+        "L'extrémité 3' possède un groupement phosphate libre",
+        "L'extrémité 5' possède un groupement phosphate libre",
+        "Les deux extrémités sont identiques"
+      ],
+      "correct": 2,
+      "explanation": "Un brin d'ADN a une polarité : une extrémité 5' (phosphate libre) et une extrémité 3' (OH libre). La synthèse se fait toujours dans le sens 5' → 3'."
+    },
+    {
+      "id": 11,
+      "question": "Quelle est la température de fusion (Tm) d'un ADN riche en paires G≡C par rapport à un ADN riche en paires A=T ?",
+      "options": [
+        "Plus basse, car les liaisons G≡C sont plus faibles",
+        "Plus élevée, car les liaisons G≡C ont 3 liaisons hydrogène",
+        "Identique, car la stabilité ne dépend pas de la composition en bases",
+        "Plus basse, car les bases G et C sont plus petites"
+      ],
+      "correct": 1,
+      "explanation": "Les paires G≡C sont maintenues par 3 liaisons hydrogène (contre 2 pour A=T), ce qui rend l'ADN plus stable thermiquement. Plus il y a de G≡C, plus la Tm est élevée."
+    },
+    {
+      "id": 12,
+      "question": "Quelle est la structure tertiaire de l'ADN chez les eucaryotes ?",
+      "options": [
+        "ADN circulaire libre dans le cytoplasme",
+        "ADN linéaire associé aux histones formant des nucléosomes",
+        "ADN simple brin enroulé sur lui-même",
+        "ADN double brin sans protéines associées"
+      ],
+      "correct": 1,
+      "explanation": "Chez les eucaryotes, l'ADN linéaire s'enroule autour de protéines histones pour former des nucléosomes (146 pb d'ADN enroulées 1,75 fois autour d'un octamère d'histones H2A, H2B, H3, H4)."
+    },
+    {
+      "id": 13,
+      "question": "Combien de paires de bases par tour d'hélice dans l'ADN de forme B ?",
+      "options": [
+        "5 paires de bases",
+        "10 paires de bases",
+        "15 paires de bases",
+        "20 paires de bases"
+      ],
+      "correct": 1,
+      "explanation": "L'ADN de forme B (la plus courante) possède environ 10,4 à 10,5 paires de bases par tour d'hélice, avec un pas de 3,4 nm et un diamètre de 2 nm."
+    },
+    {
+      "id": 14,
+      "question": "Quelle est la différence principale entre l'ADN et l'ARN ?",
+      "options": [
+        "L'ADN contient de l'uracile, l'ARN contient de la thymine",
+        "L'ADN est généralement double brin, l'ARN est généralement simple brin",
+        "L'ADN contient du ribose, l'ARN contient du désoxyribose",
+        "L'ADN est plus court que l'ARN"
+      ],
+      "correct": 1,
+      "explanation": "L'ADN est généralement double brin (double hélice) avec du désoxyribose et de la thymine. L'ARN est généralement simple brin avec du ribose et de l'uracile (au lieu de la thymine)."
+    },
+    {
+      "id": 15,
+      "question": "Quel type d'ARN est le plus abondant dans la cellule ?",
+      "options": [
+        "ARN messager (ARNm)",
+        "ARN de transfert (ARNt)",
+        "ARN ribosomal (ARNr)",
+        "MicroARN (miRNA)"
+      ],
+      "correct": 2,
+      "explanation": "L'ARN ribosomal (ARNr) représente environ 80% de l'ARN total de la cellule. L'ARNt représente ~15% et l'ARNm ~5%."
+    }
+  ]
+}

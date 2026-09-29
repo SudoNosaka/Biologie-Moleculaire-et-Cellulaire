@@ -1,0 +1,187 @@
+{
+  "title": "Quiz 2 - Réplication, Transcription & Traduction",
+  "subtitle": "10 minutes | 15 questions | Notions 3, 4 et 5",
+  "duration": 600,
+  "questions": [
+    {
+      "id": 1,
+      "question": "L'expérience de Meselson et Stahl a permis de démontrer que la réplication de l'ADN est :",
+      "options": [
+        "Conservative",
+        "Semi-conservative",
+        "Dispersive",
+        "Aléatoire"
+      ],
+      "correct": 1,
+      "explanation": "Chaque molécule d'ADN fille contient un brin parental (ancien) et un brin néosynthétisé (nouveau)."
+    },
+    {
+      "id": 2,
+      "question": "Quelle enzyme est responsable de l'ouverture de la double hélice d'ADN au niveau de la fourche de réplication ?",
+      "options": [
+        "ADN polymérase",
+        "ADN ligase",
+        "ADN hélicase",
+        "Topoisomérase"
+      ],
+      "correct": 2,
+      "explanation": "L'ADN hélicase rompt les liaisons hydrogène entre les bases pour séparer les deux brins."
+    },
+    {
+      "id": 3,
+      "question": "Pourquoi la synthèse de l'ADN est-elle discontinue sur le brin retardé ?",
+      "options": [
+        "Parce que l'ADN polymérase ne peut synthétiser que dans le sens 3' → 5'",
+        "Parce que les brins d'ADN sont antiparallèles et que l'ADN polymérase synthétise uniquement en 5' → 3'",
+        "Parce que les fragments d'Okazaki sont plus stables",
+        "Parce que l'hélicase avance trop vite"
+      ],
+      "correct": 1,
+      "explanation": "L'ADN polymérase ne peut ajouter des nucléotides qu'à une extrémité 3'-OH libre. Sur le brin orienté 5'→3', la synthèse doit se faire par petits fragments (Okazaki) en s'éloignant de la fourche."
+    },
+    {
+      "id": 4,
+      "question": "Chez les eucaryotes, quelle ARN polymérase est responsable de la synthèse des ARN messagers (ARNm) ?",
+      "options": [
+        "ARN polymérase I",
+        "ARN polymérase II",
+        "ARN polymérase III",
+        "Primase"
+      ],
+      "correct": 1,
+      "explanation": "L'ARN polymérase II transcrit les gènes codant pour les protéines (ARNm). La Pol I fait les ARNr et la Pol III les ARNt."
+    },
+    {
+      "id": 5,
+      "question": "Quelles sont les 3 modifications post-transcriptionnelles majeures subies par l'ARNm eucaryote avant son export ?",
+      "options": [
+        "Coiffe en 5', queue poly-A en 3', épissage",
+        "Coiffe en 3', queue poly-T en 5', épissage",
+        "Méthylation, phosphorylation, glycosylation",
+        "Clivage, traduction, repliement"
+      ],
+      "correct": 0,
+      "explanation": "L'ARNm eucaryote reçoit une coiffe (7-méthylguanosine) en 5', une queue poly-A en 3', et subit l'épissage pour retirer les introns."
+    },
+    {
+      "id": 6,
+      "question": "Dans le code génétique, le codon AUG code pour :",
+      "options": [
+        "Un codon stop",
+        "La méthionine (acide aminé d'initiation)",
+        "La valine",
+        "Un intron"
+      ],
+      "correct": 1,
+      "explanation": "AUG est le codon d'initiation (start) et code pour la méthionine (ou formyl-méthionine chez les bactéries)."
+    },
+    {
+      "id": 7,
+      "question": "Quel site du ribosome accueille l'aminoacyl-ARNt entrant lors de l'élongation ?",
+      "options": [
+        "Site A (Aminoacyl)",
+        "Site P (Peptidyl)",
+        "Site E (Exit)",
+        "Site T (Translocation)"
+      ],
+      "correct": 0,
+      "explanation": "Le site A accueille le nouvel ARNt chargé d'un acide aminé. Le site P contient l'ARNt portant la chaîne en croissance, et le site E est la sortie."
+    },
+    {
+      "id": 8,
+      "question": "Quelle enzyme catalyse la formation de la liaison peptidique entre deux acides aminés lors de la traduction ?",
+      "options": [
+        "ARN polymérase",
+        "Peptidyl transférase (activité de l'ARNr du ribosome)",
+        "Aminoacyl-ARNt synthétase",
+        "ADN ligase"
+      ],
+      "correct": 1,
+      "explanation": "La peptidyl transférase est une ribozyme (activité catalytique de l'ARNr de la grande sous-unité ribosomale)."
+    },
+    {
+      "id": 9,
+      "question": "Que se passe-t-il lorsque le ribosome rencontre un codon stop (UAA, UAG, UGA) ?",
+      "options": [
+        "Un ARNt spécial se lie au site A",
+        "Des facteurs de libération (RF) se lient au site A et provoquent l'hydrolyse de la chaîne polypeptidique",
+        "La traduction continue jusqu'à la fin de l'ARNm",
+        "Le ribosome fait une pause de 10 secondes"
+      ],
+      "correct": 1,
+      "explanation": "Les facteurs de libération reconnaissent les codons stop, provoquent l'hydrolyse de la liaison entre la protéine et l'ARNt du site P, et libèrent la protéine."
+    },
+    {
+      "id": 10,
+      "question": "Quelle est la conséquence d'une mutation par décalage du cadre de lecture (insertion ou délétion d'un nucléotide) ?",
+      "options": [
+        "Aucune conséquence (mutation silencieuse)",
+        "Changement d'un seul acide aminé",
+        "Changement de tous les acides aminés en aval de la mutation, souvent avec apparition prématurée d'un codon stop",
+        "Augmentation de la vitesse de traduction"
+      ],
+      "correct": 2,
+      "explanation": "Le décalage du cadre de lecture modifie tous les codons en aval, rendant la protéine généralement non fonctionnelle."
+    },
+    {
+      "id": 11,
+      "question": "Chez les procaryotes, la transcription et la traduction sont :",
+      "options": [
+        "Séparées dans le temps et l'espace",
+        "Couplées (simultanées dans le cytoplasme)",
+        "Inexistantes",
+        "Dépendantes de l'épissage"
+      ],
+      "correct": 1,
+      "explanation": "L'absence de noyau chez les procaryotes permet aux ribosomes de commencer la traduction de l'ARNm pendant qu'il est encore en cours de transcription."
+    },
+    {
+      "id": 12,
+      "question": "Quel est le rôle de l'aminoacyl-ARNt synthétase ?",
+      "options": [
+        "Synthétiser l'ARNm",
+        "Attacher l'acide aminé correct à son ARNt correspondant",
+        "Cliver les introns",
+        "Lier les fragments d'Okazaki"
+      ],
+      "correct": 1,
+      "explanation": "Cette enzyme assure le 'chargement' de l'ARNt avec l'acide aminé spécifique, garantissant la fidélité de la traduction."
+    },
+    {
+      "id": 13,
+      "question": "La 'boîte TATA' est une séquence d'ADN située en amont du gène. Quel est son rôle ?",
+      "options": [
+        "Coder pour la méthionine",
+        "Servir de site de reconnaissance pour l'initiation de la transcription (promoteur)",
+        "Servir de signal de terminaison",
+        "Coder pour la queue poly-A"
+      ],
+      "correct": 1,
+      "explanation": "La boîte TATA (ou séquences -10/-35 chez les bactéries) est une partie du promoteur reconnue par les facteurs de transcription et l'ARN polymérase."
+    },
+    {
+      "id": 14,
+      "question": "Qu'est-ce que l'épissage alternatif ?",
+      "options": [
+        "La suppression de tous les exons",
+        "Un mécanisme permettant à un seul gène de produire plusieurs protéines différentes en combinant les exons de diverses manières",
+        "La transformation de l'ADN en ARN",
+        "La réparation de l'ADN endommagé"
+      ],
+      "correct": 1,
+      "explanation": "L'épissage alternatif permet de sélectionner différents exons lors de la maturation de l'ARNm, augmentant considérablement la diversité protéique à partir d'un nombre limité de gènes."
+    },
+    {
+      "id": 15,
+      "question": "Quelle molécule fournit l'énergie nécessaire à l'élongation de la chaîne polypeptidique lors de la traduction ?",
+      "options": [
+        "ATP uniquement",
+        "GTP",
+        "NADH",
+        "Glucose"
+      ],
+      "correct": 1,
+      "explanation": "Le GTP est hydrolysé lors de l'entrée de l'ARNt au site A (facteur EF-Tu/eEF1) et lors de la translocation du ribosome (facteur EF-G/eEF2)."
+    }
+  ]
+}
