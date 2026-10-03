@@ -1,0 +1,12 @@
+{
+  "titre": "Calendrier des évaluations BMC",
+  "dateDebutSemestre": "2026-09-01",
+  "nombreSemaines": 56,
+  "evenements": [
+    {
+      "date": "2026-10-07",
+      "titre": "QCM - LDD1 - Cellule & ADN",
+      "type": "examen"
+    }
+  ]
+}

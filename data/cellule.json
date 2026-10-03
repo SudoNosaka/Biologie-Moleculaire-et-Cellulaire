@@ -1,0 +1,89 @@
+{
+  "title": "La Cellule : Unité du Vivant",
+  "subtitle": "Ce qui tombe vraiment : théorie cellulaire, procaryotes vs eucaryotes, localisation des processus",
+  "sections": [
+    {
+      "title": "Théorie Cellulaire",
+      "content": "3 principes fondamentaux à connaître par cœur :",
+      "list": [
+        "La cellule est la plus petite entité vivante",
+        "Tout être vivant est composé de cellules",
+        "Toute cellule provient d'une autre cellule préexistante (Virchow, 1855)"
+      ],
+      "hint": "Historique : Schleiden (1838, végétaux) → Schwann (1839, animaux) → Virchow (1855)"
+    },
+    {
+      "title": "Chiffres Clés",
+      "list": [
+        "Un être humain = ~10¹⁴ cellules (100 000 milliards)",
+        "Procaryote : ~5 µm",
+        "Eucaryote : ~50 µm",
+        "Ratio taille : 10x en diamètre, 1000x en volume"
+      ]
+    },
+    {
+      "title": "Procaryotes vs Eucaryotes",
+      "content": "Tableau comparatif à maîtriser absolument :",
+      "table": [
+        {"critere": "Taille", "procaryotes": "~5 µm", "eucaryotes": "~50 µm"},
+        {"critere": "Noyau", "procaryotes": "Absent (zone nucléoïde)", "eucaryotes": "Présent (enveloppe nucléaire)"},
+        {"critere": "ADN", "procaryotes": "Circulaire, nu (pas d'histones)", "eucaryotes": "Linéaire, associé aux histones (chromatine)"},
+        {"critere": "Organites", "procaryotes": "Aucun organite membranaire", "eucaryotes": "RE, Golgi, lysosomes, mitochondries..."},
+        {"critere": "Ribosomes", "procaryotes": "70S", "eucaryotes": "80S (cytoplasme) / 70S (mitochondries)"},
+        {"critere": "Transcription/Traduction", "procaryotes": "Couplées (simultanées dans le cytoplasme)", "eucaryotes": "Séparées (noyau / cytoplasme)"},
+        {"critere": "ARNm", "procaryotes": "Polycistronique (opérons)", "eucaryotes": "Monocistronique + maturation"},
+        {"critere": "Exemples", "procaryotes": "Bactéries, Archées", "eucaryotes": "Animaux, Végétaux, Champignons, Protistes"}
+      ],
+      "warning": "Différence fondamentale = présence d'un noyau délimité par une membrane chez les eucaryotes"
+    },
+    {
+      "title": "Constituants de la Cellule Procaryote",
+      "list": [
+        "Nucléoïde : zone contenant l'ADN circulaire (pas de membrane)",
+        "Paroi cellulaire : rigidité et protection (peptidoglycane chez les bactéries)",
+        "Membrane plasmique : échanges, respiration",
+        "Ribosomes 70S : synthèse des protéines",
+        "Flagelles : mobilité",
+        "Pili/fimbriae : adhérence, conjugaison",
+        "Plasmides : petits ADN circulaires supplémentaires"
+      ]
+    },
+    {
+      "title": "Constituants de la Cellule Eucaryote",
+      "content": "3 grandes régions :",
+      "list": [
+        "Noyau : contient l'ADN, entouré d'une enveloppe nucléaire (double membrane)",
+        "Cytoplasme : entre le noyau et la membrane plasmique, contient les organites",
+        "Membrane plasmique : contour de la cellule, bicouche phospholipidique"
+      ]
+    },
+    {
+      "title": "Localisation des Processus",
+      "content": "Tableau à connaître par cœur :",
+      "table": [
+        {"processus": "Réplication ADN", "procaryotes": "Cytoplasme (nucléoïde)", "eucaryotes": "Noyau"},
+        {"processus": "Transcription", "procaryotes": "Cytoplasme", "eucaryotes": "Noyau"},
+        {"processus": "Traduction", "procaryotes": "Cytoplasme (ribosomes 70S)", "eucaryotes": "Cytoplasme (ribosomes 80S) ou RE rugueux"},
+        {"processus": "Respiration cellulaire", "procaryotes": "Membrane plasmique", "eucaryotes": "Mitochondries"},
+        {"processus": "Photosynthèse", "procaryotes": "Thylakoïdes (cyanobactéries)", "eucaryotes": "Chloroplastes"},
+        {"processus": "Glycolyse", "procaryotes": "Cytoplasme", "eucaryotes": "Cytoplasme"},
+        {"processus": "Cycle de Krebs", "procaryotes": "Cytoplasme", "eucaryotes": "Matrice mitochondriale"}
+      ],
+      "warning": "Chez les procaryotes, tout se passe dans le cytoplasme (pas de compartimentation). Chez les eucaryotes, chaque processus a sa localisation spécifique."
+    },
+    {
+      "title": "Homéostasie Cellulaire",
+      "content": "Propriété des êtres vivants à maintenir leur milieu interne stable.",
+      "list": [
+        "Les cellules ne tolèrent que très peu de changements",
+        "Exemples : température, pH, concentration en ions",
+        "Si l'homéostasie est rompue → mort cellulaire"
+      ]
+    },
+    {
+      "title": "Propriétés Émergentes",
+      "content": "À chaque niveau d'organisation supérieur apparaissent de nouvelles propriétés.",
+      "hint": "Exemple : une cellule endothéliale seule ne peut pas conduire le sang. Associée à d'autres (tissu), elle forme un capillaire fonctionnel."
+    }
+  ]
+}

@@ -1,0 +1,204 @@
+{
+  "title": "QCM - La Cellule",
+  "subtitle": "3 niveaux : Facile (10Q) • Moyen (12Q) • Vicieux (10Q)",
+  "levels": {
+    "facile": [
+      {
+        "question": "Quelle est la taille typique d'une cellule procaryote ?",
+        "options": ["~50 µm", "~5 µm", "~500 µm", "~0,5 µm"],
+        "correct": 1,
+        "explanation": "Les procaryotes mesurent environ 5 µm, soit 10 fois moins que les eucaryotes (~50 µm)."
+      },
+      {
+        "question": "Quelle est la différence fondamentale entre procaryotes et eucaryotes ?",
+        "options": ["La présence d'ADN", "La présence d'un noyau délimité par une membrane", "La présence de ribosomes", "La présence d'une membrane plasmique"],
+        "correct": 1,
+        "explanation": "La différence clé = présence d'un véritable noyau chez les eucaryotes. Les procaryotes ont une zone nucléoïde sans membrane."
+      },
+      {
+        "question": "Combien de cellules contient un être humain ?",
+        "options": ["10 millions (10⁷)", "1 milliard (10⁹)", "100 000 milliards (10¹⁴)", "1 trillion (10¹²)"],
+        "correct": 2,
+        "explanation": "Un être humain contient ~10¹⁴ cellules (100 000 milliards)."
+      },
+      {
+        "question": "L'homéostasie cellulaire désigne :",
+        "options": ["La capacité d'une cellule à se diviser", "Le maintien du milieu interne stable", "Le processus de différenciation", "La mort cellulaire programmée"],
+        "correct": 1,
+        "explanation": "L'homéostasie = propriété des êtres vivants à maintenir leur milieu interne STABLE."
+      },
+      {
+        "question": "Où se déroule la transcription chez les eucaryotes ?",
+        "options": ["Cytoplasme", "Noyau", "Mitochondrie", "RE rugueux"],
+        "correct": 1,
+        "explanation": "Chez les eucaryotes, la transcription a lieu dans le noyau. La traduction a lieu dans le cytoplasme."
+      },
+      {
+        "question": "Où se déroule la respiration cellulaire chez les eucaryotes ?",
+        "options": ["Cytoplasme", "Noyau", "Mitochondries", "Membrane plasmique"],
+        "correct": 2,
+        "explanation": "Chez les eucaryotes, la respiration cellulaire a lieu dans les mitochondries. Chez les procaryotes, elle a lieu au niveau de la membrane plasmique."
+      },
+      {
+        "question": "Quel type de ribosomes trouve-t-on chez les procaryotes ?",
+        "options": ["80S", "70S", "60S", "50S"],
+        "correct": 1,
+        "explanation": "Les procaryotes ont des ribosomes 70S. Les eucaryotes ont des ribosomes 80S dans le cytoplasme (et 70S dans les mitochondries)."
+      },
+      {
+        "question": "La zone nucléoïde correspond à :",
+        "options": ["Un organite membranaire", "La zone contenant l'ADN chez les procaryotes", "Le noyau des eucaryotes", "Le cytoplasme"],
+        "correct": 1,
+        "explanation": "Chez les procaryotes, l'ADN se trouve dans une zone appelée nucléoïde, sans membrane délimitante."
+      },
+      {
+        "question": "Les procaryotes incluent :",
+        "options": ["Animaux et végétaux", "Bactéries et archées", "Champignons et protistes", "Virus"],
+        "correct": 1,
+        "explanation": "Les procaryotes = bactéries et archées. Les eucaryotes = animaux, végétaux, champignons, protistes."
+      },
+      {
+        "question": "Selon la théorie cellulaire, toute cellule provient :",
+        "options": ["De la matière inorganique", "D'une autre cellule préexistante", "D'un virus", "Du néant"],
+        "correct": 1,
+        "explanation": "3ème principe de la théorie cellulaire (Virchow, 1855) : 'omnis cellula e cellula' = toute cellule provient d'une autre cellule."
+      }
+    ],
+    "moyen": [
+      {
+        "question": "Quelle est la différence de volume entre une cellule eucaryote (50 µm) et une procaryote (5 µm) ?",
+        "options": ["10 fois", "100 fois", "1000 fois", "10 000 fois"],
+        "correct": 2,
+        "explanation": "Le volume évolue au cube du diamètre : (50/5)³ = 10³ = 1000 fois. Le diamètre est 10x plus grand, donc le volume est 1000x plus grand."
+      },
+      {
+        "question": "Chez les procaryotes, la transcription et la traduction sont :",
+        "options": ["Séparées dans le temps et l'espace", "Couplées (simultanées dans le cytoplasme)", "Inexistantes", "Dépendantes de l'épissage"],
+        "correct": 1,
+        "explanation": "L'absence de noyau chez les procaryotes permet aux ribosomes de commencer la traduction de l'ARNm pendant qu'il est encore en cours de transcription."
+      },
+      {
+        "question": "L'ARNm procaryote est généralement :",
+        "options": ["Monocistronique", "Polycistronique (opérons)", "Toujours épissé", "Jamais traduit"],
+        "correct": 1,
+        "explanation": "Chez les procaryotes, l'ARNm est polycistronique (plusieurs gènes sur un même ARNm = opérons). Chez les eucaryotes, il est monocistronique."
+      },
+      {
+        "question": "La paroi cellulaire des bactéries est constituée de :",
+        "options": ["Cellulose", "Peptidoglycane", "Chitine", "Collagène"],
+        "correct": 1,
+        "explanation": "La paroi bactérienne est constituée de peptidoglycane (muréine). La cellulose est chez les végétaux, la chitine chez les champignons."
+      },
+      {
+        "question": "Les plasmides sont :",
+        "options": ["De gros chromosomes linéaires", "De petits ADN circulaires supplémentaires", "Des organites membranaires", "Des protéines structurales"],
+        "correct": 1,
+        "explanation": "Les plasmides sont de petits ADN circulaires supplémentaires, indépendants du chromosome principal. Ils peuvent porter des gènes de résistance aux antibiotiques."
+      },
+      {
+        "question": "Les flagelles bactériens servent à :",
+        "options": ["La photosynthèse", "La mobilité", "L'adhérence", "La conjugaison"],
+        "correct": 1,
+        "explanation": "Les flagelles sont des structures de mobilité. Les pili/fimbriae servent à l'adhérence et à la conjugaison."
+      },
+      {
+        "question": "L'enveloppe nucléaire est constituée de :",
+        "options": ["Une seule membrane", "Une double membrane", "Trois membranes", "Aucune membrane"],
+        "correct": 1,
+        "explanation": "L'enveloppe nucléaire est une double membrane (interne + externe) séparée par l'espace péri-nucléaire. La membrane externe est en continuité avec le RE."
+      },
+      {
+        "question": "Les pores nucléaires permettent :",
+        "options": ["La synthèse d'ADN", "Les échanges entre noyau et cytoplasme", "La division cellulaire", "La photosynthèse"],
+        "correct": 1,
+        "explanation": "Les pores nucléaires (complexes NPC) contrôlent les échanges entre le noyau et le cytoplasme (ARN, protéines, etc.)."
+      },
+      {
+        "question": "L'hétérochromatine est :",
+        "options": ["Décondensée et transcriptionnellement active", "Condensée et transcriptionnellement inactive", "Absente du noyau", "Constituée d'ARN"],
+        "correct": 1,
+        "explanation": "L'hétérochromatine = forme condensée de l'ADN, transcriptionnellement inactive. L'euchromatine = décondensée et active."
+      },
+      {
+        "question": "Le nucléole est le site de :",
+        "options": ["La réplication de l'ADN", "La synthèse des ARNr et assemblage des ribosomes", "La traduction", "La glycolyse"],
+        "correct": 1,
+        "explanation": "Le nucléole est le lieu de synthèse des ARNr (18S, 5.8S, 28S) et de l'assemblage des sous-unités ribosomales."
+      },
+      {
+        "question": "Les propriétés émergentes apparaissent :",
+        "options": ["Au niveau cellulaire uniquement", "À chaque niveau d'organisation supérieur", "Seulement chez les procaryotes", "Jamais"],
+        "correct": 1,
+        "explanation": "À chaque niveau d'organisation supérieur (molécule → cellule → tissu → organe → organisme), de nouvelles propriétés émergent."
+      },
+      {
+        "question": "Une cellule endothéliale seule ne peut pas :",
+        "options": ["Se diviser", "Conduire le sang", "Synthétiser des protéines", "Maintenir son homéostasie"],
+        "correct": 1,
+        "explanation": "Une cellule endothéliale seule a des propriétés particulières mais ne peut pas conduire le sang. Cette fonction émerge au niveau du tissu (capillaire)."
+      }
+    ],
+    "vicieux": [
+      {
+        "question": "Si on place une bactérie dans un milieu contenant de la pénicilline (qui inhibe la synthèse du peptidoglycane), que se passe-t-il ?",
+        "options": ["Rien, la bactérie continue de se diviser", "La paroi ne peut plus se former correctement, la bactérie lyse", "La bactérie devient résistante immédiatement", "La bactérie se transforme en eucaryote"],
+        "correct": 1,
+        "explanation": "La pénicilline inhibe la synthèse du peptidoglycane de la paroi bactérienne. Sans paroi fonctionnelle, la bactérie ne peut pas résister à la pression osmotique et lyse."
+      },
+      {
+        "question": "Pourquoi les mitochondries ont-elles des ribosomes 70S (comme les bactéries) ?",
+        "options": ["C'est une coïncidence", "Elles dérivent d'une endosymbiose bactérienne ancienne", "Elles les importent du cytoplasme", "Elles les synthétisent de novo"],
+        "correct": 1,
+        "explanation": "Selon la théorie endosymbiotique (Lynn Margulis, 1967), les mitochondries dérivent d'une ancienne bactérie aérobie engulfée. Leurs ribosomes 70S sont un vestige de cette origine bactérienne."
+      },
+      {
+        "question": "Si on inhibe les pores nucléaires avec une toxine, quel processus est directement affecté ?",
+        "options": ["La glycolyse", "L'export des ARNm du noyau vers le cytoplasme", "La synthèse des lipides", "La respiration mitochondriale"],
+        "correct": 1,
+        "explanation": "Les pores nucléaires contrôlent les échanges noyau/cytoplasme. Leur inhibition bloque l'export des ARNm (transcrits dans le noyau) vers le cytoplasme où a lieu la traduction."
+      },
+      {
+        "question": "Un antibiotique qui cible spécifiquement les ribosomes 70S affectera :",
+        "options": ["Uniquement les bactéries", "Les bactéries ET les mitochondries des cellules eucaryotes", "Uniquement les eucaryotes", "Toutes les cellules"],
+        "correct": 1,
+        "explanation": "Les ribosomes 70S sont présents chez les bactéries ET dans les mitochondries (origine endosymbiotique). Un antibiotique ciblant les 70S affectera donc les deux, ce qui explique certains effets secondaires."
+      },
+      {
+        "question": "Si on marque l'ADN avec de la thymidine tritiée (³H), où observera-t-on le marquage dans une cellule eucaryote ?",
+        "options": ["Cytoplasme uniquement", "Noyau uniquement", "Mitochondries uniquement", "Noyau + mitochondries"],
+        "correct": 3,
+        "explanation": "L'ADN est présent dans le noyau (chromosomes) ET dans les mitochondries (ADN mitochondrial). La thymidine sera incorporée dans les deux compartiments."
+      },
+      {
+        "question": "Pourquoi les procaryotes peuvent-ils avoir une transcription et traduction couplées ?",
+        "options": ["Parce qu'ils n'ont pas d'ADN", "Parce qu'ils n'ont pas de noyau séparant les deux processus", "Parce qu'ils n'ont pas de ribosomes", "Parce que leur ARNm est toujours épissé"],
+        "correct": 1,
+        "explanation": "L'absence de noyau chez les procaryotes permet aux ribosomes de commencer la traduction de l'ARNm pendant qu'il est encore en cours de transcription. Chez les eucaryotes, la séparation physique noyau/cytoplasme empêche ce couplage."
+      },
+      {
+        "question": "Si une mutation affecte la lamina nucléaire, quel sera l'effet principal ?",
+        "options": ["Arrêt de la transcription", "Perte de la forme du noyau", "Blocage de la traduction", "Arrêt de la glycolyse"],
+        "correct": 1,
+        "explanation": "La lamina nucléaire (réseau de filaments intermédiaires = lamines) soutient l'enveloppe nucléaire et donne au noyau sa forme. Une mutation affecte la structure nucléaire (ex: progeria = vieillissement prématuré)."
+      },
+      {
+        "question": "Pourquoi l'euchromatine est-elle située principalement au centre du noyau ?",
+        "options": ["Parce qu'elle est plus lourde", "Parce qu'elle est active transcriptionnellement et doit être accessible", "Parce qu'elle est plus ancienne", "Parce qu'elle contient plus d'ADN"],
+        "correct": 1,
+        "explanation": "L'euchromatine = ADN décondensé et actif. Elle est au centre du noyau pour être accessible aux facteurs de transcription et à l'ARN polymérase. L'hétérochromatine (inactive) est en périphérie."
+      },
+      {
+        "question": "Si on injecte de l'ARNm eucaryote mature dans une bactérie, que se passe-t-il ?",
+        "options": ["Rien, incompatible", "La bactérie peut le traduire (mais pas l'épisser)", "La bactérie l'épisse", "La bactérie le détruit immédiatement"],
+        "correct": 1,
+        "explanation": "L'ARNm eucaryote mature (déjà épissé, avec coiffe et poly-A) peut être traduit par les ribosomes bactériens. Mais la bactérie ne peut pas l'épisser (pas de spliceosome) ni ajouter de coiffe/poly-A."
+      },
+      {
+        "question": "Pourquoi les cellules cancéreuses ont-elles souvent une télomérase active ?",
+        "options": ["Pour synthétiser plus de protéines", "Pour maintenir la longueur des télomères et devenir immortelles", "Pour accélérer la transcription", "Pour inhiber l'apoptose"],
+        "correct": 1,
+        "explanation": "La télomérase ajoute des répétitions télomériques aux extrémités des chromosomes. Normalement inactive dans les cellules somatiques (vieillissement), elle est réactivée dans les cellules cancéreuses pour éviter le raccourcissement des télomères et permettre des divisions infinies."
+      }
+    ]
+  }
+}

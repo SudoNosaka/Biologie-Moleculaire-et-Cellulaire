@@ -1,0 +1,70 @@
+{
+  "title": "La Transcription",
+  "subtitle": "Ce qui tombe vraiment : ARN polymérases, promoteurs, maturation ARNm (coiffe, poly-A, épissage)",
+  "sections": [
+    {
+      "title": "Principe Général",
+      "content": "La transcription est la copie d'un gène en ARN à partir d'une matrice d'ADN.",
+      "list": [
+        "Synthèse dans le sens 5' → 3'",
+        "Lecture du brin matrice dans le sens 3' → 5'",
+        "Le brin codant a la même séquence que l'ARN (sauf T → U)",
+        "Pas besoin d'amorce (contrairement à la réplication)",
+        "Seule une partie de l'ADN est transcrite à la fois (un gène ou un opéron)"
+      ],
+      "formula": "ADN (brin matrice 3'→5') → ARN (5'→3')"
+    },
+    {
+      "title": "Les ARN Polymérases",
+      "content": "Les enzymes qui catalysent la transcription diffèrent entre procaryotes et eucaryotes :",
+      "table": [
+        {"organisme": "Procaryotes (E. coli)", "enzyme": "Une seule ARN polymérase", "detail": "Holoenzyme = core (α₂ββ') + facteur σ (reconnaissance promoteur)"},
+        {"organisme": "Eucaryotes", "enzyme": "ARN Polymérase I", "detail": "Nucléole → ARNr (28S, 18S, 5.8S)"},
+        {"organisme": "Eucaryotes", "enzyme": "ARN Polymérase II", "detail": "Nucléoplasme → ARNm + petits ARN (la plus étudiée)"},
+        {"organisme": "Eucaryotes", "enzyme": "ARN Polymérase III", "detail": "Nucléoplasme → ARNt + ARNr 5S"}
+      ],
+      "warning": "L'ARN Pol II transcrit les gènes codant pour les protéines. C'est elle qui est ciblée par l'α-amanitine (toxine d'amanite phalloïde)"
+    },
+    {
+      "title": "Les Étapes chez les Procaryotes",
+      "content": "La transcription chez les procaryotes se déroule en 3 étapes :",
+      "list": [
+        "Initiation : L'holoenzyme (core + facteur σ) reconnaît le promoteur (boîte de Pribnow en -10 : TATAAT, région -35 : TTGACA). Formation d'une bulle de transcription. Le facteur σ se dissocie après ~10 nt.",
+        "Élongation : L'ARN polymérase core avance le long du brin matrice à ~40-80 nt/s. L'ADN se déroule en avant et se réenroule en arrière.",
+        "Terminaison : Rho-indépendante (structure en tige-boucle riche en G-C + série de U) ou Rho-dépendante (protéine Rho qui déstabilise le complexe)."
+      ]
+    },
+    {
+      "title": "Les Étapes chez les Eucaryotes (ARN Pol II)",
+      "content": "L'initiation chez les eucaryotes est plus complexe et nécessite un complexe de pré-initiation (PIC) :",
+      "list": [
+        "Le facteur TFIID (contenant la TBP) reconnaît la boîte TATA (TATAAA) vers -25",
+        "Recrutement séquentiel : TFIIA → TFIIB → TFIIF + ARN Pol II → TFIIE → TFIIH",
+        "TFIIH possède une activité hélicase (ouvre l'ADN) et une activité kinase",
+        "TFIIH phosphoryle la queue CTD de l'ARN Pol II → lancement de l'élongation",
+        "La terminaison est couplée à la maturation de l'extrémité 3' (clivage + polyadénylation au signal AAUAAA)"
+      ]
+    },
+    {
+      "title": "La Maturation de l'ARNm (Eucaryotes uniquement)",
+      "content": "L'ARN pré-messager (pré-ARNm) doit subir 3 modifications avant de devenir un ARNm mature exportable :",
+      "list": [
+        "Coiffe en 5' : Ajout d'un nucléotide de 7-méthylguanosine (liaison 5'-5' triphosphate). Protège l'ARNm des exonucléases, reconnue par les ribosomes, facilite l'export.",
+        "Queue Poly-A en 3' : Clivage au signal AAUAAA + ajout de 50-250 adénosines par la poly(A) polymérase. Stabilise l'ARNm, facilite l'export, régule la durée de vie.",
+        "Épissage (Splicing) : Élimination des introns (séquences non codantes) et ligature des exons (séquences codantes) par le spliceosome (snRNP). Reconnaît GU en 5' de l'intron, AG en 3', site de branchement avec un A. Mécanisme en 2 étapes → intermédiaire en lasso (lariat)."
+      ],
+      "warning": "L'épissage alternatif permet à un seul gène de produire plusieurs protéines différentes. C'est une source majeure de diversité protéique chez les eucaryotes."
+    },
+    {
+      "title": "Comparaison Procaryotes vs Eucaryotes",
+      "table": [
+        {"caracteristique": "Lieu", "procaryotes": "Cytoplasme", "eucaryotes": "Noyau"},
+        {"caracteristique": "ARN polymérase", "procaryotes": "Une seule (avec facteur σ)", "eucaryotes": "3 types (I, II, III) + nombreux facteurs"},
+        {"caracteristique": "Promoteur", "procaryotes": "Boîtes -10 et -35", "eucaryotes": "Boîte TATA, enhancers, silencers"},
+        {"caracteristique": "Maturation ARN", "procaryotes": "Aucune (ARNm polycistronique)", "eucaryotes": "Coiffe, poly-A, épissage (ARNm monocistronique)"},
+        {"caracteristique": "Couplage", "procaryotes": "Transcription et traduction simultanées", "eucaryotes": "Séparées dans le temps et l'espace"}
+      ],
+      "hint": "Chez les procaryotes, les ribosomes peuvent commencer à traduire l'ARNm pendant qu'il est encore en cours de transcription."
+    }
+  ]
+}

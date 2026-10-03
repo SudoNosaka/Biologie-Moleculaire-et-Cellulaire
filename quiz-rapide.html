@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="fr" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz Rapide - BMC</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/animations.css">
+</head>
+<body>
+    <!-- SIDEBAR -->
+    <nav class="sidebar">
+        <div class="sidebar-title">BMC</div>
+        <div class="sidebar-subtitle">Biologie Moléculaire<br>& Cellulaire - L1</div>
+        <div class="sidebar-nav">
+            <a href="index.html" class="sidebar-link">Accueil</a>
+            <a href="fiches.html" class="sidebar-link">Fiches</a>
+            <a href="qcm.html" class="sidebar-link">QCM</a>
+            <a href="flashcards.html" class="sidebar-link">Flashcards</a>
+            <a href="quiz-rapide.html" class="sidebar-link active">Quiz Rapide</a>
+            <a href="bilans.html" class="sidebar-link">Bilans</a>
+            <a href="parametres.html" class="sidebar-link">Paramètres</a>
+        </div>
+        <div class="sidebar-footer">
+            Fuyu-kun &copy; 2026
+        </div>
+    </nav>
+
+    <!-- CONTENU PRINCIPAL -->
+    <div class="main-content">
+        <div class="container">
+            
+            <section class="content-section fade-in">
+                <h2 id="quiz-title">Chargement...</h2>
+                <p id="quiz-subtitle" style="color: var(--text-secondary); font-style: italic;"></p>
+            </section>
+
+            <!-- TIMER -->
+            <div class="timer" id="timer" style="display: none;">⏱️ 5:00</div>
+
+            <!-- BOUTON DÉMARRER -->
+            <section class="content-section fade-in" id="start-section">
+                <h3>Instructions</h3>
+                <ul>
+                    <li><strong>10 questions aléatoires</strong> tirées de toutes les fiches</li>
+                    <li>Temps limité : <strong>5 minutes</strong></li>
+                    <li>Navigation libre entre les questions</li>
+                    <li>Corrections détaillées à la fin</li>
+                </ul>
+                <button id="start-btn" class="btn-primary" onclick="startQuiz()">
+                    🚀 Commencer le quiz
+                </button>
+            </section>
+
+            <!-- CONTENU DU QUIZ -->
+            <div id="quiz-content" class="fade-in-delay" style="display: none;"></div>
+
+            <!-- RÉSULTATS -->
+            <div id="results" class="content-section" style="display: none;">
+                <h3>Résultat</h3>
+                <div class="score" id="score"></div>
+                <p id="message"></p>
+                <div id="corrections"></div>
+                <button class="btn-primary" onclick="resetQuiz()" style="margin-top: 1.5rem;">
+                    ↻ Nouveau quiz
+                </button>
+            </div>
+
+        </div>
+    </div>
+
+    <script src="JS/config.js"></script>
+    <script src="JS/sidebar.js"></script>
+    <script src="JS/quiz-rapide.js"></script>
+    <script src="JS/sound.js"></script>
+    <script>
+        loadQuizRapide();
+    </script>
+</body>
+</html>

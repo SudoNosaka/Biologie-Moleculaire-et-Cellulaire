@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="fr" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QCM - Réplication</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/animations.css">
+</head>
+<body>
+    <!-- SIDEBAR -->
+    <nav class="sidebar">
+        <div class="sidebar-title">BMC</div>
+        <div class="sidebar-subtitle">Biologie Moléculaire<br>& Cellulaire - L1</div>
+        <div class="sidebar-nav">
+            <a href="../index.html" class="sidebar-link">Accueil</a>
+            <a href="../index.html#fiches" class="sidebar-link">Fiches</a>
+            <a href="../index.html#revision" class="sidebar-link active">Révision</a>
+            <a href="../index.html#bilan" class="sidebar-link">Bilan</a>
+            <a href="../parametres.html" class="sidebar-link">Paramètres</a>
+        </div>
+        <div class="sidebar-footer">
+            Fuyu-kun &copy; 2026
+        </div>
+    </nav>
+
+    <!-- CONTENU PRINCIPAL -->
+    <div class="main-content">
+        <div class="container">
+            
+            <section class="content-section fade-in">
+                <h2 id="qcm-title">Chargement...</h2>
+                <p id="qcm-subtitle" style="color: var(--text-secondary); font-style: italic;"></p>
+            </section>
+
+            <!-- SÉLECTEUR DE NIVEAU -->
+            <section class="content-section fade-in">
+                <h3>Niveau de difficulté</h3>
+                <div id="level-selector" class="level-selector"></div>
+            </section>
+
+            <!-- QUESTIONS -->
+            <div id="qcm-content" class="fade-in-delay"></div>
+
+            <!-- BOUTONS -->
+            <div class="qcm-actions">
+                <button id="validate-btn" class="btn-primary" onclick="validateAnswers()">
+                    ✓ Valider mes réponses
+                </button>
+                <button class="btn-secondary" onclick="resetQCM()">
+                    ↻ Recommencer
+                </button>
+            </div>
+
+            <!-- RÉSULTATS -->
+            <div id="results" class="content-section" style="display: none;">
+                <h3>Résultat</h3>
+                <div class="score" id="score"></div>
+                <p id="message"></p>
+            </div>
+
+            <!-- NAVIGATION -->
+            <div class="navigation-section">
+                <a href="qcm2.html" class="nav-btn prev">← QCM ADN & ARN</a>
+                <a href="qcm4.html" class="nav-btn next">QCM Transcription →</a>
+            </div>
+
+        </div>
+    </div>
+
+    <script src="../JS/config.js"></script>
+    <script src="../JS/sidebar.js"></script>
+    <script src="../JS/qcm-renderer.js"></script>
+    <script src="../JS/sound.js"></script>
+    <script>
+        loadQCM('qcm3');
+    </script>
+</body>
+</html>

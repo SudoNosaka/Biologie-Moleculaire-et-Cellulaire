@@ -1,0 +1,276 @@
+{
+  "title": "Flashcards - BMC",
+  "subtitle": "Révision active recto-verso",
+  "cards": [
+    {
+      "id": 1,
+      "category": "La Cellule",
+      "recto": "Quels sont les 3 principes de la théorie cellulaire ?",
+      "verso": "1. La cellule est la plus petite entité vivante\n2. Tout être vivant est composé de cellules\n3. Toute cellule provient d'une autre cellule préexistante (Virchow, 1855)"
+    },
+    {
+      "id": 2,
+      "category": "La Cellule",
+      "recto": "Différence fondamentale entre procaryotes et eucaryotes ?",
+      "verso": "Les eucaryotes ont un vrai noyau délimité par une enveloppe nucléaire.\nLes procaryotes ont une zone nucléoïde sans membrane."
+    },
+    {
+      "id": 3,
+      "category": "La Cellule",
+      "recto": "Combien de cellules dans un être humain ?",
+      "verso": "~10¹⁴ cellules (100 000 milliards)"
+    },
+    {
+      "id": 4,
+      "category": "La Cellule",
+      "recto": "Taille typique : procaryote vs eucaryote ?",
+      "verso": "Procaryote : ~5 µm\nEucaryote : ~50 µm\nRatio : 10x en diamètre, 1000x en volume"
+    },
+    {
+      "id": 5,
+      "category": "La Cellule",
+      "recto": "Où a lieu la transcription chez les eucaryotes ?",
+      "verso": "Dans le noyau.\n(Chez les procaryotes : dans le cytoplasme)"
+    },
+    {
+      "id": 6,
+      "category": "ADN & ARN",
+      "recto": "Composition d'un nucléotide ?",
+      "verso": "3 composants :\n1. Une base azotée (A, T, G, C ou U)\n2. Un ose (désoxyribose pour ADN, ribose pour ARN)\n3. Un ou plusieurs phosphate(s)"
+    },
+    {
+      "id": 7,
+      "category": "ADN & ARN",
+      "recto": "Purines vs Pyrimidines ?",
+      "verso": "Purines (2 cycles) : Adénine (A) et Guanine (G)\nPyrimidines (1 cycle) : Cytosine (C), Thymine (T, ADN), Uracile (U, ARN)"
+    },
+    {
+      "id": 8,
+      "category": "ADN & ARN",
+      "recto": "Nucléoside vs Nucléotide ?",
+      "verso": "Nucléoside = base + ose (sans phosphate)\nNucléotide = base + ose + phosphate(s)\nEx: ATP = adénosine triphosphate"
+    },
+    {
+      "id": 9,
+      "category": "ADN & ARN",
+      "recto": "Règle de Chargaff ?",
+      "verso": "Dans un ADN double brin :\n%A = %T et %G = %C\nDonc %purines = %pyrimidines"
+    },
+    {
+      "id": 10,
+      "category": "ADN & ARN",
+      "recto": "Paramètres de la double hélice B ?",
+      "verso": "Pas : 3,4 nm\nDiamètre : 2 nm\n10 paires de bases par tour\n2 brins antiparallèles (5'→3' / 3'→5')"
+    },
+    {
+      "id": 11,
+      "category": "ADN & ARN",
+      "recto": "Liaisons H entre A=T et G≡C ?",
+      "verso": "A = T : 2 liaisons hydrogène\nG ≡ C : 3 liaisons hydrogène\n→ G≡C plus stable thermiquement"
+    },
+    {
+      "id": 12,
+      "category": "ADN & ARN",
+      "recto": "Qu'est-ce qu'un nucléosome ?",
+      "verso": "146 pb d'ADN enroulées 1,75 fois autour d'un octamère d'histones (2×H2A, 2×H2B, 2×H3, 2×H4).\n+ ADN linker (~50 pb) entre 2 nucléosomes."
+    },
+    {
+      "id": 13,
+      "category": "ADN & ARN",
+      "recto": "ARN le plus abondant dans la cellule ?",
+      "verso": "ARNr (ribosomal) : ~80%\nARNt : ~15%\nARNm : ~5%"
+    },
+    {
+      "id": 14,
+      "category": "Réplication",
+      "recto": "La réplication est-elle conservative, semi-conservative ou dispersive ?",
+      "verso": "Semi-conservative :\nChaque molécule fille = 1 brin parental + 1 brin néosynthétisé.\n(Prouvé par Meselson-Stahl, 1958)"
+    },
+    {
+      "id": 15,
+      "category": "Réplication",
+      "recto": "Sens de synthèse de l'ADN polymérase ?",
+      "verso": "Uniquement 5' → 3'\nNécessite une extrémité 3'-OH libre"
+    },
+    {
+      "id": 16,
+      "category": "Réplication",
+      "recto": "Rôle de l'ADN hélicase ?",
+      "verso": "Ouvre la double hélice en rompant les liaisons H entre les bases au niveau de la fourche de réplication."
+    },
+    {
+      "id": 17,
+      "category": "Réplication",
+      "recto": "Fragments d'Okazaki ?",
+      "verso": "Courts fragments d'ADN synthétisés de manière discontinue sur le brin retardé.\n1000-2000 nt (procaryotes)\n100-200 nt (eucaryotes)"
+    },
+    {
+      "id": 18,
+      "category": "Réplication",
+      "recto": "Rôle de l'ADN ligase ?",
+      "verso": "Relie les fragments d'Okazaki entre eux en formant des liaisons phosphodiester (scelle les 'nicks')."
+    },
+    {
+      "id": 19,
+      "category": "Réplication",
+      "recto": "Télomérase : rôle et localisation ?",
+      "verso": "Reverse transcriptase qui ajoute des répétitions télomériques (TTAGGG chez l'homme).\nActive : cellules germinales, souches, cancéreuses.\nInactive : cellules somatiques (vieillissement)."
+    },
+    {
+      "id": 20,
+      "category": "Transcription",
+      "recto": "Quelle ARN Pol synthétise les ARNm ?",
+      "verso": "ARN Polymérase II.\n(Pol I → ARNr ; Pol III → ARNt et ARNr 5S)"
+    },
+    {
+      "id": 21,
+      "category": "Transcription",
+      "recto": "3 modifications de l'ARNm eucaryote ?",
+      "verso": "1. Coiffe 5' (7-méthylguanosine)\n2. Queue poly-A 3' (signal AAUAAA)\n3. Épissage (élimination des introns, ligature des exons)"
+    },
+    {
+      "id": 22,
+      "category": "Transcription",
+      "recto": "Épissage alternatif ?",
+      "verso": "Permet à un seul gène de produire plusieurs protéines différentes en combinant les exons.\nSource majeure de diversité protéique chez les eucaryotes."
+    },
+    {
+      "id": 23,
+      "category": "Transcription",
+      "recto": "Séquences consensus du promoteur procaryote ?",
+      "verso": "Boîte de Pribnow en -10 : TATAAT\nRégion en -35 : TTGACA\nReconnues par le facteur σ"
+    },
+    {
+      "id": 24,
+      "category": "Traduction",
+      "recto": "Codon start et codons stop ?",
+      "verso": "Start : AUG (code pour méthionine)\nStop : UAA, UAG, UGA (ne codent pour aucun AA)"
+    },
+    {
+      "id": 25,
+      "category": "Traduction",
+      "recto": "Les 3 sites du ribosome ?",
+      "verso": "Site A (Aminoacyl) : ARNt entrant\nSite P (Peptidyl) : ARNt portant la chaîne en croissance\nSite E (Exit) : ARNt vide sort"
+    },
+    {
+      "id": 26,
+      "category": "Traduction",
+      "recto": "Peptidyl transférase ?",
+      "verso": "Une ribozyme : c'est l'ARNr 23S (procaryotes) ou 28S (eucaryotes) de la grande sous-unité qui catalyse la liaison peptidique."
+    },
+    {
+      "id": 27,
+      "category": "Traduction",
+      "recto": "Énergie pour l'élongation de la traduction ?",
+      "verso": "Le GTP :\n- EF-Tu/eEF1 (entrée ARNt au site A)\n- EF-G/eEF2 (translocation)"
+    },
+    {
+      "id": 28,
+      "category": "Traduction",
+      "recto": "Wobble (balancement) ?",
+      "verso": "La 3ème base du codon peut former des appariements non canoniques avec la 1ère base de l'anticodon.\nExplique la dégénérescence du code génétique."
+    },
+    {
+      "id": 29,
+      "category": "Organites",
+      "recto": "pH interne des lysosomes ?",
+      "verso": "pH acide : 4,5-5,0\nMaintenu par pompes V-ATPases.\nOptimal pour les hydrolases acides."
+    },
+    {
+      "id": 30,
+      "category": "Organites",
+      "recto": "Fonctions du RE lisse (REL) ?",
+      "verso": "1. Synthèse des lipides (phospholipides, stéroïdes)\n2. Détoxification (cytochrome P450)\n3. Stockage du Ca²⁺ (réticulum sarcoplasmique)"
+    },
+    {
+      "id": 31,
+      "category": "Organites",
+      "recto": "Polarité du Golgi ?",
+      "verso": "Face cis : côté RE (réception)\nFace trans : côté membrane plasmique (expédition)"
+    },
+    {
+      "id": 32,
+      "category": "Organites",
+      "recto": "Voie de sécrétion ?",
+      "verso": "RE → (vésicules COP II) → Golgi (cis → trans) → (vésicules) → membrane plasmique (exocytose)"
+    },
+    {
+      "id": 33,
+      "category": "Organites",
+      "recto": "Théorie endosymbiotique ?",
+      "verso": "Mitochondries et chloroplastes dérivent d'anciennes bactéries engulfées il y a ~2 milliards d'années.\nPreuves : ADN circulaire, ribosomes 70S, fission binaire, double membrane."
+    },
+    {
+      "id": 34,
+      "category": "Organites",
+      "recto": "Rôle des peroxysomes ?",
+      "verso": "1. β-oxydation des acides gras à très longue chaîne\n2. Détoxification du H₂O₂ par la catalase (2 H₂O₂ → 2 H₂O + O₂)\n3. Biosynthèse des plasmalogènes"
+    },
+    {
+      "id": 35,
+      "category": "Cytosquelette",
+      "recto": "3 types de filaments et leurs diamètres ?",
+      "verso": "1. Microfilaments d'actine : 7 nm\n2. Filaments intermédiaires : 10 nm\n3. Microtubules : 25 nm"
+    },
+    {
+      "id": 36,
+      "category": "Cytosquelette",
+      "recto": "Composition des microtubules ?",
+      "verso": "Hétérodimères α/β-tubuline.\n13 protofilaments forment un tube creux de 25 nm."
+    },
+    {
+      "id": 37,
+      "category": "Cytosquelette",
+      "recto": "Kinésines vs Dynéines ?",
+      "verso": "Kinésines : vers extrémité (+) des microtubules (antérograde, périphérie)\nDynéines : vers extrémité (-) (rétrograde, centre)"
+    },
+    {
+      "id": 38,
+      "category": "Cytosquelette",
+      "recto": "Instabilité dynamique des microtubules ?",
+      "verso": "Alternance rapide entre phases de croissance (dimères-GTP) et de catastrophe (dépolymérisation rapide après perte du capuchon GTP)."
+    },
+    {
+      "id": 39,
+      "category": "Cytosquelette",
+      "recto": "Structure de l'axonème (cils/flagelles) ?",
+      "verso": "Structure 9+2 :\n9 doublets de microtubules en périphérie + 2 microtubules centraux.\nBattement généré par la dynéine axonémique."
+    },
+    {
+      "id": 40,
+      "category": "Cytosquelette",
+      "recto": "Le centrosome ?",
+      "verso": "Principal MTOC chez les animaux.\nContient 2 centrioles orthogonaux (9+0) + matériel péricentriolaire (γ-tubuline)."
+    },
+    {
+      "id": 41,
+      "category": "Cytosquelette",
+      "recto": "Drogues affectant les microtubules ?",
+      "verso": "Taxol : stabilise (chimio)\nVinblastine : empêche polymérisation (chimio)\nColchicine : inhibe polymérisation (goutte)\nNocodazole : dépolymérise"
+    },
+    {
+      "id": 42,
+      "category": "Cytosquelette",
+      "recto": "Treadmilling de l'actine ?",
+      "verso": "Ajout continu de monomères à l'extrémité (+) (barbelée) et perte à l'extrémité (-) (pointue).\nLongueur totale constante, monomères 'traversent' le filament."
+    },
+    {
+      "id": 43,
+      "category": "Cytosquelette",
+      "recto": "FI des cellules épithéliales ?",
+      "verso": "Les kératines (K5, K14 dans la couche basale).\nMutations → épidermolyse bulleuse simple (peau fragile)."
+    },
+    {
+      "id": 44,
+      "category": "Cytosquelette",
+      "recto": "Rôle de la protéine Tau ?",
+      "verso": "MAP qui stabilise les microtubules axonaux.\nHyperphosphorylation dans Alzheimer → dépolymérisation + agrégats (enchevêtrements neurofibrillaires)."
+    },
+    {
+      "id": 45,
+      "category": "Cytosquelette",
+      "recto": "Ciliopathie ?",
+      "verso": "Maladie génétique due à mutations affectant les cils primaires (9+0, non motiles).\nEx : polykystose rénale, syndrome de Bardet-Biedl.\nPhénotypes : obésité, rétinite, kystes, polydactylie."
+    }
+  ]
+}

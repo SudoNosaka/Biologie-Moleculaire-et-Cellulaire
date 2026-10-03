@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="fr" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Traduction - BMC</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/animations.css">
+</head>
+<body>
+    <!-- SIDEBAR -->
+    <nav class="sidebar">
+        <div class="sidebar-title">BMC</div>
+        <div class="sidebar-subtitle">Biologie Moléculaire<br>& Cellulaire - L1</div>
+        <div class="sidebar-nav">
+            <a href="../index.html" class="sidebar-link">Accueil</a>
+            <a href="../index.html#fiches" class="sidebar-link active">Fiches</a>
+            <a href="../index.html#revision" class="sidebar-link">Révision</a>
+            <a href="../index.html#bilan" class="sidebar-link">Bilan</a>
+            <a href="../parametres.html" class="sidebar-link">Paramètres</a>
+        </div>
+        <div class="sidebar-footer">
+            Fuyu-kun &copy; 2026
+        </div>
+    </nav>
+
+    <!-- CONTENU PRINCIPAL -->
+    <div class="main-content">
+        <div class="container">
+            
+            <section class="content-section fade-in">
+                <h2 id="fiche-title">Chargement...</h2>
+                <p id="fiche-subtitle" style="color: var(--text-secondary); font-style: italic;"></p>
+            </section>
+
+            <div id="fiche-content" class="fade-in-delay"></div>
+
+            <!-- NAVIGATION -->
+            <div class="navigation-section">
+                <a href="transcription.html" class="nav-btn prev">← Transcription</a>
+                <a href="organites.html" class="nav-btn next">Organites →</a>
+            </div>
+
+        </div>
+    </div>
+
+    <script src="../JS/config.js"></script>
+    <script src="../JS/sidebar.js"></script>
+    <script src="../JS/fiche-renderer.js"></script>
+    <script src="../JS/sound.js"></script>
+    <script>
+        loadFiche('traduction');
+    </script>
+</body>
+</html>

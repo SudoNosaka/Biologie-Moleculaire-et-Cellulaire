@@ -1,0 +1,204 @@
+{
+  "title": "QCM - La Réplication de l'ADN",
+  "subtitle": "3 niveaux : Facile (10Q) • Moyen (12Q) • Vicieux (10Q)",
+  "levels": {
+    "facile": [
+      {
+        "question": "La réplication de l'ADN est :",
+        "options": ["Conservative", "Semi-conservative", "Dispersive", "Aléatoire"],
+        "correct": 1,
+        "explanation": "La réplication est semi-conservative : chaque molécule fille contient 1 brin parental + 1 brin néosynthétisé. Prouvé par Meselson-Stahl (1958)."
+      },
+      {
+        "question": "L'ADN polymérase synthétise l'ADN dans le sens :",
+        "options": ["3' → 5'", "5' → 3'", "Bidirectionnel", "Aléatoire"],
+        "correct": 1,
+        "explanation": "L'ADN polymérase ajoute des nucléotides uniquement dans le sens 5' → 3'. Elle a besoin d'une extrémité 3'-OH libre."
+      },
+      {
+        "question": "Quelle enzyme ouvre la double hélice d'ADN au niveau de la fourche de réplication ?",
+        "options": ["ADN polymérase", "ADN ligase", "ADN hélicase", "Topoisomérase"],
+        "correct": 2,
+        "explanation": "L'ADN hélicase rompt les liaisons hydrogène entre les bases pour séparer les deux brins et ouvrir la fourche de réplication."
+      },
+      {
+        "question": "Les fragments d'Okazaki sont synthétisés sur :",
+        "options": ["Le brin avancé", "Le brin retardé", "Les deux brins", "Aucun brin"],
+        "correct": 1,
+        "explanation": "Les fragments d'Okazaki (1000-2000 nt chez procaryotes, 100-200 nt chez eucaryotes) sont synthétisés de manière discontinue sur le brin retardé."
+      },
+      {
+        "question": "Quelle enzyme synthétise l'amorce ARN nécessaire à la réplication ?",
+        "options": ["ADN polymérase", "Primase", "ADN ligase", "Hélicase"],
+        "correct": 1,
+        "explanation": "La primase (ARN polymérase ARN-dépendante) synthétise une courte amorce ARN (~10 nt) qui fournit l'extrémité 3'-OH libre nécessaire à l'ADN polymérase."
+      },
+      {
+        "question": "L'ADN ligase a pour rôle de :",
+        "options": ["Ouvrir la double hélice", "Synthétiser l'ADN", "Relier les fragments d'Okazaki", "Éliminer les amorces ARN"],
+        "correct": 2,
+        "explanation": "L'ADN ligase catalyse la formation de liaisons phosphodiester entre les fragments d'Okazaki, scellant les 'nicks' dans le brin d'ADN."
+      },
+      {
+        "question": "Les protéines SSB (Single Strand Binding) servent à :",
+        "options": ["Synthétiser l'ADN", "Stabiliser les brins simples d'ADN", "Couper l'ADN", "Lier les ARNt"],
+        "correct": 1,
+        "explanation": "Les protéines SSB se lient aux brins simples d'ADN nouvellement exposés pour empêcher leur réappariement prématuré et les protéger des nucléases."
+      },
+      {
+        "question": "La réplication commence au niveau de :",
+        "options": ["N'importe où sur le chromosome", "Origines de réplication spécifiques", "L'extrémité des chromosomes", "Le centromère"],
+        "correct": 1,
+        "explanation": "La réplication commence à des origines de réplication spécifiques (oriC chez E. coli, multiples origines chez les eucaryotes)."
+      },
+      {
+        "question": "Les télomères sont :",
+        "options": ["Des gènes codants", "Des séquences répétitives aux extrémités des chromosomes", "Des origines de réplication", "Des promoteurs"],
+        "correct": 1,
+        "explanation": "Les télomères sont des séquences répétitives non codantes (TTAGGG chez l'homme) aux extrémités des chromosomes linéaires, qui les protègent du raccourcissement."
+      },
+      {
+        "question": "La télomérase est active dans :",
+        "options": ["Toutes les cellules somatiques", "Les cellules germinales et les cellules souches", "Uniquement les bactéries", "Uniquement les plantes"],
+        "correct": 1,
+        "explanation": "La télomérase est active dans les cellules germinales, les cellules souches et la plupart des cellules cancéreuses. Elle est inactive dans la plupart des cellules somatiques (vieillissement)."
+      }
+    ],
+    "moyen": [
+      {
+        "question": "L'expérience de Meselson-Stahl (1958) a utilisé :",
+        "options": ["Des radioisotopes (³²P)", "De l'azote lourd (¹⁵N) et léger (¹⁴N)", "Des colorants fluorescents", "Des enzymes de restriction"],
+        "correct": 1,
+        "explanation": "Meselson-Stahl ont cultivé E. coli dans un milieu contenant de l'azote lourd (¹⁵N) puis l'ont transféré dans un milieu léger (¹⁴N). La centrifugation en gradient de densité a montré des bandes intermédiaires, prouvant le modèle semi-conservatif."
+      },
+      {
+        "question": "La topoisomérase a pour rôle de :",
+        "options": ["Synthétiser l'ADN", "Relâcher la tension de superenroulement en amont de la fourche", "Éliminer les amorces ARN", "Lier les fragments d'Okazaki"],
+        "correct": 1,
+        "explanation": "La topoisomérase (ADN gyrase chez les procaryotes) coupe temporairement un brin d'ADN pour relâcher la tension de superenroulement accumulée en amont de la fourche de réplication."
+      },
+      {
+        "question": "Le brin avancé est synthétisé de manière :",
+        "options": ["Discontinue", "Continue", "Alternée", "Inverse"],
+        "correct": 1,
+        "explanation": "Le brin avancé (leading strand) est synthétisé de manière continue dans le sens de la fourche de réplication, car l'ADN polymérase peut suivre l'hélicase."
+      },
+      {
+        "question": "Pourquoi la réplication est-elle discontinue sur le brin retardé ?",
+        "options": ["Parce que l'ADN polymérase est lente", "Parce que les brins sont antiparallèles et que la synthèse se fait en 5'→3'", "Parce que le brin retardé est plus court", "Parce qu'il y a moins de nucléotides"],
+        "correct": 1,
+        "explanation": "Les brins sont antiparallèles et l'ADN polymérase synthétise uniquement en 5'→3'. Sur le brin orienté 5'→3' (brin retardé), la synthèse doit se faire par fragments (Okazaki) en s'éloignant de la fourche."
+      },
+      {
+        "question": "L'ADN polymérase I a pour rôle principal de :",
+        "options": ["Synthétiser le brin avancé", "Éliminer les amorces ARN et les remplacer par de l'ADN", "Ouvrir la double hélice", "Relier les fragments"],
+        "correct": 1,
+        "explanation": "L'ADN polymérase I (procaryotes) possède une activité exonucléase 5'→3' qui élimine les amorces ARN et une activité polymérase qui les remplace par de l'ADN."
+      },
+      {
+        "question": "L'activité proofreading de l'ADN polymérase correspond à :",
+        "options": ["Une activité polymérase 5'→3'", "Une activité exonucléase 3'→5' (correction d'erreurs)", "Une activité hélicase", "Une activité ligase"],
+        "correct": 1,
+        "explanation": "L'activité proofreading = exonucléase 3'→5'. L'ADN polymérase peut revenir en arrière et exciser un nucléotide mal apparié avant de continuer la synthèse."
+      },
+      {
+        "question": "La télomérase est une :",
+        "options": ["ADN polymérase classique", "Reverse transcriptase (ARN-dépendante)", "ARN polymérase", "ADN ligase"],
+        "correct": 1,
+        "explanation": "La télomérase est une ribonucléoprotéine contenant un ARN matrice et une activité reverse transcriptase (TERT). Elle utilise son propre ARN comme matrice pour ajouter des répétitions télomériques."
+      },
+      {
+        "question": "Chez les eucaryotes, la réplication est :",
+        "options": ["Unidirectionnelle à partir d'une seule origine", "Bidirectionnelle à partir de multiples origines", "Aléatoire", "Absente"],
+        "correct": 1,
+        "explanation": "Chez les eucaryotes, la réplication est bidirectionnelle à partir de multiples origines de réplication (des milliers par chromosome), car les chromosomes sont très longs."
+      },
+      {
+        "question": "Les fragments d'Okazaki chez les eucaryotes mesurent :",
+        "options": ["10-20 nt", "100-200 nt", "1000-2000 nt", "10 000-20 000 nt"],
+        "correct": 1,
+        "explanation": "Les fragments d'Okazaki mesurent 1000-2000 nt chez les procaryotes et 100-200 nt chez les eucaryotes (plus courts car la réplication est plus lente et plus régulée)."
+      },
+      {
+        "question": "Le taux d'erreur de la réplication est d'environ :",
+        "options": ["1 erreur pour 100 nt", "1 erreur pour 10 000 nt", "1 erreur pour 10⁶ nt", "1 erreur pour 10⁹ à 10¹⁰ nt"],
+        "correct": 3,
+        "explanation": "Le taux d'erreur final est extrêmement faible (~10⁻⁹ à 10⁻¹⁰) grâce à la sélectivité de l'ADN polymérase, au proofreading et au système de réparation des mésappariements."
+      },
+      {
+        "question": "La pince β (clamp) a pour rôle de :",
+        "options": ["Couper l'ADN", "Maintenir l'ADN polymérase sur l'ADN (augmenter la processivité)", "Ouvrir la double hélice", "Synthétiser les amorces"],
+        "correct": 1,
+        "explanation": "La pince β (homodimère) entoure l'ADN et maintient l'ADN polymérase III sur le template, augmentant sa processivité de ~15 nt à ~50 000 nt."
+      },
+      {
+        "question": "Le système de réparation des mésappariements (Mismatch Repair) agit :",
+        "options": ["Pendant la réplication", "Juste après la réplication", "Avant la réplication", "Uniquement pendant la mitose"],
+        "correct": 1,
+        "explanation": "Le Mismatch Repair corrige les erreurs échappant au proofreading juste après la réplication. Il distingue le brin parental (méthylé) du brin néosynthétisé (non méthylé) chez les procaryotes."
+      }
+    ],
+    "vicieux": [
+      {
+        "question": "Si on inhibe la topoisomérase avec de la novobiocine, que se passe-t-il ?",
+        "options": ["Rien, la réplication continue normalement", "La tension de superenroulement s'accumule et bloque la fourche de réplication", "L'ADN est coupé en fragments", "Les amorces ARN ne sont pas éliminées"],
+        "correct": 1,
+        "explanation": "Sans topoisomérase, la tension de superenroulement positive s'accumule en amont de la fourche de réplication (l'ADN se 'sur-tord'). Cette tension finit par bloquer l'avancée de l'hélicase et de l'ADN polymérase."
+      },
+      {
+        "question": "Si on utilise un analogue de nucléotide sans extrémité 3'-OH (ex: AZT), que se passe-t-il ?",
+        "options": ["Rien", "L'ADN polymérase l'incorpore et la synthèse s'arrête (terminateur de chaîne)", "La réplication accélère", "Les amorces ARN sont éliminées plus vite"],
+        "correct": 1,
+        "explanation": "L'AZT (azidothymidine) est un analogue de la thymidine sans 3'-OH. Une fois incorporé, il empêche l'ajout du nucléotide suivant (pas d'extrémité 3'-OH libre). C'est un terminateur de chaîne utilisé contre le VIH (reverse transcriptase)."
+      },
+      {
+        "question": "Pourquoi les cellules cancéreuses réactivent-elles la télomérase ?",
+        "options": ["Pour synthétiser plus de protéines", "Pour maintenir la longueur des télomères et devenir immortelles (divisions infinies)", "Pour accélérer la transcription", "Pour inhiber l'apoptose"],
+        "correct": 1,
+        "explanation": "Normalement, les cellules somatiques ont une télomérase inactive → raccourcissement des télomères à chaque division → sénescence (limite de Hayflick). Les cellules cancéreuses réactivent la télomérase pour éviter ce raccourcissement et devenir immortelles."
+      },
+      {
+        "question": "Si on marque les cellules avec de la bromodésoxyuridine (BrdU, analogue de la thymidine) pendant une seule génération, puis qu'on observe l'ADN en microscopie, que voit-on ?",
+        "options": ["Les deux brins de chaque chromosome sont marqués", "Un seul brin de chaque chromosome est marqué", "Aucun marquage", "Tous les chromosomes sont entièrement marqués"],
+        "correct": 1,
+        "explanation": "Après une seule génération en présence de BrdU, chaque chromosome contient un brin parental (non marqué) et un brin néosynthétisé (marqué au BrdU). C'est une preuve visuelle du modèle semi-conservatif."
+      },
+      {
+        "question": "Une mutation dans le gène de la pince β (dnaN chez E. coli) aurait pour conséquence :",
+        "options": ["Aucun effet", "Une diminution drastique de la processivité de l'ADN polymérase III", "L'arrêt de la transcription", "L'activation de la télomérase"],
+        "correct": 1,
+        "explanation": "Sans pince β fonctionnelle, l'ADN polymérase III se dissocie fréquemment de l'ADN (processivité réduite à ~15 nt au lieu de ~50 000 nt). La réplication devient extrêmement lente et inefficace."
+      },
+      {
+        "question": "Pourquoi l'ADN polymérase I est-elle dite 'distributive' alors que l'ADN polymérase III est 'processive' ?",
+        "options": ["Parce qu'elle est plus petite", "Parce qu'elle se dissocie après ~15-20 nt (sans pince), alors que Pol III ajoute ~50 000 nt (avec pince β)", "Parce qu'elle synthétise plus vite", "Parce qu'elle n'a pas d'activité proofreading"],
+        "correct": 1,
+        "explanation": "Pol I est distributive (se dissocie souvent, ~15-20 nt) car elle n'a pas de pince. Pol III est processive (~50 000 nt) grâce à la pince β qui la maintient sur l'ADN. Pol I sert principalement à éliminer les amorces ARN."
+      },
+      {
+        "question": "Si on inhibe le Mismatch Repair (système de réparation des mésappariements), quel sera l'effet ?",
+        "options": ["Aucun effet", "Augmentation du taux de mutation (phénotype mutateur)", "Arrêt de la réplication", "Activation de l'apoptose"],
+        "correct": 1,
+        "explanation": "Sans Mismatch Repair, les erreurs échappant au proofreading ne sont pas corrigées → taux de mutation augmenté (phénotype mutateur). C'est observé dans certains cancers colorectaux héréditaires (syndrome de Lynch)."
+      },
+      {
+        "question": "Pourquoi la réplication eucaryote est-elle plus lente que la réplication procaryote (~50-100 nt/s vs ~1000 nt/s) ?",
+        "options": ["Parce que l'ADN eucaryote est plus court", "Parce que l'ADN eucaryote est compacté en chromatine (nucléosomes) et doit être décompacté", "Parce qu'il y a moins d'enzymes", "Parce que les eucaryotes n'ont pas de pince"],
+        "correct": 1,
+        "explanation": "L'ADN eucaryote est compacté en chromatine (nucléosomes). La fourche de réplication doit défaire et refaire les nucléosomes, ce qui ralentit la progression. Compensé par de multiples origines de réplication."
+      },
+      {
+        "question": "Si on surexprime la télomérase dans des cellules somatiques normales, que se passe-t-il ?",
+        "options": ["Rien", "Les cellules deviennent immortelles (crise évitée) et peuvent se diviser indéfiniment", "Les cellules meurent immédiatement", "Les cellules se différencient"],
+        "correct": 1,
+        "explanation": "La surexpression de la télomérase dans des cellules somatiques normales maintient la longueur des télomères, évitant la sénescence réplicative. Les cellules deviennent 'immortalisées' (mais pas nécessairement cancéreuses, car d'autres mutations sont nécessaires)."
+      },
+      {
+        "question": "Un mutant d'ADN polymérase III sans activité proofreading (exo-) aura :",
+        "options": ["Aucun changement", "Un taux de mutation augmenté (100 à 1000x)", "Une réplication plus rapide", "Une réplication impossible"],
+        "correct": 1,
+        "explanation": "Sans activité proofreading (exonucléase 3'→5'), les erreurs d'incorporation ne sont pas corrigées immédiatement. Le taux de mutation augmente de 100 à 1000 fois. Le Mismatch Repair peut encore corriger certaines erreurs, mais pas toutes."
+      }
+    ]
+  }
+}

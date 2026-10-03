@@ -1,0 +1,204 @@
+{
+  "title": "QCM - Le Cytosquelette",
+  "subtitle": "3 niveaux : Facile (10Q) • Moyen (12Q) • Vicieux (10Q)",
+  "levels": {
+    "facile": [
+      {
+        "question": "Le cytosquelette est constitué de :",
+        "options": ["Un seul type de filament", "3 types de filaments : microfilaments, filaments intermédiaires, microtubules", "Uniquement de microtubules", "Uniquement d'actine"],
+        "correct": 1,
+        "explanation": "Le cytosquelette = 3 types de filaments : microfilaments d'actine (7 nm), filaments intermédiaires (10 nm), microtubules (25 nm)."
+      },
+      {
+        "question": "Les microfilaments d'actine ont un diamètre de :",
+        "options": ["25 nm", "10 nm", "7 nm", "50 nm"],
+        "correct": 2,
+        "explanation": "Les microfilaments d'actine sont les plus fins (7 nm), suivis des filaments intermédiaires (10 nm) et des microtubules (25 nm)."
+      },
+      {
+        "question": "Les microtubules sont constitués de :",
+        "options": ["Monomères d'actine", "Hétérodimères de tubuline α/β", "Kératines", "Collagène"],
+        "correct": 1,
+        "explanation": "Les microtubules = polymères d'hétérodimères α/β-tubuline. Les microfilaments = polymères d'actine. Les filaments intermédiaires = protéines fibreuses (kératines, vimentine, lamines...)."
+      },
+      {
+        "question": "Les filaments intermédiaires se distinguent des autres filaments par :",
+        "options": ["Leur polarité marquée", "L'absence de polarité (assemblage antiparallèle)", "Leur diamètre de 25 nm", "Leur utilisation d'ATP"],
+        "correct": 1,
+        "explanation": "Les filaments intermédiaires sont formés de tétramères antiparallèles, ce qui leur confère une absence de polarité et une grande résistance mécanique. Les microfilaments et microtubules ont une polarité (+/-)."
+      },
+      {
+        "question": "Les kinésines sont des protéines motrices qui marchent :",
+        "options": ["Vers l'extrémité (-) des microtubules", "Vers l'extrémité (+) des microtubules", "Sur les microfilaments d'actine", "Sur les filaments intermédiaires"],
+        "correct": 1,
+        "explanation": "Les kinésines marchent vers l'extrémité (+) des microtubules (transport antérograde, vers la périphérie). Les dynéines marchent vers l'extrémité (-) (transport rétrograde, vers le centre)."
+      },
+      {
+        "question": "Le centrosome est le principal MTOC (Microtubule Organizing Center) chez :",
+        "options": ["Les procaryotes", "Les animaux", "Les végétaux uniquement", "Les champignons uniquement"],
+        "correct": 1,
+        "explanation": "Le centrosome = MTOC principal chez les animaux. Il contient 2 centrioles orthogonaux (structure 9+0) et du matériel péricentriolaire (γ-tubuline pour la nucléation des microtubules)."
+      },
+      {
+        "question": "L'axonème des cils et flagelles eucaryotes a une structure :",
+        "options": ["9+0", "9+2 (9 doublets périphériques + 2 microtubules centraux)", "7+3", "12+1"],
+        "correct": 1,
+        "explanation": "L'axonème motile = structure 9+2 : 9 doublets de microtubules en périphérie + 2 microtubules centraux. Les cils primaires (non motiles) ont une structure 9+0."
+      },
+      {
+        "question": "Le battement des cils et flagelles est généré par :",
+        "options": ["La myosine", "La dynéine axonémique", "La kinésine", "La tubuline"],
+        "correct": 1,
+        "explanation": "La dynéine axonémique (protéine motrice spécifique aux cils/flagelles) hydrolyse l'ATP et fait glisser les doublets de microtubules les uns sur les autres. La nexine convertit ce glissement en courbure."
+      },
+      {
+        "question": "Les kératines sont des filaments intermédiaires spécifiques aux :",
+        "options": ["Neurones", "Cellules épithéliales", "Cellules musculaires", "Cellules sanguines"],
+        "correct": 1,
+        "explanation": "Les kératines = filaments intermédiaires des cellules épithéliales (peau, cheveux, ongles). La vimentine = tissu conjonctif. La desmine = muscle. Les neurofilaments = neurones. Les lamines = noyau."
+      },
+      {
+        "question": "Le treadmilling de l'actine correspond à :",
+        "options": ["La dépolymérisation complète du filament", "L'ajout continu de monomères à l'extrémité (+) et la perte à l'extrémité (-)", "La polymérisation aux deux extrémités simultanément", "La stabilisation du filament"],
+        "correct": 1,
+        "explanation": "Le treadmilling = phénomène dynamique où l'actine est ajoutée à l'extrémité (+) (barbelée, croissance rapide) et perdue à l'extrémité (-) (pointue). La longueur totale du filament reste constante, mais les monomères 'traversent' le filament."
+      }
+    ],
+    "moyen": [
+      {
+        "question": "Les microtubules sont composés de combien de protofilaments ?",
+        "options": ["9", "11", "13", "15"],
+        "correct": 2,
+        "explanation": "Les microtubules = 13 protofilaments alignés parallèlement formant un tube creux de 25 nm de diamètre. Chaque protofilament = polymère linéaire d'hétérodimères α/β-tubuline."
+      },
+      {
+        "question": "La β-tubuline hydrolyse le GTP en GDP :",
+        "options": ["Avant l'incorporation dans le microtubule", "Après l'incorporation dans le microtubule", "Jamais", "Uniquement lors de la dépolymérisation"],
+        "correct": 1,
+        "explanation": "La β-tubuline lie le GTP avant incorporation. Après incorporation dans le microtubule, le GTP est hydrolysé en GDP. Ce 'capuchon' de GTP à l'extrémité (+) stabilise le microtubule. Si l'hydrolyse dépasse l'ajout, catastrophe (dépolymérisation rapide)."
+      },
+      {
+        "question": "L'instabilité dynamique des microtubules correspond à :",
+        "options": ["Une polymérisation lente et continue", "L'alternance rapide entre phases de croissance et de raccourcissement (catastrophe)", "Une dépolymérisation permanente", "Une stabilité absolue"],
+        "correct": 1,
+        "explanation": "L'instabilité dynamique = alternance entre phases de croissance (ajout de dimères-GTP) et de catastrophe (dépolymérisation rapide après perte du capuchon GTP). Permet une réorganisation rapide du cytosquelette."
+      },
+      {
+        "question": "La myosine II est impliquée dans :",
+        "options": ["Le transport vésiculaire", "La contraction musculaire (interaction avec l'actine)", "La marche sur les microtubules", "La stabilisation des filaments intermédiaires"],
+        "correct": 1,
+        "explanation": "La myosine II = myosine conventionnelle, responsable de la contraction musculaire (interaction actine-myosine). La myosine V = transport vésiculaire sur les microfilaments. Les kinésines/dynéines = transport sur microtubules."
+      },
+      {
+        "question": "Les MAPs (Microtubule-Associated Proteins) comme Tau ont pour rôle de :",
+        "options": ["Dépolymériser les microtubules", "Stabiliser les microtubules", "Transporter des vésicules", "Synthétiser la tubuline"],
+        "correct": 1,
+        "explanation": "Les MAPs (MAP2, Tau) se lient aux microtubules et les stabilisent. Tau est particulièrement abondant dans les axones. Son hyperphosphorylation (maladie d'Alzheimer) le détache des microtubules → dépolymérisation + agrégats (enchevêtrements neurofibrillaires)."
+      },
+      {
+        "question": "Le matériel péricentriolaire (PCM) contient :",
+        "options": ["De l'actine", "De la γ-tubuline (nucléation des microtubules)", "Des kératines", "De la myosine"],
+        "correct": 1,
+        "explanation": "Le PCM = matériel amorphe entourant les centrioles dans le centrosome. Il contient la γ-tubuline (forme un anneau γ-TuRC qui sert de matrice pour la nucléation des microtubules) et des protéines d'ancrage (pericentrine, CDK5RAP2)."
+      },
+      {
+        "question": "Les centrioles ont une structure :",
+        "options": ["9 doublets de microtubules", "9 triplets de microtubules (structure 9+0)", "13 protofilaments", "9+2"],
+        "correct": 1,
+        "explanation": "Les centrioles = cylindres de 9 triplets de microtubules (structure 9+0, sans microtubules centraux). Les cils/flagelles motiles = 9+2 (doublets + 2 centraux). Les cils primaires = 9+0 (comme les centrioles)."
+      },
+      {
+        "question": "Les cils primaires (non motiles) ont pour fonction :",
+        "options": ["La mobilité cellulaire", "La détection de signaux mécaniques et chimiques (antenne cellulaire)", "La contraction musculaire", "La division cellulaire"],
+        "correct": 1,
+        "explanation": "Les cils primaires (structure 9+0, non motiles) = antennes cellulaires détectant les signaux mécaniques (flux urinaire) et chimiques (signalisation Hedgehog). Leurs dysfonctions = ciliopathies (polykystose rénale, syndrome de Bardet-Biedl)."
+      },
+      {
+        "question": "La plectine est une protéine qui :",
+        "options": ["Dépolymérise l'actine", "Sert de protéine d'ancrage entre les différents réseaux du cytosquelette", "Transporte des vésicules", "Catalyse l'hydrolyse du GTP"],
+        "correct": 1,
+        "explanation": "La plectine = protéine d'ancrage géante qui connecte les différents réseaux du cytosquelette (microfilaments, filaments intermédiaires, microtubules) entre eux et avec les desmosomes/hémidesmosomes."
+      },
+      {
+        "question": "Les desmosomes sont des jonctions cellulaires qui :",
+        "options": ["Permettent le passage d'ions", "Ancrent les filaments intermédiaires entre cellules adjacentes", "Scellent hermétiquement les cellules", "Permettent la communication directe"],
+        "correct": 1,
+        "explanation": "Les desmosomes = jonctions d'ancrage qui relient les filaments intermédiaires (kératines) de cellules adjacentes via des cadhérines (desmogléines, desmocollines). Résistance mécanique aux tensions."
+      },
+      {
+        "question": "La phalloïdine (toxine de l'amanite phalloïde) a pour effet de :",
+        "options": ["Dépolymériser les microfilaments d'actine", "Stabiliser les microfilaments d'actine (empêche la dépolymérisation)", "Dépolymériser les microtubules", "Stabiliser les microtubules"],
+        "correct": 1,
+        "explanation": "La phalloïdine se lie aux F-actine et stabilise les microfilaments (empêche la dépolymérisation). À l'inverse, la cytochalasine inhibe la polymérisation. Utilisée en recherche pour visualiser l'actine F (phalloïdine fluorescente)."
+      },
+      {
+        "question": "Le fuseau mitotique est constitué de :",
+        "options": ["Microfilaments d'actine", "Microtubules", "Filaments intermédiaires", "Collagène"],
+        "correct": 1,
+        "explanation": "Le fuseau mitotique = structure de microtubules qui sépare les chromosomes lors de la mitose. 3 types : kinétochoriens (attachés aux chromosomes), polaires (chevauchement central), astraux (ancrage à la membrane)."
+      }
+    ],
+    "vicieux": [
+      {
+        "question": "Si on traite des cellules en division avec du taxol (paclitaxel), à quelle phase de la mitose sont-elles bloquées ?",
+        "options": ["Prophase", "Métaphase", "Anaphase", "Télophase"],
+        "correct": 1,
+        "explanation": "Le taxol stabilise les microtubules et empêche leur dépolymérisation. Les cellules sont bloquées en métaphase car le fuseau mitotique ne peut pas se rétracter pour séparer les chromosomes. C'est le mécanisme d'action de nombreux agents chimiothérapeutiques."
+      },
+      {
+        "question": "Une mutation dans le gène de la tubuline β peut entraîner :",
+        "options": ["Aucun effet", "Des troubles du développement cortical (lissencéphalie, polymicrogyrie)", "Une augmentation de la taille cellulaire", "Une accélération de la division"],
+        "correct": 1,
+        "explanation": "Les mutations des gènes de tubuline (TUBB2B, TUBB3...) entraînent des malformations du développement cortical (lissencéphalie, polymicrogyrie) car la migration neuronale dépend des microtubules. Phénotypes variables selon le gène affecté."
+      },
+      {
+        "question": "Si on injecte de la cytochalasine D dans une cellule en migration, que se passe-t-il ?",
+        "options": ["Rien", "La migration cellulaire est bloquée (plus de polymérisation d'actine au front de migration)", "La cellule se divise plus vite", "Les microtubules se dépolymérisent"],
+        "correct": 1,
+        "explanation": "La cytochalasine D bloque l'ajout de monomères d'actine à l'extrémité (+). Sans polymérisation d'actine au front de migration (lamellipodes), la cellule ne peut plus avancer. Utilisée expérimentalement pour étudier la migration cellulaire."
+      },
+      {
+        "question": "Les ciliopathies (ex: syndrome de Bardet-Biedl, polykystose rénale) sont causées par :",
+        "options": ["Un excès de cils", "Des mutations affectant la structure ou la fonction des cils primaires", "Une absence totale de cytosquelette", "Un excès de mitochondries"],
+        "correct": 1,
+        "explanation": "Les ciliopathies = maladies génétiques dues à des mutations dans les gènes des cils primaires (structure 9+0, non motiles). Ces cils jouent un rôle crucial dans la signalisation (Hedgehog) et la mécanosensation. Phénotypes : obésité, rétinite, kystes rénaux, polydactylie."
+      },
+      {
+        "question": "La dynéine cytoplasmique est impliquée dans :",
+        "options": ["Le transport antérograde dans l'axone", "Le transport rétrograde dans l'axone (vers le corps cellulaire)", "La contraction musculaire", "La polymérisation de l'actine"],
+        "correct": 1,
+        "explanation": "La dynéine cytoplasmique = moteur moléculaire qui marche vers l'extrémité (-) des microtubules (transport rétrograde). Dans les neurones, elle ramène les vésicules, organites et signaux de la synapse vers le corps cellulaire. À l'inverse, la kinésine = transport antérograde."
+      },
+      {
+        "question": "L'hyperphosphorylation de la protéine Tau est observée dans :",
+        "options": ["La maladie de Parkinson", "La maladie d'Alzheimer", "La sclérose en plaques", "La myasthénie"],
+        "correct": 1,
+        "explanation": "Dans la maladie d'Alzheimer, Tau est hyperphosphorylée → se détache des microtubules → dépolymérisation (perte du transport axonal) + agrégats en paires de filaments hélicoïdaux (enchevêtrements neurofibrillaires, NFT). Un des critères neuropathologiques majeurs."
+      },
+      {
+        "question": "Si on mute la nexine (protéine de liaison entre doublets de l'axonème), que se passe-t-il ?",
+        "options": ["Rien", "Les doublets glissent librement sans courbure → pas de battement ciliaire", "Le cil bat plus vite", "Le cil devient rigide"],
+        "correct": 1,
+        "explanation": "La nexine = liaison élastique entre les doublets de microtubules de l'axonème. Elle convertit le glissement (généré par la dynéine) en courbure. Sans nexine, les doublets glissent les uns sur les autres sans courbure → pas de battement ciliaire/flagellaire."
+      },
+      {
+        "question": "Les filaments intermédiaires de type vimentine sont exprimés dans :",
+        "options": ["Les cellules épithéliales", "Les cellules du tissu conjonctif (fibroblastes, cellules endothéliales)", "Les neurones", "Les cellules musculaires"],
+        "correct": 1,
+        "explanation": "La vimentine = FI typiques des cellules du tissu conjonctif (fibroblastes, cellules endothéliales, macrophages). Les kératines = épithéliales. Les neurofilaments = neurones. La desmine = muscle. La GFAP = astrocytes."
+      },
+      {
+        "question": "Si on inhibe la kinésine-5 (Eg5) avec de la monastrol, que se passe-t-il ?",
+        "options": ["Rien", "Formation d'un fuseau mitotique monopolaire (les centrosomes ne se séparent pas) → blocage en mitose", "La cellule se divise plus vite", "Les microtubules se dépolymérisent"],
+        "correct": 1,
+        "explanation": "La kinésine-5 (Eg5/KSP) = kinésine motrice qui pousse les microtubules polaires dans des directions opposées pour séparer les centrosomes lors de la prophase. Son inhibition (monastrol) = centrosomes non séparés → fuseau monopolaire → blocage en mitose. Cible thérapeutique anticancéreuse."
+      },
+      {
+        "question": "L'épidermolyse bulleuse simple est causée par :",
+        "options": ["Une mutation des microtubules", "Une mutation des kératines 5 ou 14 (filaments intermédiaires des kératinocytes)", "Une mutation de l'actine", "Une mutation de la tubuline"],
+        "correct": 1,
+        "explanation": "L'épidermolyse bulleuse simple = maladie génétique due à des mutations des kératines 5 ou 14 (FI des kératinocytes de la couche basale). La peau devient fragile : stress mécanique → rupture des kératinocytes → formation de bulles. Preuve du rôle structural des FI."
+      }
+    ]
+  }
+}

@@ -1,0 +1,247 @@
+{
+  "title": "Quiz Rapide - BMC",
+  "subtitle": "10 questions aléatoires en 5 minutes",
+  "duration": 300,
+  "questions": [
+    {
+      "question": "Quelle est la taille typique d'une cellule procaryote ?",
+      "options": ["~50 µm", "~5 µm", "~500 µm", "~0,5 µm"],
+      "correct": 1,
+      "explanation": "Les procaryotes mesurent environ 5 µm, soit 10 fois moins que les eucaryotes (~50 µm)."
+    },
+    {
+      "question": "Les purines sont :",
+      "options": ["Cytosine et Thymine", "Adénine et Guanine", "Adénine et Uracile", "Guanine et Cytosine"],
+      "correct": 1,
+      "explanation": "Les purines (2 cycles) = Adénine (A) et Guanine (G)."
+    },
+    {
+      "question": "La réplication de l'ADN est :",
+      "options": ["Conservative", "Semi-conservative", "Dispersive", "Aléatoire"],
+      "correct": 1,
+      "explanation": "Chaque molécule fille contient 1 brin parental + 1 brin néosynthétisé (Meselson-Stahl, 1958)."
+    },
+    {
+      "question": "Quelle ARN polymérase synthétise les ARNm chez les eucaryotes ?",
+      "options": ["ARN Pol I", "ARN Pol II", "ARN Pol III", "Primase"],
+      "correct": 1,
+      "explanation": "L'ARN Pol II transcrit les gènes codant pour les protéines (ARNm)."
+    },
+    {
+      "question": "Le codon start est :",
+      "options": ["UAA", "UAG", "AUG", "UGA"],
+      "correct": 2,
+      "explanation": "AUG = codon start (code pour la méthionine). UAA, UAG, UGA = codons stop."
+    },
+    {
+      "question": "Les lysosomes ont un pH interne :",
+      "options": ["Neutre (~7,2)", "Acide (~4,5-5,0)", "Basique (~9,0)", "Très acide (~2,0)"],
+      "correct": 1,
+      "explanation": "pH 4,5-5,0 maintenu par des pompes V-ATPases, optimal pour les hydrolases acides."
+    },
+    {
+      "question": "Les microtubules ont un diamètre de :",
+      "options": ["7 nm", "10 nm", "25 nm", "50 nm"],
+      "correct": 2,
+      "explanation": "Microfilaments = 7 nm, Filaments intermédiaires = 10 nm, Microtubules = 25 nm."
+    },
+    {
+      "question": "Selon la règle de Chargaff, dans un ADN double brin :",
+      "options": ["%A = %G", "%A = %T et %G = %C", "%A = %C", "%A + %G = %T + %C uniquement"],
+      "correct": 1,
+      "explanation": "Règle de Chargaff : %A = %T et %G = %C (car A s'apparie avec T, G avec C)."
+    },
+    {
+      "question": "Les fragments d'Okazaki sont synthétisés sur :",
+      "options": ["Le brin avancé", "Le brin retardé", "Les deux brins", "Aucun brin"],
+      "correct": 1,
+      "explanation": "Synthèse discontinue sur le brin retardé car l'ADN polymérase ne synthétise qu'en 5'→3'."
+    },
+    {
+      "question": "L'épissage alternatif permet :",
+      "options": ["D'éliminer tous les exons", "À un seul gène de produire plusieurs protéines", "De transformer l'ADN en ARN", "De répliquer l'ADN"],
+      "correct": 1,
+      "explanation": "En combinant les exons de différentes manières, un seul gène peut produire plusieurs variants protéiques."
+    },
+    {
+      "question": "La peptidyl transférase est :",
+      "options": ["Une protéine du ribosome", "Une activité catalytique de l'ARNr", "Un ARNt", "Un facteur d'élongation"],
+      "correct": 1,
+      "explanation": "C'est une ribozyme : l'ARNr 23S/28S de la grande sous-unité catalyse la liaison peptidique."
+    },
+    {
+      "question": "Les kinésines marchent vers :",
+      "options": ["L'extrémité (-) des microtubules", "L'extrémité (+) des microtubules", "Les microfilaments d'actine", "Les filaments intermédiaires"],
+      "correct": 1,
+      "explanation": "Kinésines → extrémité (+) (antérograde). Dynéines → extrémité (-) (rétrograde)."
+    },
+    {
+      "question": "L'ARN le plus abondant dans la cellule est :",
+      "options": ["ARNm", "ARNt", "ARNr", "miRNA"],
+      "correct": 2,
+      "explanation": "ARNr = ~80% de l'ARN total. ARNt = ~15%. ARNm = ~5%."
+    },
+    {
+      "question": "La voie de sécrétion suit le trajet :",
+      "options": ["Golgi → RE → membrane", "RE → Golgi → membrane plasmique", "Membrane → Golgi → RE", "Noyau → RE → Golgi"],
+      "correct": 1,
+      "explanation": "RE → (COP II) → Golgi (cis→trans) → (vésicules) → membrane plasmique (exocytose)."
+    },
+    {
+      "question": "L'ADN polymérase synthétise dans le sens :",
+      "options": ["3' → 5'", "5' → 3'", "Bidirectionnel", "Aléatoire"],
+      "correct": 1,
+      "explanation": "L'ADN polymérase ajoute des nucléotides uniquement dans le sens 5' → 3'."
+    },
+    {
+      "question": "Les vésicules COP II transportent les protéines :",
+      "options": ["Du Golgi vers le RE", "Du RE vers le Golgi", "Du Golgi vers les lysosomes", "De la membrane vers les endosomes"],
+      "correct": 1,
+      "explanation": "COP II = antérograde RE → Golgi. COP I = rétrograde Golgi → RE."
+    },
+    {
+      "question": "L'instabilité dynamique des microtubules correspond à :",
+      "options": ["Une polymérisation lente", "L'alternance entre croissance et catastrophe", "Une dépolymérisation permanente", "Une stabilité absolue"],
+      "correct": 1,
+      "explanation": "Alternance rapide entre phases de croissance (dimères-GTP) et de catastrophe (dépolymérisation rapide)."
+    },
+    {
+      "question": "La séquence de Shine-Dalgarno chez les procaryotes sert à :",
+      "options": ["Terminer la traduction", "Positionner le ribosome sur le codon start", "Éliminer les introns", "Ajouter la coiffe"],
+      "correct": 1,
+      "explanation": "Complémentaire de l'ARNr 16S, elle guide le ribosome vers le codon AUG start."
+    },
+    {
+      "question": "Le signal KDEL sert à :",
+      "options": ["Exporter les protéines", "Récupérer les protéines résidentes du RE ayant fui vers le Golgi", "Cibler vers les lysosomes", "Marquer pour la dégradation"],
+      "correct": 1,
+      "explanation": "KDEL = signal de rétention/récupération des protéines du RE via le transport rétrograde COP I."
+    },
+    {
+      "question": "Les filaments intermédiaires se distinguent par :",
+      "options": ["Leur polarité marquée", "L'absence de polarité (antiparallèle)", "Leur diamètre de 25 nm", "Leur utilisation d'ATP"],
+      "correct": 1,
+      "explanation": "Tétramères antiparallèles → pas de polarité. Grande résistance mécanique."
+    },
+    {
+      "question": "La coiffe en 5' de l'ARNm est constituée de :",
+      "options": ["Poly-A", "7-méthylguanosine", "Introns", "Exons"],
+      "correct": 1,
+      "explanation": "7-méthylguanosine liée par liaison 5'-5' triphosphate. Protège l'ARNm et reconnue par les ribosomes."
+    },
+    {
+      "question": "Le centrosome contient :",
+      "options": ["De l'actine", "2 centrioles (9+0) + matériel péricentriolaire (γ-tubuline)", "Des kératines", "De la myosine"],
+      "correct": 1,
+      "explanation": "Le PCM contient la γ-tubuline qui nucléent les microtubules. Les centrioles ont une structure 9+0."
+    },
+    {
+      "question": "La translocation lors de la traduction est catalysée par :",
+      "options": ["EF-Tu", "EF-G (procaryotes) / eEF2 (eucaryotes)", "La peptidyl transférase", "Les facteurs de libération"],
+      "correct": 1,
+      "explanation": "EF-G/eEF2 fait avancer le ribosome d'un codon (3 nt) vers l'extrémité 3', consommant du GTP."
+    },
+    {
+      "question": "Les peroxysomes réalisent :",
+      "options": ["La synthèse d'ATP", "La β-oxydation des acides gras à très longue chaîne et la détoxification du H₂O₂", "La dégradation des protéines", "La synthèse des lipides"],
+      "correct": 1,
+      "explanation": "Catalase : 2 H₂O₂ → 2 H₂O + O₂. β-oxydation des AG à très longue chaîne (>20C)."
+    },
+    {
+      "question": "La N-glycosylation dans le RE se fait sur :",
+      "options": ["Le OH d'une sérine", "Le NH₂ d'une asparagine (Asn-X-Ser/Thr)", "Le COOH d'un glutamate", "Le SH d'une cystéine"],
+      "correct": 1,
+      "explanation": "L'oligosaccharide est transféré en bloc depuis le dolichol-PP sur l'azote d'une asparagine."
+    },
+    {
+      "question": "Si on traite des cellules avec du taxol, à quelle phase de la mitose sont-elles bloquées ?",
+      "options": ["Prophase", "Métaphase", "Anaphase", "Télophase"],
+      "correct": 1,
+      "explanation": "Le taxol stabilise les microtubules → le fuseau ne peut pas se rétracter → blocage en métaphase."
+    },
+    {
+      "question": "Un antibiotique ciblant les ribosomes 70S affectera :",
+      "options": ["Uniquement les bactéries", "Les bactéries ET les mitochondries des eucaryotes", "Uniquement les eucaryotes", "Toutes les cellules"],
+      "correct": 1,
+      "explanation": "Ribosomes 70S = bactéries + mitochondries (origine endosymbiotique)."
+    },
+    {
+      "question": "L'hyperphosphorylation de Tau est observée dans :",
+      "options": ["Parkinson", "Alzheimer", "Sclérose en plaques", "Myasthénie"],
+      "correct": 1,
+      "explanation": "Tau hyperphosphorylée → se détache des microtubules → agrégats (enchevêtrements neurofibrillaires)."
+    },
+    {
+      "question": "Si on mute le site donneur d'épissage (GU → GC), que se passe-t-il ?",
+      "options": ["Rien", "L'intron n'est pas éliminé et reste dans l'ARNm mature", "L'exon suivant est éliminé", "L'ARNm est dégradé immédiatement"],
+      "correct": 1,
+      "explanation": "Le site GU en 5' de l'intron est essentiel pour le spliceosome. Sa mutation empêche l'épissage correct."
+    },
+    {
+      "question": "Si on utilise un analogue sans 3'-OH (ex: AZT), que se passe-t-il ?",
+      "options": ["Rien", "La synthèse s'arrête (terminateur de chaîne)", "La réplication accélère", "Les amorces sont éliminées plus vite"],
+      "correct": 1,
+      "explanation": "Pas d'extrémité 3'-OH libre → impossible d'ajouter le nucléotide suivant → terminaison de chaîne."
+    },
+    {
+      "question": "L'épidermolyse bulleuse simple est causée par une mutation des :",
+      "options": ["Microtubules", "Kératines 5 ou 14 (filaments intermédiaires)", "Actine", "Tubuline"],
+      "correct": 1,
+      "explanation": "Kératines 5/14 = FI des kératinocytes basaux. Mutation → peau fragile → bulles au moindre stress mécanique."
+    },
+    {
+      "question": "Si on injecte de la cycloheximide dans une cellule eucaryote :",
+      "options": ["Rien", "Traduction cytoplasmique bloquée, mais traduction mitochondriale continue", "Toute traduction bloquée", "Transcription bloquée"],
+      "correct": 1,
+      "explanation": "Cycloheximide inhibe les ribosomes 80S (cytoplasmiques) mais pas les 70S (mitochondriaux)."
+    },
+    {
+      "question": "Si on traite des cellules avec de la tunicamycine :",
+      "options": ["Aucun effet", "Protéines non glycosylées → mal repliées → dégradées par ERAD", "Protéines sécrétées plus vite", "Lysosomes plus acides"],
+      "correct": 1,
+      "explanation": "Tunicamycine bloque la N-glycosylation → protéines mal repliées → export vers cytosol → dégradation par protéasome (ERAD)."
+    },
+    {
+      "question": "Si on mute le récepteur M6P, que se passe-t-il ?",
+      "options": ["Rien", "Les enzymes lysosomales sont sécrétées hors de la cellule (mucolipidose II)", "Les lysosomes deviennent plus acides", "Le Golgi disparaît"],
+      "correct": 1,
+      "explanation": "Sans récepteur M6P, les enzymes lysosomales suivent la voie de sécrétion → lysosomes vides → accumulation de substrats."
+    },
+    {
+      "question": "Si on inhibe la SRP, que se passe-t-il ?",
+      "options": ["Rien", "Les protéines destinées au RE restent dans le cytoplasme", "Toutes les protéines sont sécrétées", "Le Golgi disparaît"],
+      "correct": 1,
+      "explanation": "Sans SRP, le peptide signal n'est pas reconnu → les protéines sont synthétisées dans le cytoplasme au lieu d'être transloquées dans le RE."
+    },
+    {
+      "question": "Si on inhibe EF-G avec une toxine, quelle étape de la traduction est bloquée ?",
+      "options": ["L'initiation", "La translocation (avancement du ribosome)", "La terminaison", "La formation de la liaison peptidique"],
+      "correct": 1,
+      "explanation": "EF-G catalyse la translocation (avancement du ribosome d'un codon). Son inhibition bloque cette étape."
+    },
+    {
+      "question": "Si on surexprime la télomérase dans des cellules somatiques normales :",
+      "options": ["Rien", "Les cellules deviennent immortelles (divisions infinies)", "Les cellules meurent immédiatement", "Les cellules se différencient"],
+      "correct": 1,
+      "explanation": "La surexpression de la télomérase maintient la longueur des télomères, évitant la sénescence réplicative."
+    },
+    {
+      "question": "Si on mute la boîte TATA d'un gène eucaryote (TATAAA → TATATA) :",
+      "options": ["Aucune conséquence", "Diminution drastique de la transcription du gène", "Augmentation de la transcription", "Activation de l'ARN Pol I"],
+      "correct": 1,
+      "explanation": "La boîte TATA est essentielle pour le recrutement de TFIID et l'assemblage du complexe de pré-initiation."
+    },
+    {
+      "question": "Si on inhibe la topoisomérase avec de la novobiocine :",
+      "options": ["Rien", "La tension de superenroulement s'accumule et bloque la fourche de réplication", "L'ADN est coupé en fragments", "Les amorces ARN ne sont pas éliminées"],
+      "correct": 1,
+      "explanation": "Sans topoisomérase, la tension de superenroulement positive s'accumule en amont de la fourche et finit par bloquer l'avancée."
+    },
+    {
+      "question": "Si on mute l'anticodon d'un ARNt (3'-UAC-5' → 3'-GAC-5') :",
+      "options": ["Rien", "L'ARNt ne peut plus se lier au ribosome", "L'ARNt apporte le mauvais acide aminé", "L'ARNt est dégradé immédiatement"],
+      "correct": 2,
+      "explanation": "L'anticodon détermine quel codon l'ARNt reconnaît. Sa mutation fait que l'ARNt apporte le mauvais acide aminé."
+    }
+  ]
+}

@@ -1,0 +1,34 @@
+{
+  "title": "Bilan 1 - Cellule & ADN/ARN",
+  "subtitle": "Exercices d'application type annales",
+  "exercices": [
+    {
+      "id": "1.1",
+      "titre": "Comparaison Procaryotes/Eucaryotes",
+      "enonce": "Établir un tableau de comparaison entre les cellules eucaryotes animales et procaryotes en remplissant les critères suivants :\n\n| Critère | Procaryotes | Eucaryotes |\n|---------|-------------|------------|\n| Organismes types | ? | ? |\n| Taille typique | ? | ? |\n| Noyau | ? | ? |\n| Chromosomes/ADN | ? | ? |\n| ARN/synthèse des protéines | ? | ? |\n| Ribosomes | ? | ? |\n| Organites | ? | ? |\n| Respiration | ? | ? |\n| Division/reproduction | ? | ?",
+      "aide": "Comparez systématiquement les deux types cellulaires pour chaque critère.",
+      "solution": "| Critère | Procaryotes | Eucaryotes |\n|---------|-------------|------------|\n| Organismes types | Bactéries, Archées | Animaux, Végétaux, Champignons, Protistes |\n| Taille typique | 1-5 µm | 10-100 µm |\n| Noyau | Absent (zone nucléoïde) | Présent (enveloppe nucléaire) |\n| Chromosomes/ADN | 1 chromosome circulaire, ADN nu | Plusieurs chromosomes linéaires, ADN + histones |\n| ARN/synthèse des protéines | Transcription/traduction couplées, ARNm polycistronique | Séparées (noyau/cytoplasme), ARNm monocistronique + maturation |\n| Ribosomes | 70S | 80S (cytoplasme), 70S (mitochondries) |\n| Organites | Absents | Présents (RE, Golgi, lysosomes, mitochondries...) |\n| Respiration | Membrane plasmique | Mitochondries |\n| Division/reproduction | Fission binaire (asexué) | Mitose ou méiose, reproduction sexuée"
+    },
+    {
+      "id": "1.2",
+      "titre": "Structure des acides nucléiques",
+      "enonce": "1°) Quels sont les différents types d'acides nucléiques ?\n2°) Que sont les bases puriques et pyrimidiques ?\n3°) Quelles sont les différences entre l'ADN et l'ARN du point de vue de leur structure et de leur stabilité ?\n4°) Quelle est la différence entre nucléotide et nucléoside ?\n5°) Que sont les structures primaire et secondaire de l'ADN ? Quel type de liaison stabilise la structure secondaire de l'ADN ?",
+      "aide": "Pensez aux composants des nucléotides et aux différences ADN/ARN.",
+      "solution": "1°) ADN (acide désoxyribonucléique) et ARN (acide ribonucléique)\n2°) Purines (2 cycles) : Adénine (A) et Guanine (G). Pyrimidines (1 cycle) : Cytosine (C), Thymine (T, ADN), Uracile (U, ARN)\n3°) ADN : désoxyribose (pas d'OH en 2'), double brin, très stable. ARN : ribose (OH en 2' réactif), simple brin, moins stable\n4°) Nucléoside = base + ose. Nucléotide = base + ose + phosphate(s)\n5°) Structure primaire = séquence linéaire de nucléotides liés par liaisons phosphodiester. Structure secondaire = double hélice (Watson & Crick) stabilisée par liaisons hydrogène entre bases complémentaires (A=T : 2 liaisons H, G≡C : 3 liaisons H)"
+    },
+    {
+      "id": "1.3",
+      "titre": "Règle de Chargaff et Tm",
+      "enonce": "On analyse l'ADN chromosomique de deux souches d'Escherichia Coli. Les résultats de composition en bases sont :\n- Extrait 1 : 62% AT\n- Extrait 2 : 41% AT\n\n1°) Si le contenu en GC de l'extrait 1 est de 38%, quels sont les pourcentages des 4 bases A, T, G et C ?\n2°) On mesure la densité optique à 260 nm en fonction de la température pour les deux extraits. Quelle grandeur caractéristique peut-on déterminer par cette courbe ?\n3°) Quel est le lien entre cette grandeur physique et le pourcentage en AT de chaque extrait ?\n4°) Quel extrait aura la température de fusion (Tm) la plus élevée ? Justifiez.",
+      "aide": "Utilisez la règle de Chargaff et le lien entre Tm et contenu en G≡C.",
+      "solution": "1°) Si %AT = 62%, alors %A = %T = 31%. %GC = 38%, donc %G = %C = 19%\n2°) La température de fusion (Tm) : température à laquelle 50% de l'ADN est dénaturé (séparé en 2 brins simples)\n3°) Plus le pourcentage en AT est élevé, plus la Tm est basse, car les paires A=T ont seulement 2 liaisons H (vs 3 pour G≡C). Les ADN riches en AT sont moins stables thermiquement\n4°) L'extrait 2 aura la Tm la plus élevée car il a moins d'AT (41% vs 62%), donc plus de G≡C (59% vs 38%). Les paires G≡C (3 liaisons H) stabilisent davantage la double hélice"
+    },
+    {
+      "id": "1.4",
+      "titre": "Rapports de bases chez différentes espèces",
+      "enonce": "On a déterminé le nombre de bases azotées présentes dans l'ADN de différentes espèces et établi les rapports suivants.\n\n1°) Expliquez pourquoi le rapport (A+G)/(T+C) est toujours voisin de 1, quelle que soit l'espèce considérée.\n2°) Expliquez pourquoi les rapports (A+T)/(G+C) diffèrent selon les espèces chez lesquelles l'ADN a été analysé.\n3°) Construisez un modèle possible d'un fragment d'ADN qui comporterait 24 nucléotides et dont le rapport (A+T)/(G+C) serait de 1,4.",
+      "aide": "Utilisez la règle de Chargaff et les propriétés de la double hélice.",
+      "solution": "1°) Dans un ADN double brin, A s'apparie avec T et G avec C. Donc A = T et G = C. Ainsi (A+G)/(T+C) = (T+C)/(T+C) = 1. C'est la règle de Chargaff.\n2°) Le rapport (A+T)/(G+C) varie selon les espèces car chaque espèce a une composition en bases spécifique (pourcentage en AT et GC différent). Ce rapport reflète la diversité génétique entre espèces.\n3°) Si (A+T)/(G+C) = 1,4 et total = 24 nt, alors A+T = 14 nt et G+C = 10 nt. Donc A = T = 7 nt et G = C = 5 nt. Un brin possible : 5'-AATGCATGCTAGCATGCTAGCT-3' (avec son brin complémentaire)"
+    }
+  ]
+}

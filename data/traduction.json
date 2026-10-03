@@ -1,0 +1,139 @@
+{
+  "title": "La Traduction",
+  "subtitle": "Ce qui tombe vraiment : code génétique, ribosomes, ARNt, initiation/élongation/terminaison",
+  "sections": [
+    {
+      "title": "Principe Général",
+      "content": "La traduction est le passage de l'information ARN (alphabet à 4 lettres) à la forme protéine (alphabet à 20 acides aminés).",
+      "list": [
+        "Lieu : ribosomes (cytoplasme ou RE rugueux)",
+        "Sens de lecture de l'ARNm : 5' → 3'",
+        "Sens de synthèse de la protéine : N-terminal → C-terminal",
+        "Nécessite : ARNm, ARNt, ribosomes, acides aminés, facteurs protéiques, GTP"
+      ],
+      "formula": "ARNm (5'→3') → Protéine (N-term → C-term)"
+    },
+    {
+      "title": "Le Code Génétique",
+      "content": "Le code génétique est l'ensemble des règles qui permettent de traduire la séquence d'ADN/ARN en protéine.",
+      "list": [
+        "Universel : quasi-identique chez tous les êtres vivants (rares exceptions mitochondriales)",
+        "Dégénéré (redondant) : 61 codons pour 20 acides aminés (plusieurs codons = même acide aminé)",
+        "Non chevauchant : chaque nucléotide n'appartient qu'à un seul codon",
+        "Sans ponctuation : lecture continue, sans espace entre les codons",
+        "Codon start : AUG (code pour la méthionine)",
+        "Codons stop : UAA, UAG, UGA (ne codent pour aucun acide aminé)"
+      ],
+      "hint": "Un code à 3 nucléotides (codon) offre 4³ = 64 combinaisons possibles, suffisant pour coder les 20 acides aminés"
+    },
+    {
+      "title": "Les Ribosomes",
+      "content": "Les ribosomes sont les sites de la traduction. Ce sont des complexes ribonucléoprotéiques (ARNr + protéines).",
+      "table": [
+        {"organisme": "Procaryotes", "sous_unite_petite": "30S (16S ARNr + 21 protéines)", "sous_unite_grande": "50S (5S + 23S ARNr + 31 protéines)", "ribosome_complet": "70S"},
+        {"organisme": "Eucaryotes", "sous_unite_petite": "40S (18S ARNr + ~33 protéines)", "sous_unite_grande": "60S (5S + 5.8S + 28S ARNr + ~49 protéines)", "ribosome_complet": "80S"}
+      ],
+      "list": [
+        "Site A (Aminoacyl) : accueille l'aminoacyl-ARNt entrant",
+        "Site P (Peptidyl) : contient l'ARNt portant la chaîne polypeptidique en croissance",
+        "Site E (Exit) : d'où sort l'ARNt déacylé (vide)"
+      ],
+      "warning": "Les ribosomes mitochondriaux sont de type 70S (comme les bactéries), ce qui confirme la théorie endosymbiotique"
+    },
+    {
+      "title": "Les ARN de Transfert (ARNt)",
+      "content": "Les ARNt servent d'intermédiaires entre les acides aminés et les codons de l'ARNm.",
+      "list": [
+        "Petits ARN monocaténaires (~70-90 nucléotides)",
+        "Structure secondaire en feuille de trèfle",
+        "Structure tertiaire en L",
+        "Extrémité 3' : séquence CCA où se fixe l'acide aminé",
+        "Boucle de l'anticodon : 3 nucléotides complémentaires du codon de l'ARNm",
+        "Contiennent des nucléotides modifiés (pseudouridine, méthylations...)"
+      ],
+      "subsections": [
+        {
+          "title": "Le Wobble (Balancement)",
+          "content": "La 3ème base du codon peut former des appariements non canoniques avec la 1ère base de l'anticodon.",
+          "list": [
+            "Cela explique la dégénérescence du code génétique",
+            "Un même ARNt peut reconnaître plusieurs codons synonymes",
+            "Il n'existe que ~40 ARNt différents (pour 61 codons sense)"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Les Aminoacyl-ARNt Synthétases",
+      "content": "Ces enzymes assurent le chargement des ARNt avec l'acide aminé correct.",
+      "list": [
+        "Il existe 20 aminoacyl-ARNt synthétases (une par acide aminé)",
+        "Chaque enzyme reconnaît spécifiquement un acide aminé ET son ARNt correspondant",
+        "Réaction en 2 étapes :",
+        "1) Activation : acide aminé + ATP → aminoacyl-AMP + PPi",
+        "2) Transfert : aminoacyl-AMP + ARNt → aminoacyl-ARNt + AMP"
+      ],
+      "warning": "La fidélité de cette étape est cruciale : une erreur entraîne l'incorporation d'un mauvais acide aminé dans la protéine"
+    },
+    {
+      "title": "Les Étapes de la Traduction chez les Procaryotes",
+      "subsections": [
+        {
+          "title": "1. Initiation",
+          "content": "Assemblage du complexe d'initiation sur le codon start.",
+          "list": [
+            "La petite sous-unité 30S se lie à l'ARNm via la séquence de Shine-Dalgarno (complémentaire de l'ARNr 16S)",
+            "Le codon initiateur AUG est positionné dans le site P",
+            "L'ARNt initiateur (fMet-tRNAfMet) apporte la formyl-méthionine",
+            "3 facteurs d'initiation : IF1, IF2 (lié au GTP), IF3",
+            "L'hydrolyse du GTP permet l'assemblage de la sous-unité 50S → ribosome 70S fonctionnel"
+          ]
+        },
+        {
+          "title": "2. Élongation",
+          "content": "Cycle répétitif d'ajout d'acides aminés, consommant du GTP.",
+          "list": [
+            "Décodage : un aminoacyl-ARNt complémentaire du codon du site A se fixe (avec EF-Tu + GTP)",
+            "Formation de la liaison peptidique : la peptidyl transférase (activité de l'ARNr 23S) transfère la chaîne polypeptidique du site P vers l'acide aminé du site A",
+            "Translocation : le ribosome avance d'un codon (3 nucléotides) vers l'extrémité 3' de l'ARNm (catalysé par EF-G + GTP)",
+            "L'ARNt vide passe au site E et est éjecté, l'ARNt porteur de la chaîne passe au site P, libérant le site A pour le prochain ARNt"
+          ]
+        },
+        {
+          "title": "3. Terminaison",
+          "content": "Arrêt de la synthèse lorsque le ribosome rencontre un codon stop (UAA, UAG ou UGA).",
+          "list": [
+            "Aucun ARNt ne reconnaît les codons stop",
+            "3 facteurs de libération : RF1 (reconnaît UAA et UAG), RF2 (reconnaît UAA et UGA), RF3 (lié au GTP)",
+            "Ils provoquent l'hydrolyse de la liaison entre la chaîne polypeptidique et l'ARNt du site P",
+            "La protéine est libérée, et les sous-unités ribosomales se dissocient de l'ARNm"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Différences Procaryotes vs Eucaryotes",
+      "table": [
+        {"caracteristique": "Lieu", "procaryotes": "Cytoplasme", "eucaryotes": "Cytoplasme ou RE rugueux"},
+        {"caracteristique": "Ribosome", "procaryotes": "70S", "eucaryotes": "80S"},
+        {"caracteristique": "Codon start", "procaryotes": "AUG (formyl-méthionine)", "eucaryotes": "AUG (méthionine)"},
+        {"caracteristique": "Reconnaissance ARNm", "procaryotes": "Séquence de Shine-Dalgarno", "eucaryotes": "Coiffe 5' (scan jusqu'au premier AUG)"},
+        {"caracteristique": "Facteurs d'initiation", "procaryotes": "IF1, IF2, IF3", "eucaryotes": "eIF1, eIF2, eIF3, eIF4... (nombreux)"},
+        {"caracteristique": "Couplage", "procaryotes": "Transcription et traduction simultanées", "eucaryotes": "Séparées dans le temps et l'espace"}
+      ],
+      "hint": "Chez les procaryotes, les ribosomes peuvent commencer à traduire l'ARNm pendant qu'il est encore en cours de transcription"
+    },
+    {
+      "title": "Modifications Post-Traductionnelles",
+      "content": "Une fois synthétisée, la protéine peut subir des modifications pour acquérir sa fonction.",
+      "list": [
+        "Repliement (folding) : acquisition de la structure 3D, souvent aidée par des chaperonnes (BiP, Hsp70...)",
+        "Clivage protéolytique : retrait du peptide signal ou de pro-peptides (ex: pro-insuline → insuline)",
+        "Modifications chimiques : phosphorylation, glycosylation, acétylation, méthylation",
+        "Ajout de groupes : lipides (prenylation), sucres (glycosylation), groupes prosthétiques (hème...)",
+        "Formation de ponts disulfure : stabilisation de la structure tertiaire"
+      ],
+      "warning": "Un défaut de repliement (misfolding) peut entraîner l'agrégation des protéines et est impliqué dans des maladies neurodégénératives (Alzheimer, Parkinson...)"
+    }
+  ]
+}

@@ -1,0 +1,252 @@
+{
+  "title": "Le Cytosquelette",
+  "subtitle": "Ce qui tombe vraiment : 3 types de filaments, protéines motrices, centrosome, cils/flagelles",
+  "sections": [
+    {
+      "title": "Vue d'Ensemble",
+      "content": "Le cytosquelette est un réseau dynamique de filaments protéiques qui parcourt le cytoplasme de la cellule eucaryote.",
+      "list": [
+        "3 types de filaments : microfilaments d'actine, filaments intermédiaires, microtubules",
+        "Rôles : maintien de la forme, mouvement cellulaire, transport intracellulaire, division cellulaire",
+        "Constitués de protéines polymérisées (assemblage dynamique)",
+        "Interagissent avec de nombreuses protéines accessoires (MAPs, protéines motrices)"
+      ]
+    },
+    {
+      "title": "Comparaison des 3 Types de Filaments",
+      "content": "Tableau comparatif à maîtriser absolument :",
+      "table": [
+        {"caracteristique": "Diamètre", "microfilaments": "7 nm", "filaments_intermediaires": "10 nm", "microtubules": "25 nm"},
+        {"caracteristique": "Protéine constitutive", "microfilaments": "Actine (G-actine → F-actine)", "filaments_intermediaires": "Kératines, vimentine, lamines...", "microtubules": "Tubuline α/β (hétérodimère)"},
+        {"caracteristique": "Structure", "microfilaments": "Double hélice", "filaments_intermediaires": "Corde torsadée (8 tétramères)", "microtubules": "Tube creux (13 protofilaments)"},
+        {"caracteristique": "Polarité", "microfilaments": "Oui (+/-)", "filaments_intermediaires": "Non (antiparallèle)", "microtubules": "Oui (+/-)"},
+        {"caracteristique": "Nucléotide", "microfilaments": "ATP", "filaments_intermediaires": "Aucun", "microtubules": "GTP"},
+        {"caracteristique": "Dynamique", "microfilaments": "Très dynamique", "filaments_intermediaires": "Stable", "microtubules": "Instabilité dynamique"},
+        {"caracteristique": "Centre d'organisation", "microfilaments": "Pas de MTOC spécifique", "filaments_intermediaires": "Desmosomes, hémidesmosomes", "microtubules": "Centrosome (MTOC)"},
+        {"caracteristique": "Protéines motrices", "microfilaments": "Myosines", "filaments_intermediaires": "Aucune", "microtubules": "Kinésines, dynéines"},
+        {"caracteristique": "Fonctions principales", "microfilaments": "Forme, contraction, migration", "filaments_intermediaires": "Résistance mécanique, ancrage", "microtubules": "Transport, mitose, cils/flagelles"}
+      ]
+    },
+    {
+      "title": "Les Microfilaments d'Actine (7 nm)",
+      "subsections": [
+        {
+          "title": "Structure",
+          "list": [
+            "G-actine : monomère globulaire de 43 kDa (lie ATP/ADP)",
+            "F-actine : polymère hélicoïdal de 2 brins d'actine",
+            "Polarité : extrémité (+) barbelée (croissance rapide) et extrémité (-) pointue (croissance lente)",
+            "Diamètre : 7 nm"
+          ]
+        },
+        {
+          "title": "Dynamique de Polymérisation",
+          "content": "Trois phases distinctes :",
+          "list": [
+            "Nucléation (lente) : formation d'un trimère stable",
+            "Élongation (rapide) : ajout de monomères aux deux extrémités",
+            "Équilibre (steady state) : concentration critique atteinte"
+          ],
+          "hint": "Le treadmilling : ajout continu de monomères à l'extrémité (+) et perte à l'extrémité (-)"
+        },
+        {
+          "title": "Protéines Associées",
+          "table": [
+            {"proteine": "Myosine", "fonction": "Protéine motrice (contraction musculaire, transport)"},
+            {"proteine": "Tropomyosine", "fonction": "Stabilise les filaments (muscle)"},
+            {"proteine": "Filamine", "fonction": "Réticulation en gel (cortex cellulaire)"},
+            {"proteine": "Villine/Fimbrine", "fonction": "Réticulation en faisceaux (microvillosités)"},
+            {"proteine": "CapZ", "fonction": "Coiffe l'extrémité (+)"},
+            {"proteine": "Tropomoduline", "fonction": "Coiffe l'extrémité (-)"},
+            {"proteine": "Profiline", "fonction": "Favorise l'échange ADP→ATP sur l'actine"},
+            {"proteine": "Thymosine β4", "fonction": "Séquestre les monomères d'actine"}
+          ]
+        },
+        {
+          "title": "Drogues Affectant l'Actine",
+          "list": [
+            "Cytochalasine : inhibe la polymérisation (bloque l'extrémité +)",
+            "Phalloïdine (amanite phalloïde) : stabilise les filaments, empêche la dépolymérisation"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Les Filaments Intermédiaires (10 nm)",
+      "subsections": [
+        {
+          "title": "Structure",
+          "list": [
+            "Protéines fibreuses (α-hélicoïdales)",
+            "Dimère : 2 monomères en parallèle",
+            "Tétramère : 2 dimères en antiparallèle (pas de polarité)",
+            "Filament : 8 tétramères empilés en corde torsadée",
+            "Très résistants à la traction mécanique"
+          ]
+        },
+        {
+          "title": "Types et Localisation",
+          "table": [
+            {"type": "Kératines", "localisation": "Cellules épithéliales", "exemple": "Peau, cheveux, ongles"},
+            {"type": "Vimentine", "localisation": "Cellules du tissu conjonctif", "exemple": "Fibroblastes"},
+            {"type": "Desmine", "localisation": "Cellules musculaires", "exemple": "Muscle strié"},
+            {"type": "GFAP", "localisation": "Cellules gliales", "exemple": "Astrocytes"},
+            {"type": "Neurofilaments", "localisation": "Neurones", "exemple": "Axones"},
+            {"type": "Lamines nucléaires", "localisation": "Noyau", "exemple": "Toutes les cellules"}
+          ],
+          "warning": "Les lamines nucléaires sont les seuls filaments intermédiaires présents dans TOUTES les cellules eucaryotes"
+        },
+        {
+          "title": "Maladies Associées",
+          "list": [
+            "Épidermolyse bulleuse : mutation des kératines → fragilité cutanée",
+            "Progeria : mutation de la lamine A → vieillissement prématuré",
+            "SLA (sclérose latérale amyotrophique) : agrégats de neurofilaments"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Les Microtubules (25 nm)",
+      "subsections": [
+        {
+          "title": "Structure",
+          "list": [
+            "Hétérodimère α/β-tubuline (55 kDa chacune)",
+            "Tube creux composé de 13 protofilaments",
+            "Diamètre : 25 nm",
+            "Polarité : extrémité (+) exposée (β-tubuline) et extrémité (-) enfouie (α-tubuline)",
+            "α-tubuline : GTP non échangeable",
+            "β-tubuline : hydrolyse GTP en GDP après incorporation"
+          ]
+        },
+        {
+          "title": "Dynamique",
+          "list": [
+            "Instabilité dynamique : alternance entre croissance et catastrophe (dépolymérisation rapide)",
+            "Capuchon de GTP stabilise l'extrémité (+)",
+            "Treadmilling possible",
+            "Nucléation au niveau du centrosome (MTOC)"
+          ]
+        },
+        {
+          "title": "Protéines Associées (MAPs)",
+          "list": [
+            "MAP2 : stabilise les microtubules (neurones)",
+            "Tau : stabilise les microtubules axonaux (impliqué dans Alzheimer)",
+            "Kinésine-13 (MCAK) : déstabilise les microtubules"
+          ]
+        },
+        {
+          "title": "Protéines Motrices",
+          "table": [
+            {"famille": "Kinésines", "direction": "Vers l'extrémité (+)", "role": "Transport antérograde (vers la périphérie)"},
+            {"famille": "Dynéines cytoplasmiques", "direction": "Vers l'extrémité (-)", "role": "Transport rétrograde (vers le centre)"}
+          ],
+          "hint": "Les deux utilisent l'hydrolyse de l'ATP pour 'marcher' le long des microtubules"
+        },
+        {
+          "title": "Drogues Affectant les Microtubules",
+          "list": [
+            "Taxol (paclitaxel) : stabilise les microtubules, bloque la mitose (chimiothérapie)",
+            "Vinblastine/vincristine : empêchent la polymérisation (chimiothérapie)",
+            "Colchicine : inhibe la polymérisation (traitement de la goutte)",
+            "Nocodazole : dépolymérisation des microtubules"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Le Centrosome",
+      "content": "Principal centre d'organisation des microtubules (MTOC) chez les animaux.",
+      "subsections": [
+        {
+          "title": "Structure",
+          "list": [
+            "2 centrioles orthogonaux (mère et fille)",
+            "Chaque centriole : cylindre de 9 triplets de microtubules (structure 9+0)",
+            "Longueur : ~0,5 µm, diamètre : ~0,2 µm",
+            "Matériel péricentriolaire (PCM) : contient la γ-tubuline (nucléation)"
+          ]
+        },
+        {
+          "title": "Cycle de Duplication",
+          "list": [
+            "Phase G1 : centrosome avec 2 centrioles",
+            "Phase S : formation d'un procentriole perpendiculaire à chaque centriole",
+            "Phase G2 : elongation des procentrioles",
+            "Mitose : séparation des deux centrosomes, formation du fuseau mitotique",
+            "Cytokinèse : chaque cellule fille reçoit un centrosome"
+          ],
+          "warning": "Le centriole mère possède des appendices distaux et subdistaux nécessaires à la duplication"
+        }
+      ]
+    },
+    {
+      "title": "Le Fuseau Mitotique",
+      "content": "Structure de microtubules responsable de la séparation des chromosomes lors de la mitose.",
+      "list": [
+        "Microtubules kinétochoriens : s'attachent aux kinétochores des chromosomes, tirent les chromatides vers les pôles",
+        "Microtubules polaires : s'entrecroisent au centre, allongent la cellule",
+        "Microtubules astraux : rayonnent depuis les centrosomes, positionnent le plan de division"
+      ],
+      "hint": "Les kinétochores sont des complexes protéiques sur le centromère de chaque chromosome qui servent de point d'attache pour les microtubules"
+    },
+    {
+      "title": "Cils et Flagelles",
+      "subsections": [
+        {
+          "title": "Structure de l'Axonème",
+          "list": [
+            "Structure 9+2 : 9 doublets périphériques + 2 microtubules centraux",
+            "Doublets A (13 protofilaments) et B (10 protofilaments)",
+            "Bras de dynéine axonémique (protéine motrice) : génèrent le glissement",
+            "Nexine : liaison élastique entre doublets (convertit le glissement en courbure)",
+            "Radial spokes : liaison avec les microtubules centraux",
+            "Corps basal à la base (structure 9+0, similaire au centriole)"
+          ]
+        },
+        {
+          "title": "Mécanisme de Battement",
+          "content": "La dynéine axonémique hydrolyse l'ATP et 'marche' le long du doublet adjacent vers l'extrémité (-), générant un glissement converti en courbure par la nexine.",
+          "list": [
+            "Battement asymétrique : coup de puissance (stroke) et coup de retour",
+            "Mouvement coordonné des cils (métachronisme)",
+            "Exemples : spermatozoïdes (flagelle), épithélium respiratoire (cils)"
+          ]
+        },
+        {
+          "title": "Cils Primaires (9+0)",
+          "content": "Non motiles, présents sur la plupart des cellules mammifères.",
+          "list": [
+            "Rôle d'antenne cellulaire (mécanoréception, chimioréception)",
+            "Impliqués dans la signalisation Hedgehog (développement embryonnaire)",
+            "Mutations → ciliopathies (Bardet-Biedl, polykystose rénale)"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Interactions entre les Filaments",
+      "content": "Les 3 types de filaments ne fonctionnent pas isolément.",
+      "list": [
+        "Plectine : protéine d'ancrage entre les différents réseaux",
+        "Filaments intermédiaires ancrés aux desmosomes (cellule-cellule) et hémidesmosomes (cellule-matrice)",
+        "Microtubules et microfilaments coopèrent pour le transport intracellulaire et la migration",
+        "Lors de la mitose : fuseau (microtubules) + anneau contractile (actine-myosine) + lamines nucléaires (désassemblage de l'enveloppe)"
+      ]
+    },
+    {
+      "title": "Résumé des Drogues (à connaître)",
+      "table": [
+        {"drogue": "Cytochalasine", "cible": "Actine", "effet": "Inhibe la polymérisation"},
+        {"drogue": "Phalloïdine", "cible": "Actine", "effet": "Stabilise les filaments"},
+        {"drogue": "Taxol", "cible": "Microtubules", "effet": "Stabilise les MT (chimiothérapie)"},
+        {"drogue": "Colchicine", "cible": "Microtubules", "effet": "Inhibe la polymérisation"},
+        {"drogue": "Vinblastine", "cible": "Microtubules", "effet": "Dépolymérisation (chimiothérapie)"},
+        {"drogue": "Nocodazole", "cible": "Microtubules", "effet": "Dépolymérisation"}
+      ],
+      "warning": "Les drogues anti-mitotiques (Taxol, vinblastine) bloquent la division cellulaire en ciblant les microtubules du fuseau mitotique"
+    }
+  ]
+}

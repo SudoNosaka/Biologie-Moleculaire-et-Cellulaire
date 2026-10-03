@@ -1,0 +1,131 @@
+{
+  "title": "ADN & ARN : Structure des Acides Nucléiques",
+  "subtitle": "Ce qui tombe vraiment : nucléotides, double hélice, Chargaff, nucléosomes",
+  "sections": [
+    {
+      "title": "Le Nucléotide : Unité de Base",
+      "content": "Un nucléotide = 3 composants :",
+      "list": [
+        "Un groupement phosphate (PO₄³⁻)",
+        "Un ose (sucre à 5 carbones) : désoxyribose (ADN) ou ribose (ARN)",
+        "Une base azotée"
+      ]
+    },
+    {
+      "title": "Les Bases Azotées",
+      "content": "2 familles à distinguer :",
+      "table": [
+        {"famille": "Purines (2 cycles)", "adn": "Adénine (A) + Guanine (G)", "arn": "Adénine (A) + Guanine (G)"},
+        {"famille": "Pyrimidines (1 cycle)", "adn": "Cytosine (C) + Thymine (T)", "arn": "Cytosine (C) + Uracile (U)"}
+      ],
+      "hint": "Moyen mnémotechnique : CUT Py (Cytosine, Uracile, Thymine = pyrimidines)"
+    },
+    {
+      "title": "Nucléoside vs Nucléotide",
+      "list": [
+        "Nucléoside = base + ose (sans phosphate)",
+        "Nucléotide = base + ose + phosphate(s)",
+        "ATP = adénosine triphosphate (3 phosphates)"
+      ]
+    },
+    {
+      "title": "ADN vs ARN : Différences Clés",
+      "table": [
+        {"caractéristique": "Sucre", "adn": "Désoxyribose (pas d'OH en 2')", "arn": "Ribose (OH en 2')"},
+        {"caractéristique": "Bases", "adn": "A, T, G, C", "arn": "A, U, G, C"},
+        {"caractéristique": "Structure", "adn": "Double brin (généralement)", "arn": "Simple brin (généralement)"},
+        {"caractéristique": "Stabilité", "adn": "Très stable", "arn": "Moins stable (OH en 2' réactif)"},
+        {"caractéristique": "Localisation", "adn": "Noyau (eucaryotes)", "arn": "Noyau + cytoplasme"},
+        {"caractéristique": "Rôle", "adn": "Stockage information", "arn": "Expression des gènes"}
+      ],
+      "warning": "L'OH en 2' du ribose rend l'ARN plus réactif et moins stable que l'ADN (sujet d'examen fréquent)"
+    },
+    {
+      "title": "Structure Primaire : La Séquence",
+      "content": "Les nucléotides sont reliés par des liaisons phosphodiester :",
+      "list": [
+        "Entre le C3' d'un nucléotide et le C5' du suivant",
+        "Squelette sucre-phosphate alterné",
+        "Bases orientées vers l'intérieur",
+        "Polarité : extrémité 5' (phosphate libre) → extrémité 3' (OH libre)",
+        "Lecture et synthèse toujours dans le sens 5' → 3'"
+      ],
+      "formula": "5'-p-sucre-base-sucre-base-...-OH-3'"
+    },
+    {
+      "title": "Structure Secondaire : La Double Hélice (Watson & Crick, 1953)",
+      "content": "Caractéristiques de la double hélice B (forme la plus courante) :",
+      "list": [
+        "2 brins antiparallèles (5'→3' / 3'→5')",
+        "Enroulés autour d'un axe commun",
+        "Pas de l'hélice : 3,4 nm (10 paires de bases par tour)",
+        "Diamètre : 2 nm",
+        "Bases perpendiculaires à l'axe",
+        "Squelette sucre-phosphate à l'extérieur"
+      ]
+    },
+    {
+      "title": "Règles de Complémentarité",
+      "formula": "A = T (2 liaisons H) | G ≡ C (3 liaisons H)",
+      "list": [
+        "Une purine s'apparie toujours avec une pyrimidine",
+        "Les 2 brins sont complémentaires",
+        "Si on connaît un brin, on peut déduire l'autre"
+      ],
+      "hint": "G≡C a 3 liaisons H → plus stable thermiquement que A=T (2 liaisons H)"
+    },
+    {
+      "title": "Règle de Chargaff",
+      "content": "Dans un ADN double brin :",
+      "formula": "%A = %T et %G = %C",
+      "list": [
+        "Donc %purines = %pyrimidines",
+        "Ne s'applique PAS à l'ADN simple brin",
+        "Exemple : si %T = 28% → %A = 28%, %G = %C = 22%"
+      ],
+      "warning": "Question classique d'examen : calculer les pourcentages à partir d'une base connue"
+    },
+    {
+      "title": "Dénaturation et Température de Fusion (Tm)",
+      "content": "La Tm = température à laquelle 50% de l'ADN est dénaturé (séparé en 2 brins simples).",
+      "list": [
+        "Dénaturation = rupture des liaisons H (par chaleur, pH extrême, agents chimiques)",
+        "Renaturation = réassociation des brins complémentaires",
+        "Plus il y a de G≡C → Tm plus élevée (3 liaisons H)",
+        "Plus il y a de A=T → Tm plus basse (2 liaisons H)"
+      ],
+      "formula": "Tm ≈ 69,3 + 0,41 × (%G+C)"
+    },
+    {
+      "title": "Structure Tertiaire : Compaction de l'ADN",
+      "content": "Chez les eucaryotes : 2 mètres d'ADN dans un noyau de 5-10 µm !",
+      "list": [
+        "Niveau 1 : Nucléosome (11 nm) → compaction ×7",
+        "Niveau 2 : Fibre de chromatine 30 nm (solénoïde) → ×40",
+        "Niveau 3 : Boucles attachées à un scaffold → ×1000",
+        "Niveau 4 : Chromosome métaphasique → ×10 000"
+      ]
+    },
+    {
+      "title": "Le Nucléosome",
+      "content": "Unité de base de la chromatine :",
+      "list": [
+        "146 paires de bases d'ADN enroulées 1,75 fois",
+        "Autour d'un octamère d'histones : 2×(H2A + H2B + H3 + H4)",
+        "ADN linker (~50 pb) entre 2 nucléosomes",
+        "Histone H1 stabilise l'ADN linker"
+      ],
+      "formula": "ADN + histones → « collier de perles »"
+    },
+    {
+      "title": "Les Différents Types d'ARN",
+      "table": [
+        {"type": "ARNm (messager)", "rôle": "Copie d'un gène, matrice pour la traduction", "abondance": "~5%"},
+        {"type": "ARNt (transfert)", "rôle": "Transporte les acides aminés au ribosome", "abondance": "~15%"},
+        {"type": "ARNr (ribosomal)", "rôle": "Constituant majeur des ribosomes", "abondance": "~80%"},
+        {"type": "Petits ARN", "rôle": "Régulation, épissage (snARN, miRNA)", "abondance": "Variable"}
+      ],
+      "hint": "L'ARNr est le plus abondant (80%), pas l'ARNm !"
+    }
+  ]
+}

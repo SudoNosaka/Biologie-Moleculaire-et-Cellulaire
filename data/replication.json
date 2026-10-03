@@ -1,0 +1,121 @@
+{
+  "title": "La Réplication de l'ADN",
+  "subtitle": "Ce qui tombe vraiment : fourche de réplication, enzymes clés, fragments d'Okazaki, télomérase",
+  "sections": [
+    {
+      "title": "Principe Général",
+      "content": "La réplication est le processus de copie de l'ADN avant la division cellulaire (phase S du cycle cellulaire).",
+      "list": [
+        "Semi-conservative : chaque molécule fille contient 1 brin parental + 1 brin néosynthétisé",
+        "Bidirectionnelle : part d'une origine de réplication (oriC chez procaryotes, multiples origines chez eucaryotes)",
+        "Semi-discontinue : un brin synthétisé en continu, l'autre par fragments",
+        "Nécessite une amorce ARN (primer) synthétisée par la primase"
+      ],
+      "hint": "Expérience de Meselson-Stahl (1958) : preuve du modèle semi-conservatif par marquage isotopique (15N/14N) et centrifugation en gradient de densité"
+    },
+    {
+      "title": "Les Acteurs de la Fourche de Réplication",
+      "content": "La réplication fait intervenir un complexe enzymatique appelé réplisome :",
+      "table": [
+        {"enzyme": "ADN Hélicase", "role": "Ouvre la double hélice en rompant les liaisons H"},
+        {"enzyme": "Protéines SSB (procaryotes) / RPA (eucaryotes)", "role": "Stabilisent les brins simples, empêchent le réappariement"},
+        {"enzyme": "Topoisomérase (ADN Gyrase)", "role": "Relâche la tension de superenroulement en amont de la fourche"},
+        {"enzyme": "Primase (ARN polymérase)", "role": "Synthétise une amorce ARN (~10 nt)"},
+        {"enzyme": "ADN Polymérase III (procaryotes) / Pol δ (eucaryotes)", "role": "Élongation dans le sens 5'→3'"},
+        {"enzyme": "ADN Polymérase I (procaryotes) / RNase H (eucaryotes)", "role": "Élimine les amorces ARN"},
+        {"enzyme": "ADN Ligase", "role": "Relie les fragments d'Okazaki (liaison phosphodiester)"}
+      ],
+      "warning": "L'ADN polymérase ne peut synthétiser QUE dans le sens 5'→3' et nécessite une extrémité 3'-OH libre"
+    },
+    {
+      "title": "Brin Avancé vs Brin Retardé",
+      "content": "À cause de l'antiparallélisme des brins et de la synthèse 5'→3', la réplication est asymétrique :",
+      "table": [
+        {"caractéristique": "Brin avancé (leading)", "description": "Synthèse continue dans le sens de la fourche"},
+        {"caractéristique": "Brin retardé (lagging)", "description": "Synthèse discontinue par fragments d'Okazaki (1000-2000 nt procaryotes, 100-200 nt eucaryotes)"}
+      ],
+      "list": [
+        "Le brin avancé n'a besoin que d'une seule amorce",
+        "Le brin retardé nécessite de multiples amorces (une par fragment d'Okazaki)",
+        "Les amorces ARN sont éliminées et remplacées par de l'ADN",
+        "L'ADN ligase scelle les fragments entre eux"
+      ]
+    },
+    {
+      "title": "Les Étapes de la Réplication",
+      "subsections": [
+        {
+          "title": "1. Initiation",
+          "list": [
+            "Reconnaissance de l'origine de réplication (oriC chez E. coli : riche en AT)",
+            "Fixation des protéines DnaA (procaryotes) ou ORC (eucaryotes)",
+            "Ouverture de l'ADN par les hélicases (DnaB chez procaryotes)",
+            "Stabilisation par SSB/RPA",
+            "Formation de la bulle de réplication"
+          ]
+        },
+        {
+          "title": "2. Élongation",
+          "list": [
+            "Synthèse des amorces ARN par la primase",
+            "Élongation par l'ADN polymérase III (procaryotes) ou Pol δ/ε (eucaryotes)",
+            "Synthèse continue sur le brin avancé",
+            "Synthèse discontinue sur le brin retardé (fragments d'Okazaki)",
+            "Élimination des amorces par ADN Pol I (procaryotes) ou RNase H (eucaryotes)",
+            "Ligation des fragments par l'ADN ligase"
+          ]
+        },
+        {
+          "title": "3. Terminaison",
+          "list": [
+            "Rencontre des fourches de réplication (procaryotes : cercle)",
+            "Ouverture des origines multiples (eucaryotes : chromosomes linéaires)",
+            "Décaténation des chromosomes par les topoisomérases de type II"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Fidélité de la Réplication",
+      "content": "Le taux d'erreur est extrêmement faible (~10⁻⁹ à 10⁻¹⁰ erreurs par nucléotide).",
+      "list": [
+        "Sélectivité de l'ADN polymérase (reconnaissance stérique des paires A-T, G-C)",
+        "Activité proofreading (exonucléase 3'→5') : correction immédiate des erreurs",
+        "Système de réparation des mésappariements (Mismatch Repair) : correction post-réplication"
+      ],
+      "hint": "Les erreurs non corrigées peuvent entraîner des mutations, des maladies génétiques ou des cancers"
+    },
+    {
+      "title": "Le Problème des Extrémités : Télomères et Télomérase",
+      "content": "Chez les eucaryotes, les chromosomes sont linéaires. La réplication du brin retardé pose un problème à l'extrémité 5'.",
+      "list": [
+        "Quand la dernière amorce ARN est éliminée, il n'y a pas d'extrémité 3'-OH pour combler le vide",
+        "Conséquence : raccourcissement progressif des chromosomes à chaque division",
+        "Solution : les télomères (séquences répétitives non codantes, ex: TTAGGG chez l'homme)",
+        "La télomérase ajoute des répétitions télomériques à l'extrémité 3'"
+      ],
+      "subsections": [
+        {
+          "title": "La Télomérase",
+          "list": [
+            "Ribonucléoprotéine (contient un ARN matrice + activité reverse transcriptase)",
+            "Active dans les cellules germinales, les cellules souches et la plupart des cellules cancéreuses",
+            "Inactive dans la plupart des cellules somatiques → vieillissement cellulaire (limite de Hayflick)"
+          ]
+        }
+      ],
+      "warning": "Le raccourcissement des télomères est associé au vieillissement. Les cellules cancéreuses réactivent la télomérase pour devenir immortelles"
+    },
+    {
+      "title": "Vitesse et Processivité",
+      "content": "La réplication est un processus rapide et hautement processif :",
+      "table": [
+        {"paramètre": "Procaryotes (E. coli)", "valeur": "~1000 nt/seconde"},
+        {"paramètre": "Eucaryotes", "valeur": "~50-100 nt/seconde"},
+        {"paramètre": "Processivité ADN Pol III", "valeur": "~50 000 nt avant dissociation"},
+        {"paramètre": "Processivité ADN Pol I", "valeur": "~15-20 nt (enzyme distributive)"}
+      ],
+      "hint": "La haute processivité de l'ADN Pol III est due à la pince β (clamp) qui maintient l'enzyme sur l'ADN"
+    }
+  ]
+}

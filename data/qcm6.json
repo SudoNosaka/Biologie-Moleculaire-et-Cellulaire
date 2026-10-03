@@ -1,0 +1,204 @@
+{
+  "title": "QCM - Les Organites Cellulaires",
+  "subtitle": "3 niveaux : Facile (10Q) • Moyen (12Q) • Vicieux (10Q)",
+  "levels": {
+    "facile": [
+      {
+        "question": "Le système endomembranaire comprend :",
+        "options": ["Uniquement le noyau", "RE, Golgi, lysosomes, vésicules, membrane plasmique", "Seulement les mitochondries", "Le cytosquelette uniquement"],
+        "correct": 1,
+        "explanation": "Le système endomembranaire = enveloppe nucléaire + RE + Golgi + lysosomes + endosomes + vésicules + membrane plasmique. Les mitochondries et le cytosquelette n'en font pas partie."
+      },
+      {
+        "question": "Le réticulum endoplasmique rugueux (RER) est caractérisé par :",
+        "options": ["L'absence de ribosomes", "La présence de ribosomes sur sa face cytoplasmique", "La synthèse des lipides", "Le stockage du calcium"],
+        "correct": 1,
+        "explanation": "Le RER est recouvert de ribosomes sur sa face cytoplasmique (aspect 'rugueux'). Il est le siège de la synthèse des protéines sécrétées, membranaires et lysosomales."
+      },
+      {
+        "question": "Le réticulum endoplasmique lisse (REL) a pour fonctions :",
+        "options": ["Synthèse des protéines", "Synthèse des lipides, détoxification, stockage du Ca²⁺", "Épissage des ARNm", "Réplication de l'ADN"],
+        "correct": 1,
+        "explanation": "Le REL (sans ribosomes) synthétise les lipides (phospholipides, stéroïdes), détoxifie (cytochrome P450) et stocke le Ca²⁺ (réticulum sarcoplasmique dans les muscles)."
+      },
+      {
+        "question": "L'appareil de Golgi possède une polarité :",
+        "options": ["Face cis (côté membrane plasmique) et face trans (côté RE)", "Face cis (côté RE) et face trans (côté membrane plasmique)", "Pas de polarité", "Face médiane uniquement"],
+        "correct": 1,
+        "explanation": "Le Golgi reçoit les vésicules du RE par la face cis (entrée) et expédie les vésicules vers la membrane plasmique ou les lysosomes par la face trans (sortie)."
+      },
+      {
+        "question": "Les lysosomes ont un pH interne :",
+        "options": ["Neutre (~7,2)", "Acide (~4,5-5,0)", "Basique (~9,0)", "Très acide (~2,0)"],
+        "correct": 1,
+        "explanation": "Les lysosomes ont un pH acide (4,5-5,0) maintenu par des pompes V-ATPases. Ce pH est optimal pour les hydrolases acides qu'ils contiennent."
+      },
+      {
+        "question": "Les peroxysomes contiennent la catalase qui :",
+        "options": ["Synthétise de l'ATP", "Détoxifie le H₂O₂ (2 H₂O₂ → 2 H₂O + O₂)", "Dégrade les protéines", "Synthétise des lipides"],
+        "correct": 1,
+        "explanation": "La catalase des peroxysomes convertit le peroxyde d'hydrogène (H₂O₂, toxique) en eau et oxygène. Les peroxysomes réalisent aussi la β-oxydation des acides gras à très longue chaîne."
+      },
+      {
+        "question": "Les mitochondries sont délimitées par :",
+        "options": ["Une seule membrane", "Une double membrane", "Trois membranes", "Aucune membrane"],
+        "correct": 1,
+        "explanation": "Les mitochondries ont une double membrane : externe (lisse, avec porines) et interne (repliée en crêtes, contenant la chaîne respiratoire et l'ATP synthase)."
+      },
+      {
+        "question": "Selon la théorie endosymbiotique, les mitochondries dérivent :",
+        "options": ["D'une invagination de la membrane plasmique", "D'une ancienne bactérie aérobie engulfée", "Du réticulum endoplasmique", "Du noyau"],
+        "correct": 1,
+        "explanation": "La théorie endosymbiotique (Lynn Margulis, 1967) postule que les mitochondries dérivent d'une α-protéobactérie engulfée il y a ~2 milliards d'années. Preuves : ADN circulaire, ribosomes 70S, fission binaire."
+      },
+      {
+        "question": "La voie de sécrétion suit le trajet :",
+        "options": ["Golgi → RE → membrane plasmique", "RE → Golgi → membrane plasmique", "Membrane plasmique → Golgi → RE", "Noyau → RE → Golgi"],
+        "correct": 1,
+        "explanation": "La voie de sécrétion = RE → (vésicules COP II) → Golgi (cis → trans) → (vésicules de sécrétion) → membrane plasmique (exocytose)."
+      },
+      {
+        "question": "Le nucléole est le site de :",
+        "options": ["La réplication de l'ADN", "La synthèse des ARNr et assemblage des ribosomes", "La traduction", "La glycolyse"],
+        "correct": 1,
+        "explanation": "Le nucléole est le lieu de synthèse des ARNr (18S, 5.8S, 28S) et de l'assemblage des sous-unités ribosomales. Il est organisé autour des régions ADNr (chromosomes 13, 14, 15, 21, 22)."
+      }
+    ],
+    "moyen": [
+      {
+        "question": "La membrane externe du RE est en continuité avec :",
+        "options": ["La membrane plasmique", "La membrane externe de l'enveloppe nucléaire", "La membrane mitochondriale", "L'appareil de Golgi"],
+        "correct": 1,
+        "explanation": "La membrane externe de l'enveloppe nucléaire est en continuité avec le RE rugueux. L'espace péri-nucléaire communique avec la lumière du RE."
+      },
+      {
+        "question": "Les pores nucléaires permettent :",
+        "options": ["La synthèse d'ADN", "Les échanges entre noyau et cytoplasme (ARN, protéines)", "La division cellulaire", "La photosynthèse"],
+        "correct": 1,
+        "explanation": "Les pores nucléaires (complexes NPC) contrôlent les échanges noyau/cytoplasme : export des ARNm, ARNr, ARNt ; import des protéines nucléaires (histones, ADN polymérases, facteurs de transcription)."
+      },
+      {
+        "question": "L'hétérochromatine est :",
+        "options": ["Décondensée et transcriptionnellement active", "Condensée et transcriptionnellement inactive", "Absente du noyau", "Constituée d'ARN"],
+        "correct": 1,
+        "explanation": "L'hétérochromatine = forme condensée de l'ADN, transcriptionnellement inactive, située en périphérie du noyau. L'euchromatine = décondensée et active, au centre du noyau."
+      },
+      {
+        "question": "Le peptide signal d'adressage au RE est :",
+        "options": ["Une séquence de 50-100 acides aminés hydrophiles", "Une séquence de 16-30 acides aminés hydrophobes en N-terminal", "Une séquence en C-terminal", "Une séquence de sucres"],
+        "correct": 1,
+        "explanation": "Le peptide signal = 16-30 acides aminés hydrophobes en N-terminal de la protéine en synthèse. Il est reconnu par la SRP (Signal Recognition Particle) qui guide le ribosome vers le RE."
+      },
+      {
+        "question": "La N-glycosylation dans le RE se fait sur :",
+        "options": ["Le groupement OH d'une sérine", "Le groupement NH₂ d'une asparagine (séquence Asn-X-Ser/Thr)", "Le groupement COOH d'un acide glutamique", "Le groupement SH d'une cystéine"],
+        "correct": 1,
+        "explanation": "La N-glycosylation = ajout d'un oligosaccharide sur l'azote d'une asparagine dans la séquence Asn-X-Ser/Thr. L'oligosaccharide est transféré en bloc depuis le dolichol-pyrophosphate."
+      },
+      {
+        "question": "La O-glycosylation dans le Golgi se fait sur :",
+        "options": ["Le groupement NH₂ d'une asparagine", "Le groupement OH d'une sérine ou thréonine", "Le groupement COOH d'un acide aspartique", "Le groupement SH d'une méthionine"],
+        "correct": 1,
+        "explanation": "La O-glycosylation = ajout progressif d'oses sur le groupement OH d'une sérine ou thréonine. Elle débute dans les saccules médians du Golgi et produit des chaînes plus courtes que les N-glycanes."
+      },
+      {
+        "question": "Les vésicules COP II transportent les protéines :",
+        "options": ["Du Golgi vers le RE (rétrograde)", "Du RE vers le Golgi (antérograde)", "Du Golgi vers les lysosomes", "De la membrane plasmique vers les endosomes"],
+        "correct": 1,
+        "explanation": "COP II = transport antérograde RE → Golgi (face cis). COP I = transport rétrograde Golgi → RE (récupération des protéines résidentes du RE, signal KDEL). Clathrine = Golgi → endosomes/lysosomes + endocytose."
+      },
+      {
+        "question": "Le signal KDEL sert à :",
+        "options": ["Exporter les protéines hors de la cellule", "Récupérer les protéines résidentes du RE qui ont fui vers le Golgi", "Cibler les protéines vers les lysosomes", "Marquer les protéines pour la dégradation"],
+        "correct": 1,
+        "explanation": "KDEL (Lys-Asp-Glu-Leu) = signal de rétention/récupération des protéines résidentes du RE (ex: BiP, PDI). Si une protéine KDEL arrive au Golgi, elle est reconnue par le récepteur KDEL et ramenée au RE via COP I."
+      },
+      {
+        "question": "Le mannose-6-phosphate sert de signal pour :",
+        "options": ["La sécrétion constitutive", "Le ciblage des enzymes vers les lysosomes", "L'export hors de la cellule", "La rétention dans le RE"],
+        "correct": 1,
+        "explanation": "Le mannose-6-phosphate (M6P) = signal de tri des enzymes lysosomales. Ajouté dans le Golgi, il est reconnu par le récepteur M6P qui dirige les enzymes vers les endosomes/lysosomes."
+      },
+      {
+        "question": "Les protéines SNARE servent à :",
+        "options": ["Synthétiser les protéines", "Assurer la spécificité et la fusion des vésicules avec leur membrane cible", "Dégrader les protéines", "Transporter les ions"],
+        "correct": 1,
+        "explanation": "SNARE = v-SNARE (vésicule) + t-SNARE (cible). Elles s'enroulent pour former un complexe en trans-SNARE qui rapproche les membranes et provoque leur fusion. Les protéines Rab assurent le ciblage initial."
+      },
+      {
+        "question": "Les chaperonnes du RE (ex: BiP) ont pour rôle de :",
+        "options": ["Dégrader les protéines mal repliées", "Aider au repliement correct des protéines", "Transporter les protéines vers le Golgi", "Glycosyler les protéines"],
+        "correct": 1,
+        "explanation": "BiP (Hsp70 du RE) se lie provisoirement aux segments hydrophobes des protéines en synthèse pour favoriser leur repliement correct. Les protéines mal repliées sont exportées vers le cytosol et dégradées par les protéasomes (ERAD)."
+      },
+      {
+        "question": "La β-oxydation des acides gras a lieu :",
+        "options": ["Uniquement dans le RE", "Dans les peroxysomes (acides gras à très longue chaîne) et les mitochondries (acides gras à chaîne courte/moyenne)", "Uniquement dans le Golgi", "Dans le cytoplasme"],
+        "correct": 1,
+        "explanation": "Les peroxysomes oxydent les acides gras à très longue chaîne (>20C) en acides gras à chaîne plus courte, qui sont ensuite transférés aux mitochondries pour la β-oxydation complète et la production d'ATP."
+      }
+    ],
+    "vicieux": [
+      {
+        "question": "Si on traite des cellules avec de la tunicamycine (inhibiteur de la N-glycosylation), quelle sera la conséquence ?",
+        "options": ["Aucune effet", "Les protéines ne peuvent pas être glycosylées, mal repliées et dégradées par le protéasome (ERAD)", "Les protéines sont sécrétées plus rapidement", "Les lysosomes deviennent plus acides"],
+        "correct": 1,
+        "explanation": "La tunicamycine bloque le transfert de l'oligosaccharide depuis le dolichol vers l'asparagine. Sans glycosylation, les protéines sont mal repliées, reconnues par les chaperonnes, et exportées vers le cytosol pour dégradation par le protéasome (ERAD = Endoplasmic Reticulum-Associated Degradation)."
+      },
+      {
+        "question": "Une mutation dans le gène de la lamine A (LMNA) entraîne :",
+        "options": ["Aucun effet", "La progéria (vieillissement prématuré) et des dystrophies musculaires", "Une augmentation de la synthèse d'ATP", "Une dégradation accélérée des lysosomes"],
+        "correct": 1,
+        "explanation": "Les lamines (filaments intermédiaires du noyau) soutiennent l'enveloppe nucléaire. Une mutation de la lamine A entraîne la progéria (syndrome de Hutchinson-Gilford) et des dystrophies musculaires. Le noyau perd sa forme et sa stabilité."
+      },
+      {
+        "question": "Si on inhibe la SRP (Signal Recognition Particle) avec une toxine, que se passe-t-il ?",
+        "options": ["Rien", "Les protéines destinées au RE restent dans le cytoplasme et sont mal localisées", "Toutes les protéines sont sécrétées", "Le Golgi disparaît"],
+        "correct": 1,
+        "explanation": "La SRP reconnaît le peptide signal et bloque temporairement la traduction jusqu'à ce que le ribosome soit recruté sur le RE. Sans SRP, les protéines avec peptide signal sont synthétisées complètement dans le cytoplasme et ne peuvent pas être transloquées dans le RE → mauvaise localisation."
+      },
+      {
+        "question": "Le dolichol-pyrophosphate est :",
+        "options": ["Une protéine du cytosquelette", "Un lipide ancré dans la membrane du RE sur lequel est assemblé l'oligosaccharide pour la N-glycosylation", "Un ARN messager", "Un composant du nucléole"],
+        "correct": 1,
+        "explanation": "Le dolichol-pyrophosphate = lipide à longue chaîne (100-150 carbones) ancré dans la membrane du RE. Il sert de support pour l'assemblage de l'oligosaccharide (GlcNac₂Man₉Glc₃) avant son transfert en bloc sur l'asparagine de la protéine en synthèse."
+      },
+      {
+        "question": "Si on surexprime la calnexine (chaperonne du RE), quel sera l'effet ?",
+        "options": ["Inhibition de la glycosylation", "Amélioration du repliement des protéines monoglucosylées", "Dégradation accélérée des protéines", "Export massif vers le Golgi"],
+        "correct": 1,
+        "explanation": "La calnexine (et la calréticuline) reconnaît les protéines monoglucosylées (il reste 1 glucose sur la cupule) et favorise leur repliement correct. Leur surexpression améliore le contrôle qualité du RE et réduit l'agrégation de protéines mal repliées."
+      },
+      {
+        "question": "Les maladies lysosomales (ex: maladie de Tay-Sachs) sont causées par :",
+        "options": ["Un excès d'hydrolases", "Un déficit en une hydrolase acide spécifique → accumulation du substrat non dégradé", "Un pH trop acide", "Une membrane lysosomale trop résistante"],
+        "correct": 1,
+        "explanation": "Les maladies lysosomales = déficit génétique en une hydrolase acide spécifique → accumulation du substrat non dégradé dans le lysosome. Ex: Tay-Sachs = déficit en hexosaminidase A → accumulation de gangliosides GM2 dans les neurones → dégénérescence."
+      },
+      {
+        "question": "Le réticulum sarcoplasmique est :",
+        "options": ["Un type de Golgi", "Le RE lisse spécialisé des cellules musculaires pour le stockage du Ca²⁺", "Un type de mitochondrie", "Un organite végétal"],
+        "correct": 1,
+        "explanation": "Le réticulum sarcoplasmique = RE lisse très développé dans les cellules musculaires. Il stocke le Ca²⁺ (via la pompe Ca²⁺-ATPase et la calséquestrine) et le libère lors de la contraction musculaire (via le canal ryanodine)."
+      },
+      {
+        "question": "Si on mute le récepteur M6P (mannose-6-phosphate), que se passe-t-il ?",
+        "options": ["Rien", "Les enzymes lysosomales sont sécrétées hors de la cellule au lieu d'aller aux lysosomes → maladies (mucolipidose II)", "Les lysosomes deviennent plus acides", "Le Golgi disparaît"],
+        "correct": 1,
+        "explanation": "Sans récepteur M6P fonctionnel, les enzymes lysosomales (marquées M6P dans le Golgi) ne sont pas reconnues et suivent la voie de sécrétion constitutive → elles sont excrétées hors de la cellule. Les lysosomes sont vides d'enzymes → accumulation de substrats (mucolipidose II / I-cell disease)."
+      },
+      {
+        "question": "L'ADN mitochondrial (ADNmt) est hérité :",
+        "options": ["Également du père et de la mère", "Exclusivement de la mère (hérédité maternelle)", "Exclusivement du père", "Aléatoirement"],
+        "correct": 1,
+        "explanation": "L'ADNmt est hérité exclusivement de la mère car le spermatozoïde ne contribue pratiquement pas de mitochondries au zygote (seulement quelques-unes dans la pièce intermédiaire, dégradées après la fécondation). Donc hérédité maternelle stricte."
+      },
+      {
+        "question": "Si on traite des cellules avec du brefeldine A (BFA), que se passe-t-il ?",
+        "options": ["Rien", "Le Golgi disparaît et ses enzymes retournent dans le RE (inhibition du transport COP I)", "Les mitochondries se divisent", "Les lysosomes fusionnent"],
+        "correct": 1,
+        "explanation": "Le brefeldine A (BFA) inhibe l'assemblage du manteau COP I → le transport rétrograde Golgi → RE est bloqué, mais paradoxalement le Golgi 'fusionne' avec le RE et disparaît. Les enzymes golgiennes retournent dans le RE. Utilisé expérimentalement pour étudier le trafic vésiculaire."
+      }
+    ]
+  }
+}

@@ -1,0 +1,222 @@
+{
+  "title": "Les Organites Cellulaires",
+  "subtitle": "Ce qui tombe vraiment : RE, Golgi, lysosomes, mitochondrie, voie de sécrétion",
+  "sections": [
+    {
+      "title": "Le Système Endomembranaire",
+      "content": "Les organites membranaires forment un système interconnecté qui fonctionne de manière coordonnée.",
+      "list": [
+        "Comprend : enveloppe nucléaire, RE (rugueux et lisse), Golgi, lysosomes, endosomes, vésicules, membrane plasmique",
+        "Permet la séparation de réactions biochimiques incompatibles",
+        "Augmente la surface disponible pour les réactions membranaires",
+        "Communication entre compartiments via le transport vésiculaire"
+      ],
+      "hint": "La membrane est une bicouche phospholipidique fluide (modèle de Singer et Nicolson, 1972)"
+    },
+    {
+      "title": "Le Noyau",
+      "content": "Organite le plus gros (5-10 µm), siège de la transcription et de la réplication.",
+      "subsections": [
+        {
+          "title": "Enveloppe Nucléaire",
+          "list": [
+            "Double membrane (interne + externe)",
+            "Espace péri-nucléaire entre les 2 membranes",
+            "Membrane externe en continuité avec le RE rugueux",
+            "Percée de pores nucléaires (complexes NPC) : contrôlent les échanges noyau/cytoplasme"
+          ]
+        },
+        {
+          "title": "Chromatine",
+          "list": [
+            "Hétérochromatine : condensée, transcriptionnellement inactive",
+            "Euchromatine : décondensée, transcriptionnellement active",
+            "Lamina nucléaire : réseau de filaments intermédiaires sous la membrane interne"
+          ]
+        },
+        {
+          "title": "Nucléole",
+          "list": [
+            "Région dense sans membrane",
+            "Site de synthèse des ARNr et assemblage des sous-unités ribosomales",
+            "Organisé autour des régions ADNr (chromosomes 13, 14, 15, 21, 22 chez l'homme)"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Le Réticulum Endoplasmique (RE)",
+      "content": "Réseau de membranes interconnectées, en continuité avec l'enveloppe nucléaire.",
+      "table": [
+        {"caractéristique": "RE Rugueux (RER)", "description": "Recouvert de ribosomes sur la face cytoplasmique"},
+        {"caractéristique": "Fonctions RER", "description": "Synthèse des protéines sécrétées, membranaires, lysosomales ; N-glycosylation ; contrôle qualité (chaperonnes BiP)"},
+        {"caractéristique": "RE Lisse (REL)", "description": "Dépourvu de ribosomes, aspect tubulaire"},
+        {"caractéristique": "Fonctions REL", "description": "Synthèse des lipides (phospholipides, stéroïdes) ; détoxification (cytochrome P450) ; stockage du Ca²⁺"}
+      ],
+      "warning": "Le REL hépatique est très développé pour la détoxification. Le réticulum sarcoplasmique (muscle) stocke le Ca²⁺ pour la contraction"
+    },
+    {
+      "title": "L'Appareil de Golgi",
+      "content": "Empilement de citernes membraneuses aplaties (dictyosomes). Possède une polarité.",
+      "list": [
+        "Face cis : côté RE (réception des vésicules)",
+        "Face trans : côté membrane plasmique (expédition des vésicules)",
+        "Compartiments intermédiaires : cis, médial, trans"
+      ],
+      "subsections": [
+        {
+          "title": "Fonctions Principales",
+          "list": [
+            "Tri et modification des protéines provenant du RE",
+            "Glycosylation (maturation des chaînes glucidiques, O-glycosylation)",
+            "Synthèse de polysaccharides (pectines, hémicelluloses chez les végétaux)",
+            "Formation de vésicules de sécrétion ou destinées à d'autres organites",
+            "Marquage des protéines pour leur destination finale (ex: mannose-6-phosphate pour les lysosomes)"
+          ]
+        }
+      ],
+      "hint": "Le Golgi fonctionne comme un centre de tri postal : il reçoit, modifie, étiquette et expédie"
+    },
+    {
+      "title": "Les Lysosomes",
+      "content": "Vésicules acides contenant des enzymes digestives.",
+      "list": [
+        "pH interne : 4,5-5,0 (maintenu par des pompes V-ATPases)",
+        "Contiennent >50 hydrolases acides (protéases, lipases, nucléases, glycosidases)",
+        "Capables de dégrader toutes les macromolécules biologiques"
+      ],
+      "subsections": [
+        {
+          "title": "Fonctions",
+          "list": [
+            "Digestion intracellulaire des macromolécules",
+            "Autophagie : dégradation des organites vieillissants ou endommagés",
+            "Phagocytose : digestion de particules ingérées (bactéries, débris)",
+            "Recyclage des composants cellulaires"
+          ]
+        },
+        {
+          "title": "Protection",
+          "content": "La membrane lysosomale est fortement glycosylée, ce qui la protège de ses propres enzymes. Les hydrolases acides sont inactives à pH neutre (7,2), donc si un lysosome se rompt, les enzymes libérées dans le cytosol sont inoffensives.",
+          "warning": "Un défaut de cette protection entraîne des maladies lysosomales (ex: maladie de Tay-Sachs)"
+        }
+      ]
+    },
+    {
+      "title": "Les Peroxysomes",
+      "content": "Petits organites sphériques (0,2-1 µm) délimités par une membrane unique.",
+      "list": [
+        "Contiennent des enzymes oxydatives",
+        "β-oxydation des acides gras à très longue chaîne",
+        "Détoxification du H₂O₂ par la catalase : 2 H₂O₂ → 2 H₂O + O₂",
+        "Biosynthèse des plasmalogènes (phospholipides de la myéline)",
+        "Métabolisme des purines (photorespiration chez les plantes)"
+      ],
+      "subsections": [
+        {
+          "title": "Origine",
+          "content": "Contrairement aux autres organites du système endomembranaire, les peroxysomes ne dérivent pas du RE. Ils se forment par bourgeonnement à partir de peroxysomes préexistants ou par division.",
+          "warning": "Un défaut de biogenèse des peroxysomes entraîne des maladies graves (maladies de Zellweger)"
+        }
+      ]
+    },
+    {
+      "title": "Les Mitochondries",
+      "content": "Organites ovoïdes (0,5-1 µm de diamètre, 2-8 µm de long), \"centrales énergétiques\" de la cellule.",
+      "subsections": [
+        {
+          "title": "Structure",
+          "list": [
+            "Double membrane : externe (lisse) et interne (repliée en crêtes)",
+            "Espace intermembranaire entre les 2 membranes",
+            "Matrice mitochondriale : contient ADNmt, ribosomes 70S, enzymes du cycle de Krebs",
+            "Membrane interne : contient la chaîne respiratoire et l'ATP synthase"
+          ]
+        },
+        {
+          "title": "Fonctions",
+          "list": [
+            "Production d'ATP par phosphorylation oxydative (chaîne respiratoire + ATP synthase)",
+            "Cycle de Krebs (dans la matrice)",
+            "β-oxydation des acides gras",
+            "Régulation de l'apoptose (mort cellulaire programmée) via la libération du cytochrome c"
+          ]
+        },
+        {
+          "title": "Origine Endosymbiotique",
+          "content": "Selon la théorie endosymbiotique (Lynn Margulis, 1967), les mitochondries dérivent d'une ancienne bactérie aérobie engulfée par une cellule hôte il y a ~2 milliards d'années.",
+          "list": [
+            "Possèdent leur propre ADN circulaire (ADNmt), hérité exclusivement de la mère",
+            "Ribosomes de type 70S (comme les bactéries)",
+            "Se reproduisent par fission binaire (indépendamment de la division cellulaire)",
+            "Double membrane (membrane interne = membrane bactérienne originale)"
+          ]
+        }
+      ],
+      "hint": "Les mitochondries sont sensibles aux antibiotiques qui ciblent les ribosomes 70S (ex: tétracycline), car leurs propres ribosomes sont aussi de type 70S"
+    },
+    {
+      "title": "Les Chloroplastes (Cellules Végétales)",
+      "content": "Organites spécifiques aux cellules végétales et aux algues, siège de la photosynthèse.",
+      "list": [
+        "Double membrane (externe + interne)",
+        "Stroma : équivalent de la matrice mitochondriale",
+        "Thylakoïdes : membranes internes empilées en grana",
+        "Lumen des thylakoïdes"
+      ],
+      "subsections": [
+        {
+          "title": "Fonctions",
+          "list": [
+            "Photosynthèse : conversion de l'énergie lumineuse en énergie chimique (glucose)",
+            "Phase claire : dans les thylakoïdes (production d'ATP et NADPH)",
+            "Cycle de Calvin : dans le stroma (fixation du CO₂)"
+          ]
+        },
+        {
+          "title": "Origine Endosymbiotique",
+          "content": "Comme les mitochondries, les chloroplastes dérivent d'une endosymbiose (cyanobactérie engulfée par une cellule eucaryote ancestrale).",
+          "list": [
+            "ADN circulaire propre",
+            "Ribosomes 70S",
+            "Reproduction par fission binaire"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "La Voie de Sécrétion",
+      "content": "Trajet d'une protéine destinée à être sécrétée ou envoyée à la membrane plasmique.",
+      "list": [
+        "1. Synthèse débutée par un ribosome libre",
+        "2. Ciblage vers le RER via le peptide signal (séquence N-terminale)",
+        "3. Translocation dans la lumière du RER (folding + N-glycosylation)",
+        "4. Bourgeonnement de vésicules de transport (COP II) depuis le RE",
+        "5. Fusion avec la face cis du Golgi",
+        "6. Transit à travers les citernes du Golgi (cis → médial → trans)",
+        "7. Modifications (glycosylation, clivages)",
+        "8. Bourgeonnement de vésicules de sécrétion depuis la face trans",
+        "9. Fusion avec la membrane plasmique et libération par exocytose"
+      ],
+      "hint": "Cette voie a été élucidée par George Palade (prix Nobel 1974) grâce à des expériences de pulse-chase avec des acides aminés radioactifs"
+    },
+    {
+      "title": "Le Transport Vésiculaire",
+      "content": "Mécanisme de déplacement de molécules entre les compartiments via des vésicules.",
+      "table": [
+        {"type_de_vésicule": "COP II", "direction": "RE → Golgi (cis)", "rôle": "Transport antérograde"},
+        {"type_de_vésicule": "COP I", "direction": "Golgi → RE", "rôle": "Transport rétrograde (récupération des protéines résidentes du RE, signal KDEL)"},
+        {"type_de_vésicule": "Clathrine", "direction": "Golgi (trans) → endosomes/lysosomes ; membrane plasmique → endosomes", "rôle": "Transport vers lysosomes + endocytose"}
+      ],
+      "subsections": [
+        {
+          "title": "Mécanisme de Fusion",
+          "list": [
+            "Protéines Rab (GTPases) : assurent le ciblage et l'ancrage initial",
+            "Protéines SNARE : v-SNARE (vésicule) et t-SNARE (cible) s'enroulent pour former un complexe stable qui rapproche les membranes et provoque la fusion"
+          ]
+        }
+      ]
+    }
+  ]
+}
