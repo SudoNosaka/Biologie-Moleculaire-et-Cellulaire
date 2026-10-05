@@ -271,6 +271,126 @@
       "category": "Cytosquelette",
       "recto": "Ciliopathie ?",
       "verso": "Maladie génétique due à mutations affectant les cils primaires (9+0, non motiles).\nEx : polykystose rénale, syndrome de Bardet-Biedl.\nPhénotypes : obésité, rétinite, kystes, polydactylie."
+    },
+    {
+      "id": 46,
+      "category": "Membrane",
+      "recto": "Quelles sont les 3 fonctions principales de la membrane plasmique ?",
+      "verso": "1. Assure les échanges entrants/sortants entre cytosol et milieu extracellulaire\n2. Communication cellulaire (récepteurs membranaires)\n3. Site de contact/union entre cellules et matrice extracellulaire"
+    },
+    {
+      "id": 47,
+      "category": "Membrane",
+      "recto": "Composition chimique de la membrane plasmique ?",
+      "verso": "40% Lipides (phospholipides + cholestérol)\n52% Protéines\n8% Glucides (glycolipides + glycoprotéines)\n\nRatio : 50 molécules de lipides par molécule de protéine"
+    },
+    {
+      "id": 48,
+      "category": "Membrane",
+      "recto": "Qu'est-ce qu'une molécule amphiphile ?",
+      "verso": "Molécule possédant :\n- Une partie hydrophobe (apolaire)\n- Une partie hydrophile (polaire)\n\nExemple : phospholipides, cholestérol"
+    },
+    {
+      "id": 49,
+      "category": "Membrane",
+      "recto": "Différence entre glycérophospholipides et sphingolipides ?",
+      "verso": "Glycérophospholipides : dérivés du glycérol\nEx : phosphatidylcholine, phosphatidyléthanolamine, phosphatidylsérine\n\nSphingolipides : dérivés de la sphingosine\nEx : sphingomyéline"
+    },
+    {
+      "id": 50,
+      "category": "Membrane",
+      "recto": "Rôle du cholestérol dans la membrane ?",
+      "verso": "1. Régule la fluidité membranaire (tampon)\n2. Immobilise les chaînes hydrocarbonées voisines\n3. Augmente la barrière de perméabilité\n4. Présent à 15-50% des lipides totaux (cellules animales)"
+    },
+    {
+      "id": 51,
+      "category": "Membrane",
+      "recto": "Les 3 types de protéines membranaires ?",
+      "verso": "1. Protéines intrinsèques (transmembranaires) : traversent la bicouche\n2. Protéines à ancrage lipidique : ancrées par liaison covalente à un lipide\n3. Protéines périphériques (extrinsèques) : liées indirectement aux protéines intrinsèques"
+    },
+    {
+      "id": 52,
+      "category": "Membrane",
+      "recto": "6 fonctions des protéines membranaires ?",
+      "verso": "1. Transport (canaux, pompes, transporteurs)\n2. Activité enzymatique\n3. Transduction des signaux\n4. Reconnaissance intercellulaire\n5. Adhérence intercellulaire\n6. Fixation au cytosquelette et matrice extracellulaire"
+    },
+    {
+      "id": 53,
+      "category": "Membrane",
+      "recto": "Où se trouvent les glucides membranaires ?",
+      "verso": "TOUJOURS du côté extracellulaire.\n\nLiés de façon covalente :\n- Glycolipides : sucres ajoutés dans RE et Golgi\n- Glycoprotéines : modification post-traductionnelle"
+    },
+    {
+      "id": 54,
+      "category": "Membrane",
+      "recto": "Différence entre N-glycosylation et O-glycosylation ?",
+      "verso": "N-Glycosylation :\n- Lieu : RE\n- Sur l'azote de l'asparagine\n\nO-Glycosylation :\n- Lieu : Appareil de Golgi\n- Sur l'oxygène de la sérine ou thréonine"
+    },
+    {
+      "id": 55,
+      "category": "Membrane",
+      "recto": "Qu'est-ce que le glycocalyx ?",
+      "verso": "Zone riche en glucides du côté extracellulaire de la membrane.\n\nRôles :\n- Reconnaissance cellulaire\n- Polarité cellulaire\n- Groupes sanguins ABO"
+    },
+    {
+      "id": 56,
+      "category": "Membrane",
+      "recto": "4 facteurs influençant la fluidité membranaire ?",
+      "verso": "1. Température : ↑ température = ↑ fluidité\n2. Nature des acides gras : insaturés (doubles liaisons cis) ↑ fluidité, saturés ↓ fluidité\n3. Longueur des chaînes : courtes ↑ fluidité\n4. Cholestérol : régule la fluidité (tampon)"
+    },
+    {
+      "id": 57,
+      "category": "Membrane",
+      "recto": "Qu'est-ce que le flip-flop ?",
+      "verso": "Diffusion transversale d'un phospholipide d'un feuillet à l'autre de la bicouche.\n\nC'est un déplacement LENT (contrairement à la diffusion latérale qui est rapide)."
+    },
+    {
+      "id": 58,
+      "category": "Membrane",
+      "recto": "Qu'est-ce que les radeaux lipidiques (lipid rafts) ?",
+      "verso": "Microdomaines de la membrane plasmique constitués d'associations stables entre :\n- Sphingolipides\n- Glycolipides\n- Cholestérol\n\nRôles : réponse aux pathogènes, homéostasie du cholestérol, transduction de signal"
+    },
+    {
+      "id": 59,
+      "category": "Membrane",
+      "recto": "Quelles molécules traversent facilement la bicouche lipidique ?",
+      "verso": "Perméables :\n- Molécules très petites : CO₂, O₂, N₂\n- Molécules liposolubles (hydrophobes, non polaires)\n\nImperméables :\n- Grosses molécules\n- Molécules polaires\n- Ions (K⁺, Cl⁻, Na⁺)"
+    },
+    {
+      "id": 60,
+      "category": "Membrane",
+      "recto": "Différence entre diffusion simple et diffusion facilitée ?",
+      "verso": "Diffusion simple :\n- Sans protéines de transport\n- Molécules non-polaires\n- Loi de Fick\n\nDiffusion facilitée :\n- Avec protéines transmembranaires\n- Molécules polaires et ions\n- Selon gradient électrochimique"
+    },
+    {
+      "id": 61,
+      "category": "Membrane",
+      "recto": "Différence entre uniport, symport et antiport ?",
+      "verso": "Uniport : transporte 1 molécule dans 1 direction\n\nSymport : transporte 2 substances différentes dans la MÊME direction\n\nAntiport : transporte 2 substances différentes dans des directions OPPOSÉES"
+    },
+    {
+      "id": 62,
+      "category": "Membrane",
+      "recto": "Caractéristiques des canaux ioniques ?",
+      "verso": "1. Protéine transmembranaire formant un pore\n2. Souvent spécifiques (une seule substance)\n3. Vitesse très élevée : 10⁷ à 10⁸ molécules/s\n4. Deux états : ouvert ou fermé\n5. Types : toujours ouverts, voltage-dépendants, ligand-dépendants"
+    },
+    {
+      "id": 63,
+      "category": "Membrane",
+      "recto": "Qu'est-ce que les aquaporines ?",
+      "verso": "Canaux spécifiques à l'eau (AQP).\n\n- Permettent à l'eau d'entrer/sortir sans laisser passer d'autres molécules ou ions\n- Aquaporine 1 : érythrocytes, tubules rénaux, cœur, rein, muscle, foie, pancréas\n- Mutations → diabète insipide\n- Nobel de chimie 2003 : Peter Agre (découverte 1988)"
+    },
+    {
+      "id": 64,
+      "category": "Membrane",
+      "recto": "Caractéristiques des transports actifs ?",
+      "verso": "1. Nécessitent de l'énergie (ATP)\n2. Fonctionnent CONTRE le gradient de concentration\n3. Tous sont des pompes (~10⁴ ions/sec)\n4. Protéines = ATPases (hydrolysent l'ATP)\n5. Exemple : Na⁺/K⁺ ATPase"
+    },
+    {
+      "id": 65,
+      "category": "Membrane",
+      "recto": "Qu'est-ce que l'asymétrie membranaire ?",
+      "verso": "La composition des faces externe et interne sont différentes.\n\nExemples :\n- Glycérophospholipides et sphingolipides répartis asymétriquement\n- Glucides exclusivement du côté extracellulaire\n- Cellules épithéliales : pôle apical, basal et latéral avec protéines spécifiques"
     }
   ]
 }
