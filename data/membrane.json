@@ -1,0 +1,211 @@
+{
+  "title": "La Membrane Plasmique",
+  "subtitle": "Structure, composition et fonctions de la membrane plasmique",
+  "sections": [
+    {
+      "title": "Fonctions de la Membrane Plasmique",
+      "content": "La membrane plasmique est une barrière sélective essentielle entre le cytoplasme et le milieu extracellulaire.",
+      "list": [
+        "Assure les échanges entrants et sortants entre le cytosol et le liquide interstitiel",
+        "Assure la communication cellulaire avec l'environnement (récepteurs membranaires)",
+        "Site de contact/union des cellules entre elles et à la matrice extracellulaire"
+      ]
+    },
+    {
+      "title": "Propriétés Générales",
+      "list": [
+        "Structures en forme de feuillets",
+        "Constituées de lipides, protéines et glucides",
+        "Les lipides membranaires sont amphiphiles (partie hydrophobe + partie hydrophile)",
+        "Les membranes sont asymétriques",
+        "Les membranes ont une structure fluide (modèle de la mosaïque fluide)"
+      ],
+      "hint": "La membrane plasmique a l'aspect d'une double couche de 7,5 à 10 nm d'épaisseur"
+    },
+    {
+      "title": "Composition Chimique",
+      "content": "La composition varie d'une membrane à l'autre :",
+      "table": [
+        {"composant": "Lipides (bicouche)", "pourcentage": "40%", "details": "Phospholipides + Cholestérol"},
+        {"composant": "Protéines", "pourcentage": "52%", "details": "Fonctions spécifiques"},
+        {"composant": "Glucides", "pourcentage": "8%", "details": "Glycolipides et glycoprotéines"}
+      ],
+      "hint": "En comptant la différence de masse (700 Da pour un lipide vs >10 000 Da pour une protéine), on compte 50 molécules de lipides par molécule de protéine"
+    },
+    {
+      "title": "Les Phospholipides",
+      "content": "Les phospholipides sont des esters d'acides gras et d'alcools. Ils sont amphiphiles.",
+      "table": [
+        {"type": "Glycérophospholipides", "derive": "Dérivés du glycérol", "exemples": "Phosphatidylcholine, Phosphatidyléthanolamine, Phosphatidylsérine"},
+        {"type": "Sphingolipides", "derive": "Dérivés de la sphingosine", "exemples": "Sphingomyéline"}
+      ],
+      "warning": "L'auto-organisation des phospholipides dans l'eau est liée à leur caractère amphiphile → formation de micelles, liposomes ou bicouche"
+    },
+    {
+      "title": "Le Cholestérol",
+      "content": "Le cholestérol est une molécule amphiphile dérivée des isoprényls.",
+      "list": [
+        "Absent de la plupart des cellules procaryotes",
+        "Présent dans la membrane plasmique des cellules eucaryotes animales : 15 à 50% des lipides totaux",
+        "Intercalé entre les phospholipides : tête interagit avec les têtes polaires, noyau apolaire avec les queues hydrophobes",
+        "Rôle crucial dans le maintien de la fluidité membranaire",
+        "Immobilise les chaînes hydrocarbonées avoisinantes → régule la fluidité",
+        "Augmente la barrière de perméabilité"
+      ],
+      "hint": "Le cholestérol est aussi précurseur des hormones stéroïdiennes, de la vitamine D3 et de l'hème A"
+    },
+    {
+      "title": "Les Protéines Membranaires",
+      "content": "Bien que la structure de base soit déterminée par la bicouche lipidique, la plupart des fonctions spécifiques sont portées par les protéines.",
+      "table": [
+        {"type": "Protéines intrinsèques (transmembranaires)", "description": "Traversent la bicouche lipidique. Formées de 3 segments : domaine extracellulaire, domaine transmembranaire hydrophobe, domaine cytosolique"},
+        {"type": "Protéines à ancrage lipidique", "description": "Ancrées par une ou plusieurs molécules lipidiques. Liaison covalente. Ne pénètrent pas directement dans la bicouche"},
+        {"type": "Protéines périphériques (extrinsèques)", "description": "Liées indirectement par interactions avec les protéines intrinsèques. N'interagissent pas avec la partie centrale de la bicouche"}
+      ]
+    },
+    {
+      "title": "Fonctions des Protéines Membranaires",
+      "list": [
+        "Transport (canaux, pompes, transporteurs)",
+        "Activité enzymatique",
+        "Transduction des signaux",
+        "Reconnaissance intercellulaire",
+        "Adhérence intercellulaire",
+        "Fixation aux composants du cytosquelette et à la matrice extracellulaire"
+      ]
+    },
+    {
+      "title": "Les Glucides Membranaires",
+      "content": "Les glucides sont toujours liés de façon covalente et se trouvent TOUJOURS du côté extracellulaire.",
+      "list": [
+        "Glycolipides (lipides glycosylés) : sucres ajoutés dans l'appareil de Golgi et le RE",
+        "Glycoprotéines : modification post-traductionnelle des protéines",
+        "N-Glycosylation : dans le RE, sur l'azote de l'asparagine",
+        "O-Glycosylation : dans l'appareil de Golgi, sur l'oxygène de la sérine ou thréonine"
+      ],
+      "hint": "Le glycocalyx (zone riche en glucides) joue un rôle dans la reconnaissance cellulaire et la polarité. Exemple : groupes sanguins ABO"
+    },
+    {
+      "title": "Fluidité Membranaire",
+      "content": "Les molécules (lipides et protéines) se déplacent librement dans le plan de la double couche.",
+      "subsections": [
+        {
+          "title": "Mobilité des Phospholipides",
+          "list": [
+            "Déplacement rapide : flexion des acides gras, rotation axiale, orientation des têtes polaires, diffusion latérale",
+            "Déplacement lent : diffusion transversale (flip-flop)"
+          ]
+        },
+        {
+          "title": "Facteurs Influençant la Fluidité",
+          "list": [
+            "Température : augmente la fluidité",
+            "Nature des acides gras : insaturés (doubles liaisons cis) augmentent la fluidité, saturés la diminuent",
+            "Longueur des chaînes hydrocarbonées : chaînes courtes augmentent la fluidité",
+            "Cholestérol : régule la fluidité (tampon)"
+          ]
+        }
+      ],
+      "warning": "Les cellules ajustent la fluidité en modulant la composition lipidique pour compenser les variations de température"
+    },
+    {
+      "title": "Asymétrie Membranaire",
+      "content": "La composition des faces externe et interne sont différentes.",
+      "list": [
+        "Glycérophospholipides et sphingolipides répartis asymétriquement",
+        "Dans les cellules épithéliales : pôle apical, pôle basal et faces latérales avec protéines spécifiques",
+        "Les glucides sont exclusivement du côté extracellulaire"
+      ]
+    },
+    {
+      "title": "Radeaux Lipidiques (Lipid Rafts)",
+      "content": "Microdomaines situés dans la membrane plasmique.",
+      "list": [
+        "Constitués d'associations stables entre sphingolipides, glycolipides et cholestérol",
+        "Interviennent dans : réponse aux agents pathogènes, homéostasie du cholestérol, transduction de signal"
+      ]
+    },
+    {
+      "title": "Transports Membranaires - Généralités",
+      "content": "La bicouche lipidique a une perméabilité sélective :",
+      "table": [
+        {"perméable": "Molécules très petites (CO₂, O₂, N₂)", "imperméable": "Grosses molécules"},
+        {"perméable": "Molécules liposolubles (hydrophobes, non polaires)", "imperméable": "Molécules polaires"},
+        {"perméable": "", "imperméable": "Ions (K⁺, Cl⁻, Na⁺)"}
+      ]
+    },
+    {
+      "title": "Transports Passifs",
+      "content": "Ne nécessitent aucun apport d'énergie directe. Se font selon le gradient électrochimique.",
+      "subsections": [
+        {
+          "title": "Diffusion Simple",
+          "list": [
+            "Molécules non-polaires traversent sans protéines de transport",
+            "Régi par des lois physicochimiques (loi de Fick)",
+            "Exemples : CO₂, O₂, N₂, benzène, urée, glycérol, éthanol, stéroïdes, acides gras"
+          ]
+        },
+        {
+          "title": "Diffusion Facilitée",
+          "list": [
+            "Utilise des protéines transmembranaires spécialisées",
+            "Se fait selon le gradient électrochimique",
+            "Accélère un mouvement qui se produirait naturellement mais trop lentement",
+            "Utilisée par les molécules polaires et les ions"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Types de Protéines de Transport",
+      "table": [
+        {"type": "Protéines porteuses (perméases)", "mécanisme": "S'associent aux molécules et les déplacent dans la membrane", "exemple": "GLUT4 pour le glucose"},
+        {"type": "Protéines tunnels (canaux)", "mécanisme": "Forment des pores à travers la membrane", "exemple": "Aquaporines pour l'eau"}
+      ],
+      "subsections": [
+        {
+          "title": "Transporteurs",
+          "list": [
+            "Uniport : transporte une molécule dans une direction",
+            "Symport : transporte deux substances différentes dans la même direction",
+            "Antiport : transporte deux substances différentes dans des directions opposées"
+          ]
+        },
+        {
+          "title": "Canaux Ioniques",
+          "list": [
+            "Protéine transmembranaire formant un pore",
+            "Souvent spécifiques (une seule substance)",
+            "Vitesse très élevée : 10⁷ à 10⁸ molécules/s",
+            "Deux états : ouvert ou fermé",
+            "Types : toujours ouverts, voltage-dépendants, ligand-dépendants"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Exemple : Aquaporines",
+      "content": "Canaux spécifiques à l'eau (AQP).",
+      "list": [
+        "Permettent à l'eau d'entrer/sortir sans laisser passer d'autres molécules ou ions",
+        "Aquaporine 1 : exprimée dans érythrocytes, tubules rénaux, cœur, rein, muscle squelettique, foie, pancréas",
+        "Présence dans le tube collecteur du néphron : ajuste le volume final d'urine",
+        "Mutations → diabète insipide (émission de grande quantité d'urine)",
+        "Nobel de chimie 2003 : Peter Agre pour la découverte des aquaporines en 1988"
+      ]
+    },
+    {
+      "title": "Transports Actifs",
+      "content": "Le transport est couplé à un mécanisme produisant de l'énergie.",
+      "list": [
+        "Utilise de l'énergie directement ou indirectement",
+        "Fonctionne contre le gradient de concentration",
+        "Tous sont des pompes (capacité ~10⁴ ions/sec)",
+        "Protéines qui hydrolysent l'ATP = ATPases",
+        "Exemple : Na⁺/K⁺ ATPase"
+      ],
+      "warning": "Contrairement aux transports passifs, les transports actifs nécessitent de l'ATP"
+    }
+  ]
+}
