@@ -1,0 +1,490 @@
+<!DOCTYPE html>
+<html lang="fr" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Schéma 1 - La Cellule Procaryote</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/animations.css">
+    <style>
+        /* ============================================
+        LAYOUT SPÉCIFIQUE SCHÉMA
+        ============================================ */
+        .schema-layout {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 2rem;
+            margin: 1.5rem 0;
+            align-items: start;
+        }
+        
+        /* FIX IMAGE : Aucune hauteur fixe, aucune contrainte de rognage */
+        .schema-image-box {
+            background: var(--bg-primary);
+            border: 2px solid var(--border);
+            padding: 1.5rem;
+            text-align: center;
+            width: 100%;
+        }
+        
+        .schema-image-box img {
+            max-width: 100%;
+            height: auto;
+            display: block;
+            margin: 0 auto;
+        }
+        
+        .schema-image-box h3 {
+            margin-top: 1rem;
+            color: var(--accent);
+            font-size: 1.1rem;
+        }
+        
+        /* ============================================
+        FORMULAIRE LÉGENDES
+        ============================================ */
+        .legend-form {
+            display: flex;
+            flex-direction: column;
+            gap: 0.8rem;
+        }
+        
+        .legend-form h3 {
+            color: var(--accent);
+            margin-bottom: 0.3rem;
+        }
+        
+        .legend-item {
+            display: flex;
+            align-items: center;
+            gap: 0.8rem;
+            background: var(--bg-primary);
+            border: 2px solid var(--border);
+            padding: 0.6rem 0.8rem;
+        }
+        
+        .legend-number {
+            background: var(--accent);
+            color: white;
+            width: 28px;
+            height: 28px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: 700;
+            font-size: 0.85rem;
+            flex-shrink: 0;
+        }
+        
+        .legend-input {
+            flex: 1;
+            padding: 0.5rem;
+            border: 2px solid var(--border);
+            background: var(--bg-secondary);
+            color: var(--text-primary);
+            font-size: 0.95rem;
+            font-family: inherit;
+        }
+        
+        .legend-input:focus {
+            outline: none;
+            border-color: var(--accent);
+        }
+        
+        .legend-input.correct {
+            border-color: var(--success);
+            background: #D1FAE5;
+            color: #065F46;
+        }
+        
+        .legend-input.incorrect {
+            border-color: var(--danger);
+            background: #FEE2E2;
+            color: #991B1B;
+        }
+        
+        [data-theme="dark"] .legend-input.correct {
+            background: #064E3B;
+            color: #6EE7B7;
+        }
+        
+        [data-theme="dark"] .legend-input.incorrect {
+            background: #7F1D1D;
+            color: #FCA5A5;
+        }
+        
+        /* ============================================
+        CORRECTION (CONTRASTE ÉLEVÉ)
+        ============================================ */
+        .correction-section {
+            display: none;
+            margin-top: 2rem;
+            background: var(--bg-primary);
+            border: 3px solid var(--accent);
+            padding: 1.5rem;
+        }
+        
+        .correction-section.show {
+            display: block;
+        }
+        
+        .correction-section h3 {
+            color: var(--accent);
+            font-size: 1.3rem;
+            margin-bottom: 1rem;
+            padding-bottom: 0.5rem;
+            border-bottom: 2px solid var(--border);
+        }
+        
+        .correction-list {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+        
+        .correction-list li {
+            padding: 1rem;
+            margin-bottom: 0.8rem;
+            background: var(--bg-secondary);
+            border: 2px solid var(--border);
+            border-left: 5px solid var(--accent);
+            display: flex;
+            gap: 1rem;
+            align-items: flex-start;
+        }
+        
+        .correction-list .num {
+            background: var(--accent);
+            color: white;
+            width: 32px;
+            height: 32px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: 700;
+            flex-shrink: 0;
+            font-size: 0.9rem;
+        }
+        
+        .correction-list .content {
+            flex: 1;
+        }
+        
+        .correction-list .term {
+            font-weight: 700;
+            color: var(--accent);
+            font-size: 1.05rem;
+            display: block;
+            margin-bottom: 0.3rem;
+        }
+        
+        /* FIX CONTRASTE : Utilisation de text-primary au lieu de text-secondary */
+        .correction-list .desc {
+            color: var(--text-primary);
+            font-size: 0.95rem;
+            line-height: 1.5;
+            font-weight: 500;
+        }
+        
+        /* ============================================
+        ACTIONS & SCORE
+        ============================================ */
+        .schema-actions {
+            display: flex;
+            gap: 1rem;
+            margin-top: 1.5rem;
+            flex-wrap: wrap;
+        }
+        
+        #score-display {
+            background: var(--bg-primary);
+            border: 2px solid var(--border);
+            padding: 1.5rem;
+            margin-top: 1.5rem;
+            text-align: center;
+        }
+        
+        #score-display .score {
+            font-size: 2.5rem;
+            font-weight: 700;
+            color: var(--accent);
+            margin: 0.5rem 0;
+        }
+        
+        /* ============================================
+        RESPONSIVE
+        ============================================ */
+        @media (max-width: 768px) {
+            .schema-layout {
+                grid-template-columns: 1fr;
+            }
+            .schema-actions {
+                flex-direction: column;
+            }
+            .schema-actions button {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- SIDEBAR -->
+    <nav class="sidebar">
+        <div class="sidebar-title">BMC</div>
+        <div class="sidebar-subtitle">Biologie Moléculaire<br>& Cellulaire - L1</div>
+        <div class="sidebar-nav">
+            <a href="../index.html" class="sidebar-link">Accueil</a>
+            <a href="../fiches.html" class="sidebar-link">Fiches</a>
+            <a href="../qcm.html" class="sidebar-link">QCM</a>
+            <a href="../flashcards.html" class="sidebar-link">Flashcards</a>
+            <a href="../quiz-rapide.html" class="sidebar-link">Quiz Rapide</a>
+            <a href="../schema.html" class="sidebar-link active">Schémas</a>
+            <a href="../bilans.html" class="sidebar-link">Bilans</a>
+            <a href="../parametres.html" class="sidebar-link">Paramètres</a>
+        </div>
+        <div class="sidebar-footer">
+            Fuyu-kun &copy; 2026
+        </div>
+    </nav>
+
+    <!-- CONTENU PRINCIPAL -->
+    <div class="main-content">
+        <div class="container">
+            
+            <section class="content-section fade-in">
+                <h2>Schéma 1 - La Cellule Procaryote</h2>
+                <p style="color: var(--text-secondary); font-style: italic;">
+                    Légendez le schéma de la bactérie typique en forme de bâtonnet. Écrivez le nom de chaque structure numérotée, puis vérifiez avec la correction.
+                </p>
+            </section>
+
+            <!-- SCHÉMA + FORMULAIRE -->
+            <div class="schema-layout fade-in-delay">
+                
+                <!-- Image du schéma -->
+                <div class="schema-image-box">
+                    <img src="../assets/schema1-bacterie.png" alt="Schéma d'une bactérie avec 8 numéros à légender">
+                    <h3>Bactérie typique en forme de bâtonnet</h3>
+                </div>
+
+                <!-- Formulaire de légendes -->
+                <div class="legend-form">
+                    <h3>Tes légendes :</h3>
+                    <p style="color: var(--text-secondary); font-size: 0.9rem; margin-bottom: 0.5rem;">
+                        Écris le nom de chaque structure numérotée sur le schéma.
+                    </p>
+                    
+                    <div class="legend-item">
+                        <div class="legend-number">1</div>
+                        <input type="text" class="legend-input" id="legend-1" placeholder="Structure n°1...">
+                    </div>
+                    <div class="legend-item">
+                        <div class="legend-number">2</div>
+                        <input type="text" class="legend-input" id="legend-2" placeholder="Structure n°2...">
+                    </div>
+                    <div class="legend-item">
+                        <div class="legend-number">3</div>
+                        <input type="text" class="legend-input" id="legend-3" placeholder="Structure n°3...">
+                    </div>
+                    <div class="legend-item">
+                        <div class="legend-number">4</div>
+                        <input type="text" class="legend-input" id="legend-4" placeholder="Structure n°4...">
+                    </div>
+                    <div class="legend-item">
+                        <div class="legend-number">5</div>
+                        <input type="text" class="legend-input" id="legend-5" placeholder="Structure n°5...">
+                    </div>
+                    <div class="legend-item">
+                        <div class="legend-number">6</div>
+                        <input type="text" class="legend-input" id="legend-6" placeholder="Structure n°6...">
+                    </div>
+                    <div class="legend-item">
+                        <div class="legend-number">7</div>
+                        <input type="text" class="legend-input" id="legend-7" placeholder="Structure n°7...">
+                    </div>
+                    <div class="legend-item">
+                        <div class="legend-number">8</div>
+                        <input type="text" class="legend-input" id="legend-8" placeholder="Structure n°8...">
+                    </div>
+                </div>
+            </div>
+
+            <!-- BOUTONS D'ACTION -->
+            <div class="schema-actions">
+                <button class="btn-primary" onclick="verifierLegendes()">
+                    ✓ Vérifier mes légendes
+                </button>
+                <button class="btn-secondary" onclick="afficherCorrection()">
+                    👁 Afficher la correction
+                </button>
+                <button class="btn-secondary" onclick="reinitialiser()">
+                     Réinitialiser
+                </button>
+            </div>
+
+            <!-- CORRECTION -->
+            <div class="correction-section" id="correction-section">
+                <h3>Correction complète</h3>
+                <ul class="correction-list">
+                    <li>
+                        <div class="num">1</div>
+                        <div class="content">
+                            <span class="term">Fimbriae (pili)</span>
+                            <span class="desc">Structures de fixation situées à la surface de certaines bactéries</span>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="num">2</div>
+                        <div class="content">
+                            <span class="term">Nucléoïde</span>
+                            <span class="desc">Région contenant l'ADN de la cellule (elle n'est pas entourée d'une membrane)</span>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="num">3</div>
+                        <div class="content">
+                            <span class="term">Ribosome</span>
+                            <span class="desc">Organite de la synthèse protéique</span>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="num">4</div>
+                        <div class="content">
+                            <span class="term">Membrane plasmique</span>
+                            <span class="desc">Membrane entourant le cytoplasme</span>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="num">5</div>
+                        <div class="content">
+                            <span class="term">Paroi cellulaire</span>
+                            <span class="desc">Structure rigide entourant la membrane plasmique</span>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="num">6</div>
+                        <div class="content">
+                            <span class="term">Capsule</span>
+                            <span class="desc">Substance gélatineuse recouvrant de nombreux procaryotes</span>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="num">7</div>
+                        <div class="content">
+                            <span class="term">Flagelles</span>
+                            <span class="desc">Organites de locomotion de certaines bactéries</span>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="num">8</div>
+                        <div class="content">
+                            <span class="term">Chromosome bactérien</span>
+                            <span class="desc">ADN circulaire de la bactérie, situé dans le nucléoïde</span>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- NAVIGATION -->
+            <div class="navigation-section">
+                <a href="../schema.html" class="nav-btn prev">← Schémas</a>
+                <a href="schema2.html" class="nav-btn next" style="opacity: 0.5; pointer-events: none;">Schéma 2 →</a>
+            </div>
+
+        </div>
+    </div>
+
+    <script src="../JS/config.js"></script>
+    <script src="../JS/sidebar.js"></script>
+    <script src="../JS/sound.js"></script>
+    <script>
+        const reponsesCorrectes = {
+            1: ['fimbriae', 'pili', 'fimbria', 'pilus'],
+            2: ['nucléoïde', 'nucleoide', 'nucléoide'],
+            3: ['ribosome', 'ribosomes'],
+            4: ['membrane plasmique', 'membrane cytoplasmique', 'membrane cellulaire'],
+            5: ['paroi cellulaire', 'paroi', 'paroi bacterienne'],
+            6: ['capsule', 'capsule bacterienne'],
+            7: ['flagelle', 'flagelles', 'flagellum'],
+            8: ['chromosome', 'chromosome bacterien', 'adn', 'adn bacterien', 'adn circulaire']
+        };
+
+        function normaliser(texte) {
+            return texte.toLowerCase()
+                       .trim()
+                       .normalize('NFD')
+                       .replace(/[\u0300-\u036f]/g, '')
+                       .replace(/[^a-z0-9]/g, '');
+        }
+
+        function verifierLegendes() {
+            let score = 0;
+            const total = 8;
+
+            for (let i = 1; i <= total; i++) {
+                const input = document.getElementById(`legend-${i}`);
+                const reponse = normaliser(input.value);
+                const correctes = reponsesCorrectes[i].map(r => normaliser(r));
+
+                if (reponse === '') {
+                    input.classList.remove('correct', 'incorrect');
+                } else if (correctes.some(c => reponse.includes(c) || c.includes(reponse))) {
+                    input.classList.add('correct');
+                    input.classList.remove('incorrect');
+                    score++;
+                } else {
+                    input.classList.add('incorrect');
+                    input.classList.remove('correct');
+                }
+            }
+
+            const existingScore = document.getElementById('score-display');
+            if (existingScore) existingScore.remove();
+
+            const scoreDiv = document.createElement('div');
+            scoreDiv.id = 'score-display';
+            scoreDiv.innerHTML = `
+                <h3>Résultat</h3>
+                <div class="score">${score}/${total}</div>
+                <p>${score === total ? '🎯 Parfait ! Tu maîtrises ce schéma.' : 
+                    score >= 6 ? '✅ Bien ! Encore 1-2 légendes à revoir.' : 
+                    score >= 4 ? '⚠️ Moyen. Revois la fiche sur la cellule procaryote.' : 
+                    '❌ À retravailler. Relis le cours et recommence.'}</p>
+            `;
+            document.querySelector('.schema-actions').after(scoreDiv);
+
+            if (typeof playSound === 'function') playSound('validate');
+        }
+
+        function afficherCorrection() {
+            const correction = document.getElementById('correction-section');
+            correction.classList.toggle('show');
+            
+            for (let i = 1; i <= 8; i++) {
+                const input = document.getElementById(`legend-${i}`);
+                input.value = reponsesCorrectes[i][0];
+                input.classList.add('correct');
+                input.classList.remove('incorrect');
+            }
+
+            if (typeof playSound === 'function') playSound('click');
+        }
+
+        function reinitialiser() {
+            for (let i = 1; i <= 8; i++) {
+                const input = document.getElementById(`legend-${i}`);
+                input.value = '';
+                input.classList.remove('correct', 'incorrect');
+            }
+            
+            const correction = document.getElementById('correction-section');
+            correction.classList.remove('show');
+            
+            const scoreDiv = document.getElementById('score-display');
+            if (scoreDiv) scoreDiv.remove();
+
+            if (typeof playSound === 'function') playSound('click');
+        }
+    </script>
+</body>
+</html>

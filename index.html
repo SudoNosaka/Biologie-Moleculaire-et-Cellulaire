@@ -11,13 +11,14 @@
     <!-- SIDEBAR -->
     <nav class="sidebar">
         <div class="sidebar-title">BMC</div>
-        <div class="sidebar-subtitle">Biologie Moléculaire<br>& Cellulaire - LDD1</div>
+        <div class="sidebar-subtitle">Biologie Moléculaire<br>& Cellulaire - L1</div>
         <div class="sidebar-nav">
             <a href="index.html" class="sidebar-link active">Accueil</a>
             <a href="fiches.html" class="sidebar-link">Fiches</a>
             <a href="qcm.html" class="sidebar-link">QCM</a>
             <a href="flashcards.html" class="sidebar-link">Flashcards</a>
             <a href="quiz-rapide.html" class="sidebar-link">Quiz Rapide</a>
+            <a href="schema.html" class="sidebar-link">Schémas</a>
             <a href="bilans.html" class="sidebar-link">Bilans</a>
             <a href="parametres.html" class="sidebar-link">Paramètres</a>
         </div>
@@ -33,7 +34,7 @@
             <!-- BLOC TITRE -->
             <section class="hero fade-in">
                 <h1>Biologie Moléculaire et Cellulaire</h1>
-                <p class="subtitle">LDD1 - Université Évry Paris-Saclay</p>
+                <p class="subtitle">L1 - Université Évry Paris-Saclay</p>
             </section>
 
             <!-- BLOC TEXTE -->
@@ -60,10 +61,21 @@
                 <h2>Calendrier des évaluations</h2>
                 <div id="calendrier-container" class="calendar-container"></div>
                 <p class="calendar-note">
-                    Modifie les dates dans <code>data/calendrier.json</code> pour ajouter tes évaluations.
+                    Clique sur un événement (bouton détails) pour en voir les détails.
                 </p>
             </section>
 
+        </div>
+    </div>
+
+    <!-- MODAL ÉVÉNEMENT -->
+    <div id="event-modal" class="modal">
+        <div class="modal-content">
+            <span class="modal-close" onclick="fermerModal()">&times;</span>
+            <h3 id="modal-title"></h3>
+            <p id="modal-date" class="modal-date"></p>
+            <span id="modal-type" class="modal-type"></span>
+            <p id="modal-details" class="modal-details"></p>
         </div>
     </div>
 

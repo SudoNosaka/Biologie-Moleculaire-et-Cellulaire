@@ -1655,3 +1655,210 @@ FLASHCARDS - SYSTÈME COMPLET
         font-size: 0.8rem;
     }
 }
+
+/* ============================================
+MODAL ÉVÉNEMENT
+============================================ */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 2000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    align-items: center;
+    justify-content: center;
+    animation: fadeIn 0.3s ease-out;
+}
+
+.modal-content {
+    background: var(--bg-secondary);
+    border: 2px solid var(--border);
+    padding: 2rem;
+    max-width: 500px;
+    width: 90%;
+    position: relative;
+    animation: slideUp 0.3s ease-out;
+}
+
+.modal-close {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    font-size: 2rem;
+    font-weight: bold;
+    color: var(--text-secondary);
+    cursor: pointer;
+    transition: color 0.2s;
+    line-height: 1;
+}
+
+.modal-close:hover {
+    color: var(--accent);
+}
+
+.modal-content h3 {
+    font-size: 1.4rem;
+    color: var(--accent);
+    margin-bottom: 0.8rem;
+    padding-right: 2rem;
+}
+
+.modal-date {
+    color: var(--text-secondary);
+    font-size: 0.95rem;
+    margin-bottom: 1rem;
+    text-transform: capitalize;
+}
+
+.modal-type {
+    display: inline-block;
+    padding: 0.4rem 0.8rem;
+    font-size: 0.85rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+}
+
+.modal-type.examen {
+    background: #FEE2E2;
+    color: #991B1B;
+    border-left: 3px solid var(--danger);
+}
+
+[data-theme="dark"] .modal-type.examen {
+    background: #7F1D1D;
+    color: #FCA5A5;
+}
+
+.modal-type.td {
+    background: #DBEAFE;
+    color: #1E40AF;
+    border-left: 3px solid #3B82F6;
+}
+
+[data-theme="dark"] .modal-type.td {
+    background: #1E3A5F;
+    color: #93C5FD;
+}
+
+.modal-details {
+    color: var(--text-primary);
+    line-height: 1.6;
+    font-size: 0.95rem;
+}
+
+@keyframes slideUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .modal-content {
+        padding: 1.5rem;
+        max-width: 90%;
+    }
+    
+    .modal-content h3 {
+        font-size: 1.2rem;
+    }
+}
+
+/* ============================================
+BOUTON ŒIL POUR ÉVÉNEMENTS (SVG)
+============================================ */
+.event {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 0.5rem;
+}
+
+.event-view-btn {
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    padding: 0.3rem;
+    transition: all 0.2s;
+    opacity: 0.7;
+    flex-shrink: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: currentColor;
+    border-radius: 4px;
+}
+
+.event-view-btn:hover {
+    opacity: 1;
+    background: rgba(0, 0, 0, 0.1);
+    transform: scale(1.15);
+}
+
+[data-theme="dark"] .event-view-btn:hover {
+    background: rgba(255, 255, 255, 0.1);
+}
+
+.event-view-btn:active {
+    transform: scale(0.95);
+}
+
+.event-view-btn svg {
+    width: 16px;
+    height: 16px;
+    display: block;
+}
+
+/* Taille plus grande sur mobile pour faciliter le clic */
+@media (max-width: 768px) {
+    .event-view-btn {
+        padding: 0.5rem;
+    }
+    
+    .event-view-btn svg {
+        width: 20px;
+        height: 20px;
+    }
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .event-view-btn {
+        font-size: 1rem;
+        padding: 0.3rem 0.5rem;
+    }
+}
+
+/* ============================================
+BOUTON DÉTAILS POUR ÉVÉNEMENTS
+============================================ */
+.event {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 0.5rem;
+}
+
+.event-view-btn {
+    background: var(--accent);
+    color: white;
+    border: none;
+    padding: 0.3rem 0.6rem;
+    font-size: 0.75rem;
+    font-weight: 600;
+    cursor: pointer;
+    flex-shrink: 0;
+    transition: background 0.2s;
+}
+
+.event-view-btn:hover {
+    background: var(--accent-hover);
+}

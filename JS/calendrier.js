@@ -25,7 +25,8 @@ function loadCalendrier() {
                 container.innerHTML = `
                     <div class="warning">
                         <h3>⚠️ Impossible de charger le calendrier</h3>
-                        <p>Vérifie que le fichier data/calendrier.json existe.</p>
+                        <p>Vérifie que le fichier data/calendrier.json existe et que tu utilises un serveur local.</p>
+                        <p><small>Erreur: ${error.message}</small></p>
                     </div>
                 `;
             }
@@ -50,7 +51,7 @@ function initCalendrier() {
 function getMondayOfWeek(date) {
     const d = new Date(date);
     const day = d.getDay();
-    const diff = d.getDate() - day + (day === 0 ? -6 : 1); // Ajuster pour que lundi = 1
+    const diff = d.getDate() - day + (day === 0 ? -6 : 1);
     return new Date(d.setDate(diff));
 }
 
@@ -62,10 +63,8 @@ function afficherSemaine(numSemaine) {
     const debutSemaine = new Date(dateDebut);
     debutSemaine.setDate(debutSemaine.getDate() + (numSemaine - 1) * 7);
     
-    // Trouver le lundi de cette semaine
     const lundiSemaine = getMondayOfWeek(debutSemaine);
     
-    // Générer les 5 jours (Lundi-Vendredi)
     let html = `
         <div class="calendar-header">
             <button class="calendar-nav-btn" onclick="changerSemaine(-1)" ${numSemaine <= 1 ? 'disabled' : ''}>
@@ -89,9 +88,7 @@ function afficherSemaine(numSemaine) {
         dateJour.setDate(dateJour.getDate() + i);
         const dateStr = formaterDateISO(dateJour);
         
-        // Chercher les événements pour ce jour
         const evenementsJour = calendrierData.evenements.filter(e => e.date === dateStr);
-        
         const isToday = estAujourd(dateJour);
         
         html += `
@@ -105,9 +102,15 @@ function afficherSemaine(numSemaine) {
         
         if (evenementsJour.length > 0) {
             evenementsJour.forEach(event => {
+                const titreSafe = event.titre.replace(/'/g, "\\'");
+                const detailsSafe = (event.details || '').replace(/'/g, "\\'");
                 html += `
                     <div class="event ${event.type}">
                         <span class="event-title">${event.titre}</span>
+                        <button class="event-view-btn" 
+                                onclick="afficherModal('${titreSafe}', '${event.date}', '${event.type}', '${detailsSafe}')">
+                            Détails
+                        </button>
                     </div>
                 `;
             });
@@ -123,7 +126,7 @@ function afficherSemaine(numSemaine) {
     
     html += `</div>`;
     
-    // Ajouter le carrousel des semaines
+    // Carrousel des semaines
     html += `
         <div class="calendar-weeks-track">
             <button class="weeks-nav-btn" onclick="scrollWeeks(-1)">‹</button>
@@ -157,7 +160,6 @@ function afficherSemaine(numSemaine) {
     
     container.innerHTML = html;
     
-    // Scroll vers la semaine actuelle
     setTimeout(() => {
         const currentBtn = container.querySelector('.week-btn.current');
         if (currentBtn) {
@@ -200,4 +202,51 @@ function formaterDateISO(date) {
 function estAujourd(date) {
     const aujourd = new Date();
     return date.toDateString() === aujourd.toDateString();
+}
+
+// ============================================
+// MODAL ÉVÉNEMENT
+// ============================================
+
+function afficherModal(titre, date, type, details) {
+    console.log('Modal ouverte:', titre, date, type, details);
+    
+    const modal = document.getElementById('event-modal');
+    if (!modal) {
+        console.error('Modal non trouvée dans le HTML !');
+        alert('Erreur : le modal HTML n\'existe pas dans index.html');
+        return;
+    }
+    
+    document.getElementById('modal-title').textContent = titre;
+    document.getElementById('modal-date').textContent = formaterDateComplete(date);
+    
+    const modalType = document.getElementById('modal-type');
+    modalType.textContent = type === 'examen' ? '📝 Examen' : '📚 TD';
+    modalType.className = `modal-type ${type}`;
+    
+    document.getElementById('modal-details').textContent = details || 'Aucun détail disponible';
+    
+    modal.style.display = 'flex';
+    
+    if (typeof playSound === 'function') playSound('click');
+}
+
+function fermerModal() {
+    const modal = document.getElementById('event-modal');
+    if (modal) modal.style.display = 'none';
+}
+
+function formaterDateComplete(dateStr) {
+    const date = new Date(dateStr);
+    const options = { weekday: 'long', day: 'numeric', month: 'long', year: 'numeric' };
+    return date.toLocaleDateString('fr-FR', options);
+}
+
+// Fermer la modal en cliquant en dehors
+window.onclick = function(event) {
+    const modal = document.getElementById('event-modal');
+    if (event.target === modal) {
+        fermerModal();
+    }
 }
