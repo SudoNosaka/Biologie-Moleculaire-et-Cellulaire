@@ -1,5 +1,5 @@
 // ============================================
-// CALENDRIER DYNAMIQUE - Synchronisé avec dates réelles
+// CALENDRIER DYNAMIQUE - Version corrigée
 // ============================================
 
 let calendrierData = null;
@@ -25,8 +25,7 @@ function loadCalendrier() {
                 container.innerHTML = `
                     <div class="warning">
                         <h3>⚠️ Impossible de charger le calendrier</h3>
-                        <p>Vérifie que le fichier data/calendrier.json existe et que tu utilises un serveur local.</p>
-                        <p><small>Erreur: ${error.message}</small></p>
+                        <p>Vérifie que le fichier data/calendrier.json existe.</p>
                     </div>
                 `;
             }
@@ -34,14 +33,16 @@ function loadCalendrier() {
 }
 
 function initCalendrier() {
-    // Calculer la semaine actuelle
     const dateDebut = new Date(calendrierData.dateDebutSemestre);
     const aujourd = new Date();
-    const diffTime = aujourd - dateDebut;
-    const diffJours = Math.floor(diffTime / (1000 * 60 * 60 * 24));
+    
+    // Réinitialiser les heures pour comparer uniquement les dates
+    dateDebut.setHours(0, 0, 0, 0);
+    aujourd.setHours(0, 0, 0, 0);
+    
+    const diffJours = Math.floor((aujourd - dateDebut) / (1000 * 60 * 60 * 24));
     semaineActuelle = Math.floor(diffJours / 7) + 1;
     
-    // Limiter aux semaines valides
     if (semaineActuelle < 1) semaineActuelle = 1;
     if (semaineActuelle > calendrierData.nombreSemaines) semaineActuelle = calendrierData.nombreSemaines;
     
@@ -50,9 +51,20 @@ function initCalendrier() {
 
 function getMondayOfWeek(date) {
     const d = new Date(date);
+    d.setHours(0, 0, 0, 0);
     const day = d.getDay();
     const diff = d.getDate() - day + (day === 0 ? -6 : 1);
     return new Date(d.setDate(diff));
+}
+
+function isDateInRange(date, start, end) {
+    const d = new Date(date);
+    d.setHours(0, 0, 0, 0);
+    const s = new Date(start);
+    s.setHours(0, 0, 0, 0);
+    const e = new Date(end);
+    e.setHours(0, 0, 0, 0);
+    return d >= s && d <= e;
 }
 
 function afficherSemaine(numSemaine) {
@@ -60,6 +72,8 @@ function afficherSemaine(numSemaine) {
     if (!container || !calendrierData) return;
     
     const dateDebut = new Date(calendrierData.dateDebutSemestre);
+    dateDebut.setHours(0, 0, 0, 0);
+    
     const debutSemaine = new Date(dateDebut);
     debutSemaine.setDate(debutSemaine.getDate() + (numSemaine - 1) * 7);
     
@@ -126,7 +140,7 @@ function afficherSemaine(numSemaine) {
     
     html += `</div>`;
     
-    // Carrousel des semaines
+    // Carrousel des semaines - CORRIGÉ
     html += `
         <div class="calendar-weeks-track">
             <button class="weeks-nav-btn" onclick="scrollWeeks(-1)">‹</button>
@@ -135,13 +149,18 @@ function afficherSemaine(numSemaine) {
     
     for (let i = 1; i <= calendrierData.nombreSemaines; i++) {
         const isCurrent = i === semaineActuelle;
+        
+        // Calculer le lundi de la semaine i
+        const weekStartTemp = new Date(dateDebut);
+        weekStartTemp.setDate(weekStartTemp.getDate() + (i - 1) * 7);
+        const weekStart = getMondayOfWeek(weekStartTemp);
+        const weekEnd = new Date(weekStart);
+        weekEnd.setDate(weekEnd.getDate() + 6); // Dimanche
+        
+        // Vérifier si un événement tombe dans cette semaine
         const hasEvent = calendrierData.evenements.some(e => {
             const eventDate = new Date(e.date);
-            const weekStart = new Date(dateDebut);
-            weekStart.setDate(weekStart.getDate() + (i - 1) * 7);
-            const weekEnd = new Date(weekStart);
-            weekEnd.setDate(weekEnd.getDate() + 6);
-            return eventDate >= weekStart && eventDate <= weekEnd;
+            return isDateInRange(eventDate, weekStart, weekEnd);
         });
         
         html += `
@@ -222,7 +241,7 @@ function afficherModal(titre, date, type, details) {
     document.getElementById('modal-date').textContent = formaterDateComplete(date);
     
     const modalType = document.getElementById('modal-type');
-    modalType.textContent = type === 'examen' ? '📝 Examen' : '📚 TD';
+    modalType.textContent = type === 'examen' ? ' Examen' : '📚 TD';
     modalType.className = `modal-type ${type}`;
     
     document.getElementById('modal-details').textContent = details || 'Aucun détail disponible';
@@ -243,7 +262,6 @@ function formaterDateComplete(dateStr) {
     return date.toLocaleDateString('fr-FR', options);
 }
 
-// Fermer la modal en cliquant en dehors
 window.onclick = function(event) {
     const modal = document.getElementById('event-modal');
     if (event.target === modal) {
