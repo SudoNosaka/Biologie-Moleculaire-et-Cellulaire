@@ -5,199 +5,359 @@
     "facile": [
       {
         "question": "La traduction est le processus qui permet de :",
-        "options": ["Copier l'ADN en ARN", "Copier l'ARN en protéine", "Copier l'ADN en ADN", "Copier l'ARN en ADN"],
-        "correct": 1,
-        "explanation": "La traduction = passage de l'ARNm à la protéine. La transcription = ADN → ARN. La réplication = ADN → ADN."
+        "options": [
+          {"id": "a", "text": "Copier l'ADN en ARN"},
+          {"id": "b", "text": "Copier l'ARN en protéine"},
+          {"id": "c", "text": "Copier l'ADN en ADN"},
+          {"id": "d", "text": "Copier l'ARN en ADN"}
+        ],
+        "correct": "b",
+        "explanation": "La traduction = passage de l'information de l'ARNm à la séquence d'acides aminés d'une protéine."
       },
       {
         "question": "Le codon start (codon d'initiation) est :",
-        "options": ["UAA", "UAG", "AUG", "UGA"],
-        "correct": 2,
-        "explanation": "AUG est le codon start qui code pour la méthionine (ou formyl-méthionine chez les procaryotes). UAA, UAG et UGA sont les codons stop."
+        "options": [
+          {"id": "a", "text": "UAA"},
+          {"id": "b", "text": "UAG"},
+          {"id": "c", "text": "AUG"},
+          {"id": "d", "text": "UGA"}
+        ],
+        "correct": "c",
+        "explanation": "AUG est le codon start qui code pour la méthionine (ou formyl-méthionine chez les procaryotes)."
       },
       {
         "question": "Les codons stop sont :",
-        "options": ["AUG, UAA, UAG", "UAA, UAG, UGA", "AUG, UAG, UGA", "UAA, UGA, AUG"],
-        "correct": 1,
-        "explanation": "Les 3 codons stop sont UAA, UAG et UGA. Ils ne codent pour aucun acide aminé et signalent la fin de la traduction."
+        "options": [
+          {"id": "a", "text": "AUG, UAA, UAG"},
+          {"id": "b", "text": "UAA, UAG, UGA"},
+          {"id": "c", "text": "AUG, UAG, UGA"},
+          {"id": "d", "text": "UAA, UGA, AUG"}
+        ],
+        "correct": "b",
+        "explanation": "Les 3 codons stop sont UAA, UAG et UGA. Ils ne codent pour aucun acide aminé."
       },
       {
         "question": "Le ribosome possède 3 sites de liaison pour les ARNt :",
-        "options": ["Sites A, B, C", "Sites A, P, E", "Sites X, Y, Z", "Sites 1, 2, 3"],
-        "correct": 1,
-        "explanation": "Site A (Aminoacyl) = accueille l'ARNt entrant. Site P (Peptidyl) = contient l'ARNt portant la chaîne en croissance. Site E (Exit) = sortie de l'ARNt vide."
+        "options": [
+          {"id": "a", "text": "Sites A, B, C"},
+          {"id": "b", "text": "Sites A, P, E"},
+          {"id": "c", "text": "Sites X, Y, Z"},
+          {"id": "d", "text": "Sites 1, 2, 3"}
+        ],
+        "correct": "b",
+        "explanation": "Site A (Aminoacyl), Site P (Peptidyl), Site E (Exit)."
       },
       {
         "question": "L'ARNt (ARN de transfert) a pour rôle de :",
-        "options": ["Stocker l'information génétique", "Transporter les acides aminés au ribosome", "Former la structure du ribosome", "Catalyser la transcription"],
-        "correct": 1,
-        "explanation": "L'ARNt transporte les acides aminés au ribosome. Chaque ARNt possède un anticodon complémentaire d'un codon de l'ARNm et porte un acide aminé spécifique."
+        "options": [
+          {"id": "a", "text": "Stocker l'information génétique"},
+          {"id": "b", "text": "Transporter les acides aminés au ribosome"},
+          {"id": "c", "text": "Former la structure du ribosome"},
+          {"id": "d", "text": "Catalyser la transcription"}
+        ],
+        "correct": "b",
+        "explanation": "L'ARNt transporte les acides aminés au ribosome. Il possède un anticodon complémentaire du codon de l'ARNm."
       },
       {
         "question": "Le code génétique est dit 'dégénéré' car :",
-        "options": ["Il est universel", "Plusieurs codons peuvent coder le même acide aminé", "Il contient des erreurs", "Il change selon les espèces"],
-        "correct": 1,
-        "explanation": "Le code est dégénéré (redondant) : 61 codons pour 20 acides aminés, donc plusieurs codons peuvent coder le même acide aminé (ex: GCU, GCC, GCA, GCG codent tous pour l'Alanine)."
+        "options": [
+          {"id": "a", "text": "Il est universel"},
+          {"id": "b", "text": "Plusieurs codons peuvent coder le même acide aminé"},
+          {"id": "c", "text": "Il contient des erreurs"},
+          {"id": "d", "text": "Il change selon les espèces"}
+        ],
+        "correct": "b",
+        "explanation": "Le code est dégénéré (redondant) : 61 codons pour 20 acides aminés, donc plusieurs codons codent pour le même acide aminé."
       },
       {
         "question": "La peptidyl transférase est :",
-        "options": ["Une protéine du ribosome", "Une activité catalytique de l'ARNr du ribosome", "Un ARNt", "Un facteur d'élongation"],
-        "correct": 1,
-        "explanation": "La peptidyl transférase est une ribozyme : c'est l'ARNr 23S (procaryotes) ou 28S (eucaryotes) de la grande sous-unité qui catalyse la formation de la liaison peptidique."
+        "options": [
+          {"id": "a", "text": "Une protéine du ribosome"},
+          {"id": "b", "text": "Une activité catalytique de l'ARNr du ribosome (ribozyme)"},
+          {"id": "c", "text": "Un ARNt"},
+          {"id": "d", "text": "Un facteur d'élongation"}
+        ],
+        "correct": "b",
+        "explanation": "La peptidyl transférase est une ribozyme : c'est l'ARNr 23S (procaryotes) ou 28S (eucaryotes) qui catalyse la liaison peptidique."
       },
       {
         "question": "Chez les procaryotes, la traduction a lieu :",
-        "options": ["Dans le noyau", "Dans le cytoplasme", "Dans les mitochondries", "Dans le RE"],
-        "correct": 1,
-        "explanation": "Chez les procaryotes (pas de noyau), la traduction a lieu dans le cytoplasme, souvent couplée à la transcription."
+        "options": [
+          {"id": "a", "text": "Dans le noyau"},
+          {"id": "b", "text": "Dans le cytoplasme"},
+          {"id": "c", "text": "Dans les mitochondries"},
+          {"id": "d", "text": "Dans le RE"}
+        ],
+        "correct": "b",
+        "explanation": "Chez les procaryotes, la traduction a lieu dans le cytoplasme, souvent couplée à la transcription."
       },
       {
         "question": "L'énergie nécessaire à l'élongation de la traduction est fournie par :",
-        "options": ["ATP uniquement", "GTP", "NADH", "Glucose"],
-        "correct": 1,
+        "options": [
+          {"id": "a", "text": "ATP uniquement"},
+          {"id": "b", "text": "GTP"},
+          {"id": "c", "text": "NADH"},
+          {"id": "d", "text": "Glucose"}
+        ],
+        "correct": "b",
         "explanation": "Le GTP est hydrolysé lors de l'entrée de l'ARNt au site A (EF-Tu/eEF1) et lors de la translocation (EF-G/eEF2)."
       },
       {
         "question": "Les ribosomes procaryotes sont de type :",
-        "options": ["80S", "70S", "60S", "50S"],
-        "correct": 1,
-        "explanation": "Les procaryotes ont des ribosomes 70S (30S + 50S). Les eucaryotes ont des ribosomes 80S (40S + 60S) dans le cytoplasme."
+        "options": [
+          {"id": "a", "text": "80S"},
+          {"id": "b", "text": "70S"},
+          {"id": "c", "text": "60S"},
+          {"id": "d", "text": "50S"}
+        ],
+        "correct": "b",
+        "explanation": "Les procaryotes ont des ribosomes 70S (30S + 50S). Les eucaryotes ont des ribosomes 80S (40S + 60S)."
       }
     ],
     "moyen": [
       {
         "question": "L'aminoacyl-ARNt synthétase a pour rôle de :",
-        "options": ["Synthétiser l'ARNm", "Attacher l'acide aminé correct à son ARNt", "Cliver les introns", "Lier les fragments d'Okazaki"],
-        "correct": 1,
-        "explanation": "L'aminoacyl-ARNt synthétase 'charge' l'ARNt avec l'acide aminé correct. Il existe 20 synthétases (une par acide aminé). La fidélité de cette étape est cruciale."
+        "options": [
+          {"id": "a", "text": "Synthétiser l'ARNm"},
+          {"id": "b", "text": "Attacher l'acide aminé correct à son ARNt"},
+          {"id": "c", "text": "Cliver les introns"},
+          {"id": "d", "text": "Lier les fragments d'Okazaki"}
+        ],
+        "correct": "b",
+        "explanation": "L'aminoacyl-ARNt synthétase 'charge' l'ARNt avec l'acide aminé correct. Il existe 20 synthétases (une par acide aminé)."
       },
       {
         "question": "Le wobble (balancement) concerne :",
-        "options": ["La réplication de l'ADN", "L'appariement codon-anticodon (3ème base du codon)", "La structure de l'ADN", "La division cellulaire"],
-        "correct": 1,
-        "explanation": "Le wobble permet à la 3ème base du codon de former des appariements non canoniques avec la 1ère base de l'anticodon. Cela explique pourquoi un même ARNt peut reconnaître plusieurs codons synonymes."
+        "options": [
+          {"id": "a", "text": "La réplication de l'ADN"},
+          {"id": "b", "text": "L'appariement codon-anticodon (3ème base du codon)"},
+          {"id": "c", "text": "La structure de l'ADN"},
+          {"id": "d", "text": "La division cellulaire"}
+        ],
+        "correct": "b",
+        "explanation": "Le wobble permet à la 3ème base du codon de former des appariements non canoniques avec la 1ère base de l'anticodon."
       },
       {
         "question": "La séquence de Shine-Dalgarno chez les procaryotes sert à :",
-        "options": ["Terminer la traduction", "Positionner le ribosome sur le codon start", "Éliminer les introns", "Ajouter la coiffe"],
-        "correct": 1,
-        "explanation": "La séquence de Shine-Dalgarno (complémentaire de l'ARNr 16S) permet de positionner correctement le ribosome sur le codon AUG start chez les procaryotes."
+        "options": [
+          {"id": "a", "text": "Terminer la traduction"},
+          {"id": "b", "text": "Positionner le ribosome sur le codon start"},
+          {"id": "c", "text": "Éliminer les introns"},
+          {"id": "d", "text": "Ajouter la coiffe"}
+        ],
+        "correct": "b",
+        "explanation": "La séquence de Shine-Dalgarno (complémentaire de l'ARNr 16S) guide le ribosome vers le codon AUG start."
       },
       {
         "question": "L'initiation de la traduction chez les eucaryotes commence par :",
-        "options": ["La reconnaissance de la séquence de Shine-Dalgarno", "La reconnaissance de la coiffe 5' par le ribosome", "La liaison directe au codon AUG", "L'ajout de la queue poly-A"],
-        "correct": 1,
-        "explanation": "Chez les eucaryotes, la petite sous-unité ribosomale reconnaît la coiffe 5' et 'scanne' l'ARNm jusqu'au premier codon AUG. Chez les procaryotes, c'est la séquence de Shine-Dalgarno qui guide le ribosome."
+        "options": [
+          {"id": "a", "text": "La reconnaissance de la séquence de Shine-Dalgarno"},
+          {"id": "b", "text": "La reconnaissance de la coiffe 5' par le ribosome"},
+          {"id": "c", "text": "La liaison directe au codon AUG"},
+          {"id": "d", "text": "L'ajout de la queue poly-A"}
+        ],
+        "correct": "b",
+        "explanation": "Chez les eucaryotes, la petite sous-unité reconnaît la coiffe 5' et 'scanne' l'ARNm jusqu'au premier codon AUG."
       },
       {
         "question": "Les facteurs d'élongation EF-Tu (procaryotes) et eEF1 (eucaryotes) ont pour rôle de :",
-        "options": ["Catalyser la liaison peptidique", "Amener l'aminoacyl-ARNt au site A du ribosome", "Effectuer la translocation", "Libérer la protéine"],
-        "correct": 1,
-        "explanation": "EF-Tu/eEF1 (avec GTP) amène l'aminoacyl-ARNt au site A du ribosome. EF-G/eEF2 catalyse la translocation. La peptidyl transférase catalyse la liaison peptidique."
+        "options": [
+          {"id": "a", "text": "Catalyser la liaison peptidique"},
+          {"id": "b", "text": "Amener l'aminoacyl-ARNt au site A du ribosome"},
+          {"id": "c", "text": "Effectuer la translocation"},
+          {"id": "d", "text": "Libérer la protéine"}
+        ],
+        "correct": "b",
+        "explanation": "EF-Tu/eEF1 (avec GTP) amène l'aminoacyl-ARNt au site A du ribosome."
       },
       {
         "question": "La translocation est catalysée par :",
-        "options": ["EF-Tu", "EF-G (procaryotes) ou eEF2 (eucaryotes)", "La peptidyl transférase", "Les facteurs de libération"],
-        "correct": 1,
-        "explanation": "EF-G (procaryotes) ou eEF2 (eucaryotes) catalyse la translocation : le ribosome avance d'un codon (3 nt) vers l'extrémité 3' de l'ARNm, consommant du GTP."
+        "options": [
+          {"id": "a", "text": "EF-Tu"},
+          {"id": "b", "text": "EF-G (procaryotes) ou eEF2 (eucaryotes)"},
+          {"id": "c", "text": "La peptidyl transférase"},
+          {"id": "d", "text": "Les facteurs de libération"}
+        ],
+        "correct": "b",
+        "explanation": "EF-G/eEF2 catalyse la translocation : le ribosome avance d'un codon (3 nt) vers l'extrémité 3' de l'ARNm, consommant du GTP."
       },
       {
         "question": "Les facteurs de libération RF1 et RF2 (procaryotes) reconnaissent respectivement :",
-        "options": ["RF1 : UAA et UAG ; RF2 : UAA et UGA", "RF1 : UAG et UGA ; RF2 : UAA et UAG", "RF1 : AUG ; RF2 : UAA", "RF1 : UAA ; RF2 : UAG"],
-        "correct": 0,
-        "explanation": "RF1 reconnaît UAA et UAG. RF2 reconnaît UAA et UGA. RF3 (avec GTP) stimule l'activité de RF1 et RF2."
+        "options": [
+          {"id": "a", "text": "RF1 : UAA et UAG ; RF2 : UAA et UGA"},
+          {"id": "b", "text": "RF1 : UAG et UGA ; RF2 : UAA et UAG"},
+          {"id": "c", "text": "RF1 : AUG ; RF2 : UAA"},
+          {"id": "d", "text": "RF1 : UAA ; RF2 : UAG"}
+        ],
+        "correct": "a",
+        "explanation": "RF1 reconnaît UAA et UAG. RF2 reconnaît UAA et UGA. RF3 (avec GTP) stimule leur activité."
       },
       {
-        "question": "L'ARNr (ARN ribosomal) représente environ quel pourcentage de l'ARN total de la cellule ?",
-        "options": ["5%", "15%", "50%", "80%"],
-        "correct": 3,
+        "question": "L'ARNr représente environ quel pourcentage de l'ARN total de la cellule ?",
+        "options": [
+          {"id": "a", "text": "5%"},
+          {"id": "b", "text": "15%"},
+          {"id": "c", "text": "50%"},
+          {"id": "d", "text": "80%"}
+        ],
+        "correct": "d",
         "explanation": "L'ARNr représente ~80% de l'ARN total. L'ARNt = ~15%. L'ARNm = ~5%."
       },
       {
         "question": "Un ARNt possède une structure secondaire en :",
-        "options": ["Double hélice", "Feuille de trèfle", "Helice alpha", "Feuille beta"],
-        "correct": 1,
-        "explanation": "L'ARNt a une structure secondaire en feuille de trèfle et une structure tertiaire en L. Il possède une boucle anticodon et une extrémité 3' CCA où se fixe l'acide aminé."
-      },
-      {
-        "question": "Le codon AUG code pour :",
-        "options": ["La valine", "La méthionine", "La leucine", "La sérine"],
-        "correct": 1,
-        "explanation": "AUG code pour la méthionine (Met). C'est aussi le codon start (initiation). Chez les procaryotes, c'est la formyl-méthionine (fMet)."
+        "options": [
+          {"id": "a", "text": "Double hélice"},
+          {"id": "b", "text": "Feuille de trèfle"},
+          {"id": "c", "text": "Hélice alpha"},
+          {"id": "d", "text": "Feuille beta"}
+        ],
+        "correct": "b",
+        "explanation": "L'ARNt a une structure secondaire en feuille de trèfle et une structure tertiaire en L."
       },
       {
         "question": "La liaison peptidique se forme entre :",
-        "options": ["Le groupe amino d'un AA et le groupe carboxyle du suivant", "Le groupe carboxyle d'un AA et le groupe amino du suivant", "Deux groupes amino", "Deux groupes carboxyle"],
-        "correct": 0,
-        "explanation": "La liaison peptidique se forme entre le groupe carboxyle (-COOH) de l'acide aminé au site P et le groupe amino (-NH2) de l'acide aminé au site A, avec libération d'eau."
+        "options": [
+          {"id": "a", "text": "Le groupe amino d'un AA et le groupe carboxyle du suivant"},
+          {"id": "b", "text": "Le groupe carboxyle de l'AA au site P et le groupe amino de l'AA au site A"},
+          {"id": "c", "text": "Deux groupes amino"},
+          {"id": "d", "text": "Deux groupes carboxyle"}
+        ],
+        "correct": "b",
+        "explanation": "La liaison peptidique se forme entre le groupe carboxyle de l'acide aminé au site P et le groupe amino de celui au site A."
       },
       {
         "question": "Les modifications post-traductionnelles incluent :",
-        "options": ["Réplication et transcription", "Repliement, clivage, glycosylation, phosphorylation", "Épissage et coiffe", "Traduction et maturation"],
-        "correct": 1,
-        "explanation": "Les modifications post-traductionnelles = repliement (chaperonnes), clivage protéolytique, glycosylation, phosphorylation, acétylation, etc. Elles permettent à la protéine d'acquérir sa fonction."
+        "options": [
+          {"id": "a", "text": "Réplication et transcription"},
+          {"id": "b", "text": "Repliement, clivage, glycosylation, phosphorylation"},
+          {"id": "c", "text": "Épissage et coiffe"},
+          {"id": "d", "text": "Traduction et maturation"}
+        ],
+        "correct": "b",
+        "explanation": "Les modifications post-traductionnelles permettent à la protéine d'acquérir sa fonction finale (repliement, clivage, glycosylation, etc.)."
+      },
+      {
+        "question": "Le complexe d'initiation eucaryote (43S) contient :",
+        "options": [
+          {"id": "a", "text": "La grande sous-unité ribosomale"},
+          {"id": "b", "text": "La petite sous-unité (40S), l'ARNt initiateur et des facteurs eIF"},
+          {"id": "c", "text": "L'ARNm complet"},
+          {"id": "d", "text": "Le facteur de libération"}
+        ],
+        "correct": "b",
+        "explanation": "Le complexe 43S = petite sous-unité 40S + ARNt initiateur (Met-tRNAi) + facteurs eIF (dont eIF2-GTP)."
       }
     ],
     "vicieux": [
       {
         "question": "Si on utilise un antibiotique qui cible spécifiquement les ribosomes 70S (ex: tétracycline), quelles cellules seront affectées ?",
-        "options": ["Uniquement les bactéries", "Les bactéries ET les mitochondries des cellules eucaryotes", "Uniquement les eucaryotes", "Toutes les cellules"],
-        "correct": 1,
-        "explanation": "Les ribosomes 70S sont présents chez les bactéries ET dans les mitochondries (origine endosymbiotique). Un antibiotique ciblant les 70S affectera donc les deux, ce qui explique certains effets secondaires."
+        "options": [
+          {"id": "a", "text": "Uniquement les bactéries"},
+          {"id": "b", "text": "Les bactéries ET les mitochondries des cellules eucaryotes"},
+          {"id": "c", "text": "Uniquement les eucaryotes"},
+          {"id": "d", "text": "Toutes les cellules"}
+        ],
+        "correct": "b",
+        "explanation": "Les ribosomes 70S sont présents chez les bactéries ET dans les mitochondries (origine endosymbiotique)."
       },
       {
-        "question": "Si on mute l'anticodon d'un ARNt (ex: anticodon 3'-UAC-5' → 3'-GAC-5'), que se passe-t-il ?",
-        "options": ["Rien, l'ARNt fonctionne normalement", "L'ARNt ne peut plus se lier au ribosome", "L'ARNt apporte le mauvais acide aminé au ribosome", "L'ARNt est dégradé immédiatement"],
-        "correct": 2,
-        "explanation": "L'anticodon détermine quel codon l'ARNt reconnaît. Si on mute l'anticodon, l'ARNt reconnaîtra un autre codon et apportera le mauvais acide aminé, ce qui peut entraîner une protéine non fonctionnelle."
+        "question": "Si on mute l'anticodon d'un ARNt (ex: 3'-UAC-5' → 3'-GAC-5'), que se passe-t-il ?",
+        "options": [
+          {"id": "a", "text": "Rien, l'ARNt fonctionne normalement"},
+          {"id": "b", "text": "L'ARNt ne peut plus se lier au ribosome"},
+          {"id": "c", "text": "L'ARNt apporte le mauvais acide aminé au ribosome"},
+          {"id": "d", "text": "L'ARNt est dégradé immédiatement"}
+        ],
+        "correct": "c",
+        "explanation": "L'anticodon détermine quel codon l'ARNt reconnaît. Sa mutation fait que l'ARNt apporte le mauvais acide aminé."
       },
       {
         "question": "Si on inhibe EF-G avec une toxine, quelle étape de la traduction est bloquée ?",
-        "options": ["L'initiation", "La translocation (avancement du ribosome)", "La terminaison", "La formation de la liaison peptidique"],
-        "correct": 1,
-        "explanation": "EF-G catalyse la translocation (avancement du ribosome d'un codon). Son inhibition bloque cette étape, empêchant la continuation de l'élongation."
+        "options": [
+          {"id": "a", "text": "L'initiation"},
+          {"id": "b", "text": "La translocation (avancement du ribosome)"},
+          {"id": "c", "text": "La terminaison"},
+          {"id": "d", "text": "La formation de la liaison peptidique"}
+        ],
+        "correct": "b",
+        "explanation": "EF-G catalyse la translocation. Son inhibition bloque l'avancement du ribosome le long de l'ARNm."
       },
       {
         "question": "Une mutation dans le gène d'une aminoacyl-ARNt synthétase aura pour conséquence :",
-        "options": ["Aucun effet", "L'incorporation systématique d'un mauvais acide aminé pour un AA spécifique", "L'arrêt de toute traduction", "La dégradation de tous les ARNt"],
-        "correct": 1,
-        "explanation": "Chaque synthétase est spécifique d'un acide aminé. Sa mutation peut entraîner le chargement d'un mauvais acide aminé sur l'ARNt correspondant, ce qui se traduira par l'incorporation systématique de ce mauvais AA dans toutes les protéines contenant cet AA."
+        "options": [
+          {"id": "a", "text": "Aucun effet"},
+          {"id": "b", "text": "L'incorporation systématique d'un mauvais acide aminé pour un AA spécifique"},
+          {"id": "c", "text": "L'arrêt de toute traduction"},
+          {"id": "d", "text": "La dégradation de tous les ARNt"}
+        ],
+        "correct": "b",
+        "explanation": "Chaque synthétase est spécifique d'un acide aminé. Sa mutation peut entraîner le chargement d'un mauvais acide aminé sur l'ARNt correspondant."
       },
       {
         "question": "Pourquoi les eucaryotes ont-ils besoin de plus de facteurs d'initiation (eIF) que les procaryotes (IF) ?",
-        "options": ["Parce qu'ils ont plus d'acides aminés", "Parce que leur ARNm doit être 'scanné' depuis la coiffe 5' jusqu'au premier AUG", "Parce qu'ils n'ont pas de ribosomes", "Parce que leur ARNt est plus complexe"],
-        "correct": 1,
-        "explanation": "Chez les eucaryotes, le ribosome doit reconnaître la coiffe 5' et scanner l'ARNm jusqu'au premier AUG (mécanisme de 'scanning'). Cela nécessite de nombreux facteurs eIF. Chez les procaryotes, la séquence de Shine-Dalgarno guide directement le ribosome."
+        "options": [
+          {"id": "a", "text": "Parce qu'ils ont plus d'acides aminés"},
+          {"id": "b", "text": "Parce que leur ARNm doit être 'scanné' depuis la coiffe 5' jusqu'au premier AUG"},
+          {"id": "c", "text": "Parce qu'ils n'ont pas de ribosomes"},
+          {"id": "d", "text": "Parce que leur ARNt est plus complexe"}
+        ],
+        "correct": "b",
+        "explanation": "Le mécanisme de 'scanning' depuis la coiffe 5' jusqu'au premier AUG nécessite de nombreux facteurs eIF pour stabiliser le complexe."
       },
       {
-        "question": "Si on injecte de la cycloheximide (inhibiteur spécifique des ribosomes 80S) dans une cellule eucaryote, que se passe-t-il ?",
-        "options": ["Rien", "La traduction cytoplasmique est bloquée, mais la traduction mitochondriale continue", "Toute traduction est bloquée", "La transcription est bloquée"],
-        "correct": 1,
-        "explanation": "La cycloheximide inhibe spécifiquement les ribosomes 80S (cytoplasmiques) mais pas les 70S (mitochondriaux). Donc la traduction cytoplasmique est bloquée, mais la traduction mitochondriale continue."
+        "question": "Si on injecte de la cycloheximide dans une cellule eucaryote :",
+        "options": [
+          {"id": "a", "text": "Rien"},
+          {"id": "b", "text": "Traduction cytoplasmique bloquée, mais traduction mitochondriale continue"},
+          {"id": "c", "text": "Toute traduction bloquée"},
+          {"id": "d", "text": "Transcription bloquée"}
+        ],
+        "correct": "b",
+        "explanation": "La cycloheximide inhibe spécifiquement les ribosomes 80S (cytoplasmiques) mais pas les 70S (mitochondriaux)."
       },
       {
-        "question": "Un ARNm eucaryote contient 300 nucléotides (sans compter la coiffe et la queue poly-A). Combien d'acides aminés la protéine traduite contiendra-t-elle (en comptant le codon start mais pas le stop) ?",
-        "options": ["100", "99", "98", "Impossible à déterminer sans connaître la séquence"],
-        "correct": 1,
-        "explanation": "300 nt / 3 = 100 codons. Le premier codon (AUG) code pour la Met (comptée). Le dernier codon est probablement un stop (non compté). Donc 99 acides aminés."
+        "question": "Un ARNm eucaryote contient 300 nucléotides (sans coiffe/poly-A). Combien d'acides aminés la protéine contiendra-t-elle (en comptant le start, pas le stop) ?",
+        "options": [
+          {"id": "a", "text": "100"},
+          {"id": "b", "text": "99"},
+          {"id": "c", "text": "98"},
+          {"id": "d", "text": "Impossible à déterminer"}
+        ],
+        "correct": "b",
+        "explanation": "300 nt / 3 = 100 codons. Le premier (AUG) code pour la Met (comptée). Le dernier est probablement un stop (non compté). Donc 99 acides aminés."
       },
       {
         "question": "Si on surexprime une chaperonne (ex: Hsp70) dans une cellule, quel sera l'effet ?",
-        "options": ["Inhibition de la traduction", "Amélioration du repliement des protéines", "Dégradation de l'ARNm", "Activation de la transcription"],
-        "correct": 1,
-        "explanation": "Les chaperonnes (Hsp70, BiP, etc.) aident au repliement correct des protéines. Leur surexpression améliore le repliement et réduit l'agrégation de protéines mal repliées (utile dans certaines maladies neurodégénératives)."
+        "options": [
+          {"id": "a", "text": "Inhibition de la traduction"},
+          {"id": "b", "text": "Amélioration du repliement des protéines"},
+          {"id": "c", "text": "Dégradation de l'ARNm"},
+          {"id": "d", "text": "Activation de la transcription"}
+        ],
+        "correct": "b",
+        "explanation": "Les chaperonnes aident au repliement correct des protéines. Leur surexpression réduit l'agrégation de protéines mal repliées."
       },
       {
-        "question": "Pourquoi la plupart des antibiotiques qui ciblent la traduction affectent-ils les bactéries mais pas les cellules humaines ?",
-        "options": ["Parce que les humains n'ont pas de ribosomes", "Parce que les ribosomes bactériens (70S) sont différents des ribosomes eucaryotes cytoplasmiques (80S)", "Parce que les humains ont des enzymes qui dégradent les antibiotiques", "Parce que les bactéries n'ont pas d'ADN"],
-        "correct": 1,
-        "explanation": "Les ribosomes bactériens (70S) sont structurellement différents des ribosomes eucaryotes cytoplasmiques (80S). Les antibiotiques ciblent spécifiquement les 70S, épargnant ainsi les 80S humains. Cependant, les mitochondries (70S) peuvent être affectées (effets secondaires)."
+        "question": "Si on mute le site A du ribosome, que se passe-t-il ?",
+        "options": [
+          {"id": "a", "text": "Rien"},
+          {"id": "b", "text": "L'ARNt ne peut plus entrer, bloquant l'élongation"},
+          {"id": "c", "text": "La traduction accélère"},
+          {"id": "d", "text": "La terminaison est prématurée"}
+        ],
+        "correct": "b",
+        "explanation": "Le site A accueille l'aminoacyl-ARNt entrant. Sa mutation empêche l'entrée des ARNt, bloquant l'élongation."
       },
       {
-        "question": "Si on mute le site de liaison de l'ARNt au ribosome (site A), que se passe-t-il ?",
-        "options": ["Rien", "L'ARNt ne peut plus entrer au site A, bloquant l'élongation", "La traduction accélère", "La terminaison est prématurée"],
-        "correct": 1,
-        "explanation": "Le site A accueille l'aminoacyl-ARNt entrant. Sa mutation empêche l'entrée des ARNt, bloquant l'élongation de la traduction. La protéine reste incomplète et non fonctionnelle."
+        "question": "Le mécanisme de 'frameshift' (décalage du cadre de lecture) peut être provoqué par :",
+        "options": [
+          {"id": "a", "text": "Une mutation faux-sens"},
+          {"id": "b", "text": "Une insertion ou délétion d'un nombre de nucléotides non multiple de 3"},
+          {"id": "c", "text": "Une mutation silencieuse"},
+          {"id": "d", "text": "L'épissage alternatif"}
+        ],
+        "correct": "b",
+        "explanation": "Une insertion ou délétion (indel) de 1 ou 2 nucléotides décale tout le cadre de lecture en aval, modifiant complètement la séquence protéique."
       }
     ]
   }

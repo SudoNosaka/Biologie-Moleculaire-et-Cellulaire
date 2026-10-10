@@ -5,199 +5,359 @@
     "facile": [
       {
         "question": "La transcription est le processus qui permet de :",
-        "options": ["Copier l'ADN en ADN", "Copier l'ADN en ARN", "Copier l'ARN en protéine", "Copier l'ARN en ADN"],
-        "correct": 1,
-        "explanation": "La transcription = copie d'un gène d'ADN en ARN. La traduction = passage de l'ARN à la protéine. La réplication = copie de l'ADN en ADN."
+        "options": [
+          {"id": "a", "text": "Copier l'ADN en ADN"},
+          {"id": "b", "text": "Copier l'ADN en ARN"},
+          {"id": "c", "text": "Copier l'ARN en protéine"},
+          {"id": "d", "text": "Copier l'ARN en ADN"}
+        ],
+        "correct": "b",
+        "explanation": "La transcription = synthèse d'un ARN à partir d'une matrice d'ADN."
       },
       {
-        "question": "Chez les eucaryotes, la transcription a lieu dans :",
-        "options": ["Le cytoplasme", "Le noyau", "Les mitochondries", "Le réticulum endoplasmique"],
-        "correct": 1,
-        "explanation": "Chez les eucaryotes, la transcription se déroule dans le noyau. La traduction a lieu dans le cytoplasme. Chez les procaryotes, les deux ont lieu dans le cytoplasme."
+        "question": "L'enzyme responsable de la transcription chez les procaryotes est :",
+        "options": [
+          {"id": "a", "text": "L'ADN polymérase"},
+          {"id": "b", "text": "L'ARN polymérase"},
+          {"id": "c", "text": "La primase"},
+          {"id": "d", "text": "La ligase"}
+        ],
+        "correct": "b",
+        "explanation": "L'ARN polymérase catalyse la synthèse de l'ARN à partir d'un brin d'ADN matrice."
       },
       {
-        "question": "L'ARN polymérase synthétise l'ARN dans le sens :",
-        "options": ["3' → 5'", "5' → 3'", "Bidirectionnel", "Aléatoire"],
-        "correct": 1,
-        "explanation": "Comme l'ADN polymérase, l'ARN polymérase synthétise toujours dans le sens 5' → 3'. Elle lit le brin matrice dans le sens 3' → 5'."
+        "question": "Dans quel sens l'ARN est-il synthétisé ?",
+        "options": [
+          {"id": "a", "text": "3' → 5'"},
+          {"id": "b", "text": "5' → 3'"},
+          {"id": "c", "text": "Bidirectionnel"},
+          {"id": "d", "text": "Aléatoire"}
+        ],
+        "correct": "b",
+        "explanation": "Comme pour l'ADN, l'ARN est synthétisé dans le sens 5' → 3'."
       },
       {
-        "question": "Quelle ARN polymérase synthétise les ARN messagers (ARNm) chez les eucaryotes ?",
-        "options": ["ARN Polymérase I", "ARN Polymérase II", "ARN Polymérase III", "Primase"],
-        "correct": 1,
-        "explanation": "L'ARN Pol II transcrit les ARNm (gènes codant pour les protéines). L'ARN Pol I fait les ARNr (28S, 18S, 5.8S). L'ARN Pol III fait les ARNt et l'ARNr 5S."
+        "question": "Quelle ARN polymérase eucaryote synthétise les ARNm ?",
+        "options": [
+          {"id": "a", "text": "ARN Pol I"},
+          {"id": "b", "text": "ARN Pol II"},
+          {"id": "c", "text": "ARN Pol III"},
+          {"id": "d", "text": "ARN Pol IV"}
+        ],
+        "correct": "b",
+        "explanation": "L'ARN Pol II transcrit les gènes codant pour les protéines (ARNm) et certains petits ARN."
       },
       {
-        "question": "Dans l'ARN, quelle base remplace la thymine (T) de l'ADN ?",
-        "options": ["Adénine", "Guanine", "Cytosine", "Uracile"],
-        "correct": 3,
-        "explanation": "L'Uracile (U) remplace la Thymine (T) dans l'ARN. L'ARN contient donc A, U, G, C au lieu de A, T, G, C pour l'ADN."
+        "question": "Le promoteur est :",
+        "options": [
+          {"id": "a", "text": "Une protéine qui démarre la traduction"},
+          {"id": "b", "text": "Une séquence d'ADN où se fixe l'ARN polymérase"},
+          {"id": "c", "text": "Un ARN régulateur"},
+          {"id": "d", "text": "Un lipide membranaire"}
+        ],
+        "correct": "b",
+        "explanation": "Le promoteur est une région d'ADN en amont du gène, reconnue par l'ARN polymérase et les facteurs de transcription."
       },
       {
-        "question": "La coiffe en 5' de l'ARNm eucaryote est constituée de :",
-        "options": ["Une queue de poly-A", "De la 7-méthylguanosine", "Des introns", "Des exons"],
-        "correct": 1,
-        "explanation": "La coiffe = 7-méthylguanosine liée par une liaison 5'-5' triphosphate. Elle protège l'ARNm des exonucléases et est reconnue par les ribosomes."
+        "question": "Chez les procaryotes, la boîte de Pribnow est située en :",
+        "options": [
+          {"id": "a", "text": "-10"},
+          {"id": "b", "text": "-35"},
+          {"id": "c", "text": "+1"},
+          {"id": "d", "text": "-50"}
+        ],
+        "correct": "a",
+        "explanation": "La boîte de Pribnow (TATAAT) est la séquence consensus située environ 10 bases en amont du site d'initiation (-10)."
       },
       {
-        "question": "La queue poly-A en 3' de l'ARNm est composée de :",
-        "options": ["50 à 250 adénosines", "50 à 250 thymidines", "50 à 250 uridines", "50 à 250 cytidines"],
-        "correct": 0,
-        "explanation": "La queue poly-A = 50 à 250 adénosines (A) ajoutées par la poly(A) polymérase. Elle stabilise l'ARNm et facilite son export du noyau."
+        "question": "Le facteur σ (sigma) chez les procaryotes sert à :",
+        "options": [
+          {"id": "a", "text": "Élonguer l'ARN"},
+          {"id": "b", "text": "Reconnaître le promoteur"},
+          {"id": "c", "text": "Terminer la transcription"},
+          {"id": "d", "text": "Épisser l'ARN"}
+        ],
+        "correct": "b",
+        "explanation": "Le facteur σ permet à l'ARN polymérase (holoenzyme) de reconnaître et se lier spécifiquement au promoteur."
       },
       {
-        "question": "L'épissage (splicing) consiste à :",
-        "options": ["Ajouter des introns à l'ARNm", "Éliminer les introns et lier les exons", "Ajouter la coiffe en 5'", "Ajouter la queue poly-A en 3'"],
-        "correct": 1,
-        "explanation": "L'épissage = élimination des introns (séquences non codantes) et ligature des exons (séquences codantes) pour former un ARNm mature."
+        "question": "La maturation de l'ARNm chez les eucaryotes inclut :",
+        "options": [
+          {"id": "a", "text": "L'ajout d'une coiffe en 5'"},
+          {"id": "b", "text": "L'ajout d'une queue poly-A en 3'"},
+          {"id": "c", "text": "L'épissage des introns"},
+          {"id": "d", "text": "Toutes ces réponses"}
+        ],
+        "correct": "d",
+        "explanation": "L'ARNm eucaryote subit ces 3 modifications majeures avant d'être exporté vers le cytoplasme."
       },
       {
-        "question": "L'ARNm procaryote est généralement :",
-        "options": ["Monocistronique (un gène par ARNm)", "Polycistronique (plusieurs gènes sur un même ARNm = opéron)", "Toujours épissé", "Sans coiffe ni poly-A"],
-        "correct": 1,
-        "explanation": "Chez les procaryotes, l'ARNm est polycistronique (opérons). Chez les eucaryotes, il est monocistronique (un gène par ARNm)."
+        "question": "L'épissage consiste à :",
+        "options": [
+          {"id": "a", "text": "Ajouter une coiffe"},
+          {"id": "b", "text": "Éliminer les introns et ligaturer les exons"},
+          {"id": "c", "text": "Ajouter une queue poly-A"},
+          {"id": "d", "text": "Traduire l'ARN en protéine"}
+        ],
+        "correct": "b",
+        "explanation": "L'épissage (splicing) retire les séquences non codantes (introns) et joint les séquences codantes (exons)."
       },
       {
-        "question": "Chez les procaryotes, la transcription et la traduction sont :",
-        "options": ["Séparées dans le temps et l'espace", "Couplées (simultanées dans le cytoplasme)", "Inexistantes", "Dépendantes de l'épissage"],
-        "correct": 1,
-        "explanation": "L'absence de noyau chez les procaryotes permet aux ribosomes de commencer la traduction de l'ARNm pendant qu'il est encore en cours de transcription."
+        "question": "L'ARN polymérase II est sensible à :",
+        "options": [
+          {"id": "a", "text": "La pénicilline"},
+          {"id": "b", "text": "L'α-amanitine (toxine d'amanite phalloïde)"},
+          {"id": "c", "text": "La novobiocine"},
+          {"id": "d", "text": "La cycloheximide"}
+        ],
+        "correct": "b",
+        "explanation": "L'α-amanitine inhibe spécifiquement l'ARN Pol II (et à plus forte dose l'ARN Pol III), mais pas l'ARN Pol I."
       }
     ],
     "moyen": [
       {
-        "question": "Le promoteur est une séquence d'ADN située :",
-        "options": ["En aval du gène (après le gène)", "En amont du gène (avant le gène)", "À l'intérieur du gène", "Dans l'ARNm mature"],
-        "correct": 1,
-        "explanation": "Le promoteur est situé en amont du gène (en 5' du brin non transcrit). Il est reconnu par l'ARN polymérase et les facteurs de transcription pour initier la transcription."
+        "question": "Le complexe de pré-initiation (PIC) chez les eucaryotes commence par la liaison de :",
+        "options": [
+          {"id": "a", "text": "L'ARN Pol II directement"},
+          {"id": "b", "text": "TFIID (contenant la TBP) à la boîte TATA"},
+          {"id": "c", "text": "TFIIH"},
+          {"id": "d", "text": "Le facteur σ"}
+        ],
+        "correct": "b",
+        "explanation": "TFIID (via sa sous-unité TBP) reconnaît la boîte TATA et recrute ensuite les autres facteurs (TFIIA, B, F, Pol II, E, H)."
       },
       {
-        "question": "Chez les procaryotes, le promoteur contient deux séquences consensus :",
-        "options": ["TATA box et CAAT box", "Boîte de Pribnow (-10) et région -35", "Shine-Dalgarno et Kozak", "Intron et exon"],
-        "correct": 1,
-        "explanation": "Chez les procaryotes, le promoteur contient la boîte de Pribnow en -10 (TATAAT) et une région en -35 (TTGACA). Chez les eucaryotes, on trouve la TATA box en -25."
+        "question": "L'activité hélicase de TFIIH sert à :",
+        "options": [
+          {"id": "a", "text": "Ouvrir l'ADN au niveau du promoteur"},
+          {"id": "b", "text": "Fermer l'ADN après transcription"},
+          {"id": "c", "text": "Épisser l'ARN"},
+          {"id": "d", "text": "Ajouter la coiffe"}
+        ],
+        "correct": "a",
+        "explanation": "TFIIH possède une activité hélicase qui déroule l'ADN pour former la bulle de transcription, permettant l'initiation."
       },
       {
-        "question": "Le facteur TFIID reconnaît la boîte TATA chez les eucaryotes. Il contient :",
-        "options": ["Une ARN polymérase", "La TBP (TATA-binding protein)", "Une hélicase", "Une ligase"],
-        "correct": 1,
-        "explanation": "TFIID contient la TBP (TATA-binding protein) qui reconnaît spécifiquement la séquence TATAAA de la boîte TATA. C'est la première étape de l'assemblage du complexe de pré-initiation."
+        "question": "La phosphorylation de la queue CTD de l'ARN Pol II par TFIIH permet :",
+        "options": [
+          {"id": "a", "text": "La terminaison"},
+          {"id": "b", "text": "Le démarrage de l'élongation et le recrutement des facteurs de maturation"},
+          {"id": "c", "text": "La dégradation de l'ARN"},
+          {"id": "d", "text": "La liaison du facteur σ"}
+        ],
+        "correct": "b",
+        "explanation": "La phosphorylation de la CTD (C-terminal Domain) libère l'ARN Pol II du promoteur et recrute les enzymes de coiffe et d'épissage."
       },
       {
-        "question": "Le facteur TFIIH possède deux activités enzymatiques :",
-        "options": ["Polymérase et ligase", "Hélicase et kinase", "Exonucléase et primase", "Topoisomérase et méthylase"],
-        "correct": 1,
-        "explanation": "TFIIH a une activité hélicase (ouvre l'ADN) et une activité kinase (phosphoryle la queue CTD de l'ARN Pol II pour lancer l'élongation)."
+        "question": "La coiffe en 5' est ajoutée :",
+        "options": [
+          {"id": "a", "text": "À la fin de la transcription"},
+          {"id": "b", "text": "Très tôt, après la synthèse des premiers ~20-30 nucléotides"},
+          {"id": "c", "text": "Dans le cytoplasme"},
+          {"id": "d", "text": "Avant l'initiation"}
+        ],
+        "correct": "b",
+        "explanation": "La coiffe (7-méthylguanosine) est ajoutée co-transcriptionnellement, dès que l'extrémité 5' de l'ARN émerge de l'ARN Pol II."
       },
       {
-        "question": "L'ARN polymérase II possède une queue CTD (C-terminal domain) qui est :",
-        "options": ["Une séquence d'ADN", "Une région riche en répétitions Tyr-Ser-Pro-Thr-Ser-Ser-Pro phosphorylable", "Un promoteur", "Un intron"],
-        "correct": 1,
-        "explanation": "La queue CTD de l'ARN Pol II contient des répétitions de l'heptapeptide YSPTSPS. Sa phosphorylation par TFIIH permet le passage de l'initiation à l'élongation."
+        "question": "Le signal de polyadénylation chez les mammifères est :",
+        "options": [
+          {"id": "a", "text": "TATAAA"},
+          {"id": "b", "text": "AAUAAA"},
+          {"id": "c", "text": "GU-AG"},
+          {"id": "d", "text": "AUG"}
+        ],
+        "correct": "b",
+        "explanation": "La séquence AAUAAA dans l'ARN pré-messager signale le site de clivage et d'ajout de la queue poly-A."
       },
       {
-        "question": "Le signal de polyadénylation dans l'ARNm eucaryote est :",
-        "options": ["TATAAA", "AAUAAA", "AUG", "UAA, UAG, UGA"],
-        "correct": 1,
-        "explanation": "Le signal de polyadénylation = AAUAAA (en ARN). Il est reconnu par le complexe CPSF qui clive l'ARN et permet l'ajout de la queue poly-A."
+        "question": "L'épissage est réalisé par :",
+        "options": [
+          {"id": "a", "text": "Le ribosome"},
+          {"id": "b", "text": "Le spliceosome (complexe de snRNP)"},
+          {"id": "c", "text": "L'ARN polymérase"},
+          {"id": "d", "text": "La topoisomérase"}
+        ],
+        "correct": "b",
+        "explanation": "Le spliceosome est un complexe ribonucléoprotéique (snRNP) qui catalyse l'élimination des introns."
       },
       {
-        "question": "Les introns sont éliminés par le spliceosome, qui reconnaît des séquences consensus aux jonctions intron-exon :",
-        "options": ["AUG en 5' et UAA en 3'", "GU en 5' de l'intron et AG en 3' de l'intron", "TATA en 5' et poly-A en 3'", "Shine-Dalgarno en 5' et Kozak en 3'"],
-        "correct": 1,
-        "explanation": "Le spliceosome reconnaît GU en 5' de l'intron (site donneur), AG en 3' de l'intron (site accepteur), et un site de branchement avec un A. Ces séquences sont indispensables à l'épissage."
+        "question": "Les séquences consensus aux bornes des introns sont :",
+        "options": [
+          {"id": "a", "text": "AU en 5' et CU en 3'"},
+          {"id": "b", "text": "GU en 5' et AG en 3'"},
+          {"id": "c", "text": "GA en 5' et UC en 3'"},
+          {"id": "d", "text": "UU en 5' et AA en 3'"}
+        ],
+        "correct": "b",
+        "explanation": "La règle GU-AG : l'intron commence presque toujours par GU et se termine par AG."
       },
       {
-        "question": "L'épissage alternatif permet :",
-        "options": ["D'éliminer tous les exons", "À un seul gène de produire plusieurs protéines différentes en combinant les exons de diverses manières", "De transformer l'ADN en ARN", "De répliquer l'ADN"],
-        "correct": 1,
-        "explanation": "L'épissage alternatif = mécanisme permettant de sélectionner différents exons lors de la maturation de l'ARNm. C'est une source majeure de diversité protéique chez les eucaryotes."
+        "question": "L'intermédiaire en 'lasso' (lariat) lors de l'épissage est formé par :",
+        "options": [
+          {"id": "a", "text": "Une liaison entre l'extrémité 5' de l'intron et un A du site de branchement"},
+          {"id": "b", "text": "Une liaison entre deux exons"},
+          {"id": "c", "text": "Une liaison covalente avec la coiffe"},
+          {"id": "d", "text": "Une liaison avec la queue poly-A"}
+        ],
+        "correct": "a",
+        "explanation": "Le groupe 2'-OH de l'adénosine du site de branchement attaque le site donneur 5', formant une structure en lasso."
       },
       {
-        "question": "Chez les procaryotes, la terminaison de la transcription peut être :",
-        "options": ["Uniquement rho-dépendante", "Uniquement rho-indépendante", "Rho-dépendante ou rho-indépendante (intrinsèque)", "Dépendante de la queue poly-A"],
-        "correct": 2,
-        "explanation": "Chez les procaryotes, il existe 2 types de terminaison : rho-indépendante (structure en tige-boucle + série de U) et rho-dépendante (protéine Rho qui remonte l'ARN et déstabilise le complexe)."
+        "question": "La terminaison de la transcription chez les procaryotes peut être :",
+        "options": [
+          {"id": "a", "text": "Uniquement Rho-dépendante"},
+          {"id": "b", "text": "Rho-dépendante ou Rho-indépendante (intrinsèque)"},
+          {"id": "c", "text": "Uniquement par épissage"},
+          {"id": "d", "text": "Aléatoire"}
+        ],
+        "correct": "b",
+        "explanation": "La terminaison peut être intrinsèque (structure en tige-boucle riche en G-C + série de U) ou dépendante de la protéine Rho."
       },
       {
-        "question": "Le brin transcrit (brin matrice) est lu par l'ARN polymérase dans le sens :",
-        "options": ["5' → 3'", "3' → 5'", "Bidirectionnel", "Aléatoire"],
-        "correct": 1,
-        "explanation": "L'ARN polymérase lit le brin matrice dans le sens 3' → 5' et synthétise l'ARN dans le sens 5' → 3'. Le brin non transcrit (brin codant) a la même séquence que l'ARN (sauf T → U)."
+        "question": "L'ARN Pol I transcrit :",
+        "options": [
+          {"id": "a", "text": "Les ARNm"},
+          {"id": "b", "text": "Les ARNr 28S, 18S et 5.8S"},
+          {"id": "c", "text": "Les ARNt"},
+          {"id": "d", "text": "Les microARN"}
+        ],
+        "correct": "b",
+        "explanation": "L'ARN Pol I est localisée dans le nucléole et transcrit le précurseur des grands ARNr (28S, 18S, 5.8S)."
       },
       {
-        "question": "L'ARN polymérase, contrairement à l'ADN polymérase :",
-        "options": ["A besoin d'une amorce pour initier la synthèse", "N'a pas besoin d'amorce pour initier la synthèse", "Synthétise dans le sens 3' → 5'", "Ne peut pas lire l'ADN"],
-        "correct": 1,
-        "explanation": "L'ARN polymérase peut initier la synthèse de novo (sans amorce), contrairement à l'ADN polymérase qui nécessite une amorce (ARN ou ADN) avec une extrémité 3'-OH libre."
+        "question": "L'ARN Pol III transcrit :",
+        "options": [
+          {"id": "a", "text": "Les ARNm"},
+          {"id": "b", "text": "Les ARNr 28S"},
+          {"id": "c", "text": "Les ARNt et l'ARNr 5S"},
+          {"id": "d", "text": "Les ARNm mitochondriaux"}
+        ],
+        "correct": "c",
+        "explanation": "L'ARN Pol III transcrit les petits ARN, notamment les ARNt et l'ARNr 5S."
       },
       {
-        "question": "Les ARNr (ARN ribosomiques) sont synthétisés par :",
-        "options": ["ARN Pol I (28S, 18S, 5.8S) et ARN Pol III (5S)", "ARN Pol II uniquement", "La primase", "L'ADN polymérase"],
-        "correct": 0,
-        "explanation": "L'ARN Pol I synthétise les ARNr 28S, 18S et 5.8S (dans le nucléole). L'ARN Pol III synthétise l'ARNr 5S (dans le nucléoplasme)."
+        "question": "Les enhancers (amplificateurs) sont :",
+        "options": [
+          {"id": "a", "text": "Des séquences d'ADN qui augmentent la transcription, même à distance"},
+          {"id": "b", "text": "Des protéines qui dégradent l'ARN"},
+          {"id": "c", "text": "Des séquences qui bloquent la transcription"},
+          {"id": "d", "text": "Des ARN régulateurs"}
+        ],
+        "correct": "a",
+        "explanation": "Les enhancers sont des éléments cis-régulateurs qui, via la boucle de l'ADN, augmentent l'efficacité de la transcription."
       }
     ],
     "vicieux": [
       {
-        "question": "L'α-amanitine (toxine de l'amanite phalloïde) inhibe spécifiquement :",
-        "options": ["L'ADN polymérase", "L'ARN polymérase II (synthèse d'ARNm)", "Le ribosome", "L'ADN ligase"],
-        "correct": 1,
-        "explanation": "L'α-amanitine inhibe spécifiquement l'ARN Pol II (qui synthétise les ARNm). C'est pourquoi l'ingestion d'amanite phalloïde est mortelle : elle bloque la transcription des gènes codant pour les protéines."
+        "question": "Si on mute le site de branchement (A → C) d'un intron, que se passe-t-il ?",
+        "options": [
+          {"id": "a", "text": "Rien, l'épissage est robuste"},
+          {"id": "b", "text": "L'épissage est bloqué, l'intron reste dans l'ARNm mature"},
+          {"id": "c", "text": "L'exon est éliminé"},
+          {"id": "d", "text": "La transcription s'arrête"}
+        ],
+        "correct": "b",
+        "explanation": "L'adénosine du site de branchement est essentielle pour la première étape de transestérification de l'épissage. Sa mutation bloque le processus."
       },
       {
-        "question": "Si on mute la boîte TATA d'un gène eucaryote (TATAAA → TATATA), quelle sera la conséquence ?",
-        "options": ["Aucune conséquence", "Diminution drastique de la transcription du gène", "Augmentation de la transcription", "Activation de l'ARN Pol I"],
-        "correct": 1,
-        "explanation": "La boîte TATA est essentielle pour le recrutement de TFIID et l'assemblage du complexe de pré-initiation. Sa mutation réduit fortement l'efficacité de l'initiation de la transcription."
+        "question": "L'épissage alternatif est une source majeure de :",
+        "options": [
+          {"id": "a", "text": "Mutations délétères"},
+          {"id": "b", "text": "Diversité protéique à partir d'un nombre limité de gènes"},
+          {"id": "c", "text": "Réplication de l'ADN"},
+          {"id": "d", "text": "Dégradation de l'ARN"}
+        ],
+        "correct": "b",
+        "explanation": "L'épissage alternatif permet de produire plusieurs isoformes de protéines à partir d'un seul gène, expliquant la complexité des eucaryotes."
       },
       {
-        "question": "Si on injecte de l'α-amanitine dans une cellule, quel type d'ARN sera le plus affecté ?",
-        "options": ["Les ARNr 28S, 18S, 5.8S", "Les ARNm", "Les ARNt", "Tous les ARN de manière égale"],
-        "correct": 1,
-        "explanation": "L'α-amanitine inhibe préférentiellement l'ARN Pol II (synthèse d'ARNm). L'ARN Pol I (ARNr) et l'ARN Pol III (ARNt) sont beaucoup moins sensibles à cette toxine."
+        "question": "Si on inhibe la phosphorylation de la CTD de l'ARN Pol II :",
+        "options": [
+          {"id": "a", "text": "La transcription s'accélère"},
+          {"id": "b", "text": "L'élongation ne démarre pas et la maturation (coiffe/épissage) n'est pas recrutée"},
+          {"id": "c", "text": "La terminaison est prématurée"},
+          {"id": "d", "text": "L'ARN est exporté plus vite"}
+        ],
+        "correct": "b",
+        "explanation": "La phosphorylation de la CTD par TFIIH est le signal de passage de l'initiation à l'élongation et sert de plateforme de recrutement pour les facteurs de coiffe et d'épissage."
       },
       {
-        "question": "Un gène eucaryote contient 8 exons et 7 introns. Combien de variants protéiques différents peut-on théoriquement obtenir par épissage alternatif si chaque intron peut être conservé ou éliminé ?",
-        "options": ["8", "7", "2⁷ = 128", "Impossible à déterminer"],
-        "correct": 2,
-        "explanation": "Avec 7 introns, chacun pouvant être conservé ou éliminé, on obtient théoriquement 2⁷ = 128 variants différents. En pratique, certaines combinaisons sont impossibles ou non fonctionnelles."
+        "question": "La toxine α-amanitine inhibe préférentiellement :",
+        "options": [
+          {"id": "a", "text": "L'ARN Pol I"},
+          {"id": "b", "text": "L'ARN Pol II"},
+          {"id": "c", "text": "L'ARN Pol III"},
+          {"id": "d", "text": "La primase"}
+        ],
+        "correct": "b",
+        "explanation": "L'ARN Pol II est extrêmement sensible à l'α-amanitine (inhibée à faible concentration), tandis que l'ARN Pol I est insensible et l'ARN Pol III peu sensible."
       },
       {
-        "question": "Si on mut le site donneur d'épissage (GU → GC) d'un intron, que se passe-t-il ?",
-        "options": ["Rien, l'épissage se fait normalement", "L'intron n'est pas éliminé et reste dans l'ARNm mature", "L'exon suivant est éliminé", "L'ARNm est dégradé immédiatement"],
-        "correct": 1,
-        "explanation": "Le site donneur GU en 5' de l'intron est essentiel pour la reconnaissance par le spliceosome. Sa mutation empêche l'épissage correct → l'intron reste dans l'ARNm, ce qui peut introduire un décalage du cadre de lecture ou un codon stop prématuré."
+        "question": "Le facteur de transcription TFIID contient :",
+        "options": [
+          {"id": "a", "text": "La TBP (TATA-Binding Protein)"},
+          {"id": "b", "text": "L'activité hélicase"},
+          {"id": "c", "text": "L'activité kinase"},
+          {"id": "d", "text": "L'activité exonucléase"}
+        ],
+        "correct": "a",
+        "explanation": "TFIID est un complexe multiprotéique dont la sous-unité TBP reconnaît spécifiquement la séquence TATA du promoteur."
       },
       {
-        "question": "Pourquoi l'ARNm eucaryote doit-il être exporté du noyau vers le cytoplasme avant d'être traduit ?",
-        "options": ["Parce que les ribosomes sont dans le noyau", "Parce que la transcription et la traduction sont séparées dans le temps et l'espace chez les eucaryotes", "Parce que l'ARNm doit être dégradé dans le cytoplasme", "Parce que l'ARNm n'est pas fonctionnel dans le noyau"],
-        "correct": 1,
-        "explanation": "Chez les eucaryotes, la transcription a lieu dans le noyau et la traduction dans le cytoplasme (séparation spatiale et temporelle). L'ARNm mature doit donc être exporté via les pores nucléaires pour être traduit par les ribosomes cytoplasmiques."
+        "question": "Si on supprime la séquence de polyadénylation (AAUAAA) d'un gène :",
+        "options": [
+          {"id": "a", "text": "Rien"},
+          {"id": "b", "text": "L'ARNm n'est pas clivé/polyadénylé, est instable et mal exporté"},
+          {"id": "c", "text": "La transcription ne démarre pas"},
+          {"id": "d", "text": "L'ARNm est épissé plus vite"}
+        ],
+        "correct": "b",
+        "explanation": "Le signal AAUAAA est crucial pour le clivage et l'ajout de la queue poly-A, qui protège l'ARNm et facilite son export et sa traduction."
       },
       {
-        "question": "Si on inhibe TFIIH avec une drogue, quelle étape de la transcription est bloquée ?",
-        "options": ["La terminaison", "L'initiation (ouverture de l'ADN et phosphorylation de l'ARN Pol II)", "L'élongation uniquement", "L'épissage"],
-        "correct": 1,
-        "explanation": "TFIIH a une activité hélicase (ouvre l'ADN au promoteur) et une activité kinase (phosphoryle la queue CTD de l'ARN Pol II). Son inhibition bloque l'initiation de la transcription."
+        "question": "Les snRNP (small nuclear ribonucleoproteins) sont des composants de :",
+        "options": [
+          {"id": "a", "text": "Le ribosome"},
+          {"id": "b", "text": "Le spliceosome"},
+          {"id": "c", "text": "Le télomère"},
+          {"id": "d", "text": "Le centrosome"}
+        ],
+        "correct": "b",
+        "explanation": "Les snRNP (U1, U2, U4, U5, U6) sont les éléments clés du spliceosome qui reconnaissent les sites d'épissage et catalysent la réaction."
       },
       {
-        "question": "Un ARNm mature eucaryote contient encore des séquences non traduites (UTR). Où se trouvent-elles ?",
-        "options": ["Uniquement en 5'", "Uniquement en 3'", "En 5' (entre la coiffe et le codon start) ET en 3' (entre le codon stop et la queue poly-A)", "Dans les introns"],
-        "correct": 2,
-        "explanation": "Les UTR (UnTranslated Regions) se trouvent en 5' UTR (entre la coiffe et le codon AUG start) et en 3' UTR (entre le codon stop et la queue poly-A). Elles jouent un rôle dans la régulation de la traduction et de la stabilité de l'ARNm."
+        "question": "La terminaison de l'ARN Pol II est couplée à :",
+        "options": [
+          {"id": "a", "text": "L'initiation de la traduction"},
+          {"id": "b", "text": "La polyadénylation (clivage de l'extrémité 3')"},
+          {"id": "c", "text": "La réplication de l'ADN"},
+          {"id": "d", "text": "L'épissage des introns"}
+        ],
+        "correct": "b",
+        "explanation": "Chez les eucaryotes, la terminaison de l'ARN Pol II est déclenchée par le clivage de l'ARN au site de polyadénylation, suivi de la dégradation de l'ARN résiduel par une exonucléase (modèle du torpille)."
       },
       {
-        "question": "Si on remplace le signal de polyadénylation AAUAAA par AAGAAA dans un gène eucaryote, que se passe-t-il ?",
-        "options": ["Rien, la queue poly-A est quand même ajoutée", "La queue poly-A n'est pas ajoutée, l'ARNm est instable et rapidement dégradé", "L'ARNm est plus stable", "L'épissage est bloqué"],
-        "correct": 1,
-        "explanation": "Le signal AAUAAA est reconnu par le complexe CPSF pour le clivage et l'ajout de la queue poly-A. Sa mutation empêche la polyadénylation → l'ARNm est instable et rapidement dégradé par les exonucléases."
+        "question": "Un promoteur minimal eucaryote contient généralement :",
+        "options": [
+          {"id": "a", "text": "Uniquement la boîte TATA"},
+          {"id": "b", "text": "La boîte TATA et l'élément d'initiation (Inr)"},
+          {"id": "c", "text": "Des enhancers et des silencers"},
+          {"id": "d", "text": "Le site de polyadénylation"}
+        ],
+        "correct": "b",
+        "explanation": "Un promoteur minimal suffisant pour une transcription de base contient la boîte TATA (ou un élément équivalent) et la séquence Inr autour du site +1."
       },
       {
-        "question": "La terminaison de la transcription chez les eucaryotes est couplée à :",
-        "options": ["La réplication de l'ADN", "La maturation de l'extrémité 3' de l'ARNm (clivage et polyadénylation)", "L'épissage des introns", "L'ajout de la coiffe en 5'"],
-        "correct": 1,
-        "explanation": "Chez les eucaryotes, la terminaison de la transcription par l'ARN Pol II est couplée au clivage de l'ARN au niveau du signal AAUAAA et à l'ajout de la queue poly-A. Ce couplage assure la maturation correcte de l'extrémité 3'."
+        "question": "Si on traite des cellules avec de la DRB (inhibiteur de l'élongation) :",
+        "options": [
+          {"id": "a", "text": "L'initiation a lieu, mais l'ARN Pol II ne progresse pas"},
+          {"id": "b", "text": "Le promoteur n'est pas reconnu"},
+          {"id": "c", "text": "L'ARN est dégradé immédiatement"},
+          {"id": "d", "text": "La traduction est bloquée"}
+        ],
+        "correct": "a",
+        "explanation": "La DRB inhibe le facteur d'élongation P-TEFb, empêchant la phosphorylation de la CTD et bloquant l'ARN Pol II en pause promotrice."
       }
     ]
   }

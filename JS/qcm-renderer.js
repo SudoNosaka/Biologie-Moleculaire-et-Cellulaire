@@ -1,10 +1,16 @@
 // ============================================
-// QCM RENDERER - Affiche les QCM depuis JSON
+// QCM RENDERER - Affiche les QCM depuis JSON (format avec IDs)
 // ============================================
-
 let currentQCM = null;
 let userAnswers = {};
 let currentLevel = 'facile';
+
+function getCurrentQuestions() {
+    if (window.shuffledQuestions && Array.isArray(window.shuffledQuestions)) {
+        return window.shuffledQuestions;
+    }
+    return currentQCM.levels[currentLevel];
+}
 
 function loadQCM(qcmKey) {
     fetch(`../data/${qcmKey}.json`)
@@ -25,12 +31,7 @@ function loadQCM(qcmKey) {
                     renderQCM(data, qcmKey);
                 })
                 .catch(err => {
-                    document.getElementById('qcm-content').innerHTML = `
-                        <div class="warning">
-                            <h3>⚠️ Impossible de charger</h3>
-                            <p>Utilise un serveur local.</p>
-                        </div>
-                    `;
+                    document.getElementById('qcm-content').innerHTML = `<div class="warning"> <h3>⚠️ Impossible de charger</h3> <p>Utilise un serveur local.</p> </div>`;
                 });
         });
 }
@@ -39,7 +40,6 @@ function renderQCM(data, qcmKey) {
     document.getElementById('qcm-title').textContent = data.title || 'Chargement...';
     document.getElementById('qcm-subtitle').textContent = data.subtitle || '';
     document.title = `${data.title} - BMC`;
-    
     renderLevelSelector();
     switchLevel('facile');
 }
@@ -52,7 +52,6 @@ function renderLevelSelector() {
         'moyen': '🟡 Moyen',
         'vicieux': '🔴 Vicieux'
     };
-    
     container.innerHTML = levels.map(level => `
         <button class="level-btn ${level === 'facile' ? 'active' : ''}" 
                 data-level="${level}" 
@@ -67,15 +66,12 @@ function switchLevel(level) {
     currentLevel = level;
     userAnswers = {};
     
-    // Mise à jour des boutons
     document.querySelectorAll('.level-btn').forEach(btn => {
         btn.classList.toggle('active', btn.dataset.level === level);
     });
     
-    // Rendu des questions
-    renderQuestions(currentQCM.levels[level]);
+    renderQuestions(getCurrentQuestions());
     
-    // Reset résultats
     document.getElementById('results').style.display = 'none';
     document.getElementById('validate-btn').style.display = 'block';
 }
@@ -90,12 +86,12 @@ function renderQuestions(questions) {
                 <div class="qcm-number">Question ${idx + 1}</div>
                 <div class="qcm-text">${q.question}</div>
                 <div class="qcm-options">
-                    ${q.options.map((opt, optIdx) => `
+                    ${q.options.map(opt => `
                         <div class="qcm-option" 
                              data-question="${idx}" 
-                             data-option="${optIdx}"
-                             onclick="selectOption(${idx}, ${optIdx})">
-                            ${opt}
+                             data-option-id="${opt.id}"
+                             onclick="selectOption(${idx}, '${opt.id}')">
+                            ${opt.text}
                         </div>
                     `).join('')}
                 </div>
@@ -109,47 +105,47 @@ function renderQuestions(questions) {
     container.innerHTML = html;
 }
 
-function selectOption(questionIdx, optionIdx) {
-    userAnswers[questionIdx] = optionIdx;
+function selectOption(questionIdx, optionId) {
+    userAnswers[questionIdx] = optionId;
     
-    // Mise à jour visuelle
     const options = document.querySelectorAll(`.qcm-option[data-question="${questionIdx}"]`);
     options.forEach(opt => opt.classList.remove('selected'));
-    options[optionIdx].classList.add('selected');
+    
+    const selectedOpt = document.querySelector(`.qcm-option[data-question="${questionIdx}"][data-option-id="${optionId}"]`);
+    if (selectedOpt) selectedOpt.classList.add('selected');
     
     if (typeof playSound === 'function') playSound('click');
 }
 
 function validateAnswers() {
-    const questions = currentQCM.levels[currentLevel];
+    const questions = getCurrentQuestions();
     let correct = 0;
     
     questions.forEach((q, idx) => {
-        const userAnswer = userAnswers[idx];
-        const correctAnswer = q.correct;
+        const userAnswerId = userAnswers[idx];
+        const correctAnswerId = q.correct;
+        
         const options = document.querySelectorAll(`.qcm-option[data-question="${idx}"]`);
         const explanation = document.getElementById(`explanation-${idx}`);
         
-        // Désactiver les clics
         options.forEach(opt => {
             opt.style.pointerEvents = 'none';
+            
+            // ✅ Comparaison par ID au lieu de position
+            if (opt.dataset.optionId === correctAnswerId) {
+                opt.classList.add('correct');
+            } else if (opt.dataset.optionId === userAnswerId && userAnswerId !== correctAnswerId) {
+                opt.classList.add('incorrect');
+            }
         });
         
-        if (userAnswer === correctAnswer) {
-            options[userAnswer].classList.add('correct');
+        if (userAnswerId === correctAnswerId) {
             correct++;
-        } else {
-            if (userAnswer !== undefined) {
-                options[userAnswer].classList.add('incorrect');
-            }
-            options[correctAnswer].classList.add('correct');
         }
         
-        // Afficher l'explication
         explanation.classList.add('show');
     });
     
-    // Afficher le score
     const total = questions.length;
     const percentage = Math.round((correct / total) * 100);
     
@@ -170,7 +166,8 @@ function validateAnswers() {
 
 function resetQCM() {
     userAnswers = {};
-    renderQuestions(currentQCM.levels[currentLevel]);
+    renderQuestions(getCurrentQuestions());
+    
     document.getElementById('results').style.display = 'none';
     document.getElementById('validate-btn').style.display = 'block';
 }

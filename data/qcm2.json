@@ -4,200 +4,360 @@
   "levels": {
     "facile": [
       {
-        "question": "Un nucléotide est composé de :",
-        "options": ["Base azotée + sucre uniquement", "Base azotée + sucre + phosphate(s)", "Acide aminé + sucre + phosphate", "Base azotée + acide gras"],
-        "correct": 1,
-        "explanation": "Un nucléotide = 3 composants : une base azotée, un ose (sucre) et un ou plusieurs groupements phosphate(s)."
+        "question": "De quoi est composé un nucléotide ?",
+        "options": [
+          {"id": "a", "text": "Base azotée + sucre uniquement"},
+          {"id": "b", "text": "Base azotée + sucre + phosphate(s)"},
+          {"id": "c", "text": "Acide aminé + sucre + phosphate"},
+          {"id": "d", "text": "Base azotée + acide gras"}
+        ],
+        "correct": "b",
+        "explanation": "Un nucléotide = base azotée + ose (sucre) + un ou plusieurs phosphate(s)."
       },
       {
-        "question": "Les purines sont :",
-        "options": ["Cytosine et Thymine", "Adénine et Guanine", "Adénine et Uracile", "Guanine et Cytosine"],
-        "correct": 1,
-        "explanation": "Les purines (2 cycles) = Adénine (A) et Guanine (G). Les pyrimidines (1 cycle) = Cytosine (C), Thymine (T), Uracile (U)."
+        "question": "Quelles sont les bases puriques ?",
+        "options": [
+          {"id": "a", "text": "Cytosine et Thymine"},
+          {"id": "b", "text": "Adénine et Guanine"},
+          {"id": "c", "text": "Adénine et Uracile"},
+          {"id": "d", "text": "Guanine et Cytosine"}
+        ],
+        "correct": "b",
+        "explanation": "Les purines (2 cycles) sont l'Adénine (A) et la Guanine (G)."
       },
       {
-        "question": "Quelle base est spécifique à l'ARN ?",
-        "options": ["Adénine", "Thymine", "Uracile", "Guanine"],
-        "correct": 2,
-        "explanation": "L'Uracile (U) remplace la Thymine (T) dans l'ARN. L'ADN contient A, T, G, C. L'ARN contient A, U, G, C."
-      },
-      {
-        "question": "Le sucre de l'ADN est :",
-        "options": ["Ribose", "Désoxyribose", "Glucose", "Fructose"],
-        "correct": 1,
-        "explanation": "L'ADN contient du désoxyribose (pas d'OH en 2'). L'ARN contient du ribose (avec OH en 2')."
-      },
-      {
-        "question": "Dans la double hélice, A s'apparie avec :",
-        "options": ["G (3 liaisons H)", "T (2 liaisons H)", "C (2 liaisons H)", "U (3 liaisons H)"],
-        "correct": 1,
-        "explanation": "A = T avec 2 liaisons hydrogène. G ≡ C avec 3 liaisons hydrogène. Dans l'ARN, A = U."
-      },
-      {
-        "question": "La liaison entre deux nucléotides consécutifs est :",
-        "options": ["Liaison hydrogène", "Liaison peptidique", "Liaison phosphodiester", "Liaison ionique"],
-        "correct": 2,
-        "explanation": "La liaison phosphodiester relie le C3' d'un nucléotide au C5' du suivant, formant le squelette sucre-phosphate."
-      },
-      {
-        "question": "Le pas de l'hélice d'ADN (forme B) est de :",
-        "options": ["1 nm", "2 nm", "3,4 nm", "10 nm"],
-        "correct": 2,
-        "explanation": "Le pas de l'hélice = 3,4 nm, correspondant à 10 paires de bases par tour. Le diamètre = 2 nm."
+        "question": "Quelle est la différence entre un nucléoside et un nucléotide ?",
+        "options": [
+          {"id": "a", "text": "Le nucléoside contient un phosphate"},
+          {"id": "b", "text": "Le nucléotide ne contient pas de sucre"},
+          {"id": "c", "text": "Le nucléoside n'a pas de groupement phosphate"},
+          {"id": "d", "text": "Aucune différence"}
+        ],
+        "correct": "c",
+        "explanation": "Nucléoside = base + ose. Nucléotide = base + ose + phosphate(s)."
       },
       {
         "question": "Selon la règle de Chargaff, dans un ADN double brin :",
-        "options": ["%A = %G", "%A = %T et %G = %C", "%A = %C", "%A + %G = %T + %C uniquement"],
-        "correct": 1,
-        "explanation": "Règle de Chargaff : %A = %T et %G = %C (car A s'apparie avec T, G avec C). Donc %purines = %pyrimidines."
+        "options": [
+          {"id": "a", "text": "%A = %G"},
+          {"id": "b", "text": "%A = %T et %G = %C"},
+          {"id": "c", "text": "%A = %C"},
+          {"id": "d", "text": "%purines ≠ %pyrimidines"}
+        ],
+        "correct": "b",
+        "explanation": "Règle de Chargaff : %A = %T et %G = %C (car A s'apparie avec T, G avec C)."
       },
       {
-        "question": "L'ARN le plus abondant dans la cellule est :",
-        "options": ["ARNm", "ARNt", "ARNr", "miRNA"],
-        "correct": 2,
-        "explanation": "L'ARN ribosomal (ARNr) représente ~80% de l'ARN total. L'ARNt = ~15%, l'ARNm = ~5%."
+        "question": "Combien de liaisons hydrogène relient G et C ?",
+        "options": [
+          {"id": "a", "text": "1"},
+          {"id": "b", "text": "2"},
+          {"id": "c", "text": "3"},
+          {"id": "d", "text": "4"}
+        ],
+        "correct": "c",
+        "explanation": "G ≡ C : 3 liaisons hydrogène. A = T : 2 liaisons hydrogène."
       },
       {
-        "question": "Un nucléosome est constitué de :",
-        "options": ["100 pb d'ADN + 4 histones", "146 pb d'ADN + octamère d'histones (8 histones)", "200 pb d'ADN + 2 histones", "50 pb d'ADN + 6 histones"],
-        "correct": 1,
-        "explanation": "Un nucléosome = 146 paires de bases d'ADN enroulées 1,75 fois autour d'un octamère d'histones (2×H2A, 2×H2B, 2×H3, 2×H4)."
+        "question": "Quel est l'ARN le plus abondant dans la cellule ?",
+        "options": [
+          {"id": "a", "text": "ARNm"},
+          {"id": "b", "text": "ARNt"},
+          {"id": "c", "text": "ARNr"},
+          {"id": "d", "text": "miRNA"}
+        ],
+        "correct": "c",
+        "explanation": "L'ARNr (ribosomal) représente ~80% de l'ARN total. ARNt = ~15%, ARNm = ~5%."
+      },
+      {
+        "question": "Qu'est-ce qu'un nucléosome ?",
+        "options": [
+          {"id": "a", "text": "Un brin d'ARN simple"},
+          {"id": "b", "text": "146 pb d'ADN enroulées autour d'un octamère d'histones"},
+          {"id": "c", "text": "Une protéine de réplication"},
+          {"id": "d", "text": "Un ribosome libre"}
+        ],
+        "correct": "b",
+        "explanation": "Le nucléosome = 146 pb d'ADN enroulées 1,75 fois autour d'un octamère d'histones (2×H2A, 2×H2B, 2×H3, 2×H4)."
+      },
+      {
+        "question": "Le pas de l'hélice d'ADN (forme B) est de :",
+        "options": [
+          {"id": "a", "text": "0,34 nm"},
+          {"id": "b", "text": "2,0 nm"},
+          {"id": "c", "text": "3,4 nm"},
+          {"id": "d", "text": "10 nm"}
+        ],
+        "correct": "c",
+        "explanation": "Le pas de l'hélice est de 3,4 nm, correspondant à 10 paires de bases."
+      },
+      {
+        "question": "L'ADN est synthétisé dans le sens :",
+        "options": [
+          {"id": "a", "text": "3' → 5'"},
+          {"id": "b", "text": "5' → 3'"},
+          {"id": "c", "text": "Bidirectionnel sans sens précis"},
+          {"id": "d", "text": "Aléatoire"}
+        ],
+        "correct": "b",
+        "explanation": "Toutes les polymérases synthétisent les acides nucléiques dans le sens 5' → 3'."
+      },
+      {
+        "question": "Quelle base est spécifique à l'ARN ?",
+        "options": [
+          {"id": "a", "text": "Adénine"},
+          {"id": "b", "text": "Guanine"},
+          {"id": "c", "text": "Thymine"},
+          {"id": "d", "text": "Uracile"}
+        ],
+        "correct": "d",
+        "explanation": "L'Uracile (U) remplace la Thymine (T) dans l'ARN."
       }
     ],
     "moyen": [
       {
-        "question": "La différence entre un nucléoside et un nucléotide est :",
-        "options": ["Le nucléoside a un phosphate, pas le nucléotide", "Le nucléotide a un phosphate, pas le nucléoside", "Le nucléoside est dans l'ARN, le nucléotide dans l'ADN", "Il n'y a aucune différence"],
-        "correct": 1,
-        "explanation": "Nucléoside = base + ose (sans phosphate). Nucléotide = base + ose + phosphate(s). L'ATP est un nucléotide (adénosine triphosphate)."
-      },
-      {
         "question": "Si un ADN double brin contient 30% de Guanine, quel est le pourcentage d'Adénine ?",
-        "options": ["20%", "30%", "40%", "70%"],
-        "correct": 0,
-        "explanation": "Si %G = 30%, alors %C = 30% (règle de Chargaff). Donc %G + %C = 60%. Il reste 40% pour %A + %T. Comme %A = %T, alors %A = 20%."
+        "options": [
+          {"id": "a", "text": "20%"},
+          {"id": "b", "text": "30%"},
+          {"id": "c", "text": "40%"},
+          {"id": "d", "text": "70%"}
+        ],
+        "correct": "a",
+        "explanation": "%G = %C = 30%, donc %G+%C = 60%. Reste 40% pour %A+%T. Comme %A = %T, alors %A = 20%."
       },
       {
-        "question": "Pourquoi l'ARN est-il moins stable que l'ADN ?",
-        "options": ["Il est plus court", "Le ribose a un OH en 2' réactif", "Il n'a pas de bases", "Il est simple brin"],
-        "correct": 1,
-        "explanation": "L'OH en 2' du ribose rend l'ARN plus réactif et sensible à l'hydrolyse alcaline. L'ADN (désoxyribose sans OH en 2') est plus stable."
-      },
-      {
-        "question": "La polarité d'un brin d'ADN est définie par :",
-        "options": ["La présence de bases", "Une extrémité 5' (phosphate) et une extrémité 3' (OH)", "La longueur du brin", "Le nombre de liaisons H"],
-        "correct": 1,
-        "explanation": "Un brin d'ADN a une polarité : extrémité 5' (phosphate libre) et extrémité 3' (OH libre). La synthèse se fait toujours dans le sens 5' → 3'."
-      },
-      {
-        "question": "Les deux brins de l'ADN sont :",
-        "options": ["Parallèles", "Antiparallèles", "Identiques", "Indépendants"],
-        "correct": 1,
-        "explanation": "Les deux brins sont antiparallèles : l'un va de 5'→3', l'autre de 3'→5'. C'est essentiel pour la complémentarité des bases."
-      },
-      {
-        "question": "La température de fusion (Tm) d'un ADN dépend de :",
-        "options": ["Sa longueur uniquement", "Sa teneur en G≡C (3 liaisons H)", "Sa teneur en A=T uniquement", "Son pH uniquement"],
-        "correct": 1,
-        "explanation": "Plus un ADN est riche en paires G≡C (3 liaisons H), plus sa Tm est élevée. Les paires A=T (2 liaisons H) sont moins stables."
+        "question": "La température de fusion (Tm) d'un ADN est plus élevée si :",
+        "options": [
+          {"id": "a", "text": "Il est riche en paires A=T"},
+          {"id": "b", "text": "Il est riche en paires G≡C"},
+          {"id": "c", "text": "Il est simple brin"},
+          {"id": "d", "text": "Il contient beaucoup d'Uracile"}
+        ],
+        "correct": "b",
+        "explanation": "Les paires G≡C ont 3 liaisons H (contre 2 pour A=T), ce qui stabilise davantage la double hélice et augmente la Tm."
       },
       {
         "question": "L'histone H1 a pour rôle de :",
-        "options": ["Former le cœur du nucléosome", "Stabiliser l'ADN linker entre les nucléosomes", "Catalyser la réplication", "Lier l'ARN polymérase"],
-        "correct": 1,
-        "explanation": "L'histone H1 (histone de liaison) se fixe sur l'ADN linker (~50 pb) entre les nucléosomes et stabilise la structure en 'collier de perles'."
+        "options": [
+          {"id": "a", "text": "Former le cœur du nucléosome"},
+          {"id": "b", "text": "Stabiliser l'ADN linker entre les nucléosomes"},
+          {"id": "c", "text": "Catalyser la réplication"},
+          {"id": "d", "text": "Lier l'ARN polymérase"}
+        ],
+        "correct": "b",
+        "explanation": "L'histone H1 se fixe sur l'ADN linker (~50 pb) et stabilise la structure en collier de perles."
       },
       {
-        "question": "La structure en 'collier de perles' correspond à :",
-        "options": ["Un chromosome métaphasique", "Des nucléosomes alignés le long de l'ADN", "Des ribosomes sur l'ARNm", "Des protéines sur le cytosquelette"],
-        "correct": 1,
-        "explanation": "Les nucléosomes (11 nm) ressemblent à des perles enfilées sur un fil d'ADN. C'est le premier niveau de compaction (×7)."
+        "question": "Quelle enzyme est responsable de la synthèse de l'amorce lors de la réplication ?",
+        "options": [
+          {"id": "a", "text": "ADN polymérase III"},
+          {"id": "b", "text": "Primase"},
+          {"id": "c", "text": "ADN ligase"},
+          {"id": "d", "text": "Hélicase"}
+        ],
+        "correct": "b",
+        "explanation": "La primase (une ARN polymérase) synthétise une courte amorce d'ARN nécessaire au démarrage de l'ADN polymérase."
       },
       {
-        "question": "Le wobble (balancement) concerne :",
-        "options": ["La réplication de l'ADN", "L'appariement codon-anticodon (3ème base du codon)", "La structure de l'ADN", "La division cellulaire"],
-        "correct": 1,
-        "explanation": "Le wobble permet à la 3ème base du codon de former des appariements non canoniques avec la 1ère base de l'anticodon. Cela explique la dégénérescence du code génétique."
+        "question": "Les fragments d'Okazaki sont synthétisés sur :",
+        "options": [
+          {"id": "a", "text": "Le brin avancé"},
+          {"id": "b", "text": "Le brin retardé"},
+          {"id": "c", "text": "Les deux brins simultanément"},
+          {"id": "d", "text": "Aucun brin"}
+        ],
+        "correct": "b",
+        "explanation": "La synthèse discontinue (fragments d'Okazaki) a lieu sur le brin retardé car l'ADN polymérase ne synthétise qu'en 5'→3'."
       },
       {
-        "question": "L'ARNm eucaryote subit une maturation comprenant :",
-        "options": ["Réplication et transcription", "Coiffe 5', queue poly-A 3', épissage", "Traduction et repliement", "Méthylation uniquement"],
-        "correct": 1,
-        "explanation": "L'ARNm eucaryote subit 3 modifications : coiffe en 5' (7-méthylguanosine), queue poly-A en 3' (signal AAUAAA), et épissage (élimination des introns)."
+        "question": "Quelle est la fonction principale de l'ADN ligase ?",
+        "options": [
+          {"id": "a", "text": "Ouvrir la double hélice"},
+          {"id": "b", "text": "Relier les fragments d'Okazaki (liaisons phosphodiester)"},
+          {"id": "c", "text": "Synthétiser l'amorce d'ARN"},
+          {"id": "d", "text": "Relâcher la tension de superenroulement"}
+        ],
+        "correct": "b",
+        "explanation": "L'ADN ligase scelle les 'nicks' (coupures) entre les fragments d'Okazaki en formant des liaisons phosphodiester."
       },
       {
-        "question": "Les introns sont :",
-        "options": ["Des séquences codantes conservées dans l'ARNm mature", "Des séquences non codantes éliminées par épissage", "Des promoteurs", "Des codons start"],
-        "correct": 1,
-        "explanation": "Les introns = séquences non codantes éliminées lors de l'épissage. Les exons = séquences codantes conservées et ligaturées."
+        "question": "La télomérase est active dans :",
+        "options": [
+          {"id": "a", "text": "Toutes les cellules somatiques"},
+          {"id": "b", "text": "Les cellules germinales, souches et cancéreuses"},
+          {"id": "c", "text": "Uniquement les bactéries"},
+          {"id": "d", "text": "Les globules rouges matures"}
+        ],
+        "correct": "b",
+        "explanation": "La télomérase est active dans les cellules qui doivent se diviser indéfiniment (germinales, souches, cancéreuses). Elle est inactive dans la plupart des cellules somatiques."
       },
       {
-        "question": "L'épissage est réalisé par :",
-        "options": ["L'ARN polymérase", "Le ribosome", "Le spliceosome (snRNP)", "L'ADN ligase"],
-        "correct": 2,
-        "explanation": "Le spliceosome (complexe de snARN + protéines = snRNP) réalise l'épissage en reconnaissant les séquences consensus GU-AG aux jonctions intron-exon."
+        "question": "L'ADN polymérase I chez les procaryotes a pour rôle principal de :",
+        "options": [
+          {"id": "a", "text": "Synthétiser le brin avancé"},
+          {"id": "b", "text": "Remplacer les amorces d'ARN par de l'ADN"},
+          {"id": "c", "text": "Ouvrir la fourche de réplication"},
+          {"id": "d", "text": "Relier les fragments d'Okazaki"}
+        ],
+        "correct": "b",
+        "explanation": "L'ADN Pol I possède une activité exonucléase 5'→3' qui lui permet d'éliminer les amorces d'ARN et de les remplacer par de l'ADN."
+      },
+      {
+        "question": "Quelle protéine empêche les brins d'ADN simple brin de se réapparier ?",
+        "options": [
+          {"id": "a", "text": "Hélicase"},
+          {"id": "b", "text": "Protéines SSB (Single-Strand Binding)"},
+          {"id": "c", "text": "Topoisomérase"},
+          {"id": "d", "text": "Primase"}
+        ],
+        "correct": "b",
+        "explanation": "Les protéines SSB se lient à l'ADN simple brin et empêchent la formation de structures secondaires ou le réappariement prématuré."
+      },
+      {
+        "question": "L'épissage alternatif permet :",
+        "options": [
+          {"id": "a", "text": "D'éliminer tous les exons"},
+          {"id": "b", "text": "À un seul gène de produire plusieurs protéines différentes"},
+          {"id": "c", "text": "De transformer l'ADN en ARN"},
+          {"id": "d", "text": "De répliquer l'ADN plus vite"}
+        ],
+        "correct": "b",
+        "explanation": "L'épissage alternatif permet de combiner les exons de différentes manières, augmentant la diversité protéique à partir d'un seul gène."
+      },
+      {
+        "question": "La coiffe en 5' de l'ARNm est constituée de :",
+        "options": [
+          {"id": "a", "text": "Une queue poly-A"},
+          {"id": "b", "text": "Un résidu de 7-méthylguanosine"},
+          {"id": "c", "text": "Des introns"},
+          {"id": "d", "text": "Des exons"}
+        ],
+        "correct": "b",
+        "explanation": "La coiffe est un résidu de 7-méthylguanosine lié par une liaison 5'-5' triphosphate atypique."
+      },
+      {
+        "question": "Le signal de polyadénylation chez les eucaryotes est :",
+        "options": [
+          {"id": "a", "text": "TATAAA"},
+          {"id": "b", "text": "AAUAAA"},
+          {"id": "c", "text": "AUG"},
+          {"id": "d", "text": "UAA"}
+        ],
+        "correct": "b",
+        "explanation": "Le signal AAUAAA dans l'ARN pré-messager indique le site de clivage et d'ajout de la queue poly-A."
       }
     ],
     "vicieux": [
       {
-        "question": "Si on dénature un ADN riche en A=T (80%) et un ADN riche en G≡C (80%), lequel aura la Tm la plus élevée ?",
-        "options": ["L'ADN riche en A=T", "L'ADN riche en G≡C", "Ils ont la même Tm", "Impossible à déterminer"],
-        "correct": 1,
-        "explanation": "Les paires G≡C ont 3 liaisons H (vs 2 pour A=T) et des interactions d'empilement plus fortes. L'ADN riche en G≡C est donc plus stable thermiquement et a une Tm plus élevée."
+        "question": "Si on utilise un analogue de nucléotide sans groupement 3'-OH (ex: AZT), que se passe-t-il ?",
+        "options": [
+          {"id": "a", "text": "Rien, la synthèse continue normalement"},
+          {"id": "b", "text": "La synthèse s'arrête (terminaison de chaîne)"},
+          {"id": "c", "text": "La réplication accélère"},
+          {"id": "d", "text": "Les amorces sont éliminées plus vite"}
+        ],
+        "correct": "b",
+        "explanation": "Sans extrémité 3'-OH libre, l'ADN polymérase ne peut pas ajouter le nucléotide suivant → terminaison de chaîne (principe des antiviraux)."
       },
       {
-        "question": "Si on traite de l'ADN avec une enzyme qui coupe spécifiquement les liaisons phosphodiester, que reste-t-il ?",
-        "options": ["Des nucléotides isolés", "Des nucléosides (base + sucre)", "Des bases azotées libres", "Des sucres libres"],
-        "correct": 0,
-        "explanation": "La coupure des liaisons phosphodiester libère des nucléotides individuels (base + sucre + phosphate). Pour obtenir des nucléosides, il faudrait aussi enlever les phosphates."
+        "question": "Si on inhibe la topoisomérase avec de la novobiocine :",
+        "options": [
+          {"id": "a", "text": "Rien"},
+          {"id": "b", "text": "La tension de superenroulement s'accumule et bloque la fourche"},
+          {"id": "c", "text": "L'ADN est coupé en fragments aléatoires"},
+          {"id": "d", "text": "Les amorces ARN ne sont pas éliminées"}
+        ],
+        "correct": "b",
+        "explanation": "Sans topoisomérase, la tension de superenroulement positive s'accumule en amont de la fourche et finit par bloquer l'avancée de l'hélicase."
       },
       {
-        "question": "Pourquoi la règle de Chargaff ne s'applique-t-elle pas à l'ARN ?",
-        "options": ["L'ARN est trop court", "L'ARN est généralement simple brin (pas de complémentarité entre 2 brins)", "L'ARN n'a pas de bases", "L'ARN est instable"],
-        "correct": 1,
-        "explanation": "La règle de Chargaff (%A=%T, %G=%C) repose sur la complémentarité entre les 2 brins de l'ADN double brin. L'ARN étant généralement simple brin, il n'y a pas de raison pour que %A=%U ou %G=%C."
+        "question": "Si on mute le site donneur d'épissage (GU → GC), que se passe-t-il ?",
+        "options": [
+          {"id": "a", "text": "Rien, l'épissage est robuste"},
+          {"id": "b", "text": "L'intron n'est pas éliminé et reste dans l'ARNm mature"},
+          {"id": "c", "text": "L'exon suivant est éliminé"},
+          {"id": "d", "text": "L'ARNm est dégradé immédiatement"}
+        ],
+        "correct": "b",
+        "explanation": "Le site GU en 5' de l'intron est essentiel pour la reconnaissance par le spliceosome. Sa mutation empêche l'épissage correct."
       },
       {
-        "question": "Si on synthétise un oligonucléotide 5'-ATGC-3', quel est son brin complémentaire (sens 5'→3') ?",
-        "options": ["5'-TACG-3'", "5'-GCAT-3'", "3'-TACG-5'", "5'-CGTA-3'"],
-        "correct": 1,
-        "explanation": "Le brin complémentaire de 5'-ATGC-3' est 3'-TACG-5'. Mais si on l'écrit dans le sens conventionnel 5'→3', il faut le lire à l'envers : 5'-GCAT-3'."
+        "question": "L'hyperphosphorylation de la protéine Tau est observée dans :",
+        "options": [
+          {"id": "a", "text": "La maladie de Parkinson"},
+          {"id": "b", "text": "La maladie d'Alzheimer"},
+          {"id": "c", "text": "La sclérose en plaques"},
+          {"id": "d", "text": "La myasthénie"}
+        ],
+        "correct": "b",
+        "explanation": "Tau hyperphosphorylée se détache des microtubules → dépolymérisation + agrégats (enchevêtrements neurofibrillaires), caractéristique d'Alzheimer."
       },
       {
-        "question": "L'α-amanitine (toxine de l'amanite phalloïde) inhibe spécifiquement :",
-        "options": ["L'ADN polymérase", "L'ARN polymérase II (synthèse d'ARNm)", "Le ribosome", "L'ADN ligase"],
-        "correct": 1,
-        "explanation": "L'α-amanitine inhibe spécifiquement l'ARN polymérase II (qui synthétise les ARNm). C'est pourquoi l'ingestion d'amanite phalloïde est mortelle : elle bloque la transcription des gènes codant pour les protéines."
+        "question": "Si on mute la boîte TATA d'un gène eucaryote (TATAAA → TATATA) :",
+        "options": [
+          {"id": "a", "text": "Aucune conséquence"},
+          {"id": "b", "text": "Diminution drastique de la transcription du gène"},
+          {"id": "c", "text": "Augmentation de la transcription"},
+          {"id": "d", "text": "Activation de l'ARN Pol I"}
+        ],
+        "correct": "b",
+        "explanation": "La boîte TATA est essentielle pour le recrutement de TFIID (TBP) et l'assemblage du complexe de pré-initiation."
       },
       {
-        "question": "Si on remplace tous les T par des U dans un ADN double brin, que devient cette molécule ?",
-        "options": ["De l'ARN double brin", "Une molécule instable (l'UR est plus réactif)", "De l'ADN normal", "Une molécule identique"],
-        "correct": 1,
-        "explanation": "Si on remplace T par U dans l'ADN, on obtient une molécule hybride avec du désoxyribose (stable) mais de l'uracile (normalement dans l'ARN avec ribose). Cette molécule serait instable car l'uracile est normalement associé au ribose."
+        "question": "Si on traite des cellules avec de la tunicamycine :",
+        "options": [
+          {"id": "a", "text": "Aucun effet"},
+          {"id": "b", "text": "Protéines non glycosylées → mal repliées → dégradées par ERAD"},
+          {"id": "c", "text": "Protéines sécrétées plus vite"},
+          {"id": "d", "text": "Lysosomes plus acides"}
+        ],
+        "correct": "b",
+        "explanation": "La tunicamycine bloque la N-glycosylation dans le RE → protéines mal repliées → export vers cytosol → dégradation par le protéasome (ERAD)."
       },
       {
-        "question": "Pourquoi les nucléosomes sont-ils espacés régulièrement le long de l'ADN ?",
-        "options": ["Parce que l'ADN est rigide", "Parce que l'histone H1 impose une périodicité", "Parce que les histones se repoussent", "C'est aléatoire"],
-        "correct": 1,
-        "explanation": "L'histone H1 se fixe sur l'ADN linker (~50 pb) et impose une périodicité régulière aux nucléosomes. Cela permet une compaction ordonnée de la chromatine."
+        "question": "Si on mute le récepteur M6P, que se passe-t-il ?",
+        "options": [
+          {"id": "a", "text": "Rien"},
+          {"id": "b", "text": "Les enzymes lysosomales sont sécrétées hors de la cellule (mucolipidose II)"},
+          {"id": "c", "text": "Les lysosomes deviennent plus acides"},
+          {"id": "d", "text": "Le Golgi disparaît"}
+        ],
+        "correct": "b",
+        "explanation": "Sans récepteur M6P, les enzymes lysosomales ne sont pas triées vers les lysosomes et suivent la voie de sécrétion constitutive."
       },
       {
-        "question": "Si on surexprime une histone acétyltransférase (HAT), quel sera l'effet sur la transcription ?",
-        "options": ["Inhibition de la transcription", "Activation de la transcription (chromatine décondensée)", "Aucun effet", "Dégradation de l'ADN"],
-        "correct": 1,
-        "explanation": "Les HAT acétyle les histones, ce qui relâche leur interaction avec l'ADN (charges négatives). La chromatine se décondense, rendant l'ADN accessible aux facteurs de transcription → activation de la transcription."
+        "question": "Si on inhibe la SRP (Signal Recognition Particle) :",
+        "options": [
+          {"id": "a", "text": "Rien"},
+          {"id": "b", "text": "Les protéines destinées au RE restent dans le cytoplasme"},
+          {"id": "c", "text": "Toutes les protéines sont sécrétées"},
+          {"id": "d", "text": "Le Golgi disparaît"}
+        ],
+        "correct": "b",
+        "explanation": "Sans SRP, le peptide signal n'est pas reconnu → les protéines sont synthétisées dans le cytoplasme au lieu d'être transloquées dans le RE."
       },
       {
-        "question": "Un gène eucaryote contient 5 exons et 4 introns. Après épissage alternatif, combien de variants protéiques différents peut-on théoriquement obtenir ?",
-        "options": ["1 (toujours le même)", "5", "2⁴ = 16 (si tous les introns sont alternativement inclus/exclus)", "Impossible à déterminer"],
-        "correct": 2,
-        "explanation": "L'épissage alternatif permet d'inclure ou d'exclure certains exons. Avec 4 introns, on peut théoriquement obtenir 2⁴ = 16 variants différents (chaque intron peut être conservé ou éliminé). En pratique, c'est plus complexe."
+        "question": "L'épidermolyse bulleuse simple est causée par une mutation des :",
+        "options": [
+          {"id": "a", "text": "Microtubules"},
+          {"id": "b", "text": "Kératines 5 ou 14 (filaments intermédiaires)"},
+          {"id": "c", "text": "Actine"},
+          {"id": "d", "text": "Tubuline"}
+        ],
+        "correct": "b",
+        "explanation": "Les kératines 5/14 sont des FI des kératinocytes basaux. Leur mutation rend la peau fragile → bulles au moindre stress mécanique."
       },
       {
-        "question": "Pourquoi l'ADN mitochondrial est-il circulaire (comme les bactéries) ?",
-        "options": ["C'est une coïncidence", "Il dérive d'une endosymbiose bactérienne ancienne", "Il est plus stable ainsi", "C'est plus petit"],
-        "correct": 1,
-        "explanation": "Selon la théorie endosymbiotique, les mitochondries dérivent d'une ancienne bactérie aérobie engulfée. Leur ADN circulaire est un vestige de cette origine bactérienne (les bactéries ont un chromosome circulaire)."
+        "question": "Si on injecte de la cycloheximide dans une cellule eucaryote :",
+        "options": [
+          {"id": "a", "text": "Rien"},
+          {"id": "b", "text": "Traduction cytoplasmique bloquée, mais traduction mitochondriale continue"},
+          {"id": "c", "text": "Toute traduction bloquée"},
+          {"id": "d", "text": "Transcription bloquée"}
+        ],
+        "correct": "b",
+        "explanation": "La cycloheximide inhibe spécifiquement les ribosomes 80S (cytoplasmiques) mais pas les 70S (mitochondriaux)."
       }
     ]
   }
