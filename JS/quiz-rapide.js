@@ -1,5 +1,5 @@
 // ============================================
-// QUIZ RAPIDE - 10 questions aléatoires en 5 min
+// QUIZ RAPIDE - 10 questions aléatoires en 5 min (format avec IDs)
 // ============================================
 
 let quizData = null;
@@ -64,9 +64,50 @@ function initQuizRapide() {
     document.getElementById('start-btn').style.display = 'inline-block';
 }
 
+// ============================================
+// SHUFFLE FUNCTIONS
+// ============================================
+
+function shuffleArray(array) {
+    const shuffled = [...array];
+    for (let i = shuffled.length - 1; i > 0; i--) {
+        const j = Math.floor(Math.random() * (i + 1));
+        [shuffled[i], shuffled[j]] = [shuffled[j], shuffled[i]];
+    }
+    return shuffled;
+}
+
+function shuffleQuestionOptions(question) {
+    const optionsWithStatus = question.options.map(opt => ({
+        id: opt.id,
+        text: opt.text,
+        isCorrect: opt.id === question.correct
+    }));
+    
+    const shuffledOptions = shuffleArray(optionsWithStatus);
+    const newCorrectId = shuffledOptions.find(opt => opt.isCorrect).id;
+    
+    return {
+        question: question.question,
+        options: shuffledOptions.map(opt => ({ id: opt.id, text: opt.text })),
+        correct: newCorrectId,
+        explanation: question.explanation
+    };
+}
+
+function prepareShuffledQuestions(questions, count) {
+    const shuffledQuestions = shuffleArray(questions);
+    const selected = shuffledQuestions.slice(0, count);
+    return selected.map(q => shuffleQuestionOptions(q));
+}
+
+// ============================================
+// QUIZ FUNCTIONS
+// ============================================
+
 function startQuiz() {
-    // Sélectionner 10 questions aléatoires
-    selectedQuestions = selectRandomQuestions(10);
+    // Sélectionner 10 questions aléatoires et mélanger les options
+    selectedQuestions = prepareShuffledQuestions(quizData.questions, 10);
     userAnswers = {};
     currentQuestionIndex = 0;
     timeLeft = quizData.duration || 300;
@@ -81,19 +122,6 @@ function startQuiz() {
     startTimer();
 }
 
-function selectRandomQuestions(n) {
-    const allQuestions = [...quizData.questions];
-    const selected = [];
-    
-    for (let i = 0; i < n && allQuestions.length > 0; i++) {
-        const randomIndex = Math.floor(Math.random() * allQuestions.length);
-        selected.push(allQuestions[randomIndex]);
-        allQuestions.splice(randomIndex, 1);
-    }
-    
-    return selected;
-}
-
 function displayQuestion() {
     const question = selectedQuestions[currentQuestionIndex];
     const container = document.getElementById('quiz-content');
@@ -106,10 +134,10 @@ function displayQuestion() {
             ${question.question}
         </div>
         <div class="options-container">
-            ${question.options.map((opt, idx) => `
-                <div class="quiz-option ${userAnswers[currentQuestionIndex] === idx ? 'selected' : ''}" 
-                     onclick="selectAnswer(${idx})">
-                    ${opt}
+            ${question.options.map(opt => `
+                <div class="quiz-option ${userAnswers[currentQuestionIndex] === opt.id ? 'selected' : ''}" 
+                     onclick="selectAnswer('${opt.id}')">
+                    ${opt.text}
                 </div>
             `).join('')}
         </div>
@@ -125,8 +153,8 @@ function displayQuestion() {
     `;
 }
 
-function selectAnswer(idx) {
-    userAnswers[currentQuestionIndex] = idx;
+function selectAnswer(optionId) {
+    userAnswers[currentQuestionIndex] = optionId;
     displayQuestion();
     if (typeof playSound === 'function') playSound('click');
 }
@@ -162,9 +190,8 @@ function updateTimerDisplay() {
     const minutes = Math.floor(timeLeft / 60);
     const seconds = timeLeft % 60;
     const timerEl = document.getElementById('timer');
-    timerEl.textContent = `⏱️ ${minutes}:${seconds.toString().padStart(2, '0')}`;
+    timerEl.textContent = `️ ${minutes}:${seconds.toString().padStart(2, '0')}`;
     
-    // Alerte visuelle quand il reste peu de temps
     if (timeLeft <= 60) {
         timerEl.style.background = 'var(--danger)';
     } else if (timeLeft <= 120) {
@@ -203,10 +230,13 @@ function finishQuiz() {
     // Afficher les corrections
     let correctionsHtml = '<h3 style="margin-top: 1.5rem;">Corrections</h3>';
     selectedQuestions.forEach((q, idx) => {
-        const userAnswer = userAnswers[idx];
-        const isCorrect = userAnswer === q.correct;
+        const userAnswerId = userAnswers[idx];
+        const isCorrect = userAnswerId === q.correct;
         const statusClass = isCorrect ? 'correct' : 'incorrect';
         const statusIcon = isCorrect ? '✓' : '✗';
+        
+        const correctOption = q.options.find(opt => opt.id === q.correct);
+        const userOption = userAnswerId ? q.options.find(opt => opt.id === userAnswerId) : null;
         
         correctionsHtml += `
             <div class="correction-item ${statusClass}">
@@ -215,8 +245,8 @@ function finishQuiz() {
                     <strong>Question ${idx + 1} :</strong> ${q.question}
                 </div>
                 <div class="correction-details">
-                    ${!isCorrect && userAnswer !== undefined ? `<p>Ta réponse : <span class="wrong-answer">${q.options[userAnswer]}</span></p>` : ''}
-                    ${!isCorrect ? `<p>Bonne réponse : <span class="right-answer">${q.options[q.correct]}</span></p>` : ''}
+                    ${!isCorrect && userOption ? `<p>Ta réponse : <span class="wrong-answer">${userOption.text}</span></p>` : ''}
+                    ${!isCorrect ? `<p>Bonne réponse : <span class="right-answer">${correctOption.text}</span></p>` : ''}
                     <p class="explanation-text"><em>${q.explanation}</em></p>
                 </div>
             </div>

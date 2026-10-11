@@ -5,243 +5,1708 @@
   "questions": [
     {
       "question": "Quelle est la taille typique d'une cellule procaryote ?",
-      "options": ["~50 µm", "~5 µm", "~500 µm", "~0,5 µm"],
-      "correct": 1,
+      "options": [
+        {"id": "a", "text": "~50 µm"},
+        {"id": "b", "text": "~5 µm"},
+        {"id": "c", "text": "~500 µm"},
+        {"id": "d", "text": "~0,5 µm"}
+      ],
+      "correct": "b",
       "explanation": "Les procaryotes mesurent environ 5 µm, soit 10 fois moins que les eucaryotes (~50 µm)."
     },
     {
+      "question": "Quelle est la différence fondamentale entre procaryotes et eucaryotes ?",
+      "options": [
+        {"id": "a", "text": "La présence d'ADN"},
+        {"id": "b", "text": "La présence d'un noyau délimité par une membrane"},
+        {"id": "c", "text": "La présence de ribosomes"},
+        {"id": "d", "text": "La présence d'une membrane plasmique"}
+      ],
+      "correct": "b",
+      "explanation": "La différence clé = présence d'un véritable noyau chez les eucaryotes. Les procaryotes ont une zone nucléoïde sans membrane."
+    },
+    {
+      "question": "Combien de cellules contient un être humain ?",
+      "options": [
+        {"id": "a", "text": "10 millions (10⁷)"},
+        {"id": "b", "text": "1 milliard (10⁹)"},
+        {"id": "c", "text": "100 000 milliards (10¹⁴)"},
+        {"id": "d", "text": "1 trillion (10¹²)"}
+      ],
+      "correct": "c",
+      "explanation": "Un être humain contient ~10¹⁴ cellules (100 000 milliards)."
+    },
+    {
+      "question": "L'homéostasie cellulaire désigne :",
+      "options": [
+        {"id": "a", "text": "La capacité d'une cellule à se diviser"},
+        {"id": "b", "text": "Le maintien du milieu interne stable"},
+        {"id": "c", "text": "Le processus de différenciation"},
+        {"id": "d", "text": "La mort cellulaire programmée"}
+      ],
+      "correct": "b",
+      "explanation": "L'homéostasie = propriété des êtres vivants à maintenir leur milieu interne STABLE."
+    },
+    {
+      "question": "Où se déroule la transcription chez les eucaryotes ?",
+      "options": [
+        {"id": "a", "text": "Cytoplasme"},
+        {"id": "b", "text": "Noyau"},
+        {"id": "c", "text": "Mitochondrie"},
+        {"id": "d", "text": "RE rugueux"}
+      ],
+      "correct": "b",
+      "explanation": "Chez les eucaryotes, la transcription a lieu dans le noyau. La traduction a lieu dans le cytoplasme."
+    },
+    {
+      "question": "Où se déroule la respiration cellulaire chez les eucaryotes ?",
+      "options": [
+        {"id": "a", "text": "Cytoplasme"},
+        {"id": "b", "text": "Noyau"},
+        {"id": "c", "text": "Mitochondries"},
+        {"id": "d", "text": "Membrane plasmique"}
+      ],
+      "correct": "c",
+      "explanation": "Chez les eucaryotes, la respiration cellulaire a lieu dans les mitochondries. Chez les procaryotes, elle a lieu au niveau de la membrane plasmique."
+    },
+    {
+      "question": "Quel type de ribosomes trouve-t-on chez les procaryotes ?",
+      "options": [
+        {"id": "a", "text": "80S"},
+        {"id": "b", "text": "70S"},
+        {"id": "c", "text": "60S"},
+        {"id": "d", "text": "50S"}
+      ],
+      "correct": "b",
+      "explanation": "Les procaryotes ont des ribosomes 70S. Les eucaryotes ont des ribosomes 80S dans le cytoplasme (et 70S dans les mitochondries)."
+    },
+    {
+      "question": "La zone nucléoïde correspond à :",
+      "options": [
+        {"id": "a", "text": "Un organite membranaire"},
+        {"id": "b", "text": "La zone contenant l'ADN chez les procaryotes"},
+        {"id": "c", "text": "Le noyau des eucaryotes"},
+        {"id": "d", "text": "Le cytoplasme"}
+      ],
+      "correct": "b",
+      "explanation": "Chez les procaryotes, l'ADN se trouve dans une zone appelée nucléoïde, sans membrane délimitante."
+    },
+    {
+      "question": "Les procaryotes incluent :",
+      "options": [
+        {"id": "a", "text": "Animaux et végétaux"},
+        {"id": "b", "text": "Bactéries et archées"},
+        {"id": "c", "text": "Champignons et protistes"},
+        {"id": "d", "text": "Virus"}
+      ],
+      "correct": "b",
+      "explanation": "Les procaryotes = bactéries et archées. Les eucaryotes = animaux, végétaux, champignons, protistes."
+    },
+    {
+      "question": "Selon la théorie cellulaire, toute cellule provient :",
+      "options": [
+        {"id": "a", "text": "De la matière inorganique"},
+        {"id": "b", "text": "D'une autre cellule préexistante"},
+        {"id": "c", "text": "D'un virus"},
+        {"id": "d", "text": "Du néant"}
+      ],
+      "correct": "b",
+      "explanation": "3ème principe de la théorie cellulaire (Virchow, 1855) : 'omnis cellula e cellula' = toute cellule provient d'une autre cellule."
+    },
+    {
+      "question": "Un nucléotide est composé de :",
+      "options": [
+        {"id": "a", "text": "Base azotée + sucre uniquement"},
+        {"id": "b", "text": "Base azotée + sucre + phosphate(s)"},
+        {"id": "c", "text": "Acide aminé + sucre + phosphate"},
+        {"id": "d", "text": "Base azotée + acide gras"}
+      ],
+      "correct": "b",
+      "explanation": "Un nucléotide = 3 composants : une base azotée, un ose (sucre) et un ou plusieurs groupements phosphate(s)."
+    },
+    {
       "question": "Les purines sont :",
-      "options": ["Cytosine et Thymine", "Adénine et Guanine", "Adénine et Uracile", "Guanine et Cytosine"],
-      "correct": 1,
-      "explanation": "Les purines (2 cycles) = Adénine (A) et Guanine (G)."
+      "options": [
+        {"id": "a", "text": "Cytosine et Thymine"},
+        {"id": "b", "text": "Adénine et Guanine"},
+        {"id": "c", "text": "Adénine et Uracile"},
+        {"id": "d", "text": "Guanine et Cytosine"}
+      ],
+      "correct": "b",
+      "explanation": "Les purines (2 cycles) = Adénine (A) et Guanine (G). Les pyrimidines (1 cycle) = Cytosine (C), Thymine (T), Uracile (U)."
     },
     {
-      "question": "La réplication de l'ADN est :",
-      "options": ["Conservative", "Semi-conservative", "Dispersive", "Aléatoire"],
-      "correct": 1,
-      "explanation": "Chaque molécule fille contient 1 brin parental + 1 brin néosynthétisé (Meselson-Stahl, 1958)."
+      "question": "Quelle base est spécifique à l'ARN ?",
+      "options": [
+        {"id": "a", "text": "Adénine"},
+        {"id": "b", "text": "Thymine"},
+        {"id": "c", "text": "Uracile"},
+        {"id": "d", "text": "Guanine"}
+      ],
+      "correct": "c",
+      "explanation": "L'Uracile (U) remplace la Thymine (T) dans l'ARN. L'ADN contient A, T, G, C. L'ARN contient A, U, G, C."
     },
     {
-      "question": "Quelle ARN polymérase synthétise les ARNm chez les eucaryotes ?",
-      "options": ["ARN Pol I", "ARN Pol II", "ARN Pol III", "Primase"],
-      "correct": 1,
-      "explanation": "L'ARN Pol II transcrit les gènes codant pour les protéines (ARNm)."
+      "question": "Le sucre de l'ADN est :",
+      "options": [
+        {"id": "a", "text": "Ribose"},
+        {"id": "b", "text": "Désoxyribose"},
+        {"id": "c", "text": "Glucose"},
+        {"id": "d", "text": "Fructose"}
+      ],
+      "correct": "b",
+      "explanation": "L'ADN contient du désoxyribose (pas d'OH en 2'). L'ARN contient du ribose (avec OH en 2')."
     },
     {
-      "question": "Le codon start est :",
-      "options": ["UAA", "UAG", "AUG", "UGA"],
-      "correct": 2,
-      "explanation": "AUG = codon start (code pour la méthionine). UAA, UAG, UGA = codons stop."
+      "question": "Dans la double hélice, A s'apparie avec :",
+      "options": [
+        {"id": "a", "text": "G (3 liaisons H)"},
+        {"id": "b", "text": "T (2 liaisons H)"},
+        {"id": "c", "text": "C (2 liaisons H)"},
+        {"id": "d", "text": "U (3 liaisons H)"}
+      ],
+      "correct": "b",
+      "explanation": "A = T avec 2 liaisons hydrogène. G ≡ C avec 3 liaisons hydrogène. Dans l'ARN, A = U."
     },
     {
-      "question": "Les lysosomes ont un pH interne :",
-      "options": ["Neutre (~7,2)", "Acide (~4,5-5,0)", "Basique (~9,0)", "Très acide (~2,0)"],
-      "correct": 1,
-      "explanation": "pH 4,5-5,0 maintenu par des pompes V-ATPases, optimal pour les hydrolases acides."
+      "question": "La liaison entre deux nucléotides consécutifs est :",
+      "options": [
+        {"id": "a", "text": "Liaison hydrogène"},
+        {"id": "b", "text": "Liaison peptidique"},
+        {"id": "c", "text": "Liaison phosphodiester"},
+        {"id": "d", "text": "Liaison ionique"}
+      ],
+      "correct": "c",
+      "explanation": "La liaison phosphodiester relie le C3' d'un nucléotide au C5' du suivant, formant le squelette sucre-phosphate."
     },
     {
-      "question": "Les microtubules ont un diamètre de :",
-      "options": ["7 nm", "10 nm", "25 nm", "50 nm"],
-      "correct": 2,
-      "explanation": "Microfilaments = 7 nm, Filaments intermédiaires = 10 nm, Microtubules = 25 nm."
+      "question": "Le pas de l'hélice d'ADN (forme B) est de :",
+      "options": [
+        {"id": "a", "text": "1 nm"},
+        {"id": "b", "text": "2 nm"},
+        {"id": "c", "text": "3,4 nm"},
+        {"id": "d", "text": "10 nm"}
+      ],
+      "correct": "c",
+      "explanation": "Le pas de l'hélice = 3,4 nm, correspondant à 10 paires de bases par tour. Le diamètre = 2 nm."
     },
     {
       "question": "Selon la règle de Chargaff, dans un ADN double brin :",
-      "options": ["%A = %G", "%A = %T et %G = %C", "%A = %C", "%A + %G = %T + %C uniquement"],
-      "correct": 1,
-      "explanation": "Règle de Chargaff : %A = %T et %G = %C (car A s'apparie avec T, G avec C)."
-    },
-    {
-      "question": "Les fragments d'Okazaki sont synthétisés sur :",
-      "options": ["Le brin avancé", "Le brin retardé", "Les deux brins", "Aucun brin"],
-      "correct": 1,
-      "explanation": "Synthèse discontinue sur le brin retardé car l'ADN polymérase ne synthétise qu'en 5'→3'."
-    },
-    {
-      "question": "L'épissage alternatif permet :",
-      "options": ["D'éliminer tous les exons", "À un seul gène de produire plusieurs protéines", "De transformer l'ADN en ARN", "De répliquer l'ADN"],
-      "correct": 1,
-      "explanation": "En combinant les exons de différentes manières, un seul gène peut produire plusieurs variants protéiques."
-    },
-    {
-      "question": "La peptidyl transférase est :",
-      "options": ["Une protéine du ribosome", "Une activité catalytique de l'ARNr", "Un ARNt", "Un facteur d'élongation"],
-      "correct": 1,
-      "explanation": "C'est une ribozyme : l'ARNr 23S/28S de la grande sous-unité catalyse la liaison peptidique."
-    },
-    {
-      "question": "Les kinésines marchent vers :",
-      "options": ["L'extrémité (-) des microtubules", "L'extrémité (+) des microtubules", "Les microfilaments d'actine", "Les filaments intermédiaires"],
-      "correct": 1,
-      "explanation": "Kinésines → extrémité (+) (antérograde). Dynéines → extrémité (-) (rétrograde)."
+      "options": [
+        {"id": "a", "text": "%A = %G"},
+        {"id": "b", "text": "%A = %T et %G = %C"},
+        {"id": "c", "text": "%A = %C"},
+        {"id": "d", "text": "%A + %G = %T + %C uniquement"}
+      ],
+      "correct": "b",
+      "explanation": "Règle de Chargaff : %A = %T et %G = %C (car A s'apparie avec T, G avec C). Donc %purines = %pyrimidines."
     },
     {
       "question": "L'ARN le plus abondant dans la cellule est :",
-      "options": ["ARNm", "ARNt", "ARNr", "miRNA"],
-      "correct": 2,
-      "explanation": "ARNr = ~80% de l'ARN total. ARNt = ~15%. ARNm = ~5%."
+      "options": [
+        {"id": "a", "text": "ARNm"},
+        {"id": "b", "text": "ARNt"},
+        {"id": "c", "text": "ARNr"},
+        {"id": "d", "text": "miRNA"}
+      ],
+      "correct": "c",
+      "explanation": "L'ARN ribosomal (ARNr) représente ~80% de l'ARN total. L'ARNt = ~15%, l'ARNm = ~5%."
+    },
+    {
+      "question": "Un nucléosome est constitué de :",
+      "options": [
+        {"id": "a", "text": "100 pb d'ADN + 4 histones"},
+        {"id": "b", "text": "146 pb d'ADN + octamère d'histones (8 histones)"},
+        {"id": "c", "text": "200 pb d'ADN + 2 histones"},
+        {"id": "d", "text": "50 pb d'ADN + 6 histones"}
+      ],
+      "correct": "b",
+      "explanation": "Un nucléosome = 146 paires de bases d'ADN enroulées 1,75 fois autour d'un octamère d'histones (2×H2A, 2×H2B, 2×H3, 2×H4)."
+    },
+    {
+      "question": "La réplication de l'ADN est :",
+      "options": [
+        {"id": "a", "text": "Conservative"},
+        {"id": "b", "text": "Semi-conservative"},
+        {"id": "c", "text": "Dispersive"},
+        {"id": "d", "text": "Aléatoire"}
+      ],
+      "correct": "b",
+      "explanation": "La réplication est semi-conservative : chaque molécule fille contient 1 brin parental + 1 brin néosynthétisé. Prouvé par Meselson-Stahl (1958)."
+    },
+    {
+      "question": "L'ADN polymérase synthétise l'ADN dans le sens :",
+      "options": [
+        {"id": "a", "text": "3' → 5'"},
+        {"id": "b", "text": "5' → 3'"},
+        {"id": "c", "text": "Bidirectionnel"},
+        {"id": "d", "text": "Aléatoire"}
+      ],
+      "correct": "b",
+      "explanation": "L'ADN polymérase ajoute des nucléotides uniquement dans le sens 5' → 3'. Elle a besoin d'une extrémité 3'-OH libre."
+    },
+    {
+      "question": "Quelle enzyme ouvre la double hélice d'ADN au niveau de la fourche de réplication ?",
+      "options": [
+        {"id": "a", "text": "ADN polymérase"},
+        {"id": "b", "text": "ADN ligase"},
+        {"id": "c", "text": "ADN hélicase"},
+        {"id": "d", "text": "Topoisomérase"}
+      ],
+      "correct": "c",
+      "explanation": "L'ADN hélicase rompt les liaisons hydrogène entre les bases pour séparer les deux brins et ouvrir la fourche de réplication."
+    },
+    {
+      "question": "Les fragments d'Okazaki sont synthétisés sur :",
+      "options": [
+        {"id": "a", "text": "Le brin avancé"},
+        {"id": "b", "text": "Le brin retardé"},
+        {"id": "c", "text": "Les deux brins"},
+        {"id": "d", "text": "Aucun brin"}
+      ],
+      "correct": "b",
+      "explanation": "Les fragments d'Okazaki (1000-2000 nt chez procaryotes, 100-200 nt chez eucaryotes) sont synthétisés de manière discontinue sur le brin retardé."
+    },
+    {
+      "question": "Quelle enzyme synthétise l'amorce ARN nécessaire à la réplication ?",
+      "options": [
+        {"id": "a", "text": "ADN polymérase"},
+        {"id": "b", "text": "Primase"},
+        {"id": "c", "text": "ADN ligase"},
+        {"id": "d", "text": "Hélicase"}
+      ],
+      "correct": "b",
+      "explanation": "La primase (ARN polymérase ARN-dépendante) synthétise une courte amorce ARN (~10 nt) qui fournit l'extrémité 3'-OH libre nécessaire à l'ADN polymérase."
+    },
+    {
+      "question": "L'ADN ligase a pour rôle de :",
+      "options": [
+        {"id": "a", "text": "Ouvrir la double hélice"},
+        {"id": "b", "text": "Synthétiser l'ADN"},
+        {"id": "c", "text": "Relier les fragments d'Okazaki"},
+        {"id": "d", "text": "Éliminer les amorces ARN"}
+      ],
+      "correct": "c",
+      "explanation": "L'ADN ligase catalyse la formation de liaisons phosphodiester entre les fragments d'Okazaki, scellant les 'nicks' dans le brin d'ADN."
+    },
+    {
+      "question": "Les protéines SSB (Single Strand Binding) servent à :",
+      "options": [
+        {"id": "a", "text": "Synthétiser l'ADN"},
+        {"id": "b", "text": "Stabiliser les brins simples d'ADN"},
+        {"id": "c", "text": "Couper l'ADN"},
+        {"id": "d", "text": "Lier les ARNt"}
+      ],
+      "correct": "b",
+      "explanation": "Les protéines SSB se lient aux brins simples d'ADN nouvellement exposés pour empêcher leur réappariement prématuré et les protéger des nucléases."
+    },
+    {
+      "question": "La réplication commence au niveau de :",
+      "options": [
+        {"id": "a", "text": "N'importe où sur le chromosome"},
+        {"id": "b", "text": "Origines de réplication spécifiques"},
+        {"id": "c", "text": "L'extrémité des chromosomes"},
+        {"id": "d", "text": "Le centromère"}
+      ],
+      "correct": "b",
+      "explanation": "La réplication commence à des origines de réplication spécifiques (oriC chez E. coli, multiples origines chez les eucaryotes)."
+    },
+    {
+      "question": "Les télomères sont :",
+      "options": [
+        {"id": "a", "text": "Des gènes codants"},
+        {"id": "b", "text": "Des séquences répétitives aux extrémités des chromosomes"},
+        {"id": "c", "text": "Des origines de réplication"},
+        {"id": "d", "text": "Des promoteurs"}
+      ],
+      "correct": "b",
+      "explanation": "Les télomères sont des séquences répétitives non codantes (TTAGGG chez l'homme) aux extrémités des chromosomes linéaires, qui les protègent du raccourcissement."
+    },
+    {
+      "question": "La télomérase est active dans :",
+      "options": [
+        {"id": "a", "text": "Toutes les cellules somatiques"},
+        {"id": "b", "text": "Les cellules germinales et les cellules souches"},
+        {"id": "c", "text": "Uniquement les bactéries"},
+        {"id": "d", "text": "Uniquement les plantes"}
+      ],
+      "correct": "b",
+      "explanation": "La télomérase est active dans les cellules germinales, les cellules souches et la plupart des cellules cancéreuses. Elle est inactive dans la plupart des cellules somatiques (vieillissement)."
+    },
+    {
+      "question": "La transcription est le processus qui permet de :",
+      "options": [
+        {"id": "a", "text": "Copier l'ADN en ADN"},
+        {"id": "b", "text": "Copier l'ADN en ARN"},
+        {"id": "c", "text": "Copier l'ARN en protéine"},
+        {"id": "d", "text": "Copier l'ARN en ADN"}
+      ],
+      "correct": "b",
+      "explanation": "La transcription = copie d'un gène d'ADN en ARN. La traduction = passage de l'ARN à la protéine. La réplication = copie de l'ADN en ADN."
+    },
+    {
+      "question": "Quelle ARN polymérase synthétise les ARN messagers (ARNm) chez les eucaryotes ?",
+      "options": [
+        {"id": "a", "text": "ARN Polymérase I"},
+        {"id": "b", "text": "ARN Polymérase II"},
+        {"id": "c", "text": "ARN Polymérase III"},
+        {"id": "d", "text": "Primase"}
+      ],
+      "correct": "b",
+      "explanation": "L'ARN Pol II transcrit les ARNm (gènes codant pour les protéines). L'ARN Pol I fait les ARNr (28S, 18S, 5.8S). L'ARN Pol III fait les ARNt et l'ARNr 5S."
+    },
+    {
+      "question": "La coiffe en 5' de l'ARNm eucaryote est constituée de :",
+      "options": [
+        {"id": "a", "text": "Une queue de poly-A"},
+        {"id": "b", "text": "De la 7-méthylguanosine"},
+        {"id": "c", "text": "Des introns"},
+        {"id": "d", "text": "Des exons"}
+      ],
+      "correct": "b",
+      "explanation": "La coiffe = 7-méthylguanosine liée par une liaison 5'-5' triphosphate. Elle protège l'ARNm des exonucléases et est reconnue par les ribosomes."
+    },
+    {
+      "question": "L'épissage (splicing) consiste à :",
+      "options": [
+        {"id": "a", "text": "Ajouter des introns à l'ARNm"},
+        {"id": "b", "text": "Éliminer les introns et lier les exons"},
+        {"id": "c", "text": "Ajouter la coiffe en 5'"},
+        {"id": "d", "text": "Ajouter la queue poly-A en 3'"}
+      ],
+      "correct": "b",
+      "explanation": "L'épissage = élimination des introns (séquences non codantes) et ligature des exons (séquences codantes) pour former un ARNm mature."
+    },
+    {
+      "question": "L'ARNm procaryote est généralement :",
+      "options": [
+        {"id": "a", "text": "Monocistronique (un gène par ARNm)"},
+        {"id": "b", "text": "Polycistronique (plusieurs gènes sur un même ARNm = opéron)"},
+        {"id": "c", "text": "Toujours épissé"},
+        {"id": "d", "text": "Sans coiffe ni poly-A"}
+      ],
+      "correct": "b",
+      "explanation": "Chez les procaryotes, l'ARNm est polycistronique (opérons). Chez les eucaryotes, il est monocistronique (un gène par ARNm)."
+    },
+    {
+      "question": "Chez les procaryotes, la transcription et la traduction sont :",
+      "options": [
+        {"id": "a", "text": "Séparées dans le temps et l'espace"},
+        {"id": "b", "text": "Couplées (simultanées dans le cytoplasme)"},
+        {"id": "c", "text": "Inexistantes"},
+        {"id": "d", "text": "Dépendantes de l'épissage"}
+      ],
+      "correct": "b",
+      "explanation": "L'absence de noyau chez les procaryotes permet aux ribosomes de commencer la traduction de l'ARNm pendant qu'il est encore en cours de transcription."
+    },
+    {
+      "question": "La traduction est le processus qui permet de :",
+      "options": [
+        {"id": "a", "text": "Copier l'ADN en ARN"},
+        {"id": "b", "text": "Copier l'ARN en protéine"},
+        {"id": "c", "text": "Copier l'ADN en ADN"},
+        {"id": "d", "text": "Copier l'ARN en ADN"}
+      ],
+      "correct": "b",
+      "explanation": "La traduction = passage de l'ARNm à la protéine. La transcription = ADN → ARN. La réplication = ADN → ADN."
+    },
+    {
+      "question": "Le codon start (codon d'initiation) est :",
+      "options": [
+        {"id": "a", "text": "UAA"},
+        {"id": "b", "text": "UAG"},
+        {"id": "c", "text": "AUG"},
+        {"id": "d", "text": "UGA"}
+      ],
+      "correct": "c",
+      "explanation": "AUG est le codon start qui code pour la méthionine (ou formyl-méthionine chez les procaryotes). UAA, UAG et UGA sont les codons stop."
+    },
+    {
+      "question": "Les codons stop sont :",
+      "options": [
+        {"id": "a", "text": "AUG, UAA, UAG"},
+        {"id": "b", "text": "UAA, UAG, UGA"},
+        {"id": "c", "text": "AUG, UAG, UGA"},
+        {"id": "d", "text": "UAA, UGA, AUG"}
+      ],
+      "correct": "b",
+      "explanation": "Les 3 codons stop sont UAA, UAG et UGA. Ils ne codent pour aucun acide aminé et signalent la fin de la traduction."
+    },
+    {
+      "question": "Le ribosome possède 3 sites de liaison pour les ARNt :",
+      "options": [
+        {"id": "a", "text": "Sites A, B, C"},
+        {"id": "b", "text": "Sites A, P, E"},
+        {"id": "c", "text": "Sites X, Y, Z"},
+        {"id": "d", "text": "Sites 1, 2, 3"}
+      ],
+      "correct": "b",
+      "explanation": "Site A (Aminoacyl) = accueille l'ARNt entrant. Site P (Peptidyl) = contient l'ARNt portant la chaîne en croissance. Site E (Exit) = sortie de l'ARNt vide."
+    },
+    {
+      "question": "L'ARNt (ARN de transfert) a pour rôle de :",
+      "options": [
+        {"id": "a", "text": "Stocker l'information génétique"},
+        {"id": "b", "text": "Transporter les acides aminés au ribosome"},
+        {"id": "c", "text": "Former la structure du ribosome"},
+        {"id": "d", "text": "Catalyser la transcription"}
+      ],
+      "correct": "b",
+      "explanation": "L'ARNt transporte les acides aminés au ribosome. Chaque ARNt possède un anticodon complémentaire d'un codon de l'ARNm et porte un acide aminé spécifique."
+    },
+    {
+      "question": "Le code génétique est dit 'dégénéré' car :",
+      "options": [
+        {"id": "a", "text": "Il est universel"},
+        {"id": "b", "text": "Plusieurs codons peuvent coder le même acide aminé"},
+        {"id": "c", "text": "Il contient des erreurs"},
+        {"id": "d", "text": "Il change selon les espèces"}
+      ],
+      "correct": "b",
+      "explanation": "Le code est dégénéré (redondant) : 61 codons pour 20 acides aminés, donc plusieurs codons peuvent coder le même acide aminé (ex: GCU, GCC, GCA, GCG codent tous pour l'Alanine)."
+    },
+    {
+      "question": "La peptidyl transférase est :",
+      "options": [
+        {"id": "a", "text": "Une protéine du ribosome"},
+        {"id": "b", "text": "Une activité catalytique de l'ARNr du ribosome"},
+        {"id": "c", "text": "Un ARNt"},
+        {"id": "d", "text": "Un facteur d'élongation"}
+      ],
+      "correct": "b",
+      "explanation": "La peptidyl transférase est une ribozyme : c'est l'ARNr 23S (procaryotes) ou 28S (eucaryotes) de la grande sous-unité qui catalyse la formation de la liaison peptidique."
+    },
+    {
+      "question": "Chez les procaryotes, la traduction a lieu :",
+      "options": [
+        {"id": "a", "text": "Dans le noyau"},
+        {"id": "b", "text": "Dans le cytoplasme"},
+        {"id": "c", "text": "Dans les mitochondries"},
+        {"id": "d", "text": "Dans le RE"}
+      ],
+      "correct": "b",
+      "explanation": "Chez les procaryotes (pas de noyau), la traduction a lieu dans le cytoplasme, souvent couplée à la transcription."
+    },
+    {
+      "question": "L'énergie nécessaire à l'élongation de la traduction est fournie par :",
+      "options": [
+        {"id": "a", "text": "ATP uniquement"},
+        {"id": "b", "text": "GTP"},
+        {"id": "c", "text": "NADH"},
+        {"id": "d", "text": "Glucose"}
+      ],
+      "correct": "b",
+      "explanation": "Le GTP est hydrolysé lors de l'entrée de l'ARNt au site A (EF-Tu/eEF1) et lors de la translocation (EF-G/eEF2)."
+    },
+    {
+      "question": "Les ribosomes procaryotes sont de type :",
+      "options": [
+        {"id": "a", "text": "80S"},
+        {"id": "b", "text": "70S"},
+        {"id": "c", "text": "60S"},
+        {"id": "d", "text": "50S"}
+      ],
+      "correct": "b",
+      "explanation": "Les procaryotes ont des ribosomes 70S (30S + 50S). Les eucaryotes ont des ribosomes 80S (40S + 60S) dans le cytoplasme."
+    },
+    {
+      "question": "Le système endomembranaire comprend :",
+      "options": [
+        {"id": "a", "text": "Uniquement le noyau"},
+        {"id": "b", "text": "RE, Golgi, lysosomes, vésicules, membrane plasmique"},
+        {"id": "c", "text": "Seulement les mitochondries"},
+        {"id": "d", "text": "Le cytosquelette uniquement"}
+      ],
+      "correct": "b",
+      "explanation": "Le système endomembranaire = enveloppe nucléaire + RE + Golgi + lysosomes + endosomes + vésicules + membrane plasmique. Les mitochondries et le cytosquelette n'en font pas partie."
+    },
+    {
+      "question": "Le réticulum endoplasmique rugueux (RER) est caractérisé par :",
+      "options": [
+        {"id": "a", "text": "L'absence de ribosomes"},
+        {"id": "b", "text": "La présence de ribosomes sur sa face cytoplasmique"},
+        {"id": "c", "text": "La synthèse des lipides"},
+        {"id": "d", "text": "Le stockage du calcium"}
+      ],
+      "correct": "b",
+      "explanation": "Le RER est recouvert de ribosomes sur sa face cytoplasmique (aspect 'rugueux'). Il est le siège de la synthèse des protéines sécrétées, membranaires et lysosomales."
+    },
+    {
+      "question": "Le réticulum endoplasmique lisse (REL) a pour fonctions :",
+      "options": [
+        {"id": "a", "text": "Synthèse des protéines"},
+        {"id": "b", "text": "Synthèse des lipides, détoxification, stockage du Ca²⁺"},
+        {"id": "c", "text": "Épissage des ARNm"},
+        {"id": "d", "text": "Réplication de l'ADN"}
+      ],
+      "correct": "b",
+      "explanation": "Le REL (sans ribosomes) synthétise les lipides (phospholipides, stéroïdes), détoxifie (cytochrome P450) et stocke le Ca²⁺ (réticulum sarcoplasmique dans les muscles)."
+    },
+    {
+      "question": "L'appareil de Golgi possède une polarité :",
+      "options": [
+        {"id": "a", "text": "Face cis (côté membrane plasmique) et face trans (côté RE)"},
+        {"id": "b", "text": "Face cis (côté RE) et face trans (côté membrane plasmique)"},
+        {"id": "c", "text": "Pas de polarité"},
+        {"id": "d", "text": "Face médiane uniquement"}
+      ],
+      "correct": "b",
+      "explanation": "Le Golgi reçoit les vésicules du RE par la face cis (entrée) et expédie les vésicules vers la membrane plasmique ou les lysosomes par la face trans (sortie)."
+    },
+    {
+      "question": "Les lysosomes ont un pH interne :",
+      "options": [
+        {"id": "a", "text": "Neutre (~7,2)"},
+        {"id": "b", "text": "Acide (~4,5-5,0)"},
+        {"id": "c", "text": "Basique (~9,0)"},
+        {"id": "d", "text": "Très acide (~2,0)"}
+      ],
+      "correct": "b",
+      "explanation": "Les lysosomes ont un pH acide (4,5-5,0) maintenu par des pompes V-ATPases. Ce pH est optimal pour les hydrolases acides qu'ils contiennent."
+    },
+    {
+      "question": "Les peroxysomes contiennent la catalase qui :",
+      "options": [
+        {"id": "a", "text": "Synthétise de l'ATP"},
+        {"id": "b", "text": "Détoxifie le H₂O₂ (2 H₂O₂ → 2 H₂O + O₂)"},
+        {"id": "c", "text": "Dégrade les protéines"},
+        {"id": "d", "text": "Synthétise des lipides"}
+      ],
+      "correct": "b",
+      "explanation": "La catalase des peroxysomes convertit le peroxyde d'hydrogène (H₂O₂, toxique) en eau et oxygène. Les peroxysomes réalisent aussi la β-oxydation des acides gras à très longue chaîne."
+    },
+    {
+      "question": "Les mitochondries sont délimitées par :",
+      "options": [
+        {"id": "a", "text": "Une seule membrane"},
+        {"id": "b", "text": "Une double membrane"},
+        {"id": "c", "text": "Trois membranes"},
+        {"id": "d", "text": "Aucune membrane"}
+      ],
+      "correct": "b",
+      "explanation": "Les mitochondries ont une double membrane : externe (lisse, avec porines) et interne (repliée en crêtes, contenant la chaîne respiratoire et l'ATP synthase)."
+    },
+    {
+      "question": "Selon la théorie endosymbiotique, les mitochondries dérivent :",
+      "options": [
+        {"id": "a", "text": "D'une invagination de la membrane plasmique"},
+        {"id": "b", "text": "D'une ancienne bactérie aérobie engulfée"},
+        {"id": "c", "text": "Du réticulum endoplasmique"},
+        {"id": "d", "text": "Du noyau"}
+      ],
+      "correct": "b",
+      "explanation": "La théorie endosymbiotique (Lynn Margulis, 1967) postule que les mitochondries dérivent d'une α-protéobactérie engulfée il y a ~2 milliards d'années. Preuves : ADN circulaire, ribosomes 70S, fission binaire."
     },
     {
       "question": "La voie de sécrétion suit le trajet :",
-      "options": ["Golgi → RE → membrane", "RE → Golgi → membrane plasmique", "Membrane → Golgi → RE", "Noyau → RE → Golgi"],
-      "correct": 1,
-      "explanation": "RE → (COP II) → Golgi (cis→trans) → (vésicules) → membrane plasmique (exocytose)."
+      "options": [
+        {"id": "a", "text": "Golgi → RE → membrane plasmique"},
+        {"id": "b", "text": "RE → Golgi → membrane plasmique"},
+        {"id": "c", "text": "Membrane plasmique → Golgi → RE"},
+        {"id": "d", "text": "Noyau → RE → Golgi"}
+      ],
+      "correct": "b",
+      "explanation": "La voie de sécrétion = RE → (vésicules COP II) → Golgi (cis → trans) → (vésicules de sécrétion) → membrane plasmique (exocytose)."
     },
     {
-      "question": "L'ADN polymérase synthétise dans le sens :",
-      "options": ["3' → 5'", "5' → 3'", "Bidirectionnel", "Aléatoire"],
-      "correct": 1,
-      "explanation": "L'ADN polymérase ajoute des nucléotides uniquement dans le sens 5' → 3'."
+      "question": "Le nucléole est le site de :",
+      "options": [
+        {"id": "a", "text": "La réplication de l'ADN"},
+        {"id": "b", "text": "La synthèse des ARNr et assemblage des ribosomes"},
+        {"id": "c", "text": "La traduction"},
+        {"id": "d", "text": "La glycolyse"}
+      ],
+      "correct": "b",
+      "explanation": "Le nucléole est le lieu de synthèse des ARNr (18S, 5.8S, 28S) et de l'assemblage des sous-unités ribosomales. Il est organisé autour des régions ADNr (chromosomes 13, 14, 15, 21, 22)."
     },
     {
-      "question": "Les vésicules COP II transportent les protéines :",
-      "options": ["Du Golgi vers le RE", "Du RE vers le Golgi", "Du Golgi vers les lysosomes", "De la membrane vers les endosomes"],
-      "correct": 1,
-      "explanation": "COP II = antérograde RE → Golgi. COP I = rétrograde Golgi → RE."
+      "question": "Le cytosquelette est constitué de :",
+      "options": [
+        {"id": "a", "text": "Un seul type de filament"},
+        {"id": "b", "text": "3 types de filaments : microfilaments, filaments intermédiaires, microtubules"},
+        {"id": "c", "text": "Uniquement de microtubules"},
+        {"id": "d", "text": "Uniquement d'actine"}
+      ],
+      "correct": "b",
+      "explanation": "Le cytosquelette = 3 types de filaments : microfilaments d'actine (7 nm), filaments intermédiaires (10 nm), microtubules (25 nm)."
     },
     {
-      "question": "L'instabilité dynamique des microtubules correspond à :",
-      "options": ["Une polymérisation lente", "L'alternance entre croissance et catastrophe", "Une dépolymérisation permanente", "Une stabilité absolue"],
-      "correct": 1,
-      "explanation": "Alternance rapide entre phases de croissance (dimères-GTP) et de catastrophe (dépolymérisation rapide)."
+      "question": "Les microfilaments d'actine ont un diamètre de :",
+      "options": [
+        {"id": "a", "text": "25 nm"},
+        {"id": "b", "text": "10 nm"},
+        {"id": "c", "text": "7 nm"},
+        {"id": "d", "text": "50 nm"}
+      ],
+      "correct": "c",
+      "explanation": "Les microfilaments d'actine sont les plus fins (7 nm), suivis des filaments intermédiaires (10 nm) et des microtubules (25 nm)."
+    },
+    {
+      "question": "Les microtubules sont constitués de :",
+      "options": [
+        {"id": "a", "text": "Monomères d'actine"},
+        {"id": "b", "text": "Hétérodimères de tubuline α/β"},
+        {"id": "c", "text": "Kératines"},
+        {"id": "d", "text": "Collagène"}
+      ],
+      "correct": "b",
+      "explanation": "Les microtubules = polymères d'hétérodimères α/β-tubuline. Les microfilaments = polymères d'actine. Les filaments intermédiaires = protéines fibreuses (kératines, vimentine, lamines...)."
+    },
+    {
+      "question": "Les filaments intermédiaires se distinguent des autres filaments par :",
+      "options": [
+        {"id": "a", "text": "Leur polarité marquée"},
+        {"id": "b", "text": "L'absence de polarité (assemblage antiparallèle)"},
+        {"id": "c", "text": "Leur diamètre de 25 nm"},
+        {"id": "d", "text": "Leur utilisation d'ATP"}
+      ],
+      "correct": "b",
+      "explanation": "Les filaments intermédiaires sont formés de tétramères antiparallèles, ce qui leur confère une absence de polarité et une grande résistance mécanique. Les microfilaments et microtubules ont une polarité (+/-)."
+    },
+    {
+      "question": "Les kinésines sont des protéines motrices qui marchent :",
+      "options": [
+        {"id": "a", "text": "Vers l'extrémité (-) des microtubules"},
+        {"id": "b", "text": "Vers l'extrémité (+) des microtubules"},
+        {"id": "c", "text": "Sur les microfilaments d'actine"},
+        {"id": "d", "text": "Sur les filaments intermédiaires"}
+      ],
+      "correct": "b",
+      "explanation": "Les kinésines marchent vers l'extrémité (+) des microtubules (transport antérograde, vers la périphérie). Les dynéines marchent vers l'extrémité (-) (transport rétrograde, vers le centre)."
+    },
+    {
+      "question": "Le centrosome est le principal MTOC (Microtubule Organizing Center) chez :",
+      "options": [
+        {"id": "a", "text": "Les procaryotes"},
+        {"id": "b", "text": "Les animaux"},
+        {"id": "c", "text": "Les végétaux uniquement"},
+        {"id": "d", "text": "Les champignons uniquement"}
+      ],
+      "correct": "b",
+      "explanation": "Le centrosome = MTOC principal chez les animaux. Il contient 2 centrioles orthogonaux (structure 9+0) et du matériel péricentriolaire (γ-tubuline pour la nucléation des microtubules)."
+    },
+    {
+      "question": "L'axonème des cils et flagelles eucaryotes a une structure :",
+      "options": [
+        {"id": "a", "text": "9+0"},
+        {"id": "b", "text": "9+2 (9 doublets périphériques + 2 microtubules centraux)"},
+        {"id": "c", "text": "7+3"},
+        {"id": "d", "text": "12+1"}
+      ],
+      "correct": "b",
+      "explanation": "L'axonème motile = structure 9+2 : 9 doublets de microtubules en périphérie + 2 microtubules centraux. Les cils primaires (non motiles) ont une structure 9+0."
+    },
+    {
+      "question": "Le battement des cils et flagelles est généré par :",
+      "options": [
+        {"id": "a", "text": "La myosine"},
+        {"id": "b", "text": "La dynéine axonémique"},
+        {"id": "c", "text": "La kinésine"},
+        {"id": "d", "text": "La tubuline"}
+      ],
+      "correct": "b",
+      "explanation": "La dynéine axonémique (protéine motrice spécifique aux cils/flagelles) hydrolyse l'ATP et fait glisser les doublets de microtubules les uns sur les autres. La nexine convertit ce glissement en courbure."
+    },
+    {
+      "question": "Les kératines sont des filaments intermédiaires spécifiques aux :",
+      "options": [
+        {"id": "a", "text": "Neurones"},
+        {"id": "b", "text": "Cellules épithéliales"},
+        {"id": "c", "text": "Cellules musculaires"},
+        {"id": "d", "text": "Cellules sanguines"}
+      ],
+      "correct": "b",
+      "explanation": "Les kératines = filaments intermédiaires des cellules épithéliales (peau, cheveux, ongles). La vimentine = tissu conjonctif. La desmine = muscle. Les neurofilaments = neurones. Les lamines = noyau."
+    },
+    {
+      "question": "Le treadmilling de l'actine correspond à :",
+      "options": [
+        {"id": "a", "text": "La dépolymérisation complète du filament"},
+        {"id": "b", "text": "L'ajout continu de monomères à l'extrémité (+) et la perte à l'extrémité (-)"},
+        {"id": "c", "text": "La polymérisation aux deux extrémités simultanément"},
+        {"id": "d", "text": "La stabilisation du filament"}
+      ],
+      "correct": "b",
+      "explanation": "Le treadmilling = phénomène dynamique où l'actine est ajoutée à l'extrémité (+) (barbelée, croissance rapide) et perdue à l'extrémité (-) (pointue). La longueur totale du filament reste constante, mais les monomères 'traversent' le filament."
+    },
+    {
+      "question": "Les 3 fonctions principales de la membrane plasmique sont :",
+      "options": [
+        {"id": "a", "text": "Stockage, digestion, excrétion"},
+        {"id": "b", "text": "Barrière sélective, échanges, communication cellulaire"},
+        {"id": "c", "text": "Synthèse protéique, réplication, transcription"},
+        {"id": "d", "text": "Contraction, conduction, sécrétion"}
+      ],
+      "correct": "b",
+      "explanation": "La membrane plasmique = barrière sélective entre cytoplasme et milieu extracellulaire, assure les échanges et la communication cellulaire (récepteurs membranaires)."
+    },
+    {
+      "question": "La composition chimique de la membrane plasmique est :",
+      "options": [
+        {"id": "a", "text": "40% lipides, 52% protéines, 8% glucides"},
+        {"id": "b", "text": "50% lipides, 40% protéines, 10% glucides"},
+        {"id": "c", "text": "30% lipides, 60% protéines, 10% glucides"},
+        {"id": "d", "text": "60% lipides, 30% protéines, 10% glucides"}
+      ],
+      "correct": "a",
+      "explanation": "La membrane plasmique = 40% lipides (bicouche lipidique), 52% protéines, 8% glucides (glycolipides et glycoprotéines)."
+    },
+    {
+      "question": "Qu'est-ce qu'une molécule amphiphile ?",
+      "options": [
+        {"id": "a", "text": "Molécule uniquement hydrophobe"},
+        {"id": "b", "text": "Molécule avec une partie hydrophobe et une partie hydrophile"},
+        {"id": "c", "text": "Molécule uniquement hydrophile"},
+        {"id": "d", "text": "Molécule neutre"}
+      ],
+      "correct": "b",
+      "explanation": "Une molécule amphiphile possède une partie hydrophobe (apolaire) et une partie hydrophile (polaire). Exemple : phospholipides, cholestérol."
+    },
+    {
+      "question": "La différence entre glycérophospholipides et sphingolipides :",
+      "options": [
+        {"id": "a", "text": "Les glycérophospholipides dérivent du glycérol, les sphingolipides de la sphingosine"},
+        {"id": "b", "text": "Les glycérophospholipides sont dans le noyau, les sphingolipides dans le cytoplasme"},
+        {"id": "c", "text": "Les glycérophospholipides sont des protéines, les sphingolipides des lipides"},
+        {"id": "d", "text": "Aucune différence"}
+      ],
+      "correct": "a",
+      "explanation": "Glycérophospholipides = dérivés du glycérol (ex: phosphatidylcholine). Sphingolipides = dérivés de la sphingosine (ex: sphingomyéline)."
+    },
+    {
+      "question": "Le rôle du cholestérol dans la membrane :",
+      "options": [
+        {"id": "a", "text": "Synthétiser des protéines"},
+        {"id": "b", "text": "Réguler la fluidité membranaire (tampon)"},
+        {"id": "c", "text": "Transporter des ions"},
+        {"id": "d", "text": "Catalyser des réactions"}
+      ],
+      "correct": "b",
+      "explanation": "Le cholestérol régule la fluidité membranaire (tampon), immobilise les chaînes hydrocarbonées voisines et augmente la barrière de perméabilité. Présent à 15-50% des lipides totaux (cellules animales)."
+    },
+    {
+      "question": "Les 3 types de protéines membranaires :",
+      "options": [
+        {"id": "a", "text": "Intrinsèques, périphériques, à ancrage lipidique"},
+        {"id": "b", "text": "Canaux, pompes, transporteurs"},
+        {"id": "c", "text": "Enzymes, récepteurs, transporteurs"},
+        {"id": "d", "text": "Structurales, fonctionnelles, régulatrices"}
+      ],
+      "correct": "a",
+      "explanation": "1. Protéines intrinsèques (transmembranaires) : traversent la bicouche. 2. Protéines à ancrage lipidique : ancrées par liaison covalente à un lipide. 3. Protéines périphériques (extrinsèques) : liées indirectement aux protéines intrinsèques."
+    },
+    {
+      "question": "Les 6 fonctions des protéines membranaires :",
+      "options": [
+        {"id": "a", "text": "Transport, activité enzymatique, transduction des signaux, reconnaissance, adhérence, fixation au cytosquelette"},
+        {"id": "b", "text": "Réplication, transcription, traduction, épissage, glycosylation, phosphorylation"},
+        {"id": "c", "text": "Diffusion, osmose, endocytose, exocytose, pinocytose, phagocytose"},
+        {"id": "d", "text": "Contraction, conduction, sécrétion, absorption, filtration, excrétion"}
+      ],
+      "correct": "a",
+      "explanation": "Les protéines membranaires assurent : transport (canaux, pompes), activité enzymatique, transduction des signaux, reconnaissance intercellulaire, adhérence intercellulaire, fixation au cytosquelette et matrice extracellulaire."
+    },
+    {
+      "question": "Où se trouvent les glucides membranaires ?",
+      "options": [
+        {"id": "a", "text": "Toujours du côté intracellulaire"},
+        {"id": "b", "text": "Toujours du côté extracellulaire"},
+        {"id": "c", "text": "Des deux côtés"},
+        {"id": "d", "text": "Uniquement dans le noyau"}
+      ],
+      "correct": "b",
+      "explanation": "Les glucides membranaires sont TOUJOURS du côté extracellulaire. Liés de façon covalente : glycolipides (sucres ajoutés dans RE et Golgi) et glycoprotéines (modification post-traductionnelle)."
+    },
+    {
+      "question": "La différence entre N-glycosylation et O-glycosylation :",
+      "options": [
+        {"id": "a", "text": "N-glycosylation dans le RE sur l'azote de l'asparagine, O-glycosylation dans le Golgi sur l'oxygène de la sérine/thréonine"},
+        {"id": "b", "text": "N-glycosylation dans le Golgi, O-glycosylation dans le RE"},
+        {"id": "c", "text": "N-glycosylation sur les lipides, O-glycosylation sur les protéines"},
+        {"id": "d", "text": "Aucune différence"}
+      ],
+      "correct": "a",
+      "explanation": "N-Glycosylation : lieu = RE, sur l'azote de l'asparagine (séquence Asn-X-Ser/Thr). O-Glycosylation : lieu = Appareil de Golgi, sur l'oxygène de la sérine ou thréonine."
+    },
+    {
+      "question": "Qu'est-ce que le glycocalyx ?",
+      "options": [
+        {"id": "a", "text": "Une protéine membranaire"},
+        {"id": "b", "text": "Zone riche en glucides du côté extracellulaire de la membrane"},
+        {"id": "c", "text": "Un type de lipide"},
+        {"id": "d", "text": "Un organite"}
+      ],
+      "correct": "b",
+      "explanation": "Le glycocalyx = zone riche en glucides du côté extracellulaire de la membrane. Rôles : reconnaissance cellulaire, polarité cellulaire, groupes sanguins ABO."
+    },
+    {
+      "question": "Les 4 facteurs influençant la fluidité membranaire :",
+      "options": [
+        {"id": "a", "text": "Température, nature des acides gras, longueur des chaînes, cholestérol"},
+        {"id": "b", "text": "pH, pression, volume, concentration"},
+        {"id": "c", "text": "Taille, forme, couleur, poids"},
+        {"id": "d", "text": "ADN, ARN, protéines, lipides"}
+      ],
+      "correct": "a",
+      "explanation": "1. Température : ↑ température = ↑ fluidité. 2. Nature des acides gras : insaturés (doubles liaisons cis) ↑ fluidité, saturés ↓ fluidité. 3. Longueur des chaînes : courtes ↑ fluidité. 4. Cholestérol : régule la fluidité (tampon)."
+    },
+    {
+      "question": "Qu'est-ce que le flip-flop ?",
+      "options": [
+        {"id": "a", "text": "Diffusion latérale rapide des phospholipides"},
+        {"id": "b", "text": "Diffusion transversale d'un phospholipide d'un feuillet à l'autre (lente)"},
+        {"id": "c", "text": "Rotation axiale des protéines"},
+        {"id": "d", "text": "Flexion des acides gras"}
+      ],
+      "correct": "b",
+      "explanation": "Le flip-flop = diffusion transversale d'un phospholipide d'un feuillet à l'autre de la bicouche. C'est un déplacement LENT (contrairement à la diffusion latérale qui est rapide)."
+    },
+    {
+      "question": "Qu'est-ce que les radeaux lipidiques (lipid rafts) ?",
+      "options": [
+        {"id": "a", "text": "Des vésicules de sécrétion"},
+        {"id": "b", "text": "Microdomaines de la membrane plasmique constitués de sphingolipides, glycolipides et cholestérol"},
+        {"id": "c", "text": "Des organites membranaires"},
+        {"id": "d", "text": "Des protéines transmembranaires"}
+      ],
+      "correct": "b",
+      "explanation": "Les radeaux lipidiques = microdomaines de la membrane plasmique constitués d'associations stables entre sphingolipides, glycolipides et cholestérol. Rôles : réponse aux pathogènes, homéostasie du cholestérol, transduction de signal."
+    },
+    {
+      "question": "Quelles molécules traversent facilement la bicouche lipidique ?",
+      "options": [
+        {"id": "a", "text": "Grosses molécules polaires et ions"},
+        {"id": "b", "text": "Molécules très petites (CO₂, O₂, N₂) et molécules liposolubles"},
+        {"id": "c", "text": "Protéines et acides nucléiques"},
+        {"id": "d", "text": "Glucose et acides aminés"}
+      ],
+      "correct": "b",
+      "explanation": "Perméables : molécules très petites (CO₂, O₂, N₂) et molécules liposolubles (hydrophobes, non polaires). Imperméables : grosses molécules, molécules polaires, ions (K⁺, Cl⁻, Na)."
+    },
+    {
+      "question": "La différence entre diffusion simple et diffusion facilitée :",
+      "options": [
+        {"id": "a", "text": "Diffusion simple sans protéines, diffusion facilitée avec protéines transmembranaires"},
+        {"id": "b", "text": "Diffusion simple contre le gradient, diffusion facilitée selon le gradient"},
+        {"id": "c", "text": "Diffusion simple nécessite de l'ATP, diffusion facilitée non"},
+        {"id": "d", "text": "Aucune différence"}
+      ],
+      "correct": "a",
+      "explanation": "Diffusion simple : sans protéines de transport, molécules non-polaires, loi de Fick. Diffusion facilitée : avec protéines transmembranaires, molécules polaires et ions, selon gradient électrochimique."
+    },
+    {
+      "question": "La différence entre uniport, symport et antiport :",
+      "options": [
+        {"id": "a", "text": "Uniport : 1 molécule dans 1 direction ; Symport : 2 substances dans la même direction ; Antiport : 2 substances dans des directions opposées"},
+        {"id": "b", "text": "Uniport : 2 molécules ; Symport : 1 molécule ; Antiport : 3 molécules"},
+        {"id": "c", "text": "Uniport : contre le gradient ; Symport : selon le gradient ; Antiport : aléatoire"},
+        {"id": "d", "text": "Aucune différence"}
+      ],
+      "correct": "a",
+      "explanation": "Uniport : transporte 1 molécule dans 1 direction. Symport : transporte 2 substances différentes dans la MÊME direction. Antiport : transporte 2 substances différentes dans des directions OPPOSÉES."
+    },
+    {
+      "question": "Les caractéristiques des canaux ioniques :",
+      "options": [
+        {"id": "a", "text": "Lents, non spécifiques, toujours ouverts"},
+        {"id": "b", "text": "Rapides (10⁷-10 molécules/s), souvent spécifiques, deux états (ouvert/fermé)"},
+        {"id": "c", "text": "Lents, spécifiques, toujours fermés"},
+        {"id": "d", "text": "Rapides, non spécifiques, toujours ouverts"}
+      ],
+      "correct": "b",
+      "explanation": "Canaux ioniques : protéine transmembranaire formant un pore, souvent spécifiques (une seule substance), vitesse très élevée (10⁷ à 10⁸ molécules/s), deux états (ouvert ou fermé). Types : toujours ouverts, voltage-dépendants, ligand-dépendants."
+    },
+    {
+      "question": "Qu'est-ce que les aquaporines ?",
+      "options": [
+        {"id": "a", "text": "Canaux spécifiques aux ions"},
+        {"id": "b", "text": "Canaux spécifiques à l'eau (AQP)"},
+        {"id": "c", "text": "Pompes à protons"},
+        {"id": "d", "text": "Transporteurs de glucose"}
+      ],
+      "correct": "b",
+      "explanation": "Les aquaporines = canaux spécifiques à l'eau (AQP). Permettent à l'eau d'entrer/sortir sans laisser passer d'autres molécules ou ions. Aquaporine 1 : érythrocytes, tubules rénaux, cœur, rein, muscle, foie, pancréas. Mutations → diabète insipide. Nobel de chimie 2003 : Peter Agre (découverte 1988)."
+    },
+    {
+      "question": "Les caractéristiques des transports actifs :",
+      "options": [
+        {"id": "a", "text": "Ne nécessitent pas d'énergie, selon le gradient"},
+        {"id": "b", "text": "Nécessitent de l'énergie (ATP), contre le gradient, pompes (~10⁴ ions/sec), ATPases"},
+        {"id": "c", "text": "Nécessitent de l'énergie, selon le gradient"},
+        {"id": "d", "text": "Ne nécessitent pas d'énergie, contre le gradient"}
+      ],
+      "correct": "b",
+      "explanation": "Transports actifs : nécessitent de l'énergie (ATP), fonctionnent CONTRE le gradient de concentration, tous sont des pompes (~10⁴ ions/sec), protéines = ATPases (hydrolysent l'ATP). Exemple : Na⁺/K⁺ ATPase."
+    },
+    {
+      "question": "Qu'est-ce que l'asymétrie membranaire ?",
+      "options": [
+        {"id": "a", "text": "La membrane est identique des deux côtés"},
+        {"id": "b", "text": "La composition des faces externe et interne sont différentes"},
+        {"id": "c", "text": "La membrane n'existe que d'un côté"},
+        {"id": "d", "text": "La membrane est symétrique"}
+      ],
+      "correct": "b",
+      "explanation": "L'asymétrie membranaire = la composition des faces externe et interne sont différentes. Exemples : glycérophospholipides et sphingolipides répartis asymétriquement, glucides exclusivement du côté extracellulaire, cellules épithéliales : pôle apical, basal et latéral avec protéines spécifiques."
+    },
+    {
+      "question": "Si un ADN double brin contient 30% de Guanine, quel est le pourcentage d'Adénine ?",
+      "options": [
+        {"id": "a", "text": "20%"},
+        {"id": "b", "text": "30%"},
+        {"id": "c", "text": "40%"},
+        {"id": "d", "text": "70%"}
+      ],
+      "correct": "a",
+      "explanation": "Si %G = 30%, alors %C = 30% (règle de Chargaff). Donc %G + %C = 60%. Il reste 40% pour %A + %T. Comme %A = %T, alors %A = 20%."
+    },
+    {
+      "question": "Pourquoi l'ARN est-il moins stable que l'ADN ?",
+      "options": [
+        {"id": "a", "text": "Il est plus court"},
+        {"id": "b", "text": "Le ribose a un OH en 2' réactif"},
+        {"id": "c", "text": "Il n'a pas de bases"},
+        {"id": "d", "text": "Il est simple brin"}
+      ],
+      "correct": "b",
+      "explanation": "L'OH en 2' du ribose rend l'ARN plus réactif et sensible à l'hydrolyse alcaline. L'ADN (désoxyribose sans OH en 2') est plus stable."
+    },
+    {
+      "question": "La polarité d'un brin d'ADN est définie par :",
+      "options": [
+        {"id": "a", "text": "La présence de bases"},
+        {"id": "b", "text": "Une extrémité 5' (phosphate) et une extrémité 3' (OH)"},
+        {"id": "c", "text": "La longueur du brin"},
+        {"id": "d", "text": "Le nombre de liaisons H"}
+      ],
+      "correct": "b",
+      "explanation": "Un brin d'ADN a une polarité : extrémité 5' (phosphate libre) et extrémité 3' (OH libre). La synthèse se fait toujours dans le sens 5' → 3'."
+    },
+    {
+      "question": "Les deux brins de l'ADN sont :",
+      "options": [
+        {"id": "a", "text": "Parallèles"},
+        {"id": "b", "text": "Antiparallèles"},
+        {"id": "c", "text": "Identiques"},
+        {"id": "d", "text": "Indépendants"}
+      ],
+      "correct": "b",
+      "explanation": "Les deux brins sont antiparallèles : l'un va de 5'→3', l'autre de 3'→5'. C'est essentiel pour la complémentarité des bases."
+    },
+    {
+      "question": "La température de fusion (Tm) d'un ADN dépend de :",
+      "options": [
+        {"id": "a", "text": "Sa longueur uniquement"},
+        {"id": "b", "text": "Sa teneur en GC (3 liaisons H)"},
+        {"id": "c", "text": "Sa teneur en A=T uniquement"},
+        {"id": "d", "text": "Son pH uniquement"}
+      ],
+      "correct": "b",
+      "explanation": "Plus un ADN est riche en paires G≡C (3 liaisons H), plus sa Tm est élevée. Les paires A=T (2 liaisons H) sont moins stables."
+    },
+    {
+      "question": "L'histone H1 a pour rôle de :",
+      "options": [
+        {"id": "a", "text": "Former le cœur du nucléosome"},
+        {"id": "b", "text": "Stabiliser l'ADN linker entre les nucléosomes"},
+        {"id": "c", "text": "Catalyser la réplication"},
+        {"id": "d", "text": "Lier l'ARN polymérase"}
+      ],
+      "correct": "b",
+      "explanation": "L'histone H1 (histone de liaison) se fixe sur l'ADN linker (~50 pb) entre les nucléosomes et stabilise la structure en 'collier de perles'."
+    },
+    {
+      "question": "La structure en 'collier de perles' correspond à :",
+      "options": [
+        {"id": "a", "text": "Un chromosome métaphasique"},
+        {"id": "b", "text": "Des nucléosomes alignés le long de l'ADN"},
+        {"id": "c", "text": "Des ribosomes sur l'ARNm"},
+        {"id": "d", "text": "Des protéines sur le cytosquelette"}
+      ],
+      "correct": "b",
+      "explanation": "Les nucléosomes (11 nm) ressemblent à des perles enfilées sur un fil d'ADN. C'est le premier niveau de compaction (×7)."
+    },
+    {
+      "question": "Le wobble (balancement) concerne :",
+      "options": [
+        {"id": "a", "text": "La réplication de l'ADN"},
+        {"id": "b", "text": "L'appariement codon-anticodon (3ème base du codon)"},
+        {"id": "c", "text": "La structure de l'ADN"},
+        {"id": "d", "text": "La division cellulaire"}
+      ],
+      "correct": "b",
+      "explanation": "Le wobble permet à la 3ème base du codon de former des appariements non canoniques avec la 1ère base de l'anticodon. Cela explique la dégénérescence du code génétique."
+    },
+    {
+      "question": "L'ARNm eucaryote subit une maturation comprenant :",
+      "options": [
+        {"id": "a", "text": "Réplication et transcription"},
+        {"id": "b", "text": "Coiffe 5', queue poly-A 3', épissage"},
+        {"id": "c", "text": "Traduction et repliement"},
+        {"id": "d", "text": "Méthylation uniquement"}
+      ],
+      "correct": "b",
+      "explanation": "L'ARNm eucaryote subit 3 modifications : coiffe en 5' (7-méthylguanosine), queue poly-A en 3' (signal AAUAAA), et épissage (élimination des introns)."
+    },
+    {
+      "question": "Les introns sont :",
+      "options": [
+        {"id": "a", "text": "Des séquences codantes conservées dans l'ARNm mature"},
+        {"id": "b", "text": "Des séquences non codantes éliminées par épissage"},
+        {"id": "c", "text": "Des promoteurs"},
+        {"id": "d", "text": "Des codons start"}
+      ],
+      "correct": "b",
+      "explanation": "Les introns = séquences non codantes éliminées lors de l'épissage. Les exons = séquences codantes conservées et ligaturées."
+    },
+    {
+      "question": "L'épissage est réalisé par :",
+      "options": [
+        {"id": "a", "text": "L'ARN polymérase"},
+        {"id": "b", "text": "Le ribosome"},
+        {"id": "c", "text": "Le spliceosome (snRNP)"},
+        {"id": "d", "text": "L'ADN ligase"}
+      ],
+      "correct": "c",
+      "explanation": "Le spliceosome (complexe de snARN + protéines = snRNP) réalise l'épissage en reconnaissant les séquences consensus GU-AG aux jonctions intron-exon."
+    },
+    {
+      "question": "L'expérience de Meselson-Stahl (1958) a utilisé :",
+      "options": [
+        {"id": "a", "text": "Des radioisotopes (³²P)"},
+        {"id": "b", "text": "De l'azote lourd (¹⁵N) et léger (¹⁴N)"},
+        {"id": "c", "text": "Des colorants fluorescents"},
+        {"id": "d", "text": "Des enzymes de restriction"}
+      ],
+      "correct": "b",
+      "explanation": "Meselson-Stahl ont cultivé E. coli dans un milieu contenant de l'azote lourd (¹⁵N) puis l'ont transféré dans un milieu léger (¹⁴N). La centrifugation en gradient de densité a montré des bandes intermédiaires, prouvant le modèle semi-conservatif."
+    },
+    {
+      "question": "La topoisomérase a pour rôle de :",
+      "options": [
+        {"id": "a", "text": "Synthétiser l'ADN"},
+        {"id": "b", "text": "Relâcher la tension de superenroulement en amont de la fourche"},
+        {"id": "c", "text": "Éliminer les amorces ARN"},
+        {"id": "d", "text": "Lier les fragments d'Okazaki"}
+      ],
+      "correct": "b",
+      "explanation": "La topoisomérase (ADN gyrase chez les procaryotes) coupe temporairement un brin d'ADN pour relâcher la tension de superenroulement accumulée en amont de la fourche de réplication."
+    },
+    {
+      "question": "Le brin avancé est synthétisé de manière :",
+      "options": [
+        {"id": "a", "text": "Discontinue"},
+        {"id": "b", "text": "Continue"},
+        {"id": "c", "text": "Alternée"},
+        {"id": "d", "text": "Inverse"}
+      ],
+      "correct": "b",
+      "explanation": "Le brin avancé (leading strand) est synthétisé de manière continue dans le sens de la fourche de réplication, car l'ADN polymérase peut suivre l'hélicase."
+    },
+    {
+      "question": "Pourquoi la réplication est-elle discontinue sur le brin retardé ?",
+      "options": [
+        {"id": "a", "text": "Parce que l'ADN polymérase est lente"},
+        {"id": "b", "text": "Parce que les brins sont antiparallèles et que la synthèse se fait en 5'→3'"},
+        {"id": "c", "text": "Parce que le brin retardé est plus court"},
+        {"id": "d", "text": "Parce qu'il y a moins de nucléotides"}
+      ],
+      "correct": "b",
+      "explanation": "Les brins sont antiparallèles et l'ADN polymérase synthétise uniquement en 5'→3'. Sur le brin orienté 5'→3' (brin retardé), la synthèse doit se faire par fragments (Okazaki) en s'éloignant de la fourche."
+    },
+    {
+      "question": "L'ADN polymérase I a pour rôle principal de :",
+      "options": [
+        {"id": "a", "text": "Synthétiser le brin avancé"},
+        {"id": "b", "text": "Éliminer les amorces ARN et les remplacer par de l'ADN"},
+        {"id": "c", "text": "Ouvrir la double hélice"},
+        {"id": "d", "text": "Relier les fragments"}
+      ],
+      "correct": "b",
+      "explanation": "L'ADN polymérase I (procaryotes) possède une activité exonucléase 5'→3' qui élimine les amorces ARN et une activité polymérase qui les remplace par de l'ADN."
+    },
+    {
+      "question": "L'activité proofreading de l'ADN polymérase correspond à :",
+      "options": [
+        {"id": "a", "text": "Une activité polymérase 5'→3'"},
+        {"id": "b", "text": "Une activité exonucléase 3'→5' (correction d'erreurs)"},
+        {"id": "c", "text": "Une activité hélicase"},
+        {"id": "d", "text": "Une activité ligase"}
+      ],
+      "correct": "b",
+      "explanation": "L'activité proofreading = exonucléase 3'→5'. L'ADN polymérase peut revenir en arrière et exciser un nucléotide mal apparié avant de continuer la synthèse."
+    },
+    {
+      "question": "La télomérase est une :",
+      "options": [
+        {"id": "a", "text": "ADN polymérase classique"},
+        {"id": "b", "text": "Reverse transcriptase (ARN-dépendante)"},
+        {"id": "c", "text": "ARN polymérase"},
+        {"id": "d", "text": "ADN ligase"}
+      ],
+      "correct": "b",
+      "explanation": "La télomérase est une ribonucléoprotéine contenant un ARN matrice et une activité reverse transcriptase (TERT). Elle utilise son propre ARN comme matrice pour ajouter des répétitions télomériques."
+    },
+    {
+      "question": "Chez les eucaryotes, la réplication est :",
+      "options": [
+        {"id": "a", "text": "Unidirectionnelle à partir d'une seule origine"},
+        {"id": "b", "text": "Bidirectionnelle à partir de multiples origines"},
+        {"id": "c", "text": "Aléatoire"},
+        {"id": "d", "text": "Absente"}
+      ],
+      "correct": "b",
+      "explanation": "Chez les eucaryotes, la réplication est bidirectionnelle à partir de multiples origines de réplication (des milliers par chromosome), car les chromosomes sont très longs."
+    },
+    {
+      "question": "Les fragments d'Okazaki chez les eucaryotes mesurent :",
+      "options": [
+        {"id": "a", "text": "10-20 nt"},
+        {"id": "b", "text": "100-200 nt"},
+        {"id": "c", "text": "1000-2000 nt"},
+        {"id": "d", "text": "10 000-20 000 nt"}
+      ],
+      "correct": "b",
+      "explanation": "Les fragments d'Okazaki mesurent 1000-2000 nt chez les procaryotes et 100-200 nt chez les eucaryotes (plus courts car la réplication est plus lente et plus régulée)."
+    },
+    {
+      "question": "Le taux d'erreur de la réplication est d'environ :",
+      "options": [
+        {"id": "a", "text": "1 erreur pour 100 nt"},
+        {"id": "b", "text": "1 erreur pour 10 000 nt"},
+        {"id": "c", "text": "1 erreur pour 10⁶ nt"},
+        {"id": "d", "text": "1 erreur pour 10⁹ à 10¹⁰ nt"}
+      ],
+      "correct": "d",
+      "explanation": "Le taux d'erreur final est extrêmement faible (~10⁻⁹ à 10⁻¹⁰) grâce à la sélectivité de l'ADN polymérase, au proofreading et au système de réparation des mésappariements."
+    },
+    {
+      "question": "La pince β (clamp) a pour rôle de :",
+      "options": [
+        {"id": "a", "text": "Couper l'ADN"},
+        {"id": "b", "text": "Maintenir l'ADN polymérase sur l'ADN (augmenter la processivité)"},
+        {"id": "c", "text": "Ouvrir la double hélice"},
+        {"id": "d", "text": "Synthétiser les amorces"}
+      ],
+      "correct": "b",
+      "explanation": "La pince β (homodimère) entoure l'ADN et maintient l'ADN polymérase III sur le template, augmentant sa processivité de ~15 nt à ~50 000 nt."
+    },
+    {
+      "question": "Le système de réparation des mésappariements (Mismatch Repair) agit :",
+      "options": [
+        {"id": "a", "text": "Pendant la réplication"},
+        {"id": "b", "text": "Juste après la réplication"},
+        {"id": "c", "text": "Avant la réplication"},
+        {"id": "d", "text": "Uniquement pendant la mitose"}
+      ],
+      "correct": "b",
+      "explanation": "Le Mismatch Repair corrige les erreurs échappant au proofreading juste après la réplication. Il distingue le brin parental (méthylé) du brin néosynthétisé (non méthylé) chez les procaryotes."
+    },
+    {
+      "question": "Le promoteur est une séquence d'ADN située :",
+      "options": [
+        {"id": "a", "text": "En aval du gène (après le gène)"},
+        {"id": "b", "text": "En amont du gène (avant le gène)"},
+        {"id": "c", "text": "À l'intérieur du gène"},
+        {"id": "d", "text": "Dans l'ARNm mature"}
+      ],
+      "correct": "b",
+      "explanation": "Le promoteur est situé en amont du gène (en 5' du brin non transcrit). Il est reconnu par l'ARN polymérase et les facteurs de transcription pour initier la transcription."
+    },
+    {
+      "question": "Chez les procaryotes, le promoteur contient deux séquences consensus :",
+      "options": [
+        {"id": "a", "text": "TATA box et CAAT box"},
+        {"id": "b", "text": "Boîte de Pribnow (-10) et région -35"},
+        {"id": "c", "text": "Shine-Dalgarno et Kozak"},
+        {"id": "d", "text": "Intron et exon"}
+      ],
+      "correct": "b",
+      "explanation": "Chez les procaryotes, le promoteur contient la boîte de Pribnow en -10 (TATAAT) et une région en -35 (TTGACA). Chez les eucaryotes, on trouve la TATA box en -25."
+    },
+    {
+      "question": "Le facteur TFIID reconnaît la boîte TATA chez les eucaryotes. Il contient :",
+      "options": [
+        {"id": "a", "text": "Une ARN polymérase"},
+        {"id": "b", "text": "La TBP (TATA-binding protein)"},
+        {"id": "c", "text": "Une hélicase"},
+        {"id": "d", "text": "Une ligase"}
+      ],
+      "correct": "b",
+      "explanation": "TFIID contient la TBP (TATA-binding protein) qui reconnaît spécifiquement la séquence TATAAA de la boîte TATA. C'est la première étape de l'assemblage du complexe de pré-initiation."
+    },
+    {
+      "question": "Le facteur TFIIH possède deux activités enzymatiques :",
+      "options": [
+        {"id": "a", "text": "Polymérase et ligase"},
+        {"id": "b", "text": "Hélicase et kinase"},
+        {"id": "c", "text": "Exonucléase et primase"},
+        {"id": "d", "text": "Topoisomérase et méthylase"}
+      ],
+      "correct": "b",
+      "explanation": "TFIIH a une activité hélicase (ouvre l'ADN) et une activité kinase (phosphoryle la queue CTD de l'ARN Pol II pour lancer l'élongation)."
+    },
+    {
+      "question": "L'ARN polymérase II possède une queue CTD (C-terminal domain) qui est :",
+      "options": [
+        {"id": "a", "text": "Une séquence d'ADN"},
+        {"id": "b", "text": "Une région riche en répétitions Tyr-Ser-Pro-Thr-Ser-Ser-Pro phosphorylable"},
+        {"id": "c", "text": "Un promoteur"},
+        {"id": "d", "text": "Un intron"}
+      ],
+      "correct": "b",
+      "explanation": "La queue CTD de l'ARN Pol II contient des répétitions de l'heptapeptide YSPTSPS. Sa phosphorylation par TFIIH permet le passage de l'initiation à l'élongation."
+    },
+    {
+      "question": "Le signal de polyadénylation dans l'ARNm eucaryote est :",
+      "options": [
+        {"id": "a", "text": "TATAAA"},
+        {"id": "b", "text": "AAUAAA"},
+        {"id": "c", "text": "AUG"},
+        {"id": "d", "text": "UAA, UAG, UGA"}
+      ],
+      "correct": "b",
+      "explanation": "Le signal de polyadénylation = AAUAAA (en ARN). Il est reconnu par le complexe CPSF qui clive l'ARN et permet l'ajout de la queue poly-A."
+    },
+    {
+      "question": "Les introns sont éliminés par le spliceosome, qui reconnaît des séquences consensus aux jonctions intron-exon :",
+      "options": [
+        {"id": "a", "text": "AUG en 5' et UAA en 3'"},
+        {"id": "b", "text": "GU en 5' de l'intron et AG en 3' de l'intron"},
+        {"id": "c", "text": "TATA en 5' et poly-A en 3'"},
+        {"id": "d", "text": "Shine-Dalgarno en 5' et Kozak en 3'"}
+      ],
+      "correct": "b",
+      "explanation": "Le spliceosome reconnaît GU en 5' de l'intron (site donneur), AG en 3' de l'intron (site accepteur), et un site de branchement avec un A. Ces séquences sont indispensables à l'épissage."
+    },
+    {
+      "question": "L'épissage alternatif permet :",
+      "options": [
+        {"id": "a", "text": "D'éliminer tous les exons"},
+        {"id": "b", "text": "À un seul gène de produire plusieurs protéines différentes en combinant les exons de diverses manières"},
+        {"id": "c", "text": "De transformer l'ADN en ARN"},
+        {"id": "d", "text": "De répliquer l'ADN"}
+      ],
+      "correct": "b",
+      "explanation": "L'épissage alternatif = mécanisme permettant de sélectionner différents exons lors de la maturation de l'ARNm. C'est une source majeure de diversité protéique chez les eucaryotes."
+    },
+    {
+      "question": "Chez les procaryotes, la terminaison de la transcription peut être :",
+      "options": [
+        {"id": "a", "text": "Uniquement rho-dépendante"},
+        {"id": "b", "text": "Uniquement rho-indépendante"},
+        {"id": "c", "text": "Rho-dépendante ou rho-indépendante (intrinsèque)"},
+        {"id": "d", "text": "Dépendante de la queue poly-A"}
+      ],
+      "correct": "c",
+      "explanation": "Chez les procaryotes, il existe 2 types de terminaison : rho-indépendante (structure en tige-boucle + série de U) et rho-dépendante (protéine Rho qui remonte l'ARN et déstabilise le complexe)."
+    },
+    {
+      "question": "Le brin transcrit (brin matrice) est lu par l'ARN polymérase dans le sens :",
+      "options": [
+        {"id": "a", "text": "5' → 3'"},
+        {"id": "b", "text": "3' → 5'"},
+        {"id": "c", "text": "Bidirectionnel"},
+        {"id": "d", "text": "Aléatoire"}
+      ],
+      "correct": "b",
+      "explanation": "L'ARN polymérase lit le brin matrice dans le sens 3' → 5' et synthétise l'ARN dans le sens 5' → 3'. Le brin non transcrit (brin codant) a la même séquence que l'ARN (sauf T → U)."
+    },
+    {
+      "question": "L'ARN polymérase, contrairement à l'ADN polymérase :",
+      "options": [
+        {"id": "a", "text": "A besoin d'une amorce pour initier la synthèse"},
+        {"id": "b", "text": "N'a pas besoin d'amorce pour initier la synthèse"},
+        {"id": "c", "text": "Synthétise dans le sens 3' → 5'"},
+        {"id": "d", "text": "Ne peut pas lire l'ADN"}
+      ],
+      "correct": "b",
+      "explanation": "L'ARN polymérase peut initier la synthèse de novo (sans amorce), contrairement à l'ADN polymérase qui nécessite une amorce (ARN ou ADN) avec une extrémité 3'-OH libre."
+    },
+    {
+      "question": "Les ARNr (ARN ribosomiques) sont synthétisés par :",
+      "options": [
+        {"id": "a", "text": "ARN Pol I (28S, 18S, 5.8S) et ARN Pol III (5S)"},
+        {"id": "b", "text": "ARN Pol II uniquement"},
+        {"id": "c", "text": "La primase"},
+        {"id": "d", "text": "L'ADN polymérase"}
+      ],
+      "correct": "a",
+      "explanation": "L'ARN Pol I synthétise les ARNr 28S, 18S et 5.8S (dans le nucléole). L'ARN Pol III synthétise l'ARNr 5S (dans le nucléoplasme)."
+    },
+    {
+      "question": "L'aminoacyl-ARNt synthétase a pour rôle de :",
+      "options": [
+        {"id": "a", "text": "Synthétiser l'ARNm"},
+        {"id": "b", "text": "Attacher l'acide aminé correct à son ARNt"},
+        {"id": "c", "text": "Cliver les introns"},
+        {"id": "d", "text": "Lier les fragments d'Okazaki"}
+      ],
+      "correct": "b",
+      "explanation": "L'aminoacyl-ARNt synthétase 'charge' l'ARNt avec l'acide aminé correct. Il existe 20 synthétases (une par acide aminé). La fidélité de cette étape est cruciale."
     },
     {
       "question": "La séquence de Shine-Dalgarno chez les procaryotes sert à :",
-      "options": ["Terminer la traduction", "Positionner le ribosome sur le codon start", "Éliminer les introns", "Ajouter la coiffe"],
-      "correct": 1,
-      "explanation": "Complémentaire de l'ARNr 16S, elle guide le ribosome vers le codon AUG start."
+      "options": [
+        {"id": "a", "text": "Terminer la traduction"},
+        {"id": "b", "text": "Positionner le ribosome sur le codon start"},
+        {"id": "c", "text": "Éliminer les introns"},
+        {"id": "d", "text": "Ajouter la coiffe"}
+      ],
+      "correct": "b",
+      "explanation": "La séquence de Shine-Dalgarno (complémentaire de l'ARNr 16S) permet de positionner correctement le ribosome sur le codon AUG start chez les procaryotes."
     },
     {
-      "question": "Le signal KDEL sert à :",
-      "options": ["Exporter les protéines", "Récupérer les protéines résidentes du RE ayant fui vers le Golgi", "Cibler vers les lysosomes", "Marquer pour la dégradation"],
-      "correct": 1,
-      "explanation": "KDEL = signal de rétention/récupération des protéines du RE via le transport rétrograde COP I."
+      "question": "L'initiation de la traduction chez les eucaryotes commence par :",
+      "options": [
+        {"id": "a", "text": "La reconnaissance de la séquence de Shine-Dalgarno"},
+        {"id": "b", "text": "La reconnaissance de la coiffe 5' par le ribosome"},
+        {"id": "c", "text": "La liaison directe au codon AUG"},
+        {"id": "d", "text": "L'ajout de la queue poly-A"}
+      ],
+      "correct": "b",
+      "explanation": "Chez les eucaryotes, la petite sous-unité ribosomale reconnaît la coiffe 5' et 'scanne' l'ARNm jusqu'au premier codon AUG. Chez les procaryotes, c'est la séquence de Shine-Dalgarno qui guide le ribosome."
     },
     {
-      "question": "Les filaments intermédiaires se distinguent par :",
-      "options": ["Leur polarité marquée", "L'absence de polarité (antiparallèle)", "Leur diamètre de 25 nm", "Leur utilisation d'ATP"],
-      "correct": 1,
-      "explanation": "Tétramères antiparallèles → pas de polarité. Grande résistance mécanique."
+      "question": "Les facteurs d'élongation EF-Tu (procaryotes) et eEF1 (eucaryotes) ont pour rôle de :",
+      "options": [
+        {"id": "a", "text": "Catalyser la liaison peptidique"},
+        {"id": "b", "text": "Amener l'aminoacyl-ARNt au site A du ribosome"},
+        {"id": "c", "text": "Effectuer la translocation"},
+        {"id": "d", "text": "Libérer la protéine"}
+      ],
+      "correct": "b",
+      "explanation": "EF-Tu/eEF1 (avec GTP) amène l'aminoacyl-ARNt au site A du ribosome. EF-G/eEF2 catalyse la translocation. La peptidyl transférase catalyse la liaison peptidique."
     },
     {
-      "question": "La coiffe en 5' de l'ARNm est constituée de :",
-      "options": ["Poly-A", "7-méthylguanosine", "Introns", "Exons"],
-      "correct": 1,
-      "explanation": "7-méthylguanosine liée par liaison 5'-5' triphosphate. Protège l'ARNm et reconnue par les ribosomes."
+      "question": "La translocation est catalysée par :",
+      "options": [
+        {"id": "a", "text": "EF-Tu"},
+        {"id": "b", "text": "EF-G (procaryotes) ou eEF2 (eucaryotes)"},
+        {"id": "c", "text": "La peptidyl transférase"},
+        {"id": "d", "text": "Les facteurs de libération"}
+      ],
+      "correct": "b",
+      "explanation": "EF-G (procaryotes) ou eEF2 (eucaryotes) catalyse la translocation : le ribosome avance d'un codon (3 nt) vers l'extrémité 3' de l'ARNm, consommant du GTP."
     },
     {
-      "question": "Le centrosome contient :",
-      "options": ["De l'actine", "2 centrioles (9+0) + matériel péricentriolaire (γ-tubuline)", "Des kératines", "De la myosine"],
-      "correct": 1,
-      "explanation": "Le PCM contient la γ-tubuline qui nucléent les microtubules. Les centrioles ont une structure 9+0."
+      "question": "Les facteurs de libération RF1 et RF2 (procaryotes) reconnaissent respectivement :",
+      "options": [
+        {"id": "a", "text": "RF1 : UAA et UAG ; RF2 : UAA et UGA"},
+        {"id": "b", "text": "RF1 : UAG et UGA ; RF2 : UAA et UAG"},
+        {"id": "c", "text": "RF1 : AUG ; RF2 : UAA"},
+        {"id": "d", "text": "RF1 : UAA ; RF2 : UAG"}
+      ],
+      "correct": "a",
+      "explanation": "RF1 reconnaît UAA et UAG. RF2 reconnaît UAA et UGA. RF3 (avec GTP) stimule l'activité de RF1 et RF2."
     },
     {
-      "question": "La translocation lors de la traduction est catalysée par :",
-      "options": ["EF-Tu", "EF-G (procaryotes) / eEF2 (eucaryotes)", "La peptidyl transférase", "Les facteurs de libération"],
-      "correct": 1,
-      "explanation": "EF-G/eEF2 fait avancer le ribosome d'un codon (3 nt) vers l'extrémité 3', consommant du GTP."
+      "question": "Un ARNt possède une structure secondaire en :",
+      "options": [
+        {"id": "a", "text": "Double hélice"},
+        {"id": "b", "text": "Feuille de trèfle"},
+        {"id": "c", "text": "Helice alpha"},
+        {"id": "d", "text": "Feuille beta"}
+      ],
+      "correct": "b",
+      "explanation": "L'ARNt a une structure secondaire en feuille de trèfle et une structure tertiaire en L. Il possède une boucle anticodon et une extrémité 3' CCA où se fixe l'acide aminé."
     },
     {
-      "question": "Les peroxysomes réalisent :",
-      "options": ["La synthèse d'ATP", "La β-oxydation des acides gras à très longue chaîne et la détoxification du H₂O₂", "La dégradation des protéines", "La synthèse des lipides"],
-      "correct": 1,
-      "explanation": "Catalase : 2 H₂O₂ → 2 H₂O + O₂. β-oxydation des AG à très longue chaîne (>20C)."
+      "question": "Le codon AUG code pour :",
+      "options": [
+        {"id": "a", "text": "La valine"},
+        {"id": "b", "text": "La méthionine"},
+        {"id": "c", "text": "La leucine"},
+        {"id": "d", "text": "La sérine"}
+      ],
+      "correct": "b",
+      "explanation": "AUG code pour la méthionine (Met). C'est aussi le codon start (initiation). Chez les procaryotes, c'est la formyl-méthionine (fMet)."
+    },
+    {
+      "question": "La liaison peptidique se forme entre :",
+      "options": [
+        {"id": "a", "text": "Le groupe amino d'un AA et le groupe carboxyle du suivant"},
+        {"id": "b", "text": "Le groupe carboxyle d'un AA et le groupe amino du suivant"},
+        {"id": "c", "text": "Deux groupes amino"},
+        {"id": "d", "text": "Deux groupes carboxyle"}
+      ],
+      "correct": "b",
+      "explanation": "La liaison peptidique se forme entre le groupe carboxyle (-COOH) de l'acide aminé au site P et le groupe amino (-NH2) de l'acide aminé au site A, avec libération d'eau."
+    },
+    {
+      "question": "Les modifications post-traductionnelles incluent :",
+      "options": [
+        {"id": "a", "text": "Réplication et transcription"},
+        {"id": "b", "text": "Repliement, clivage, glycosylation, phosphorylation"},
+        {"id": "c", "text": "Épissage et coiffe"},
+        {"id": "d", "text": "Traduction et maturation"}
+      ],
+      "correct": "b",
+      "explanation": "Les modifications post-traductionnelles = repliement (chaperonnes), clivage protéolytique, glycosylation, phosphorylation, acétylation, etc. Elles permettent à la protéine d'acquérir sa fonction."
+    },
+    {
+      "question": "La membrane externe du RE est en continuité avec :",
+      "options": [
+        {"id": "a", "text": "La membrane plasmique"},
+        {"id": "b", "text": "La membrane externe de l'enveloppe nucléaire"},
+        {"id": "c", "text": "La membrane mitochondriale"},
+        {"id": "d", "text": "L'appareil de Golgi"}
+      ],
+      "correct": "b",
+      "explanation": "La membrane externe de l'enveloppe nucléaire est en continuité avec le RE rugueux. L'espace péri-nucléaire communique avec la lumière du RE."
+    },
+    {
+      "question": "Les pores nucléaires permettent :",
+      "options": [
+        {"id": "a", "text": "La synthèse d'ADN"},
+        {"id": "b", "text": "Les échanges entre noyau et cytoplasme (ARN, protéines)"},
+        {"id": "c", "text": "La division cellulaire"},
+        {"id": "d", "text": "La photosynthèse"}
+      ],
+      "correct": "b",
+      "explanation": "Les pores nucléaires (complexes NPC) contrôlent les échanges noyau/cytoplasme : export des ARNm, ARNr, ARNt ; import des protéines nucléaires (histones, ADN polymérases, facteurs de transcription)."
+    },
+    {
+      "question": "L'hétérochromatine est :",
+      "options": [
+        {"id": "a", "text": "Décondensée et transcriptionnellement active"},
+        {"id": "b", "text": "Condensée et transcriptionnellement inactive"},
+        {"id": "c", "text": "Absente du noyau"},
+        {"id": "d", "text": "Constituée d'ARN"}
+      ],
+      "correct": "b",
+      "explanation": "L'hétérochromatine = forme condensée de l'ADN, transcriptionnellement inactive, située en périphérie du noyau. L'euchromatine = décondensée et active, au centre du noyau."
+    },
+    {
+      "question": "Le peptide signal d'adressage au RE est :",
+      "options": [
+        {"id": "a", "text": "Une séquence de 50-100 acides aminés hydrophiles"},
+        {"id": "b", "text": "Une séquence de 16-30 acides aminés hydrophobes en N-terminal"},
+        {"id": "c", "text": "Une séquence en C-terminal"},
+        {"id": "d", "text": "Une séquence de sucres"}
+      ],
+      "correct": "b",
+      "explanation": "Le peptide signal = 16-30 acides aminés hydrophobes en N-terminal de la protéine en synthèse. Il est reconnu par la SRP (Signal Recognition Particle) qui guide le ribosome vers le RE."
     },
     {
       "question": "La N-glycosylation dans le RE se fait sur :",
-      "options": ["Le OH d'une sérine", "Le NH₂ d'une asparagine (Asn-X-Ser/Thr)", "Le COOH d'un glutamate", "Le SH d'une cystéine"],
-      "correct": 1,
-      "explanation": "L'oligosaccharide est transféré en bloc depuis le dolichol-PP sur l'azote d'une asparagine."
+      "options": [
+        {"id": "a", "text": "Le groupement OH d'une sérine"},
+        {"id": "b", "text": "Le groupement NH₂ d'une asparagine (séquence Asn-X-Ser/Thr)"},
+        {"id": "c", "text": "Le groupement COOH d'un acide glutamique"},
+        {"id": "d", "text": "Le groupement SH d'une cystéine"}
+      ],
+      "correct": "b",
+      "explanation": "La N-glycosylation = ajout d'un oligosaccharide sur l'azote d'une asparagine dans la séquence Asn-X-Ser/Thr. L'oligosaccharide est transféré en bloc depuis le dolichol-pyrophosphate."
     },
     {
-      "question": "Si on traite des cellules avec du taxol, à quelle phase de la mitose sont-elles bloquées ?",
-      "options": ["Prophase", "Métaphase", "Anaphase", "Télophase"],
-      "correct": 1,
-      "explanation": "Le taxol stabilise les microtubules → le fuseau ne peut pas se rétracter → blocage en métaphase."
+      "question": "La O-glycosylation dans le Golgi se fait sur :",
+      "options": [
+        {"id": "a", "text": "Le groupement NH₂ d'une asparagine"},
+        {"id": "b", "text": "Le groupement OH d'une sérine ou thréonine"},
+        {"id": "c", "text": "Le groupement COOH d'un acide aspartique"},
+        {"id": "d", "text": "Le groupement SH d'une méthionine"}
+      ],
+      "correct": "b",
+      "explanation": "La O-glycosylation = ajout progressif d'oses sur le groupement OH d'une sérine ou thréonine. Elle débute dans les saccules médians du Golgi et produit des chaînes plus courtes que les N-glycanes."
     },
     {
-      "question": "Un antibiotique ciblant les ribosomes 70S affectera :",
-      "options": ["Uniquement les bactéries", "Les bactéries ET les mitochondries des eucaryotes", "Uniquement les eucaryotes", "Toutes les cellules"],
-      "correct": 1,
-      "explanation": "Ribosomes 70S = bactéries + mitochondries (origine endosymbiotique)."
+      "question": "Les vésicules COP II transportent les protéines :",
+      "options": [
+        {"id": "a", "text": "Du Golgi vers le RE (rétrograde)"},
+        {"id": "b", "text": "Du RE vers le Golgi (antérograde)"},
+        {"id": "c", "text": "Du Golgi vers les lysosomes"},
+        {"id": "d", "text": "De la membrane plasmique vers les endosomes"}
+      ],
+      "correct": "b",
+      "explanation": "COP II = transport antérograde RE → Golgi (face cis). COP I = transport rétrograde Golgi → RE (récupération des protéines résidentes du RE, signal KDEL). Clathrine = Golgi → endosomes/lysosomes + endocytose."
     },
     {
-      "question": "L'hyperphosphorylation de Tau est observée dans :",
-      "options": ["Parkinson", "Alzheimer", "Sclérose en plaques", "Myasthénie"],
-      "correct": 1,
-      "explanation": "Tau hyperphosphorylée → se détache des microtubules → agrégats (enchevêtrements neurofibrillaires)."
+      "question": "Le signal KDEL sert à :",
+      "options": [
+        {"id": "a", "text": "Exporter les protéines hors de la cellule"},
+        {"id": "b", "text": "Récupérer les protéines résidentes du RE qui ont fui vers le Golgi"},
+        {"id": "c", "text": "Cibler les protéines vers les lysosomes"},
+        {"id": "d", "text": "Marquer les protéines pour la dégradation"}
+      ],
+      "correct": "b",
+      "explanation": "KDEL (Lys-Asp-Glu-Leu) = signal de rétention/récupération des protéines résidentes du RE (ex: BiP, PDI). Si une protéine KDEL arrive au Golgi, elle est reconnue par le récepteur KDEL et ramenée au RE via COP I."
     },
     {
-      "question": "Si on mute le site donneur d'épissage (GU → GC), que se passe-t-il ?",
-      "options": ["Rien", "L'intron n'est pas éliminé et reste dans l'ARNm mature", "L'exon suivant est éliminé", "L'ARNm est dégradé immédiatement"],
-      "correct": 1,
-      "explanation": "Le site GU en 5' de l'intron est essentiel pour le spliceosome. Sa mutation empêche l'épissage correct."
+      "question": "Le mannose-6-phosphate sert de signal pour :",
+      "options": [
+        {"id": "a", "text": "La sécrétion constitutive"},
+        {"id": "b", "text": "Le ciblage des enzymes vers les lysosomes"},
+        {"id": "c", "text": "L'export hors de la cellule"},
+        {"id": "d", "text": "La rétention dans le RE"}
+      ],
+      "correct": "b",
+      "explanation": "Le mannose-6-phosphate (M6P) = signal de tri des enzymes lysosomales. Ajouté dans le Golgi, il est reconnu par le récepteur M6P qui dirige les enzymes vers les endosomes/lysosomes."
     },
     {
-      "question": "Si on utilise un analogue sans 3'-OH (ex: AZT), que se passe-t-il ?",
-      "options": ["Rien", "La synthèse s'arrête (terminateur de chaîne)", "La réplication accélère", "Les amorces sont éliminées plus vite"],
-      "correct": 1,
-      "explanation": "Pas d'extrémité 3'-OH libre → impossible d'ajouter le nucléotide suivant → terminaison de chaîne."
+      "question": "Les protéines SNARE servent à :",
+      "options": [
+        {"id": "a", "text": "Synthétiser les protéines"},
+        {"id": "b", "text": "Assurer la spécificité et la fusion des vésicules avec leur membrane cible"},
+        {"id": "c", "text": "Dégrader les protéines"},
+        {"id": "d", "text": "Transporter les ions"}
+      ],
+      "correct": "b",
+      "explanation": "SNARE = v-SNARE (vésicule) + t-SNARE (cible). Elles s'enroulent pour former un complexe en trans-SNARE qui rapproche les membranes et provoque leur fusion. Les protéines Rab assurent le ciblage initial."
     },
     {
-      "question": "L'épidermolyse bulleuse simple est causée par une mutation des :",
-      "options": ["Microtubules", "Kératines 5 ou 14 (filaments intermédiaires)", "Actine", "Tubuline"],
-      "correct": 1,
-      "explanation": "Kératines 5/14 = FI des kératinocytes basaux. Mutation → peau fragile → bulles au moindre stress mécanique."
+      "question": "Les chaperonnes du RE (ex: BiP) ont pour rôle de :",
+      "options": [
+        {"id": "a", "text": "Dégrader les protéines mal repliées"},
+        {"id": "b", "text": "Aider au repliement correct des protéines"},
+        {"id": "c", "text": "Transporter les protéines vers le Golgi"},
+        {"id": "d", "text": "Glycosyler les protéines"}
+      ],
+      "correct": "b",
+      "explanation": "BiP (Hsp70 du RE) se lie provisoirement aux segments hydrophobes des protéines en synthèse pour favoriser leur repliement correct. Les protéines mal repliées sont exportées vers le cytosol et dégradées par les protéasomes (ERAD)."
     },
     {
-      "question": "Si on injecte de la cycloheximide dans une cellule eucaryote :",
-      "options": ["Rien", "Traduction cytoplasmique bloquée, mais traduction mitochondriale continue", "Toute traduction bloquée", "Transcription bloquée"],
-      "correct": 1,
-      "explanation": "Cycloheximide inhibe les ribosomes 80S (cytoplasmiques) mais pas les 70S (mitochondriaux)."
+      "question": "La β-oxydation des acides gras a lieu :",
+      "options": [
+        {"id": "a", "text": "Uniquement dans le RE"},
+        {"id": "b", "text": "Dans les peroxysomes (acides gras à très longue chaîne) et les mitochondries (acides gras à chaîne courte/moyenne)"},
+        {"id": "c", "text": "Uniquement dans le Golgi"},
+        {"id": "d", "text": "Dans le cytoplasme"}
+      ],
+      "correct": "b",
+      "explanation": "Les peroxysomes oxydent les acides gras à très longue chaîne (>20C) en acides gras à chaîne plus courte, qui sont ensuite transférés aux mitochondries pour la β-oxydation complète et la production d'ATP."
     },
     {
-      "question": "Si on traite des cellules avec de la tunicamycine :",
-      "options": ["Aucun effet", "Protéines non glycosylées → mal repliées → dégradées par ERAD", "Protéines sécrétées plus vite", "Lysosomes plus acides"],
-      "correct": 1,
-      "explanation": "Tunicamycine bloque la N-glycosylation → protéines mal repliées → export vers cytosol → dégradation par protéasome (ERAD)."
+      "question": "Les microtubules sont composés de combien de protofilaments ?",
+      "options": [
+        {"id": "a", "text": "9"},
+        {"id": "b", "text": "11"},
+        {"id": "c", "text": "13"},
+        {"id": "d", "text": "15"}
+      ],
+      "correct": "c",
+      "explanation": "Les microtubules = 13 protofilaments alignés parallèlement formant un tube creux de 25 nm de diamètre. Chaque protofilament = polymère linéaire d'hétérodimères α/β-tubuline."
     },
     {
-      "question": "Si on mute le récepteur M6P, que se passe-t-il ?",
-      "options": ["Rien", "Les enzymes lysosomales sont sécrétées hors de la cellule (mucolipidose II)", "Les lysosomes deviennent plus acides", "Le Golgi disparaît"],
-      "correct": 1,
-      "explanation": "Sans récepteur M6P, les enzymes lysosomales suivent la voie de sécrétion → lysosomes vides → accumulation de substrats."
+      "question": "La β-tubuline hydrolyse le GTP en GDP :",
+      "options": [
+        {"id": "a", "text": "Avant l'incorporation dans le microtubule"},
+        {"id": "b", "text": "Après l'incorporation dans le microtubule"},
+        {"id": "c", "text": "Jamais"},
+        {"id": "d", "text": "Uniquement lors de la dépolymérisation"}
+      ],
+      "correct": "b",
+      "explanation": "La β-tubuline lie le GTP avant incorporation. Après incorporation dans le microtubule, le GTP est hydrolysé en GDP. Ce 'capuchon' de GTP à l'extrémité (+) stabilise le microtubule. Si l'hydrolyse dépasse l'ajout, catastrophe (dépolymérisation rapide)."
     },
     {
-      "question": "Si on inhibe la SRP, que se passe-t-il ?",
-      "options": ["Rien", "Les protéines destinées au RE restent dans le cytoplasme", "Toutes les protéines sont sécrétées", "Le Golgi disparaît"],
-      "correct": 1,
-      "explanation": "Sans SRP, le peptide signal n'est pas reconnu → les protéines sont synthétisées dans le cytoplasme au lieu d'être transloquées dans le RE."
+      "question": "L'instabilité dynamique des microtubules correspond à :",
+      "options": [
+        {"id": "a", "text": "Une polymérisation lente et continue"},
+        {"id": "b", "text": "L'alternance rapide entre phases de croissance et de raccourcissement (catastrophe)"},
+        {"id": "c", "text": "Une dépolymérisation permanente"},
+        {"id": "d", "text": "Une stabilité absolue"}
+      ],
+      "correct": "b",
+      "explanation": "L'instabilité dynamique = alternance entre phases de croissance (ajout de dimères-GTP) et de catastrophe (dépolymérisation rapide après perte du capuchon GTP). Permet une réorganisation rapide du cytosquelette."
     },
     {
-      "question": "Si on inhibe EF-G avec une toxine, quelle étape de la traduction est bloquée ?",
-      "options": ["L'initiation", "La translocation (avancement du ribosome)", "La terminaison", "La formation de la liaison peptidique"],
-      "correct": 1,
-      "explanation": "EF-G catalyse la translocation (avancement du ribosome d'un codon). Son inhibition bloque cette étape."
+      "question": "La myosine II est impliquée dans :",
+      "options": [
+        {"id": "a", "text": "Le transport vésiculaire"},
+        {"id": "b", "text": "La contraction musculaire (interaction avec l'actine)"},
+        {"id": "c", "text": "La marche sur les microtubules"},
+        {"id": "d", "text": "La stabilisation des filaments intermédiaires"}
+      ],
+      "correct": "b",
+      "explanation": "La myosine II = myosine conventionnelle, responsable de la contraction musculaire (interaction actine-myosine). La myosine V = transport vésiculaire sur les microfilaments. Les kinésines/dynéines = transport sur microtubules."
     },
     {
-      "question": "Si on surexprime la télomérase dans des cellules somatiques normales :",
-      "options": ["Rien", "Les cellules deviennent immortelles (divisions infinies)", "Les cellules meurent immédiatement", "Les cellules se différencient"],
-      "correct": 1,
-      "explanation": "La surexpression de la télomérase maintient la longueur des télomères, évitant la sénescence réplicative."
+      "question": "Les MAPs (Microtubule-Associated Proteins) comme Tau ont pour rôle de :",
+      "options": [
+        {"id": "a", "text": "Dépolymériser les microtubules"},
+        {"id": "b", "text": "Stabiliser les microtubules"},
+        {"id": "c", "text": "Transporter des vésicules"},
+        {"id": "d", "text": "Synthétiser la tubuline"}
+      ],
+      "correct": "b",
+      "explanation": "Les MAPs (MAP2, Tau) se lient aux microtubules et les stabilisent. Tau est particulièrement abondant dans les axones. Son hyperphosphorylation (maladie d'Alzheimer) le détache des microtubules → dépolymérisation + agrégats (enchevêtrements neurofibrillaires)."
     },
     {
-      "question": "Si on mute la boîte TATA d'un gène eucaryote (TATAAA → TATATA) :",
-      "options": ["Aucune conséquence", "Diminution drastique de la transcription du gène", "Augmentation de la transcription", "Activation de l'ARN Pol I"],
-      "correct": 1,
-      "explanation": "La boîte TATA est essentielle pour le recrutement de TFIID et l'assemblage du complexe de pré-initiation."
+      "question": "Le matériel péricentriolaire (PCM) contient :",
+      "options": [
+        {"id": "a", "text": "De l'actine"},
+        {"id": "b", "text": "De la γ-tubuline (nucléation des microtubules)"},
+        {"id": "c", "text": "Des kératines"},
+        {"id": "d", "text": "De la myosine"}
+      ],
+      "correct": "b",
+      "explanation": "Le PCM = matériel amorphe entourant les centrioles dans le centrosome. Il contient la γ-tubuline (forme un anneau γ-TuRC qui sert de matrice pour la nucléation des microtubules) et des protéines d'ancrage (pericentrine, CDK5RAP2)."
     },
     {
-      "question": "Si on inhibe la topoisomérase avec de la novobiocine :",
-      "options": ["Rien", "La tension de superenroulement s'accumule et bloque la fourche de réplication", "L'ADN est coupé en fragments", "Les amorces ARN ne sont pas éliminées"],
-      "correct": 1,
-      "explanation": "Sans topoisomérase, la tension de superenroulement positive s'accumule en amont de la fourche et finit par bloquer l'avancée."
+      "question": "Les centrioles ont une structure :",
+      "options": [
+        {"id": "a", "text": "9 doublets de microtubules"},
+        {"id": "b", "text": "9 triplets de microtubules (structure 9+0)"},
+        {"id": "c", "text": "13 protofilaments"},
+        {"id": "d", "text": "9+2"}
+      ],
+      "correct": "b",
+      "explanation": "Les centrioles = cylindres de 9 triplets de microtubules (structure 9+0, sans microtubules centraux). Les cils/flagelles motiles = 9+2 (doublets + 2 centraux). Les cils primaires = 9+0 (comme les centrioles)."
     },
     {
-      "question": "Si on mute l'anticodon d'un ARNt (3'-UAC-5' → 3'-GAC-5') :",
-      "options": ["Rien", "L'ARNt ne peut plus se lier au ribosome", "L'ARNt apporte le mauvais acide aminé", "L'ARNt est dégradé immédiatement"],
-      "correct": 2,
-      "explanation": "L'anticodon détermine quel codon l'ARNt reconnaît. Sa mutation fait que l'ARNt apporte le mauvais acide aminé."
+      "question": "Les cils primaires (non motiles) ont pour fonction :",
+      "options": [
+        {"id": "a", "text": "La mobilité cellulaire"},
+        {"id": "b", "text": "La détection de signaux mécaniques et chimiques (antenne cellulaire)"},
+        {"id": "c", "text": "La contraction musculaire"},
+        {"id": "d", "text": "La division cellulaire"}
+      ],
+      "correct": "b",
+      "explanation": "Les cils primaires (structure 9+0, non motiles) = antennes cellulaires détectant les signaux mécaniques (flux urinaire) et chimiques (signalisation Hedgehog). Leurs dysfonctions = ciliopathies (polykystose rénale, syndrome de Bardet-Biedl)."
+    },
+    {
+      "question": "La plectine est une protéine qui :",
+      "options": [
+        {"id": "a", "text": "Dépolymérise l'actine"},
+        {"id": "b", "text": "Sert de protéine d'ancrage entre les différents réseaux du cytosquelette"},
+        {"id": "c", "text": "Transporte des vésicules"},
+        {"id": "d", "text": "Catalyse l'hydrolyse du GTP"}
+      ],
+      "correct": "b",
+      "explanation": "La plectine = protéine d'ancrage géante qui connecte les différents réseaux du cytosquelette (microfilaments, filaments intermédiaires, microtubules) entre eux et avec les desmosomes/hémidesmosomes."
+    },
+    {
+      "question": "Les desmosomes sont des jonctions cellulaires qui :",
+      "options": [
+        {"id": "a", "text": "Permettent le passage d'ions"},
+        {"id": "b", "text": "Ancrent les filaments intermédiaires entre cellules adjacentes"},
+        {"id": "c", "text": "Scellent hermétiquement les cellules"},
+        {"id": "d", "text": "Permettent la communication directe"}
+      ],
+      "correct": "b",
+      "explanation": "Les desmosomes = jonctions d'ancrage qui relient les filaments intermédiaires (kératines) de cellules adjacentes via des cadhérines (desmogléines, desmocollines). Résistance mécanique aux tensions."
+    },
+    {
+      "question": "La phalloïdine (toxine de l'amanite phalloïde) a pour effet de :",
+      "options": [
+        {"id": "a", "text": "Dépolymériser les microfilaments d'actine"},
+        {"id": "b", "text": "Stabiliser les microfilaments d'actine (empêche la dépolymérisation)"},
+        {"id": "c", "text": "Dépolymériser les microtubules"},
+        {"id": "d", "text": "Stabiliser les microtubules"}
+      ],
+      "correct": "b",
+      "explanation": "La phalloïdine se lie aux F-actine et stabilise les microfilaments (empêche la dépolymérisation). À l'inverse, la cytochalasine inhibe la polymérisation. Utilisée en recherche pour visualiser l'actine F (phalloïdine fluorescente)."
+    },
+    {
+      "question": "Le fuseau mitotique est constitué de :",
+      "options": [
+        {"id": "a", "text": "Microfilaments d'actine"},
+        {"id": "b", "text": "Microtubules"},
+        {"id": "c", "text": "Filaments intermédiaires"},
+        {"id": "d", "text": "Collagène"}
+      ],
+      "correct": "b",
+      "explanation": "Le fuseau mitotique = structure de microtubules qui sépare les chromosomes lors de la mitose. 3 types : kinétochoriens (attachés aux chromosomes), polaires (chevauchement central), astraux (ancrage à la membrane)."
     }
   ]
 }
