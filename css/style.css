@@ -2220,3 +2220,126 @@ QUIZ RAPIDE - OPTIONS DE RÉPONSE (FORCÉ)
         padding-left: 0 !important;
     }
 }
+
+/* ============================================
+SIDEBAR HOVER (Rétractable)
+============================================ */
+.sidebar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 60px; /* Largeur réduite par défaut (juste pour le logo/titre) */
+    background: var(--bg-secondary);
+    border-right: 1px solid var(--border);
+    transition: width 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    overflow: hidden;
+    z-index: 1000;
+    display: flex;
+    flex-direction: column;
+    padding: 1.5rem 0;
+}
+
+/* Déploiement au survol */
+.sidebar:hover {
+    width: 220px; /* Largeur déployée */
+    box-shadow: 4px 0 15px rgba(0, 0, 0, 0.1);
+}
+
+/* Gestion de l'apparition du texte (pour qu'il ne dépasse pas pendant l'animation) */
+.sidebar-title, 
+.sidebar-subtitle, 
+.sidebar-nav, 
+.sidebar-footer {
+    opacity: 0;
+    white-space: nowrap;
+    transition: opacity 0.2s ease;
+    transition-delay: 0s; /* Disparaît immédiatement quand on quitte */
+}
+
+/* Le texte réapparaît une fois la sidebar ouverte */
+.sidebar:hover .sidebar-title,
+.sidebar:hover .sidebar-subtitle,
+.sidebar:hover .sidebar-nav,
+.sidebar:hover .sidebar-footer {
+    opacity: 1;
+    transition-delay: 0.15s; /* Petit délai pour laisser la sidebar s'ouvrir d'abord */
+}
+
+/* Style spécifique pour que le titre "BMC" reste centré quand c'est fermé */
+.sidebar-title {
+    font-size: 1.5rem;
+    font-weight: 800;
+    color: var(--accent);
+    text-align: center;
+    margin-bottom: 0.5rem;
+    padding: 0 10px;
+}
+
+.sidebar-subtitle {
+    padding: 0 15px;
+    font-size: 0.85rem;
+    color: var(--text-secondary);
+    margin-bottom: 2rem;
+    line-height: 1.4;
+}
+
+.sidebar-nav {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    padding: 0 15px;
+    flex: 1;
+}
+
+.sidebar-link {
+    display: block;
+    padding: 0.8rem 1rem;
+    color: var(--text-primary);
+    text-decoration: none;
+    border-radius: 6px;
+    transition: background 0.2s;
+}
+
+.sidebar-link:hover, .sidebar-link.active {
+    background: var(--accent);
+    color: white;
+}
+
+.sidebar-footer {
+    padding: 0 15px;
+    font-size: 0.75rem;
+    color: var(--text-secondary);
+    text-align: center;
+}
+
+/* ============================================
+CONTENU PRINCIPAL
+============================================ */
+.main-content {
+    margin-left: 60px; /* Doit correspondre à la largeur fermée de la sidebar */
+    padding: 2rem;
+    min-height: 100vh;
+    background: var(--bg-primary);
+    transition: margin-left 0.3s ease;
+}
+
+/* Responsive : sur mobile, on garde la sidebar fixe ou on l'adapte */
+@media (max-width: 768px) {
+    .sidebar {
+        width: 100%;
+        height: auto;
+        position: relative;
+        border-right: none;
+        border-bottom: 1px solid var(--border);
+    }
+    .sidebar:hover {
+        width: 100%;
+    }
+    .sidebar-title, .sidebar-subtitle, .sidebar-nav, .sidebar-footer {
+        opacity: 1;
+    }
+    .main-content {
+        margin-left: 0;
+    }
+}

@@ -1,9 +1,9 @@
 // ============================================
-// CALENDRIER DYNAMIQUE - Version corrigée
+// CALENDRIER DYNAMIQUE - Semaines ISO de l'année
 // ============================================
 
 let calendrierData = null;
-let semaineActuelle = 0;
+let semaineIsoActuelle = 0;
 
 function loadCalendrier() {
     console.log('Chargement du calendrier...');
@@ -33,28 +33,37 @@ function loadCalendrier() {
 }
 
 function initCalendrier() {
-    const dateDebut = new Date(calendrierData.dateDebutSemestre);
-    const aujourd = new Date();
+    // Récupérer la semaine ISO de l'année en cours
+    semaineIsoActuelle = getISOWeek(new Date());
+    console.log('Semaine ISO actuelle :', semaineIsoActuelle);
     
-    // Réinitialiser les heures pour comparer uniquement les dates
-    dateDebut.setHours(0, 0, 0, 0);
-    aujourd.setHours(0, 0, 0, 0);
-    
-    const diffJours = Math.floor((aujourd - dateDebut) / (1000 * 60 * 60 * 24));
-    semaineActuelle = Math.floor(diffJours / 7) + 1;
-    
-    if (semaineActuelle < 1) semaineActuelle = 1;
-    if (semaineActuelle > calendrierData.nombreSemaines) semaineActuelle = calendrierData.nombreSemaines;
-    
-    afficherSemaine(semaineActuelle);
+    afficherSemaine(semaineIsoActuelle);
 }
 
-function getMondayOfWeek(date) {
-    const d = new Date(date);
-    d.setHours(0, 0, 0, 0);
-    const day = d.getDay();
-    const diff = d.getDate() - day + (day === 0 ? -6 : 1);
-    return new Date(d.setDate(diff));
+/**
+ * Calcule le numéro de semaine ISO d'une date
+ */
+function getISOWeek(date) {
+    const d = new Date(Date.UTC(date.getFullYear(), date.getMonth(), date.getDate()));
+    const dayNum = d.getUTCDay() || 7;
+    d.setUTCDate(d.getUTCDate() + 4 - dayNum);
+    const yearStart = new Date(Date.UTC(d.getUTCFullYear(), 0, 1));
+    return Math.ceil((((d - yearStart) / 86400000) + 1) / 7);
+}
+
+/**
+ * Retourne le lundi de la semaine ISO donnée pour une année donnée
+ */
+function getMondayOfISOWeek(isoWeek, year) {
+    const simple = new Date(year, 0, 1 + (isoWeek - 1) * 7);
+    const dow = simple.getDay();
+    const ISOweekStart = simple;
+    if (dow <= 4) {
+        ISOweekStart.setDate(simple.getDate() - simple.getDay() + 1);
+    } else {
+        ISOweekStart.setDate(simple.getDate() + 8 - simple.getDay());
+    }
+    return ISOweekStart;
 }
 
 function isDateInRange(date, start, end) {
@@ -71,24 +80,22 @@ function afficherSemaine(numSemaine) {
     const container = document.getElementById('calendrier-container');
     if (!container || !calendrierData) return;
     
-    const dateDebut = new Date(calendrierData.dateDebutSemestre);
-    dateDebut.setHours(0, 0, 0, 0);
+    const aujourd = new Date();
+    const year = aujourd.getFullYear();
     
-    const debutSemaine = new Date(dateDebut);
-    debutSemaine.setDate(debutSemaine.getDate() + (numSemaine - 1) * 7);
-    
-    const lundiSemaine = getMondayOfWeek(debutSemaine);
+    // Lundi de la semaine ISO demandée
+    const lundiSemaine = getMondayOfISOWeek(numSemaine, year);
     
     let html = `
         <div class="calendar-header">
-            <button class="calendar-nav-btn" onclick="changerSemaine(-1)" ${numSemaine <= 1 ? 'disabled' : ''}>
+            <button class="calendar-nav-btn" onclick="changerSemaine(-1)">
                 ← Semaine précédente
             </button>
             <div class="calendar-week-info">
                 <h3>Semaine ${numSemaine}</h3>
-                <p class="calendar-dates">${formaterDate(lundiSemaine)} - ${formaterDate(new Date(lundiSemaine.getTime() + 4 * 24 * 60 * 60 * 1000))}</p>
+                <p class="calendar-dates">${formaterDate(lundiSemaine)} - ${formaterDate(new Date(lundiSemaine.getTime() + 4 * 24 * 60 * 60 * 1000))} ${year}</p>
             </div>
-            <button class="calendar-nav-btn" onclick="changerSemaine(1)" ${numSemaine >= calendrierData.nombreSemaines ? 'disabled' : ''}>
+            <button class="calendar-nav-btn" onclick="changerSemaine(1)">
                 Semaine suivante →
             </button>
         </div>
@@ -140,24 +147,44 @@ function afficherSemaine(numSemaine) {
     
     html += `</div>`;
     
-    // Carrousel des semaines - CORRIGÉ
+    // Carrousel des semaines ISO (autour de la semaine actuelle)
     html += `
         <div class="calendar-weeks-track">
             <button class="weeks-nav-btn" onclick="scrollWeeks(-1)">‹</button>
             <div class="weeks-scroll" id="weeks-scroll">
     `;
     
-    for (let i = 1; i <= calendrierData.nombreSemaines; i++) {
-        const isCurrent = i === semaineActuelle;
-        
-        // Calculer le lundi de la semaine i
-        const weekStartTemp = new Date(dateDebut);
-        weekStartTemp.setDate(weekStartTemp.getDate() + (i - 1) * 7);
-        const weekStart = getMondayOfWeek(weekStartTemp);
+    // Afficher les semaines ISO de l'année universitaire (septembre à juin)
+    // Généralement semaines 36 à 25 de l'année suivante
+    const debutAnneeUniv = 36; // Semaine ISO de début septembre
+    const finAnneeUniv = 25;   // Semaine ISO de fin juin
+    
+    for (let i = debutAnneeUniv; i <= 52; i++) {
+        const isCurrent = i === semaineIsoActuelle;
+        const weekStart = getMondayOfISOWeek(i, year);
         const weekEnd = new Date(weekStart);
-        weekEnd.setDate(weekEnd.getDate() + 6); // Dimanche
+        weekEnd.setDate(weekEnd.getDate() + 6);
         
-        // Vérifier si un événement tombe dans cette semaine
+        const hasEvent = calendrierData.evenements.some(e => {
+            const eventDate = new Date(e.date);
+            return isDateInRange(eventDate, weekStart, weekEnd);
+        });
+        
+        html += `
+            <button class="week-btn ${isCurrent ? 'current' : ''} ${hasEvent ? 'has-event' : ''}" 
+                    onclick="allerSemaine(${i})">
+                S${i}
+            </button>
+        `;
+    }
+    
+    // Semaines de l'année suivante (janvier à juin)
+    for (let i = 1; i <= finAnneeUniv; i++) {
+        const isCurrent = i === semaineIsoActuelle;
+        const weekStart = getMondayOfISOWeek(i, year + 1);
+        const weekEnd = new Date(weekStart);
+        weekEnd.setDate(weekEnd.getDate() + 6);
+        
         const hasEvent = calendrierData.evenements.some(e => {
             const eventDate = new Date(e.date);
             return isDateInRange(eventDate, weekStart, weekEnd);
@@ -188,15 +215,15 @@ function afficherSemaine(numSemaine) {
 }
 
 function changerSemaine(delta) {
-    semaineActuelle += delta;
-    if (semaineActuelle < 1) semaineActuelle = 1;
-    if (semaineActuelle > calendrierData.nombreSemaines) semaineActuelle = calendrierData.nombreSemaines;
-    afficherSemaine(semaineActuelle);
+    semaineIsoActuelle += delta;
+    if (semaineIsoActuelle < 1) semaineIsoActuelle = 52;
+    if (semaineIsoActuelle > 52) semaineIsoActuelle = 1;
+    afficherSemaine(semaineIsoActuelle);
 }
 
 function allerSemaine(numSemaine) {
-    semaineActuelle = numSemaine;
-    afficherSemaine(semaineActuelle);
+    semaineIsoActuelle = numSemaine;
+    afficherSemaine(semaineIsoActuelle);
 }
 
 function scrollWeeks(direction) {
@@ -233,7 +260,6 @@ function afficherModal(titre, date, type, details) {
     const modal = document.getElementById('event-modal');
     if (!modal) {
         console.error('Modal non trouvée dans le HTML !');
-        alert('Erreur : le modal HTML n\'existe pas dans index.html');
         return;
     }
     
@@ -241,7 +267,7 @@ function afficherModal(titre, date, type, details) {
     document.getElementById('modal-date').textContent = formaterDateComplete(date);
     
     const modalType = document.getElementById('modal-type');
-    modalType.textContent = type === 'examen' ? ' Examen' : '📚 TD';
+    modalType.textContent = type === 'examen' ? '📝 Examen' : '📚 TD';
     modalType.className = `modal-type ${type}`;
     
     document.getElementById('modal-details').textContent = details || 'Aucun détail disponible';
