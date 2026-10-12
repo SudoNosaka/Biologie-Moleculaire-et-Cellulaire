@@ -342,11 +342,11 @@
         "options": [
           {"id": "a", "text": "1 (toujours le même)"},
           {"id": "b", "text": "5"},
-          {"id": "c", "text": "2⁴ = 16"},
+          {"id": "c", "text": "2 puissance 5 = 36"},
           {"id": "d", "text": "Impossible à déterminer"}
         ],
         "correct": "c",
-        "explanation": "L'épissage alternatif permet d'inclure ou d'exclure certains exons. Avec 4 introns, on peut théoriquement obtenir 2⁴ = 16 variants différents (chaque intron peut être conservé ou éliminé). En pratique, c'est plus complexe."
+        "explanation": "L'épissage alternatif permet d'inclure ou d'exclure certains introns. Avec 5 exons, on peut théoriquement obtenir 2 puissance 5 = 32 variants différents (chaque intron peut être conservé ou éliminé). En pratique, c'est plus complexe."
       },
       {
         "question": "Pourquoi l'ADN mitochondrial est-il circulaire (comme les bactéries) ?",
