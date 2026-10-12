@@ -1,6 +1,6 @@
 {
   "title": "QCM - La Cellule",
-  "subtitle": "3 niveaux : Facile (10Q) • Moyen (12Q) • Vicieux (10Q)",
+  "subtitle": "4 niveaux : Facile (10Q) • Moyen (12Q) • Vicieux (10Q) • Infernal (8Q)",
   "levels": {
     "facile": [
       {
@@ -358,6 +358,96 @@
         ],
         "correct": "b",
         "explanation": "La télomérase ajoute des répétitions télomériques aux extrémités des chromosomes. Normalement inactive dans les cellules somatiques (vieillissement), elle est réactivée dans les cellules cancéreuses pour éviter le raccourcissement des télomères et permettre des divisions infinies."
+      }
+    ],
+    "infernal": [
+      {
+        "question": "Which of the following are TRUE about the nuclear envelope ? (Plusieurs réponses possibles)",
+        "options": [
+          {"id": "a", "text": "It consists of a single membrane"},
+          {"id": "b", "text": "It is continuous with the rough ER"},
+          {"id": "c", "text": "It contains nuclear pores (NPC)"},
+          {"id": "d", "text": "It is absent in prokaryotes"}
+        ],
+        "correct": ["b", "c", "d"],
+        "explanation": "L'enveloppe nucléaire = double membrane (pas simple), en continuité avec le RE rugueux, contient les pores nucléaires (NPC), et est absente chez les procaryotes (pas de noyau)."
+      },
+      {
+        "question": "Quelles structures suivantes sont présentes chez les procaryotes ?",
+        "options": [
+          {"id": "a", "text": "Ribosomes 70S"},
+          {"id": "b", "text": "Nucléoïde"},
+          {"id": "c", "text": "Mitochondries"},
+          {"id": "d", "text": "Paroi de peptidoglycane"}
+        ],
+        "correct": ["a", "b", "d"],
+        "explanation": "Les procaryotes ont : ribosomes 70S, nucléoïde (ADN sans membrane), paroi de peptidoglycane. Ils n'ont PAS de mitochondries (organites membranaires)."
+      },
+      {
+        "question": "Which statements about chromatin are CORRECT ?",
+        "options": [
+          {"id": "a", "text": "Euchromatin is transcriptionally active"},
+          {"id": "b", "text": "Heterochromatin is located at the nuclear periphery"},
+          {"id": "c", "text": "Nucleosomes contain 8 histones"},
+          {"id": "d", "text": "Histone H1 is part of the nucleosome core"}
+        ],
+        "correct": ["a", "b", "c"],
+        "explanation": "L'euchromatine est active (centrale), l'hétérochromatine inactive (périphérique), les nucléosomes ont 8 histones (octamère). H1 est une histone de liaison, PAS du cœur du nucléosome."
+      },
+      {
+        "question": "Concernant la théorie cellulaire, quelles affirmations sont VRAIES ?",
+        "options": [
+          {"id": "a", "text": "La cellule est la plus petite unité du vivant"},
+          {"id": "b", "text": "Tout être vivant est composé de cellules"},
+          {"id": "c", "text": "Les virus sont des cellules"},
+          {"id": "d", "text": "Toute cellule vient d'une autre cellule (Virchow)"}
+        ],
+        "correct": ["a", "b", "d"],
+        "explanation": "Les 3 principes de la théorie cellulaire : cellule = unité du vivant, tout être vivant = composé de cellules, toute cellule vient d'une autre cellule. Les virus NE SONT PAS des cellules (pas de métabolisme propre)."
+      },
+      {
+        "question": "Which of the following are properties of emergent levels ?",
+        "options": [
+          {"id": "a", "text": "New properties appear at each level"},
+          {"id": "b", "text": "A single endothelial cell can conduct blood"},
+          {"id": "c", "text": "Tissues have properties that cells don't have"},
+          {"id": "d", "text": "Emergence only occurs in eukaryotes"}
+        ],
+        "correct": ["a", "c"],
+        "explanation": "Les propriétés émergentes apparaissent à chaque niveau (molécule → cellule → tissu → organe). Une cellule endothéliale seule NE PEUT PAS conduire le sang (fonction du tissu). L'émergence existe chez tous les êtres vivants."
+      },
+      {
+        "question": "Quelles structures sont spécifiques aux cellules eucaryotes (absentes chez les procaryotes) ?",
+        "options": [
+          {"id": "a", "text": "Noyau délimité par une membrane"},
+          {"id": "b", "text": "Ribosomes"},
+          {"id": "c", "text": "Mitochondries"},
+          {"id": "d", "text": "ADN"}
+        ],
+        "correct": ["a", "c"],
+        "explanation": "Spécifiques aux eucaryotes : noyau membranaire, mitochondries. Les ribosomes et l'ADN sont présents chez TOUS les êtres vivants (procaryotes ET eucaryotes)."
+      },
+      {
+        "question": "About the nucleolus, which statements are TRUE ?",
+        "options": [
+          {"id": "a", "text": "It is the site of rRNA synthesis"},
+          {"id": "b", "text": "It is surrounded by a membrane"},
+          {"id": "c", "text": "It assembles ribosomal subunits"},
+          {"id": "d", "text": "It is present in prokaryotes"}
+        ],
+        "correct": ["a", "c"],
+        "explanation": "Le nucléole = site de synthèse des ARNr (18S, 5.8S, 28S) et assemblage des sous-unités ribosomales. Il n'a PAS de membrane (c'est un condensat biomoléculaire) et est absent chez les procaryotes."
+      },
+      {
+        "question": "Quelles affirmations sur l'homéostasie sont CORRECTES ?",
+        "options": [
+          {"id": "a", "text": "C'est le maintien du milieu interne stable"},
+          {"id": "b", "text": "Elle nécessite de l'énergie"},
+          {"id": "c", "text": "Elle est propre aux eucaryotes"},
+          {"id": "d", "text": "Elle implique des échanges avec l'environnement"}
+        ],
+        "correct": ["a", "b", "d"],
+        "explanation": "L'homéostasie = maintien du milieu interne stable, nécessite de l'énergie (transport actif, etc.), implique des échanges avec l'environnement. Elle est présente chez TOUS les êtres vivants (procaryotes ET eucaryotes)."
       }
     ]
   }

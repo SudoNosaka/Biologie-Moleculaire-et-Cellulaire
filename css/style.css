@@ -2343,3 +2343,169 @@ CONTENU PRINCIPAL
         margin-left: 0;
     }
 }
+
+/* ============================================
+QCM - SYSTÈME DE POINTS NÉGATIFS
+============================================ */
+
+.score-details {
+    text-align: center;
+    margin: 1rem 0;
+}
+
+.score-main {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: var(--accent);
+    margin-bottom: 0.8rem;
+}
+
+.score-breakdown {
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+    flex-wrap: wrap;
+    font-size: 0.95rem;
+    font-weight: 600;
+}
+
+.score-good {
+    color: #10b981;
+    background: #D1FAE5;
+    padding: 0.4rem 0.8rem;
+    border-radius: 6px;
+}
+
+.score-bad {
+    color: #ef4444;
+    background: #FEE2E2;
+    padding: 0.4rem 0.8rem;
+    border-radius: 6px;
+}
+
+.score-skip {
+    color: #6b7280;
+    background: #F3F4F6;
+    padding: 0.4rem 0.8rem;
+    border-radius: 6px;
+}
+
+[data-theme="dark"] .score-good {
+    background: #064E3B;
+    color: #6EE7B7;
+}
+
+[data-theme="dark"] .score-bad {
+    background: #7F1D1D;
+    color: #FCA5A5;
+}
+
+[data-theme="dark"] .score-skip {
+    background: #374151;
+    color: #D1D5DB;
+}
+
+/* Question non répondue - style visuel */
+.qcm-option.unanswered {
+    border-style: dashed;
+    opacity: 0.7;
+}
+
+/* Avertissement points négatifs dans le sous-titre */
+.qcm-warning {
+    background: #FEF3C7;
+    border-left: 4px solid #F59E0B;
+    padding: 0.8rem 1rem;
+    margin: 1rem 0;
+    font-size: 0.9rem;
+    color: #92400E;
+}
+
+[data-theme="dark"] .qcm-warning {
+    background: #78350F;
+    color: #FCD34D;
+}
+
+/* ============================================
+QCM - MULTI-RÉPONSES & INFERNAL
+============================================ */
+
+.qcm-option-label {
+    display: block;
+    margin-bottom: 0.5rem;
+    cursor: pointer;
+}
+
+.qcm-option-label input[type="checkbox"],
+.qcm-option-label input[type="radio"] {
+    margin-right: 0.5rem;
+    cursor: pointer;
+    transform: scale(1.2);
+}
+
+.multi-badge {
+    display: inline-block;
+    background: #F59E0B;
+    color: white;
+    padding: 0.2rem 0.6rem;
+    border-radius: 4px;
+    font-size: 0.75rem;
+    font-weight: 600;
+    margin-left: 0.5rem;
+}
+
+.qcm-option.partial {
+    border-color: #F59E0B;
+    background: #FEF3C7;
+    color: #92400E;
+}
+
+.score-partial {
+    color: #F59E0B;
+    background: #FEF3C7;
+    padding: 0.4rem 0.8rem;
+    border-radius: 6px;
+    font-weight: 600;
+}
+
+[data-theme="dark"] .score-partial {
+    background: #78350F;
+    color: #FCD34D;
+}
+
+#infernal-warning {
+    display: none;
+    background: #FEF2F2;
+    border-left: 4px solid #EF4444;
+    padding: 1rem;
+    margin: 1rem 0;
+    color: #991B1B;
+    font-weight: 600;
+}
+
+#infernal-warning strong {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-size: 1.1rem;
+}
+
+[data-theme="dark"] #infernal-warning {
+    background: #7F1D1D;
+    color: #FCA5A5;
+}
+
+/* Niveau Infernal - style spécial */
+.level-btn[data-level="infernal"] {
+    background: linear-gradient(135deg, #EF4444, #F59E0B);
+    color: white;
+    border-color: #EF4444;
+}
+
+.level-btn[data-level="infernal"]:hover {
+    background: linear-gradient(135deg, #DC2626, #D97706);
+}
+
+.level-btn[data-level="infernal"].active {
+    background: linear-gradient(135deg, #DC2626, #D97706);
+    box-shadow: 0 4px 12px rgba(239, 68, 68, 0.4);
+}

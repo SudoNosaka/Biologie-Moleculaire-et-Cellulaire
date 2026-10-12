@@ -1,6 +1,6 @@
 {
-  "title": "QCM - La Réplication",
-  "subtitle": "3 niveaux : Facile (10Q) • Moyen (12Q) • Vicieux (10Q)",
+  "title": "QCM - La Réplication de l'ADN",
+  "subtitle": "4 niveaux : Facile (10Q) • Moyen (12Q) • Vicieux (10Q) • Infernal (8Q)",
   "levels": {
     "facile": [
       {
@@ -358,6 +358,96 @@
         ],
         "correct": "a",
         "explanation": "L'étoposide stabilise le complexe clivé ADN-topoisomérase II, entraînant des cassures double brin fatales pour la cellule (utilisé en chimiothérapie)."
+      }
+    ],
+    "infernal": [
+      {
+        "question": "Which of the following are TRUE about DNA replication ? (Plusieurs réponses possibles)",
+        "options": [
+          {"id": "a", "text": "It is semi-conservative"},
+          {"id": "b", "text": "DNA polymerase synthesizes in 5'→3' direction"},
+          {"id": "c", "text": "Okazaki fragments are on the leading strand"},
+          {"id": "d", "text": "Helicase unwinds the double helix"}
+        ],
+        "correct": ["a", "b", "d"],
+        "explanation": "La réplication est semi-conservative, l'ADN polymérase synthétise en 5'→3', et l'hélicase déroule la double hélice. Les fragments d'Okazaki sont sur le brin RETARDÉ (pas avancé)."
+      },
+      {
+        "question": "Quelles enzymes sont impliquées dans la réplication de l'ADN ?",
+        "options": [
+          {"id": "a", "text": "Hélicase"},
+          {"id": "b", "text": "ADN ligase"},
+          {"id": "c", "text": "Primase"},
+          {"id": "d", "text": "ARN polymérase II"}
+        ],
+        "correct": ["a", "b", "c"],
+        "explanation": "L'hélicase ouvre la double hélice, l'ADN ligase relie les fragments d'Okazaki, la primase synthétise les amorces ARN. L'ARN Pol II est impliquée dans la TRANSCRIPTION (pas la réplication)."
+      },
+      {
+        "question": "About telomerase, which statements are CORRECT ?",
+        "options": [
+          {"id": "a", "text": "It is a reverse transcriptase"},
+          {"id": "b", "text": "It adds TTAGGG repeats in humans"},
+          {"id": "c", "text": "It is active in most somatic cells"},
+          {"id": "d", "text": "It is reactivated in cancer cells"}
+        ],
+        "correct": ["a", "b", "d"],
+        "explanation": "La télomérase est une reverse transcriptase qui ajoute TTAGGG chez l'homme. Elle est INACTIVE dans la plupart des cellules somatiques (vieillissement) mais réactivée dans les cellules cancéreuses."
+      },
+      {
+        "question": "Concernant les protéines de réplication, quelles affirmations sont VRAIES ?",
+        "options": [
+          {"id": "a", "text": "Les protéines SSB stabilisent l'ADN simple brin"},
+          {"id": "b", "text": "La pince β augmente la processivité de l'ADN Pol III"},
+          {"id": "c", "text": "La topoisomérase coupe l'ADN de manière irréversible"},
+          {"id": "d", "text": "La primase synthétise une amorce d'ARN"}
+        ],
+        "correct": ["a", "b", "d"],
+        "explanation": "Les SSB stabilisent l'ADN simple brin, la pince β maintient l'ADN Pol III sur l'ADN, et la primase synthétise l'amorce ARN. La topoisomérase coupe TEMPORAIREMENT l'ADN (pas irréversible)."
+      },
+      {
+        "question": "Which statements about Okazaki fragments are TRUE ?",
+        "options": [
+          {"id": "a", "text": "They are synthesized on the lagging strand"},
+          {"id": "b", "text": "They are 100-200 nt in eukaryotes"},
+          {"id": "c", "text": "They are joined by DNA ligase"},
+          {"id": "d", "text": "They are synthesized continuously"}
+        ],
+        "correct": ["a", "b", "c"],
+        "explanation": "Les fragments d'Okazaki sont synthétisés sur le brin retardé (100-200 nt chez les eucaryotes) et sont reliés par l'ADN ligase. Ils sont synthétisés de manière DISCONTINUE (pas continue)."
+      },
+      {
+        "question": "Quelles affirmations sur la réplication eucaryote sont CORRECTES ?",
+        "options": [
+          {"id": "a", "text": "Elle démarre à de multiples origines"},
+          {"id": "b", "text": "La PCNA est l'équivalent de la pince β"},
+          {"id": "c", "text": "L'ADN Pol γ réplique l'ADN mitochondrial"},
+          {"id": "d", "text": "Elle est plus rapide que chez les procaryotes"}
+        ],
+        "correct": ["a", "b", "c"],
+        "explanation": "La réplication eucaryote démarre à de multiples origines, la PCNA est l'équivalent de la pince β, et l'ADN Pol γ réplique l'ADN mitochondrial. Elle est plus LENTE que chez les procaryotes (~50-100 nt/s vs ~1000 nt/s) à cause de la chromatine."
+      },
+      {
+        "question": "About replication errors and repair, which are TRUE ?",
+        "options": [
+          {"id": "a", "text": "Proofreading is a 3'→5' exonuclease activity"},
+          {"id": "b", "text": "Mismatch repair acts after replication"},
+          {"id": "c", "text": "BRCA1/2 are involved in homologous recombination"},
+          {"id": "d", "text": "DNA Pol I has 5'→3' exonuclease activity"}
+        ],
+        "correct": ["a", "b", "c", "d"],
+        "explanation": "Toutes sont vraies : le proofreading est une exonucléase 3'→5', le Mismatch Repair agit après la réplication, BRCA1/2 sont impliqués dans la recombinaison homologue, et l'ADN Pol I a une activité exonucléase 5'→3' pour éliminer les amorces ARN."
+      },
+      {
+        "question": "Quelles structures/protéines sont spécifiques à la réplication (et non à la transcription) ?",
+        "options": [
+          {"id": "a", "text": "Origines de réplication (oriC)"},
+          {"id": "b", "text": "Facteur σ (sigma)"},
+          {"id": "c", "text": "Fragments d'Okazaki"},
+          {"id": "d", "text": "Boîte de Pribnow"}
+        ],
+        "correct": ["a", "c"],
+        "explanation": "Les origines de réplication (oriC) et les fragments d'Okazaki sont spécifiques à la réplication. Le facteur σ et la boîte de Pribnow sont spécifiques à la TRANSCRIPTION procaryote."
       }
     ]
   }

@@ -6,6 +6,216 @@
     <title>QCM - La Cellule</title>
     <link rel="stylesheet" href="../css/style.css">
     <link rel="stylesheet" href="../css/animations.css">
+    <style>
+        /* ============================================
+        QCM1 - STYLES SPÉCIFIQUES (sans boutons moches)
+        ============================================ */
+        
+        /* Cacher les boutons radio/checkbox natifs */
+        .qcm-option-label input[type="radio"],
+        .qcm-option-label input[type="checkbox"] {
+            position: absolute;
+            opacity: 0;
+            width: 0;
+            height: 0;
+            pointer-events: none;
+        }
+        
+        /* Les options deviennent des blocs cliquables */
+        .qcm-option-label {
+            display: block;
+            margin-bottom: 0.6rem;
+            cursor: pointer;
+        }
+        
+        .qcm-option {
+            background: var(--bg-primary);
+            border: 2px solid var(--border);
+            padding: 1rem 1.2rem;
+            transition: all 0.2s ease;
+            color: var(--text-primary);
+            font-size: 0.95rem;
+            line-height: 1.5;
+            position: relative;
+        }
+        
+        .qcm-option:hover {
+            border-color: var(--accent);
+            background: var(--bg-tertiary);
+            transform: translateX(4px);
+        }
+        
+        /* État sélectionné */
+        .qcm-option.selected {
+            border-color: var(--accent);
+            background: var(--accent);
+            color: white;
+            font-weight: 600;
+        }
+        
+        /* États de validation */
+        .qcm-option.correct {
+            border-color: #10b981 !important;
+            background: #D1FAE5 !important;
+            color: #065F46 !important;
+            font-weight: 600;
+        }
+        
+        .qcm-option.incorrect {
+            border-color: #ef4444 !important;
+            background: #FEE2E2 !important;
+            color: #991B1B !important;
+            text-decoration: line-through;
+        }
+        
+        [data-theme="dark"] .qcm-option.correct {
+            background: #064E3B !important;
+            color: #6EE7B7 !important;
+        }
+        
+        [data-theme="dark"] .qcm-option.incorrect {
+            background: #7F1D1D !important;
+            color: #FCA5A5 !important;
+        }
+        
+        /* Badge multi-réponses */
+        .multi-badge {
+            display: inline-block;
+            background: #F59E0B;
+            color: white;
+            padding: 0.2rem 0.6rem;
+            border-radius: 4px;
+            font-size: 0.75rem;
+            font-weight: 600;
+            margin-left: 0.5rem;
+            vertical-align: middle;
+        }
+        
+        /* Avertissement Infernal */
+        #infernal-warning {
+            display: none;
+            background: #FEF2F2;
+            border-left: 4px solid #EF4444;
+            padding: 1rem;
+            margin: 1rem 0;
+            color: #991B1B;
+            font-weight: 600;
+        }
+        
+        #infernal-warning strong {
+            display: block;
+            margin-bottom: 0.5rem;
+            font-size: 1.1rem;
+        }
+        
+        #infernal-warning ul {
+            margin: 0.5rem 0 0 1.5rem;
+            padding: 0;
+        }
+        
+        #infernal-warning li {
+            margin-bottom: 0.3rem;
+        }
+        
+        [data-theme="dark"] #infernal-warning {
+            background: #7F1D1D;
+            color: #FCA5A5;
+        }
+        
+        /* Score détaillé */
+        .score-details {
+            text-align: center;
+            margin: 1rem 0;
+        }
+        
+        .score-main {
+            font-size: 2.5rem;
+            font-weight: 700;
+            color: var(--accent);
+            margin-bottom: 0.8rem;
+        }
+        
+        .score-breakdown {
+            display: flex;
+            justify-content: center;
+            gap: 1rem;
+            flex-wrap: wrap;
+            font-size: 0.9rem;
+            font-weight: 600;
+        }
+        
+        .score-good {
+            color: #10b981;
+            background: #D1FAE5;
+            padding: 0.4rem 0.8rem;
+            border-radius: 6px;
+        }
+        
+        .score-bad {
+            color: #ef4444;
+            background: #FEE2E2;
+            padding: 0.4rem 0.8rem;
+            border-radius: 6px;
+        }
+        
+        .score-partial {
+            color: #F59E0B;
+            background: #FEF3C7;
+            padding: 0.4rem 0.8rem;
+            border-radius: 6px;
+        }
+        
+        .score-skip {
+            color: #6b7280;
+            background: #F3F4F6;
+            padding: 0.4rem 0.8rem;
+            border-radius: 6px;
+        }
+        
+        [data-theme="dark"] .score-good {
+            background: #064E3B;
+            color: #6EE7B7;
+        }
+        
+        [data-theme="dark"] .score-bad {
+            background: #7F1D1D;
+            color: #FCA5A5;
+        }
+        
+        [data-theme="dark"] .score-partial {
+            background: #78350F;
+            color: #FCD34D;
+        }
+        
+        [data-theme="dark"] .score-skip {
+            background: #374151;
+            color: #D1D5DB;
+        }
+        
+        /* Niveau Infernal - bouton spécial */
+        .level-btn[data-level="infernal"] {
+            background: linear-gradient(135deg, #EF4444, #F59E0B);
+            color: white;
+            border-color: #EF4444;
+        }
+        
+        .level-btn[data-level="infernal"]:hover {
+            background: linear-gradient(135deg, #DC2626, #D97706);
+        }
+        
+        .level-btn[data-level="infernal"].active {
+            background: linear-gradient(135deg, #DC2626, #D97706);
+            box-shadow: 0 4px 12px rgba(239, 68, 68, 0.4);
+        }
+        
+        /* Responsive */
+        @media (max-width: 768px) {
+            .score-breakdown {
+                flex-direction: column;
+                align-items: center;
+            }
+        }
+    </style>
 </head>
 <body>
     <!-- SIDEBAR -->
@@ -14,9 +224,12 @@
         <div class="sidebar-subtitle">Biologie Moléculaire<br>& Cellulaire - L1</div>
         <div class="sidebar-nav">
             <a href="../index.html" class="sidebar-link">Accueil</a>
-            <a href="../index.html#fiches" class="sidebar-link">Fiches</a>
-            <a href="../index.html#revision" class="sidebar-link active">Révision</a>
-            <a href="../index.html#bilan" class="sidebar-link">Bilan</a>
+            <a href="../fiches.html" class="sidebar-link">Fiches</a>
+            <a href="qcm.html" class="sidebar-link active">QCM</a>
+            <a href="../flashcards.html" class="sidebar-link">Flashcards</a>
+            <a href="../quiz-rapide.html" class="sidebar-link">Quiz Rapide</a>
+            <a href="../schema.html" class="sidebar-link">Schémas</a>
+            <a href="../bilans.html" class="sidebar-link">Bilans</a>
             <a href="../parametres.html" class="sidebar-link">Paramètres</a>
         </div>
         <div class="sidebar-footer">
@@ -34,16 +247,24 @@
             </section>
 
             <!-- SÉLECTEUR DE NIVEAU -->
-            <section class="content-section fade-in">
-                <h3>Niveau de difficulté</h3>
-                <div id="level-selector" class="level-selector"></div>
-            </section>
+            <div id="level-selector" class="level-selector fade-in"></div>
 
-            <!-- QUESTIONS -->
+            <!-- AVERTISSEMENT INFERNAL -->
+            <div id="infernal-warning">
+                <strong>🔥 NIVEAU INFERNAL</strong>
+                <ul>
+                    <li>Plusieurs réponses peuvent être correctes (cases à cocher)</li>
+                    <li>Questions en anglais et français mélangés</li>
+                    <li>Barème : Bonne réponse = +1, Partielle = score partiel, Mauvaise = <strong>-2</strong> (points négatifs ×2), Pas de réponse = 0</li>
+                    <li>Conseil : Ne coche que ce dont tu es CERTAIN</li>
+                </ul>
+            </div>
+
+            <!-- CONTENU QCM -->
             <div id="qcm-content" class="fade-in-delay"></div>
 
-            <!-- BOUTONS -->
-            <div class="qcm-actions">
+            <!-- BOUTONS D'ACTION -->
+            <div class="qcm-actions" style="display: flex; gap: 1rem; margin-top: 1.5rem; flex-wrap: wrap;">
                 <button id="validate-btn" class="btn-primary" onclick="validateAnswers()">
                     ✓ Valider mes réponses
                 </button>
@@ -53,10 +274,10 @@
             </div>
 
             <!-- RÉSULTATS -->
-            <div id="results" class="content-section" style="display: none;">
+            <div id="results" class="content-section" style="display: none; margin-top: 2rem;">
                 <h3>Résultat</h3>
-                <div class="score" id="score"></div>
-                <p id="message"></p>
+                <div id="score"></div>
+                <p id="message" style="margin-top: 1rem; font-size: 1.05rem;"></p>
             </div>
 
             <!-- NAVIGATION -->
@@ -71,10 +292,9 @@
     <script src="../JS/config.js"></script>
     <script src="../JS/sidebar.js"></script>
     <script src="../JS/qcm-renderer.js"></script>
-    <script src="../JS/qcm-shuffle.js"></script>
     <script src="../JS/sound.js"></script>
     <script>
-        loadQCM('qcm1');
+        loadQCM('qcm1.json');
     </script>
 </body>
 </html>
