@@ -1,0 +1,254 @@
+{
+  "title": "QCM - Méthodes d'Analyse",
+  "subtitle": "4 niveaux : Facile (10Q) • Moyen (12Q) • Vicieux (10Q) • Infernal (8Q)",
+  "levels": {
+    "facile": [
+      {
+        "question": "L'électrophorèse sépare les particules selon :",
+        "options": [{"id": "a", "text": "Leur couleur"}, {"id": "b", "text": "Leur charge électrique et leur taille"}, {"id": "c", "text": "Leur température"}, {"id": "d", "text": "Leur pH"}],
+        "correct": "b",
+        "explanation": "La séparation se fait selon la charge (v = E×z/F) et pour des charges identiques, selon la taille (friction)."
+      },
+      {
+        "question": "Les acides nucléiques migrent vers :",
+        "options": [{"id": "a", "text": "La cathode (-)"}, {"id": "b", "text": "L'anode (+)"}, {"id": "c", "text": "Ils ne migrent pas"}, {"id": "d", "text": "Le centre du gel"}],
+        "correct": "b",
+        "explanation": "Les acides nucléiques sont chargés négativement (phosphate) → migrent vers l'anode (+)."
+      },
+      {
+        "question": "Le gel utilisé pour l'électrophorèse des acides nucléiques est :",
+        "options": [{"id": "a", "text": "Polyacrylamide"}, {"id": "b", "text": "Agarose"}, {"id": "c", "text": "Gélatine"}, {"id": "d", "text": "Agar-agar"}],
+        "correct": "b",
+        "explanation": "L'agarose est utilisé pour les acides nucléiques. Le polyacrylamide est utilisé pour les protéines (SDS-PAGE)."
+      },
+      {
+        "question": "Le SDS dans l'électrophorèse des protéines sert à :",
+        "options": [{"id": "a", "text": "Colorer les protéines"}, {"id": "b", "text": "Rendre toutes les protéines chargées négativement"}, {"id": "c", "text": "Couper les protéines"}, {"id": "d", "text": "Stabiliser les protéines"}],
+        "correct": "b",
+        "explanation": "Le SDS est un détergent chargé négativement qui se fixe à toutes les protéines → elles migrent selon leur taille uniquement."
+      },
+      {
+        "question": "La longueur d'onde d'absorbance maximale des acides nucléiques est :",
+        "options": [{"id": "a", "text": "280 nm"}, {"id": "b", "text": "260 nm"}, {"id": "c", "text": "350 nm"}, {"id": "d", "text": "488 nm"}],
+        "correct": "b",
+        "explanation": "Les bases azotées absorbent à 260 nm. Les protéines (tryptophane) absorbent à 280 nm."
+      },
+      {
+        "question": "La limite de résolution du microscope optique est :",
+        "options": [{"id": "a", "text": "0,2 nm"}, {"id": "b", "text": "0,2 µm"}, {"id": "c", "text": "2 µm"}, {"id": "d", "text": "20 µm"}],
+        "correct": "b",
+        "explanation": "Microscope optique : 0,2 µm. Microscope électronique : 0,2 nm (1000× mieux)."
+      },
+      {
+        "question": "Le DAPI est un fluorochrome qui se lie à :",
+        "options": [{"id": "a", "text": "L'ARN"}, {"id": "b", "text": "L'ADN (bases A et T)"}, {"id": "c", "text": "Les protéines"}, {"id": "d", "text": "Les lipides"}],
+        "correct": "b",
+        "explanation": "Le DAPI se lie à l'ADN (A et T), excitation 350 nm, émission bleue (450-490 nm) → marque le noyau."
+      },
+      {
+        "question": "La phalloïdine couplée à un fluorochrome permet de visualiser :",
+        "options": [{"id": "a", "text": "Les microtubules"}, {"id": "b", "text": "Les microfilaments d'actine"}, {"id": "c", "text": "Les filaments intermédiaires"}, {"id": "d", "text": "Le noyau"}],
+        "correct": "b",
+        "explanation": "La phalloïdine se lie spécifiquement à la F-actine → visualisation des microfilaments."
+      },
+      {
+        "question": "Le paraformaldéhyde (PFA) est utilisé pour :",
+        "options": [{"id": "a", "text": "Colorer les cellules"}, {"id": "b", "text": "Fixer les cellules/tissus"}, {"id": "c", "text": "Couper les tissus"}, {"id": "d", "text": "Marquer l'ADN"}],
+        "correct": "b",
+        "explanation": "Le PFA est un fixateur qui immobilise, tue et conserve les cellules/tissus pour l'observation microscopique."
+      },
+      {
+        "question": "Le bleu de Coomassie sert à :",
+        "options": [{"id": "a", "text": "Colorer l'ADN"}, {"id": "b", "text": "Colorer les protéines après SDS-PAGE"}, {"id": "c", "text": "Fixer les cellules"}, {"id": "d", "text": "Marquer les fluorochromes"}],
+        "correct": "b",
+        "explanation": "Le bleu de Coomassie permet de visualiser toutes les protéines après migration sur gel de polyacrylamide."
+      }
+    ],
+    "moyen": [
+      {
+        "question": "Le rapport A260/A280 d'une solution d'ADN pur est d'environ :",
+        "options": [{"id": "a", "text": "1,0"}, {"id": "b", "text": "1,8"}, {"id": "c", "text": "2,0"}, {"id": "d", "text": "0,5"}],
+        "correct": "b",
+        "explanation": "ADN pur : A260/A280 ≈ 1,8. ARN pur : ≈ 2,0. Protéine pure : A280/A260 ≈ 2."
+      },
+      {
+        "question": "L'acide aminé chromophore principal des protéines est :",
+        "options": [{"id": "a", "text": "L'alanine"}, {"id": "b", "text": "Le tryptophane"}, {"id": "c", "text": "La glycine"}, {"id": "d", "text": "La proline"}],
+        "correct": "b",
+        "explanation": "Seul le tryptophane a un coefficient d'extinction molaire élevé à 280 nm."
+      },
+      {
+        "question": "Selon la théorie d'Abbe, pour améliorer la résolution il faut :",
+        "options": [{"id": "a", "text": "Augmenter λ"}, {"id": "b", "text": "Réduire λ"}, {"id": "c", "text": "Augmenter la taille de l'objet"}, {"id": "d", "text": "Utiliser l'air comme milieu"}],
+        "correct": "b",
+        "explanation": "d = 0,6λ/(n×sin μ). Réduire λ réduit d → meilleure résolution. C'est pourquoi le microscope électronique (λ ~5 pm) est plus puissant."
+      },
+      {
+        "question": "L'immunofluorescence utilise :",
+        "options": [{"id": "a", "text": "Un anticorps primaire + un anticorps secondaire couplé à un fluorochrome"}, {"id": "b", "text": "Uniquement un colorant chimique"}, {"id": "c", "text": "De l'ADN marqué"}, {"id": "d", "text": "Un marqueur radioactif"}],
+        "correct": "a",
+        "explanation": "Ab I reconnaît l'antigène, Ab II (couplé à un fluorochrome) reconnaît l'Ab I → fluorescence spécifique."
+      },
+      {
+        "question": "Le bromure d'éthidium est :",
+        "options": [{"id": "a", "text": "Un colorant peu toxique"}, {"id": "b", "text": "Un intercalant de l'ADN toxique et mutagène"}, {"id": "c", "text": "Un fixateur"}, {"id": "d", "text": "Un fluorochrome pour protéines"}],
+        "correct": "b",
+        "explanation": "Le bromure d'éthidium s'intercale dans l'ADN, très toxique et mutagène. Remplacé par SYBR Green I."
+      },
+      {
+        "question": "La loi de Beer-Lambert relie :",
+        "options": [{"id": "a", "text": "Taille et migration"}, {"id": "b", "text": "Absorbance et concentration"}, {"id": "c", "text": "Longueur d'onde et couleur"}, {"id": "d", "text": "pH et charge"}],
+        "correct": "b",
+        "explanation": "A = ε × l × c. L'absorbance est proportionnelle à la concentration → permet de doser les molécules."
+      },
+      {
+        "question": "Les disques d'Airy sont liés à :",
+        "options": [{"id": "a", "text": "La fluorescence"}, {"id": "b", "text": "La diffraction de la lumière"}, {"id": "c", "text": "L'absorption UV"}, {"id": "d", "text": "La migration électrophorétique"}],
+        "correct": "b",
+        "explanation": "Du fait de la nature ondulatoire de la lumière, un point apparaît comme des cercles concentriques (disques d'Airy) → limite la résolution."
+      },
+      {
+        "question": "Le cryostat est utilisé pour :",
+        "options": [{"id": "a", "text": "Fixer les cellules"}, {"id": "b", "text": "Couper des tissus congelés à -20°C"}, {"id": "c", "text": "Observer en fluorescence"}, {"id": "d", "text": "Faire migrer l'ADN"}],
+        "correct": "b",
+        "explanation": "Le cryostat permet de couper des tissus congelés (évite l'altération des composants cellulaires vs inclusion en paraffine)."
+      },
+      {
+        "question": "L'indice de réfraction de l'huile d'immersion est :",
+        "options": [{"id": "a", "text": "1,0"}, {"id": "b", "text": "1,3"}, {"id": "c", "text": "1,6"}, {"id": "d", "text": "2,0"}],
+        "correct": "c",
+        "explanation": "Air = 1,0 ; Eau = 1,3 ; Huile d'immersion = 1,6. Plus n est élevé, meilleure est la résolution (d diminue)."
+      },
+      {
+        "question": "La SYBR Green I est excitée à :",
+        "options": [{"id": "a", "text": "260 nm"}, {"id": "b", "text": "280 nm"}, {"id": "c", "text": "350 nm"}, {"id": "d", "text": "488 nm"}],
+        "correct": "d",
+        "explanation": "La SYBR Green I (alternative moins toxique au bromure d'éthidium) est excitée à 488 nm pour révéler l'ADN/ARN."
+      },
+      {
+        "question": "Le microscope électronique utilise des lentilles :",
+        "options": [{"id": "a", "text": "En verre"}, {"id": "b", "text": "Électromagnétiques"}, {"id": "c", "text": "En plastique"}, {"id": "d", "text": "En quartz"}],
+        "correct": "b",
+        "explanation": "Le microscope optique utilise des lentilles en verre. Le microscope électronique utilise des lentilles électromagnétiques."
+      },
+      {
+        "question": "Le glutaraldéhyde est utilisé pour :",
+        "options": [{"id": "a", "text": "Colorer les protéines"}, {"id": "b", "text": "Fixer les tissus"}, {"id": "c", "text": "Couper les cellules"}, {"id": "d", "text": "Marquer l'ARN"}],
+        "correct": "b",
+        "explanation": "Le glutaraldéhyde, comme le PFA, est un fixateur utilisé pour conserver la structure des tissus avant inclusion ou congélation."
+      }
+    ],
+    "vicieux": [
+      {
+        "question": "Si on augmente l'indice de réfraction du milieu (ex: huile au lieu d'air), que se passe-t-il ?",
+        "options": [{"id": "a", "text": "La résolution diminue (d augmente)"}, {"id": "b", "text": "La résolution augmente (d diminue)"}, {"id": "c", "text": "Aucun effet"}, {"id": "d", "text": "L'image devient plus sombre"}],
+        "correct": "b",
+        "explanation": "d = 0,6λ/(n×sin μ). Si n augmente, d diminue → meilleure résolution. C'est pourquoi on utilise l'huile d'immersion (n=1,6)."
+      },
+      {
+        "question": "Si on traite des protéines sans SDS avant l'électrophorèse, que se passe-t-il ?",
+        "options": [{"id": "a", "text": "Rien, elles migrent normalement"}, {"id": "b", "text": "Elles migrent selon leur charge native ET leur taille → séparation non reproductible"}, {"id": "c", "text": "Elles ne migrent pas"}, {"id": "d", "text": "Elles migrent plus vite"}],
+        "correct": "b",
+        "explanation": "Sans SDS, les protéines conservent leur charge native (variable) ET leur forme 3D → migration selon charge + taille + forme."
+      },
+      {
+        "question": "Si une solution d'ADN a un rapport A260/A280 = 1,5, cela indique :",
+        "options": [{"id": "a", "text": "Un ADN très pur"}, {"id": "b", "text": "Une contamination protéique"}, {"id": "c", "text": "Une contamination par de l'ARN"}, {"id": "d", "text": "Un ADN dégradé"}],
+        "correct": "b",
+        "explanation": "Un rapport < 1,8 indique une contamination protéique (les protéines absorbent à 280 nm, ce qui augmente le dénominateur)."
+      },
+      {
+        "question": "Pourquoi utilise-t-on un marqueur de masse moléculaire (ladder) en électrophorèse ?",
+        "options": [{"id": "a", "text": "Pour colorer le gel"}, {"id": "b", "text": "Pour estimer la taille des protéines/ADN par comparaison"}, {"id": "c", "text": "Pour fixer les échantillons"}, {"id": "d", "text": "Pour augmenter la résolution"}],
+        "correct": "b",
+        "explanation": "Le ladder contient des protéines/ADN de tailles connues. En comparant la migration, on estime la masse moléculaire des échantillons."
+      },
+      {
+        "question": "Si on utilise le DAPI sur des cellules en mitose, on observe :",
+        "options": [{"id": "a", "text": "Un seul noyau rond"}, {"id": "b", "text": "Des chromosomes condensés fluorescents"}, {"id": "c", "text": "Le cytoplasme fluorescent"}, {"id": "d", "text": "Rien (le DAPI ne marche pas en mitose)"}],
+        "correct": "b",
+        "explanation": "Le DAPI marque l'ADN. En mitose, l'ADN est condensé en chromosomes → on observe des structures chromosomiques fluorescentes."
+      },
+      {
+        "question": "Pourquoi l'agarose est-il coulé à 100°C puis polymérise à T° ambiante ?",
+        "options": [{"id": "a", "text": "Pour tuer les bactéries"}, {"id": "b", "text": "L'agarose est liquide à 100°C et polymérise en refroidissant"}, {"id": "c", "text": "Pour activer les fluorochromes"}, {"id": "d", "text": "Pour dénaturer l'ADN"}],
+        "correct": "b",
+        "explanation": "L'agarose est un biopolymère qui fond à 100°C (liquide) et polymérise en refroidissant à T° ambiante → formation du gel."
+      },
+      {
+        "question": "Si on observe un tissu avec un microscope électronique à balayage, on obtient :",
+        "options": [{"id": "a", "text": "Une image en coupe fine"}, {"id": "b", "text": "Une image de la surface en 3D"}, {"id": "c", "text": "Une image en fluorescence"}, {"id": "d", "text": "Une image en couleur naturelle"}],
+        "correct": "b",
+        "explanation": "Le microscope électronique à balayage (MEB) donne une image de la surface des échantillons en 3D."
+      },
+      {
+        "question": "Pourquoi la microscopie électronique nécessite-t-elle un vide poussé ?",
+        "options": [{"id": "a", "text": "Pour refroidir l'échantillon"}, {"id": "b", "text": "Pour éviter que les électrons ne soient déviés par les molécules d'air"}, {"id": "c", "text": "Pour augmenter la résolution"}, {"id": "d", "text": "Pour fixer l'échantillon"}],
+        "correct": "b",
+        "explanation": "Les électrons interagissent fortement avec la matière. Sans vide, ils seraient déviés/absorbés par les molécules d'air."
+      },
+      {
+        "question": "Si on utilise un anticorps secondaire non spécifique en immunofluorescence, on observe :",
+        "options": [{"id": "a", "text": "Une fluorescence spécifique"}, {"id": "b", "text": "Un bruit de fond élevé (fluorescence non spécifique)"}, {"id": "c", "text": "Aucune fluorescence"}, {"id": "d", "text": "Une fluorescence plus intense"}],
+        "correct": "b",
+        "explanation": "Un Ab II non spécifique se fixe à d'autres protéines que l'Ab I → fluorescence non spécifique (bruit de fond) → faux positifs."
+      },
+      {
+        "question": "Pourquoi la congélation (isopentane + N₂ liquide) est-elle parfois préférée à l'inclusion en paraffine ?",
+        "options": [{"id": "a", "text": "Elle est moins chère"}, {"id": "b", "text": "Elle évite l'altération des composants cellulaires par la chaleur (60°C)"}, {"id": "c", "text": "Elle permet de couper des cellules en culture"}, {"id": "d", "text": "Elle colore les tissus"}],
+        "correct": "b",
+        "explanation": "L'inclusion en paraffine nécessite 60°C, ce qui peut altérer certains composants. La congélation préserve mieux les structures sensibles."
+      }
+    ],
+    "infernal": [
+      {
+        "question": "Which of the following are TRUE about electrophoresis ? (Plusieurs réponses possibles)",
+        "options": [{"id": "a", "text": "Nucleic acids migrate toward the anode"}, {"id": "b", "text": "SDS makes all proteins negatively charged"}, {"id": "c", "text": "Agarose gel is used for proteins"}, {"id": "d", "text": "Separation depends on charge and size"}],
+        "correct": ["a", "b", "d"],
+        "explanation": "Les acides nucléiques migrent vers l'anode (+), le SDS charge négativement les protéines, et la séparation dépend de la charge et de la taille. L'agarose est pour les acides nucléiques."
+      },
+      {
+        "question": "Concernant la spectrophotométrie, quelles affirmations sont CORRECTES ?",
+        "options": [{"id": "a", "text": "L'ADN pur a un rapport A260/A280 ≈ 1,8"}, {"id": "b", "text": "Les protéines absorbent à 280 nm grâce au tryptophane"}, {"id": "c", "text": "La loi de Beer-Lambert : A = ε × l × c"}, {"id": "d", "text": "L'ARN pur a un rapport A260/A280 ≈ 1,5"}],
+        "correct": ["a", "b", "c"],
+        "explanation": "ADN pur ≈ 1,8, ARN pur ≈ 2,0 (pas 1,5). Les protéines absorbent à 280 nm (tryptophane). Loi de Beer-Lambert : A = ε × l × c."
+      },
+      {
+        "question": "About microscopy resolution, which are CORRECT ?",
+        "options": [{"id": "a", "text": "Optical microscope resolution: 0.2 µm"}, {"id": "b", "text": "Electron microscope resolution: 0.2 nm"}, {"id": "c", "text": "Reducing λ improves resolution"}, {"id": "d", "text": "Oil immersion decreases resolution"}],
+        "correct": ["a", "b", "c"],
+        "explanation": "Optique = 0,2 µm, Électronique = 0,2 nm. Réduire λ améliore la résolution. L'huile d'immersion (n=1,6) AUGMENTE la résolution."
+      },
+      {
+        "question": "Quelles techniques permettent de visualiser spécifiquement une protéine dans une cellule ?",
+        "options": [{"id": "a", "text": "Immunofluorescence"}, {"id": "b", "text": "Immunohistochimie"}, {"id": "c", "text": "Électrophorèse SDS-PAGE"}, {"id": "d", "text": "DAPI"}],
+        "correct": ["a", "b"],
+        "explanation": "L'immunofluorescence (cellules) et l'immunohistochimie (tissus) permettent de visualiser une protéine spécifique. Le SDS-PAGE sépare mais ne localise pas."
+      },
+      {
+        "question": "If you measure A260/A280 = 2.1 for a DNA solution, what does it indicate ?",
+        "options": [{"id": "a", "text": "Pure DNA"}, {"id": "b", "text": "Possible RNA contamination"}, {"id": "c", "text": "Protein contamination"}, {"id": "d", "text": "Degraded DNA"}],
+        "correct": ["b"],
+        "explanation": "ADN pur ≈ 1,8. Un rapport > 2,0 suggère une contamination par de l'ARN (qui a un rapport ≈ 2,0)."
+      },
+      {
+        "question": "Concernant la préparation des échantillons pour la microscopie, quelles affirmations sont VRAIES ?",
+        "options": [{"id": "a", "text": "Les cellules en culture peuvent être observées vivantes sans fixation"}, {"id": "b", "text": "Les tissus nécessitent une coupe (microtome ou cryostat)"}, {"id": "c", "text": "La congélation altère plus les composants cellulaires que l'inclusion en paraffine"}, {"id": "d", "text": "Le glutaraldéhyde est un fixateur"}],
+        "correct": ["a", "b", "d"],
+        "explanation": "Les cellules en culture peuvent être observées vivantes. Les tissus doivent être coupés. La congélation ALTÈRE MOINS les composants que la paraffine."
+      },
+      {
+        "question": "Which fluorochromes are correctly matched with their targets ?",
+        "options": [{"id": "a", "text": "DAPI → DNA (nucleus)"}, {"id": "b", "text": "Phalloidin → F-actin (microfilaments)"}, {"id": "c", "text": "SYBR Green → proteins"}, {"id": "d", "text": "Ethidium bromide → nucleic acids"}],
+        "correct": ["a", "b", "d"],
+        "explanation": "DAPI → ADN. Phalloïdine → F-actine. SYBR Green → acides nucléiques (pas protéines). Bromure d'éthidium → acides nucléiques."
+      },
+      {
+        "question": "Si on compare un microscope optique (λ = 500 nm, NA = 1,4) et un microscope électronique (λ = 0,005 nm, NA = 0,01), lequel a la meilleure résolution ?",
+        "options": [{"id": "a", "text": "Le microscope optique"}, {"id": "b", "text": "Le microscope électronique"}, {"id": "c", "text": "Ils ont la même résolution"}, {"id": "d", "text": "Impossible à déterminer"}],
+        "correct": ["b"],
+        "explanation": "Optique : d ≈ 214 nm. Électronique : d ≈ 0,3 nm. Malgré un NA plus faible, le microscope électronique a une résolution bien meilleure grâce à λ très petit."
+      }
+    ]
+  }
+}

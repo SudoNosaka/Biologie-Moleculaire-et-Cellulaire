@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="fr" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Méthodes d'Analyse - BMC</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/animations.css">
+</head>
+<body>
+    <!-- SIDEBAR -->
+    <nav class="sidebar">
+        <div class="sidebar-title">BMC</div>
+        <div class="sidebar-subtitle">Biologie Moléculaire<br>& Cellulaire - L1</div>
+        <div class="sidebar-nav">
+            <a href="../index.html" class="sidebar-link">Accueil</a>
+            <a href="fiches.html" class="sidebar-link active">Fiches</a>
+            <a href="../qcm.html" class="sidebar-link">QCM</a>
+            <a href="../flashcards.html" class="sidebar-link">Flashcards</a>
+            <a href="../quiz-rapide.html" class="sidebar-link">Quiz Rapide</a>
+            <a href="../schema.html" class="sidebar-link">Schémas</a>
+            <a href="../bilans.html" class="sidebar-link">Bilans</a>
+            <a href="../parametres.html" class="sidebar-link">Paramètres</a>
+        </div>
+        <div class="sidebar-footer">
+            Fuyu-kun &copy; 2026
+        </div>
+    </nav>
+
+    <!-- CONTENU PRINCIPAL -->
+    <div class="main-content">
+        <div class="container">
+            
+            <section class="content-section fade-in">
+                <h2 id="fiche-title">Chargement...</h2>
+                <p id="fiche-subtitle" style="color: var(--text-secondary); font-style: italic;"></p>
+            </section>
+
+            <div id="fiche-content" class="fade-in-delay"></div>
+
+            <!-- NAVIGATION -->
+            <div class="navigation-section">
+                <a href="membrane.html" class="nav-btn prev">← Membrane</a>
+                <a href="../index.html" class="nav-btn next">Accueil →</a>
+            </div>
+
+        </div>
+    </div>
+
+    <script src="../JS/config.js"></script>
+    <script src="../JS/sidebar.js"></script>
+    <script src="../JS/sound.js"></script>
+    <script>
+        fetch('../data/methode.json')
+            .then(r => r.json())
+            .then(data => {
+                document.getElementById('fiche-title').textContent = data.title;
+                document.getElementById('fiche-subtitle').textContent = data.subtitle;
+                
+                const container = document.getElementById('fiche-content');
+                let html = '';
+                
+                data.sections.forEach(section => {
+                    html += `<section class="content-section">`;
+                    html += `<h3>${section.title}</h3>`;
+                    
+                    if (section.content) html += `<p>${section.content}</p>`;
+                    if (section.content2) html += `<p style="margin-top:1rem;">${section.content2}</p>`;
+                    
+                    if (section.list) {
+                        html += `<ul>`;
+                        section.list.forEach(item => html += `<li>${item}</li>`);
+                        html += `</ul>`;
+                    }
+                    
+                    if (section.table) {
+                        html += `<div style="overflow-x: auto; margin-top: 1rem;"><table style="width: 100%; border-collapse: collapse;">`;
+                        html += `<thead><tr style="background: var(--accent); color: white;">`;
+                        Object.keys(section.table[0]).forEach(key => {
+                            html += `<th style="padding: 0.8rem; text-align: left;">${key.replace(/_/g, ' ')}</th>`;
+                        });
+                        html += `</tr></thead><tbody>`;
+                        section.table.forEach((row, idx) => {
+                            html += `<tr style="border-bottom: 1px solid var(--border); ${idx % 2 === 0 ? 'background: var(--bg-secondary);' : ''}">`;
+                            Object.values(row).forEach(val => html += `<td style="padding: 0.8rem;">${val}</td>`);
+                            html += `</tr>`;
+                        });
+                        html += `</tbody></table></div>`;
+                    }
+                    
+                    if (section.hint) html += `<div class="info-card" style="margin-top: 1rem;"><strong>💡 À retenir :</strong> ${section.hint}</div>`;
+                    if (section.warning) html += `<div class="info-card" style="margin-top: 1rem; border-left-color: var(--danger);"><strong>⚠️ Attention :</strong> ${section.warning}</div>`;
+                    
+                    html += `</section>`;
+                });
+                
+                container.innerHTML = html;
+            })
+            .catch(err => {
+                document.getElementById('fiche-content').innerHTML = `<p style="color: var(--danger);">Erreur de chargement : ${err.message}</p>`;
+            });
+    </script>
+</body>
+</html>
