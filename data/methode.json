@@ -1,0 +1,127 @@
+{
+  "title": "Quiz Rapide - Méthodes d'Analyse",
+  "subtitle": "Questions sur l'électrophorèse, spectrophotométrie et microscopie",
+  "duration": 300,
+  "questions": [
+    {
+      "question": "L'électrophorèse sépare les particules selon :",
+      "options": ["Leur couleur", "Leur charge électrique et leur taille", "Leur température", "Leur pH"],
+      "correct": 1,
+      "explanation": "La séparation se fait selon la charge électrique (v = E×z/F) et pour des charges identiques, selon la taille (friction F)."
+    },
+    {
+      "question": "Les acides nucléiques migrent vers :",
+      "options": ["La cathode (-)", "L'anode (+)", "Ils ne migrent pas", "Le centre du gel"],
+      "correct": 1,
+      "explanation": "Les acides nucléiques sont chargés négativement (phosphate) → migrent vers l'anode (+)."
+    },
+    {
+      "question": "Le gel utilisé pour l'électrophorèse des acides nucléiques est :",
+      "options": ["Polyacrylamide", "Agarose", "Gélatine", "Agar-agar"],
+      "correct": 1,
+      "explanation": "L'agarose (extrait des algues rouges) est utilisé pour les acides nucléiques. Le polyacrylamide est utilisé pour les protéines (SDS-PAGE)."
+    },
+    {
+      "question": "Le SDS dans l'électrophorèse des protéines sert à :",
+      "options": ["Colorer les protéines", "Rendre toutes les protéines chargées négativement", "Couper les protéines", "Stabiliser les protéines"],
+      "correct": 1,
+      "explanation": "Le SDS est un détergent chargé négativement qui se fixe à toutes les protéines → elles migrent selon leur taille uniquement."
+    },
+    {
+      "question": "Le bleu de Coomassie sert à :",
+      "options": ["Colorer l'ADN", "Colorer les protéines après SDS-PAGE", "Fixer les cellules", "Marquer les fluorochromes"],
+      "correct": 1,
+      "explanation": "Le bleu de Coomassie permet de visualiser toutes les protéines après migration sur gel de polyacrylamide."
+    },
+    {
+      "question": "La longueur d'onde d'absorbance maximale des acides nucléiques est :",
+      "options": ["280 nm", "260 nm", "350 nm", "488 nm"],
+      "correct": 1,
+      "explanation": "Les bases azotées absorbent à 260 nm. Les protéines (tryptophane) absorbent à 280 nm."
+    },
+    {
+      "question": "Le rapport A260/A280 d'une solution d'ADN pur est d'environ :",
+      "options": ["1,0", "1,8", "2,0", "0,5"],
+      "correct": 1,
+      "explanation": "ADN pur : A260/A280 ≈ 1,8. ARN pur : ≈ 2,0. Protéine pure : A280/A260 ≈ 2."
+    },
+    {
+      "question": "L'acide aminé chromophore principal des protéines est :",
+      "options": ["L'alanine", "Le tryptophane", "La glycine", "La proline"],
+      "correct": 1,
+      "explanation": "Seul le tryptophane a un coefficient d'extinction molaire élevé à 280 nm (avec la tyrosine et phénylalanine, mais beaucoup moins)."
+    },
+    {
+      "question": "La limite de résolution du microscope optique est :",
+      "options": ["0,2 nm", "0,2 µm", "2 µm", "20 µm"],
+      "correct": 1,
+      "explanation": "Microscope optique : 0,2 µm. Microscope électronique : 0,2 nm (1000× mieux)."
+    },
+    {
+      "question": "Selon la théorie d'Abbe, pour améliorer la résolution il faut :",
+      "options": ["Augmenter λ", "Réduire λ", "Augmenter la taille de l'objet", "Utiliser l'air comme milieu"],
+      "correct": 1,
+      "explanation": "d = 0,6λ/(n×sin μ). Réduire λ réduit d → meilleure résolution. C'est pourquoi le microscope électronique (λ ~5 pm) est plus puissant."
+    },
+    {
+      "question": "Le DAPI est un fluorochrome qui se lie à :",
+      "options": ["L'ARN", "L'ADN (bases A et T)", "Les protéines", "Les lipides"],
+      "correct": 1,
+      "explanation": "Le DAPI se lie à l'ADN (A et T), excitation 350 nm, émission bleue (450-490 nm) → marque le noyau."
+    },
+    {
+      "question": "La phalloïdine couplée à un fluorochrome permet de visualiser :",
+      "options": ["Les microtubules", "Les microfilaments d'actine", "Les filaments intermédiaires", "Le noyau"],
+      "correct": 1,
+      "explanation": "La phalloïdine se lie spécifiquement à la F-actine → visualisation des microfilaments."
+    },
+    {
+      "question": "L'immunofluorescence utilise :",
+      "options": ["Un anticorps primaire + un anticorps secondaire couplé à un fluorochrome", "Uniquement un colorant chimique", "De l'ADN marqué", "Un marqueur radioactif"],
+      "correct": 0,
+      "explanation": "Ab I reconnaît l'antigène, Ab II (couplé à un fluorochrome) reconnaît l'Ab I → fluorescence spécifique."
+    },
+    {
+      "question": "Le bromure d'éthidium est :",
+      "options": ["Un colorant peu toxique", "Un intercalant de l'ADN toxique et mutagène", "Un fixateur", "Un fluorochrome pour protéines"],
+      "correct": 1,
+      "explanation": "Le bromure d'éthidium s'intercale dans l'ADN, très toxique et mutagène. Remplacé par SYBR Green I (moins toxique)."
+    },
+    {
+      "question": "Le gel de polyacrylamide est utilisé pour :",
+      "options": ["L'ADN", "Les protéines (SDS-PAGE)", "Les lipides", "Les glucides"],
+      "correct": 1,
+      "explanation": "Polyacrylamide = protéines (SDS-PAGE, orientation verticale). Agarose = acides nucléiques (orientation horizontale)."
+    },
+    {
+      "question": "La loi de Beer-Lambert relie :",
+      "options": ["Taille et migration", "Absorbance et concentration", "Longueur d'onde et couleur", "pH et charge"],
+      "correct": 1,
+      "explanation": "A = ε × l × c. L'absorbance est proportionnelle à la concentration → permet de doser les molécules."
+    },
+    {
+      "question": "Les disques d'Airy sont liés à :",
+      "options": ["La fluorescence", "La diffraction de la lumière", "L'absorption UV", "La migration électrophorétique"],
+      "correct": 1,
+      "explanation": "Du fait de la nature ondulatoire de la lumière, un point apparaît comme des cercles concentriques (disques d'Airy) → limite la résolution."
+    },
+    {
+      "question": "Le paraformaldéhyde (PFA) est utilisé pour :",
+      "options": ["Colorer les cellules", "Fixer les cellules/tissus", "Couper les tissus", "Marquer l'ADN"],
+      "correct": 1,
+      "explanation": "Le PFA est un fixateur qui immobilise, tue et conserve les cellules/tissus pour l'observation microscopique."
+    },
+    {
+      "question": "Le cryostat est utilisé pour :",
+      "options": ["Fixer les cellules", "Couper des tissus congelés à -20°C", "Observer en fluorescence", "Faire migrer l'ADN"],
+      "correct": 1,
+      "explanation": "Le cryostat permet de couper des tissus congelés (évite l'altération des composants cellulaires vs inclusion en paraffine)."
+    },
+    {
+      "question": "L'indice de réfraction de l'huile d'immersion est :",
+      "options": ["1,0", "1,3", "1,6", "2,0"],
+      "correct": 2,
+      "explanation": "Air = 1,0 ; Eau = 1,3 ; Huile d'immersion = 1,6. Plus n est élevé, meilleure est la résolution (d diminue)."
+    }
+  ]
+}

@@ -104,7 +104,8 @@
         "Niveau 2 : Fibre de chromatine 30 nm (solénoïde) → ×40",
         "Niveau 3 : Boucles attachées à un scaffold → ×1000",
         "Niveau 4 : Chromosome métaphasique → ×10 000"
-      ]
+      ],
+      "warning": "Méthode pour retenir : NFBC"
     },
     {
       "title": "Le Nucléosome",
