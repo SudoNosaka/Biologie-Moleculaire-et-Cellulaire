@@ -1,0 +1,454 @@
+{
+  "title": "QCM - La Membrane Plasmique",
+  "subtitle": "4 niveaux : Facile (10Q) • Moyen (12Q) • Vicieux (10Q) • Infernal (8Q)",
+  "levels": {
+    "facile": [
+      {
+        "question": "La membrane plasmique est principalement composée de :",
+        "options": [
+          {"id": "a", "text": "Uniquement de protéines"},
+          {"id": "b", "text": "Une bicouche lipidique et des protéines"},
+          {"id": "c", "text": "Uniquement de glucides"},
+          {"id": "d", "text": "D'ADN et d'ARN"}
+        ],
+        "correct": "b",
+        "explanation": "La membrane plasmique = bicouche lipidique (phospholipides, cholestérol) + protéines membranaires + glucides (glycocalyx)."
+      },
+      {
+        "question": "Le modèle actuel de la membrane plasmique est appelé :",
+        "options": [
+          {"id": "a", "text": "Modèle sandwich"},
+          {"id": "b", "text": "Modèle de la mosaïque fluide"},
+          {"id": "c", "text": "Modèle unitaire"},
+          {"id": "d", "text": "Modèle statique"}
+        ],
+        "correct": "b",
+        "explanation": "Le modèle de la mosaïque fluide (Singer & Nicolson, 1972) décrit la membrane comme une bicouche lipidique fluide dans laquelle baignent des protéines."
+      },
+      {
+        "question": "Les phospholipides sont des molécules :",
+        "options": [
+          {"id": "a", "text": "Uniquement hydrophobes"},
+          {"id": "b", "text": "Amphiphiles (tête polaire + queues apolaires)"},
+          {"id": "c", "text": "Uniquement hydrophiles"},
+          {"id": "d", "text": "Neutres"}
+        ],
+        "correct": "b",
+        "explanation": "Les phospholipides sont amphiphiles : tête polaire hydrophile (phosphate) orientée vers l'extérieur, et 2 queues d'acides gras apolaires hydrophobes orientées vers l'intérieur."
+      },
+      {
+        "question": "Le cholestérol dans la membrane a pour rôle de :",
+        "options": [
+          {"id": "a", "text": "Synthétiser des protéines"},
+          {"id": "b", "text": "Réguler la fluidité membranaire"},
+          {"id": "c", "text": "Transporter des ions"},
+          {"id": "d", "text": "Catalyser des réactions"}
+        ],
+        "correct": "b",
+        "explanation": "Le cholestérol régule la fluidité : il rigidifie la membrane à haute température et empêche la solidification à basse température (effet tampon)."
+      },
+      {
+        "question": "Les protéines intrinsèques (transmembranaires) :",
+        "options": [
+          {"id": "a", "text": "Sont à la surface de la membrane"},
+          {"id": "b", "text": "Traversent toute la bicouche lipidique"},
+          {"id": "c", "text": "Sont dans le cytoplasme"},
+          {"id": "d", "text": "Sont dans le noyau"}
+        ],
+        "correct": "b",
+        "explanation": "Les protéines intrinsèques (intégrales) traversent toute la bicouche lipidique. Elles ont des domaines hydrophobes en contact avec les queues lipidiques."
+      },
+      {
+        "question": "Les glucides membranaires se trouvent :",
+        "options": [
+          {"id": "a", "text": "Du côté cytoplasmique"},
+          {"id": "b", "text": "Du côté extracellulaire"},
+          {"id": "c", "text": "Des deux côtés"},
+          {"id": "d", "text": "Dans le noyau"}
+        ],
+        "correct": "b",
+        "explanation": "Les glucides membranaires (glycolipides, glycoprotéines) sont TOUJOURS du côté extracellulaire. Ils forment le glycocalyx."
+      },
+      {
+        "question": "Le glycocalyx est :",
+        "options": [
+          {"id": "a", "text": "Une protéine membranaire"},
+          {"id": "b", "text": "La couche de glucides du côté extracellulaire"},
+          {"id": "c", "text": "Un type de lipide"},
+          {"id": "d", "text": "Un organite"}
+        ],
+        "correct": "b",
+        "explanation": "Le glycocalyx = couche de glucides (glycoprotéines + glycolipides) du côté extracellulaire. Rôles : reconnaissance cellulaire, protection, groupes sanguins."
+      },
+      {
+        "question": "La diffusion simple à travers la membrane concerne :",
+        "options": [
+          {"id": "a", "text": "Les grosses molécules polaires"},
+          {"id": "b", "text": "Les petites molécules non polaires (O₂, CO₂)"},
+          {"id": "c", "text": "Les ions (Na⁺, K⁺)"},
+          {"id": "d", "text": "Les protéines"}
+        ],
+        "correct": "b",
+        "explanation": "La diffusion simple = passage direct à travers la bicouche lipidique. Seules les petites molécules non polaires (O₂, CO₂, N₂) et liposolubles peuvent traverser ainsi."
+      },
+      {
+        "question": "La diffusion facilitée nécessite :",
+        "options": [
+          {"id": "a", "text": "De l'énergie (ATP)"},
+          {"id": "b", "text": "Des protéines de transport (canaux ou transporteurs)"},
+          {"id": "c", "text": "Un gradient inverse"},
+          {"id": "d", "text": "De la lumière"}
+        ],
+        "correct": "b",
+        "explanation": "La diffusion facilitée = passage selon le gradient de concentration, mais avec l'aide de protéines membranaires (canaux ioniques ou transporteurs/carriers)."
+      },
+      {
+        "question": "Le transport actif nécessite :",
+        "options": [
+          {"id": "a", "text": "Uniquement un gradient de concentration"},
+          {"id": "b", "text": "De l'énergie (ATP) et fonctionne contre le gradient"},
+          {"id": "c", "text": "De la lumière"},
+          {"id": "d", "text": "Aucune énergie"}
+        ],
+        "correct": "b",
+        "explanation": "Le transport actif = déplacement contre le gradient de concentration, nécessitant de l'énergie (ATP). Exemple : pompe Na/K⁺ ATPase."
+      }
+    ],
+    "moyen": [
+      {
+        "question": "La composition chimique de la membrane plasmique est approximativement :",
+        "options": [
+          {"id": "a", "text": "40% lipides, 52% protéines, 8% glucides"},
+          {"id": "b", "text": "70% lipides, 20% protéines, 10% glucides"},
+          {"id": "c", "text": "30% lipides, 60% protéines, 10% glucides"},
+          {"id": "d", "text": "50% lipides, 40% protéines, 10% glucides"}
+        ],
+        "correct": "a",
+        "explanation": "La membrane plasmique = ~40% lipides, ~52% protéines, ~8% glucides. Les proportions varient selon le type cellulaire."
+      },
+      {
+        "question": "Les 3 types de protéines membranaires sont :",
+        "options": [
+          {"id": "a", "text": "Intrinsèques, périphériques, à ancrage lipidique"},
+          {"id": "b", "text": "Canaux, pompes, transporteurs"},
+          {"id": "c", "text": "Enzymes, récepteurs, transporteurs"},
+          {"id": "d", "text": "Structurales, fonctionnelles, régulatrices"}
+        ],
+        "correct": "a",
+        "explanation": "1. Protéines intrinsèques (transmembranaires). 2. Protéines à ancrage lipidique (liées à un lipide). 3. Protéines périphériques (liées indirectement aux protéines intrinsèques)."
+      },
+      {
+        "question": "Les 6 fonctions des protéines membranaires incluent :",
+        "options": [
+          {"id": "a", "text": "Transport, activité enzymatique, transduction de signal, reconnaissance, adhérence, fixation au cytosquelette"},
+          {"id": "b", "text": "Réplication, transcription, traduction, épissage, glycosylation, phosphorylation"},
+          {"id": "c", "text": "Diffusion, osmose, endocytose, exocytose, pinocytose, phagocytose"},
+          {"id": "d", "text": "Contraction, conduction, sécrétion, absorption, filtration, excrétion"}
+        ],
+        "correct": "a",
+        "explanation": "Les protéines membranaires assurent : transport, activité enzymatique, transduction des signaux, reconnaissance intercellulaire, adhérence, fixation au cytosquelette et matrice extracellulaire."
+      },
+      {
+        "question": "La différence entre N-glycosylation et O-glycosylation :",
+        "options": [
+          {"id": "a", "text": "N-glycosylation dans le RE sur l'asparagine, O-glycosylation dans le Golgi sur la sérine/thréonine"},
+          {"id": "b", "text": "N-glycosylation dans le Golgi, O-glycosylation dans le RE"},
+          {"id": "c", "text": "N-glycosylation sur les lipides, O-glycosylation sur les protéines"},
+          {"id": "d", "text": "Aucune différence"}
+        ],
+        "correct": "a",
+        "explanation": "N-Glycosylation : lieu = RE, sur l'azote de l'asparagine (séquence Asn-X-Ser/Thr). O-Glycosylation : lieu = Golgi, sur l'oxygène de la sérine ou thréonine."
+      },
+      {
+        "question": "Les 4 facteurs influençant la fluidité membranaire :",
+        "options": [
+          {"id": "a", "text": "Température, nature des acides gras, longueur des chaînes, cholestérol"},
+          {"id": "b", "text": "pH, pression, volume, concentration"},
+          {"id": "c", "text": "Taille, forme, couleur, poids"},
+          {"id": "d", "text": "ADN, ARN, protéines, lipides"}
+        ],
+        "correct": "a",
+        "explanation": "1. Température : ↑ température = ↑ fluidité. 2. Acides gras insaturés (doubles liaisons cis) ↑ fluidité. 3. Chaînes courtes ↑ fluidité. 4. Cholestérol = régulateur (tampon)."
+      },
+      {
+        "question": "Le flip-flop correspond à :",
+        "options": [
+          {"id": "a", "text": "La diffusion latérale rapide des phospholipides"},
+          {"id": "b", "text": "La diffusion transversale d'un feuillet à l'autre (lente)"},
+          {"id": "c", "text": "La rotation axiale des protéines"},
+          {"id": "d", "text": "La flexion des acides gras"}
+        ],
+        "correct": "b",
+        "explanation": "Le flip-flop = diffusion transversale d'un phospholipide d'un feuillet à l'autre. C'est un déplacement LENT (contrairement à la diffusion latérale qui est rapide)."
+      },
+      {
+        "question": "Les radeaux lipidiques (lipid rafts) sont :",
+        "options": [
+          {"id": "a", "text": "Des vésicules de sécrétion"},
+          {"id": "b", "text": "Microdomaines riches en sphingolipides, glycolipides et cholestérol"},
+          {"id": "c", "text": "Des organites membranaires"},
+          {"id": "d", "text": "Des protéines transmembranaires"}
+        ],
+        "correct": "b",
+        "explanation": "Les radeaux lipidiques = microdomaines de la membrane plasmique constitués d'associations stables entre sphingolipides, glycolipides et cholestérol. Rôles : réponse aux pathogènes, transduction de signal."
+      },
+      {
+        "question": "Les molécules qui traversent facilement la bicouche lipidique :",
+        "options": [
+          {"id": "a", "text": "Grosses molécules polaires et ions"},
+          {"id": "b", "text": "Petites molécules (CO₂, O₂) et molécules liposolubles"},
+          {"id": "c", "text": "Protéines et acides nucléiques"},
+          {"id": "d", "text": "Glucose et acides aminés"}
+        ],
+        "correct": "b",
+        "explanation": "Perméables : petites molécules (CO₂, O₂, N₂) et molécules liposolubles (hydrophobes, non polaires). Imperméables : grosses molécules, molécules polaires, ions (K⁺, Cl⁻, Na⁺)."
+      },
+      {
+        "question": "La différence entre uniport, symport et antiport :",
+        "options": [
+          {"id": "a", "text": "Uniport : 1 molécule dans 1 direction ; Symport : 2 substances même direction ; Antiport : 2 substances directions opposées"},
+          {"id": "b", "text": "Uniport : 2 molécules ; Symport : 1 molécule ; Antiport : 3 molécules"},
+          {"id": "c", "text": "Uniport : contre le gradient ; Symport : selon le gradient ; Antiport : aléatoire"},
+          {"id": "d", "text": "Aucune différence"}
+        ],
+        "correct": "a",
+        "explanation": "Uniport : transporte 1 molécule dans 1 direction. Symport : transporte 2 substances différentes dans la MÊME direction. Antiport : transporte 2 substances dans des directions OPPOSÉES."
+      },
+      {
+        "question": "Les caractéristiques des canaux ioniques :",
+        "options": [
+          {"id": "a", "text": "Lents, non spécifiques, toujours ouverts"},
+          {"id": "b", "text": "Rapides (10⁷-10⁸ molécules/s), souvent spécifiques, deux états (ouvert/fermé)"},
+          {"id": "c", "text": "Lents, spécifiques, toujours fermés"},
+          {"id": "d", "text": "Rapides, non spécifiques, toujours ouverts"}
+        ],
+        "correct": "b",
+        "explanation": "Canaux ioniques : protéine transmembranaire formant un pore, souvent spécifiques, vitesse très élevée (10⁷ à 10 molécules/s), deux états (ouvert ou fermé). Types : toujours ouverts, voltage-dépendants, ligand-dépendants."
+      },
+      {
+        "question": "Les aquaporines sont :",
+        "options": [
+          {"id": "a", "text": "Canaux spécifiques aux ions"},
+          {"id": "b", "text": "Canaux spécifiques à l'eau (AQP)"},
+          {"id": "c", "text": "Pompes à protons"},
+          {"id": "d", "text": "Transporteurs de glucose"}
+        ],
+        "correct": "b",
+        "explanation": "Les aquaporines = canaux spécifiques à l'eau (AQP). Permettent à l'eau d'entrer/sortir sans laisser passer d'autres molécules ou ions. Découverte par Peter Agre (Nobel 2003)."
+      },
+      {
+        "question": "Les caractéristiques des transports actifs :",
+        "options": [
+          {"id": "a", "text": "Ne nécessitent pas d'énergie, selon le gradient"},
+          {"id": "b", "text": "Nécessitent de l'énergie (ATP), contre le gradient, pompes (~10⁴ ions/sec), ATPases"},
+          {"id": "c", "text": "Nécessitent de l'énergie, selon le gradient"},
+          {"id": "d", "text": "Ne nécessitent pas d'énergie, contre le gradient"}
+        ],
+        "correct": "b",
+        "explanation": "Transports actifs : nécessitent de l'énergie (ATP), fonctionnent CONTRE le gradient de concentration, tous sont des pompes (~10⁴ ions/sec), protéines = ATPases (hydrolysent l'ATP)."
+      }
+    ],
+    "vicieux": [
+      {
+        "question": "Si on traite une membrane avec une phospholipase qui coupe spécifiquement les liaisons ester en position 2 des phospholipides, que se passe-t-il ?",
+        "options": [
+          {"id": "a", "text": "Rien, la membrane reste intacte"},
+          {"id": "b", "text": "Libération d'acides gras et formation de lysophospholipides → destabilisation de la membrane"},
+          {"id": "c", "text": "La membrane devient plus rigide"},
+          {"id": "d", "text": "Les protéines membranaires sont dégradées"}
+        ],
+        "correct": "b",
+        "explanation": "Les phospholipases A2 coupent la liaison ester en position 2 → libération d'acide gras + lysophospholipide (1 seule queue). Cela destabilise la bicouche et peut mener à la lyse cellulaire."
+      },
+      {
+        "question": "Pourquoi les membranes biologiques sont-elles asymétriques ?",
+        "options": [
+          {"id": "a", "text": "Parce que les lipides sont tous identiques"},
+          {"id": "b", "text": "Parce que la composition des feuillets interne et externe diffère (ex: phosphatidylsérine uniquement côté interne)"},
+          {"id": "c", "text": "Parce que les protéines sont toutes du même côté"},
+          {"id": "d", "text": "C'est une erreur de la cellule"}
+        ],
+        "correct": "b",
+        "explanation": "L'asymétrie membranaire = composition différente des deux feuillets. Ex: phosphatidylsérine (PS) et phosphatidyléthanolamine (PE) côté interne ; phosphatidylcholine (PC) et sphingomyéline côté externe. Cette asymétrie est maintenue par des flippases (ATP-dépendantes)."
+      },
+      {
+        "question": "Si on inhibe les flippases (enzymes ATP-dépendantes), quelle conséquence observe-t-on ?",
+        "options": [
+          {"id": "a", "text": "Aucune conséquence"},
+          {"id": "b", "text": "Perte de l'asymétrie membranaire → phosphatidylsérine exposée à l'extérieur → signal d'apoptose"},
+          {"id": "c", "text": "La membrane devient plus fluide"},
+          {"id": "d", "text": "Les protéines sont dégradées"}
+        ],
+        "correct": "b",
+        "explanation": "Les flippases maintiennent l'asymétrie en transportant la phosphatidylsérine (PS) vers le feuillet interne. Leur inhibition → PS exposée à l'extérieur → signal 'eat me' pour les macrophages → apoptose."
+      },
+      {
+        "question": "La pompe Na⁺/K ATPase transporte :",
+        "options": [
+          {"id": "a", "text": "3 Na⁺ vers l'intérieur et 2 K⁺ vers l'extérieur"},
+          {"id": "b", "text": "3 Na⁺ vers l'extérieur et 2 K⁺ vers l'intérieur"},
+          {"id": "c", "text": "2 Na⁺ vers l'extérieur et 3 K⁺ vers l'intérieur"},
+          {"id": "d", "text": "1 Na et 1 K⁺ dans les deux sens"}
+        ],
+        "correct": "b",
+        "explanation": "La pompe Na⁺/K⁺ ATPase expulse 3 Na⁺ vers l'extérieur et fait entrer 2 K⁺ vers l'intérieur, en hydrolysant 1 ATP. Cela crée un gradient électrochimique (intérieur négatif) essentiel pour le potentiel de membrane."
+      },
+      {
+        "question": "Si on place une cellule dans une solution hypotonique, que se passe-t-il ?",
+        "options": [
+          {"id": "a", "text": "La cellule rétrécit (plasmolyse)"},
+          {"id": "b", "text": "L'eau entre dans la cellule → gonflement → possible lyse"},
+          {"id": "c", "text": "Rien, la membrane est imperméable à l'eau"},
+          {"id": "d", "text": "La cellule se divise"}
+        ],
+        "correct": "b",
+        "explanation": "Solution hypotonique = concentration en solutés inférieure à celle du cytoplasme. L'eau entre par osmose → la cellule gonfle. Sans paroi rigide (cellules animales), elle peut lyser."
+      },
+      {
+        "question": "L'endocytose médiée par les récepteurs (clathrine-dépendante) permet :",
+        "options": [
+          {"id": "a", "text": "L'export de protéines hors de la cellule"},
+          {"id": "b", "text": "L'internalisation sélective de ligands spécifiques (ex: LDL, transferrine)"},
+          {"id": "c", "text": "La synthèse de lipides"},
+          {"id": "d", "text": "La réplication de l'ADN"}
+        ],
+        "correct": "b",
+        "explanation": "L'endocytose médiée par les récepteurs = internalisation sélective de ligands spécifiques via des récepteurs membranaires qui se concentrent dans des puits recouverts de clathrine. Ex: internalisation du LDL (cholestérol)."
+      },
+      {
+        "question": "Les jonctions serrées (tight junctions) ont pour rôle de :",
+        "options": [
+          {"id": "a", "text": "Permettre le passage d'ions entre cellules"},
+          {"id": "b", "text": "Sceller hermétiquement l'espace intercellulaire (barrière de perméabilité)"},
+          {"id": "c", "text": "Ancre les filaments intermédiaires"},
+          {"id": "d", "text": "Permettre la communication directe"}
+        ],
+        "correct": "b",
+        "explanation": "Les jonctions serrées (occludines, claudines) = barrière étanche entre cellules épithéliales. Elles empêchent le passage paracellulaire de molécules et maintiennent la polarité cellulaire (séparation des domaines apical/basal)."
+      },
+      {
+        "question": "Les jonctions communicantes (gap junctions) permettent :",
+        "options": [
+          {"id": "a", "text": "Le passage de grosses protéines entre cellules"},
+          {"id": "b", "text": "Le passage direct de petits ions et molécules (< 1 kDa) entre cellules adjacentes"},
+          {"id": "c", "text": "L'adhérence mécanique"},
+          {"id": "d", "text": "La sécrétion de hormones"}
+        ],
+        "correct": "b",
+        "explanation": "Les gap junctions = canaux formés par des connexines (6 connexines = 1 connexon). Elles permettent le passage direct d'ions (Ca²⁺, K⁺) et petites molécules (< 1 kDa) entre cellules → communication intercellulaire rapide (ex: cœur, muscle lisse)."
+      },
+      {
+        "question": "Si on traite des cellules avec de la digitonine (saponine qui se lie au cholestérol), que se passe-t-il ?",
+        "options": [
+          {"id": "a", "text": "Rien"},
+          {"id": "b", "text": "Perméabilisation sélective de la membrane plasmique (riches en cholestérol) sans affecter les membranes internes"},
+          {"id": "c", "text": "Lyse de toutes les membranes"},
+          {"id": "d", "text": "Activation de la transcription"}
+        ],
+        "correct": "b",
+        "explanation": "La digitonine se lie spécifiquement au cholestérol. La membrane plasmique (riche en cholestérol) est perméabilisée, mais les membranes internes (RE, mitochondries, pauvres en cholestérol) restent intactes. Utilisée en biochimie pour accéder au cytoplasme."
+      },
+      {
+        "question": "L'osmose correspond à :",
+        "options": [
+          {"id": "a", "text": "Le passage de solutés contre le gradient"},
+          {"id": "b", "text": "Le passage de l'eau à travers une membrane semi-perméable, du milieu hypotonique vers le milieu hypertonique"},
+          {"id": "c", "text": "Le passage de protéines"},
+          {"id": "d", "text": "La synthèse d'ATP"}
+        ],
+        "correct": "b",
+        "explanation": "L'osmose = diffusion de l'eau à travers une membrane semi-perméable, du milieu le moins concentré en solutés (hypotonique) vers le plus concentré (hypertonique), jusqu'à équilibre."
+      }
+    ],
+    "infernal": [
+      {
+        "question": "Which of the following are TRUE about the plasma membrane ? (Plusieurs réponses possibles)",
+        "options": [
+          {"id": "a", "text": "It is composed of a lipid bilayer"},
+          {"id": "b", "text": "Proteins can span the entire membrane"},
+          {"id": "c", "text": "Carbohydrates are on the cytoplasmic side"},
+          {"id": "d", "text": "It exhibits fluidity"}
+        ],
+        "correct": ["a", "b", "d"],
+        "explanation": "La membrane = bicouche lipidique fluide avec protéines transmembranaires. Les glucides sont du côté EXTRACELLULAIRE (pas cytoplasmique)."
+      },
+      {
+        "question": "Quelles affirmations sur les protéines membranaires sont CORRECTES ?",
+        "options": [
+          {"id": "a", "text": "Les protéines intrinsèques traversent la bicouche"},
+          {"id": "b", "text": "Les protéines périphériques sont liées indirectement aux protéines intrinsèques"},
+          {"id": "c", "text": "Les protéines à ancrage lipidique sont liées de façon covalente à un lipide"},
+          {"id": "d", "text": "Toutes les protéines membranaires sont des enzymes"}
+        ],
+        "correct": ["a", "b", "c"],
+        "explanation": "Les protéines membranaires ont des fonctions variées (transport, enzymes, récepteurs, adhérence, etc.), pas uniquement enzymatiques."
+      },
+      {
+        "question": "About membrane fluidity, which statements are TRUE ?",
+        "options": [
+          {"id": "a", "text": "Unsaturated fatty acids increase fluidity"},
+          {"id": "b", "text": "Cholesterol acts as a buffer"},
+          {"id": "c", "text": "Longer fatty acid chains increase fluidity"},
+          {"id": "d", "text": "Higher temperature increases fluidity"}
+        ],
+        "correct": ["a", "b", "d"],
+        "explanation": "Les acides gras insaturés (doubles liaisons cis) ↑ fluidité. Le cholestérol = tampon. Les chaînes LONGUES ↓ fluidité (plus d'interactions). La température ↑ fluidité."
+      },
+      {
+        "question": "Concernant le transport membranaire, quelles affirmations sont VRAIES ?",
+        "options": [
+          {"id": "a", "text": "La diffusion simple ne nécessite pas de protéines"},
+          {"id": "b", "text": "La diffusion facilitée utilise des canaux ou transporteurs"},
+          {"id": "c", "text": "Le transport actif fonctionne contre le gradient avec de l'ATP"},
+          {"id": "d", "text": "L'osmose est un transport actif"}
+        ],
+        "correct": ["a", "b", "c"],
+        "explanation": "L'osmose = diffusion passive de l'eau (pas de transport actif). Les 3 autres affirmations sont correctes."
+      },
+      {
+        "question": "Which structures are involved in cell-cell junctions ?",
+        "options": [
+          {"id": "a", "text": "Tight junctions (occludins, claudins)"},
+          {"id": "b", "text": "Desmosomes (cadherins, intermediate filaments)"},
+          {"id": "c", "text": "Gap junctions (connexins)"},
+          {"id": "d", "text": "Ribosomes"}
+        ],
+        "correct": ["a", "b", "c"],
+        "explanation": "Les jonctions cellulaires = tight junctions (étanchéité), desmosomes (adhérence mécanique via FI), gap junctions (communication). Les ribosomes ne sont PAS des jonctions."
+      },
+      {
+        "question": "Quelles molécules peuvent traverser la bicouche lipidique par diffusion simple ?",
+        "options": [
+          {"id": "a", "text": "O₂ et CO₂"},
+          {"id": "b", "text": "Glucose"},
+          {"id": "c", "text": "Éthanol"},
+          {"id": "d", "text": "Na⁺ et K⁺"}
+        ],
+        "correct": ["a", "c"],
+        "explanation": "O₂, CO₂ (petites molécules non polaires) et éthanol (petite molécule liposoluble) traversent par diffusion simple. Le glucose (polaire, gros) et les ions (chargés) nécessitent des protéines de transport."
+      },
+      {
+        "question": "About the Na/K⁺ ATPase pump, which are CORRECT ?",
+        "options": [
+          {"id": "a", "text": "It transports 3 Na⁺ out and 2 K⁺ in"},
+          {"id": "b", "text": "It hydrolyzes 1 ATP per cycle"},
+          {"id": "c", "text": "It creates an electrochemical gradient"},
+          {"id": "d", "text": "It is a passive transporter"}
+        ],
+        "correct": ["a", "b", "c"],
+        "explanation": "La pompe Na⁺/K⁺ = transport ACTIF (pas passif) : 3 Na⁺ sortent, 2 K⁺ entrent, 1 ATP hydrolysé. Crée un gradient électrochimique (intérieur négatif) essentiel pour le potentiel de membrane."
+      },
+      {
+        "question": "Si on inhibe spécifiquement les aquaporines dans les reins, quelles conséquences observe-t-on ?",
+        "options": [
+          {"id": "a", "text": "Aucune conséquence"},
+          {"id": "b", "text": "Diminution de la réabsorption d'eau → diabète insipide"},
+          {"id": "c", "text": "Augmentation de la concentration des urines"},
+          {"id": "d", "text": "Production d'urines très diluées et abondantes"}
+        ],
+        "correct": ["b", "d"],
+        "explanation": "Les aquaporines (AQP2) dans les tubules rénaux permettent la réabsorption d'eau sous contrôle de l'ADH (vasopressine). Leur inhibition → eau non réabsorbée → urines diluées et abondantes = diabète insipide."
+      }
+    ]
+  }
+}

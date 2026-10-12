@@ -1,6 +1,6 @@
 {
   "title": "QCM - Le Cytosquelette",
-  "subtitle": "3 niveaux : Facile (10Q) • Moyen (12Q) • Vicieux (10Q)",
+  "subtitle": "4 niveaux : Facile (10Q) • Moyen (12Q) • Vicieux (10Q) • Infernal (8Q)",
   "levels": {
     "facile": [
       {
@@ -358,6 +358,96 @@
         ],
         "correct": "b",
         "explanation": "L'épidermolyse bulleuse simple = maladie génétique due à des mutations des kératines 5 ou 14 (FI des kératinocytes de la couche basale). La peau devient fragile : stress mécanique → rupture des kératinocytes → formation de bulles. Preuve du rôle structural des FI."
+      }
+    ],
+    "infernal": [
+      {
+        "question": "Which of the following are TRUE about microtubules ? (Plusieurs réponses possibles)",
+        "options": [
+          {"id": "a", "text": "They are composed of 13 protofilaments"},
+          {"id": "b", "text": "They have a structural polarity (+ and - ends)"},
+          {"id": "c", "text": "They are made of actin monomers"},
+          {"id": "d", "text": "They exhibit dynamic instability"}
+        ],
+        "correct": ["a", "b", "d"],
+        "explanation": "Les microtubules ont 13 protofilaments, une polarité (+/-) et une instabilité dynamique. Ils sont faits de tubuline (pas d'actine)."
+      },
+      {
+        "question": "Quelles affirmations sur les filaments intermédiaires sont CORRECTES ?",
+        "options": [
+          {"id": "a", "text": "Ils n'ont pas de polarité structurelle"},
+          {"id": "b", "text": "Ils sont spécifiques à certains tissus (kératine, vimentine, neurofilaments)"},
+          {"id": "c", "text": "Ils utilisent l'ATP pour leur assemblage"},
+          {"id": "d", "text": "Ils confèrent une résistance mécanique à la cellule"}
+        ],
+        "correct": ["a", "b", "d"],
+        "explanation": "Les FI n'ont pas de polarité, sont tissu-spécifiques et résistants. Leur assemblage est spontané (pas besoin d'ATP/GTP)."
+      },
+      {
+        "question": "About motor proteins, which statements are TRUE ?",
+        "options": [
+          {"id": "a", "text": "Kinesins generally move toward the (+) end of microtubules"},
+          {"id": "b", "text": "Cytoplasmic dyneins move toward the (-) end"},
+          {"id": "c", "text": "Myosins move along microtubules"},
+          {"id": "d", "text": "They all hydrolyze ATP to generate movement"}
+        ],
+        "correct": ["a", "b", "d"],
+        "explanation": "Kinésines → (+), Dynéines → (-), Myosines → actine (pas microtubules). Tous hydrolysent l'ATP."
+      },
+      {
+        "question": "Concernant les médicaments ciblant le cytosquelette, lesquels sont VRAIS ?",
+        "options": [
+          {"id": "a", "text": "Le taxol stabilise les microtubules"},
+          {"id": "b", "text": "La cytochalasine D inhibe la polymérisation de l'actine"},
+          {"id": "c", "text": "La colchicine favorise l'assemblage des microtubules"},
+          {"id": "d", "text": "La phalloïdine stabilise les filaments d'actine"}
+        ],
+        "correct": ["a", "b", "d"],
+        "explanation": "Taxol = stabilise MT. Cytochalasine D = inhibe actine. Phalloïdine = stabilise actine. Colchicine = INHIBE l'assemblage des MT (pas favorise)."
+      },
+      {
+        "question": "Which structures contain a 9+2 axoneme ?",
+        "options": [
+          {"id": "a", "text": "Motile cilia"},
+          {"id": "b", "text": "Eukaryotic flagella"},
+          {"id": "c", "text": "Primary (non-motile) cilia"},
+          {"id": "d", "text": "Centrioles"}
+        ],
+        "correct": ["a", "b"],
+        "explanation": "Les cils motiles et flagelles ont un axonème 9+2. Les cils primaires et centrioles ont une structure 9+0."
+      },
+      {
+        "question": "Quelles pathologies sont liées à un défaut du cytosquelette ?",
+        "options": [
+          {"id": "a", "text": "Maladie d'Alzheimer (protéine Tau)"},
+          {"id": "b", "text": "Épidermolyse bulleuse simple (kératines)"},
+          {"id": "c", "text": "Ciliopathies (ex: polykystose rénale)"},
+          {"id": "d", "text": "Drépanocytose (hémoglobine S)"}
+        ],
+        "correct": ["a", "b", "c"],
+        "explanation": "Alzheimer (Tau/MT), Épidermolyse (Kératines/FI), Ciliopathies (cils/MT). La drépanocytose est due à l'hémoglobine (pas le cytosquelette)."
+      },
+      {
+        "question": "About the centrosome, which are CORRECT ?",
+        "options": [
+          {"id": "a", "text": "It is the main MTOC in animal cells"},
+          {"id": "b", "text": "It contains two orthogonal centrioles"},
+          {"id": "c", "text": "It contains gamma-tubulin for nucleation"},
+          {"id": "d", "text": "It is present in all eukaryotic cells (including plants)"}
+        ],
+        "correct": ["a", "b", "c"],
+        "explanation": "Le centrosome est le MTOC principal des cellules animales, contient 2 centrioles et de la γ-tubuline. Les plantes n'ont pas de centrosome typique."
+      },
+      {
+        "question": "Si on inhibe la dynéine cytoplasmique, quels processus sont affectés ?",
+        "options": [
+          {"id": "a", "text": "Le transport rétrograde axonal"},
+          {"id": "b", "text": "Le positionnement du fuseau mitotique"},
+          {"id": "c", "text": "Le transport antérograde axonal"},
+          {"id": "d", "text": "Le maintien de l'appareil de Golgi près du noyau"}
+        ],
+        "correct": ["a", "b", "d"],
+        "explanation": "La dynéine cytoplasmique gère le transport rétrograde (-), le positionnement du fuseau et le maintien du Golgi. Le transport antérograde est géré par les kinésines."
       }
     ]
   }

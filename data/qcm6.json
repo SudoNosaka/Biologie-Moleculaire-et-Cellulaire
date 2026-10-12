@@ -1,6 +1,6 @@
 {
   "title": "QCM - Les Organites Cellulaires",
-  "subtitle": "3 niveaux : Facile (10Q) • Moyen (12Q) • Vicieux (10Q)",
+  "subtitle": "4 niveaux : Facile (10Q) • Moyen (12Q) • Vicieux (10Q) • Infernal (8Q)",
   "levels": {
     "facile": [
       {
@@ -252,13 +252,13 @@
       {
         "question": "Si on traite des cellules avec de la tunicamycine (inhibiteur de la N-glycosylation), quelle sera la conséquence ?",
         "options": [
-          {"id": "a", "text": "Aucune effet"},
+          {"id": "a", "text": "Aucun effet"},
           {"id": "b", "text": "Les protéines ne peuvent pas être glycosylées, mal repliées et dégradées par le protéasome (ERAD)"},
           {"id": "c", "text": "Les protéines sont sécrétées plus rapidement"},
           {"id": "d", "text": "Les lysosomes deviennent plus acides"}
         ],
         "correct": "b",
-        "explanation": "La tunicamycine bloque le transfert de l'oligosaccharide depuis le dolichol vers l'asparagine. Sans glycosylation, les protéines sont mal repliées, reconnues par les chaperonnes, et exportées vers le cytosol pour dégradation par le protéasome (ERAD = Endoplasmic Reticulum-Associated Degradation)."
+        "explanation": "La tunicamycine bloque le transfert de l'oligosaccharide depuis le dolichol vers l'asparagine. Sans glycosylation, les protéines sont mal repliées, reconnues par les chaperonnes, et exportées vers le cytosol pour dégradation par le protéasome (ERAD)."
       },
       {
         "question": "Une mutation dans le gène de la lamine A (LMNA) entraîne :",
@@ -280,7 +280,7 @@
           {"id": "d", "text": "Le Golgi disparaît"}
         ],
         "correct": "b",
-        "explanation": "La SRP reconnaît le peptide signal et bloque temporairement la traduction jusqu'à ce que le ribosome soit recruté sur le RE. Sans SRP, les protéines avec peptide signal sont synthétisées complètement dans le cytoplasme et ne peuvent pas être transloquées dans le RE → mauvaise localisation."
+        "explanation": "La SRP reconnaît le peptide signal et bloque temporairement la traduction jusqu'à ce que le ribosome soit recruté sur le RE. Sans SRP, les protéines avec peptide signal sont synthétisées complètement dans le cytoplasme et ne peuvent pas être transloquées dans le RE."
       },
       {
         "question": "Le dolichol-pyrophosphate est :",
@@ -313,13 +313,13 @@
           {"id": "d", "text": "Une membrane lysosomale trop résistante"}
         ],
         "correct": "b",
-        "explanation": "Les maladies lysosomales = déficit génétique en une hydrolase acide spécifique → accumulation du substrat non dégradé dans le lysosome. Ex: Tay-Sachs = déficit en hexosaminidase A → accumulation de gangliosides GM2 dans les neurones → dégénérescence."
+        "explanation": "Les maladies lysosomales = déficit génétique en une hydrolase acide spécifique → accumulation du substrat non dégradé dans le lysosome. Ex: Tay-Sachs = déficit en hexosaminidase A → accumulation de gangliosides GM2 dans les neurones."
       },
       {
         "question": "Le réticulum sarcoplasmique est :",
         "options": [
           {"id": "a", "text": "Un type de Golgi"},
-          {"id": "b", "text": "Le RE lisse spécialisé des cellules musculaires pour le stockage du Ca²⁺"},
+          {"id": "b", "text": "Le RE lisse spécialisé des cellules musculaires pour le stockage du Ca²"},
           {"id": "c", "text": "Un type de mitochondrie"},
           {"id": "d", "text": "Un organite végétal"}
         ],
@@ -335,7 +335,7 @@
           {"id": "d", "text": "Le Golgi disparaît"}
         ],
         "correct": "b",
-        "explanation": "Sans récepteur M6P fonctionnel, les enzymes lysosomales (marquées M6P dans le Golgi) ne sont pas reconnues et suivent la voie de sécrétion constitutive → elles sont excrétées hors de la cellule. Les lysosomes sont vides d'enzymes → accumulation de substrats (mucolipidose II / I-cell disease)."
+        "explanation": "Sans récepteur M6P fonctionnel, les enzymes lysosomales (marquées M6P dans le Golgi) ne sont pas reconnues et suivent la voie de sécrétion constitutive → elles sont excrétées hors de la cellule. Les lysosomes sont vides d'enzymes."
       },
       {
         "question": "L'ADN mitochondrial (ADNmt) est hérité :",
@@ -346,7 +346,7 @@
           {"id": "d", "text": "Aléatoirement"}
         ],
         "correct": "b",
-        "explanation": "L'ADNmt est hérité exclusivement de la mère car le spermatozoïde ne contribue pratiquement pas de mitochondries au zygote (seulement quelques-unes dans la pièce intermédiaire, dégradées après la fécondation). Donc hérédité maternelle stricte."
+        "explanation": "L'ADNmt est hérité exclusivement de la mère car le spermatozoïde ne contribue pratiquement pas de mitochondries au zygote (seulement quelques-unes dans la pièce intermédiaire, dégradées après la fécondation)."
       },
       {
         "question": "Si on traite des cellules avec du brefeldine A (BFA), que se passe-t-il ?",
@@ -357,7 +357,97 @@
           {"id": "d", "text": "Les lysosomes fusionnent"}
         ],
         "correct": "b",
-        "explanation": "Le brefeldine A (BFA) inhibe l'assemblage du manteau COP I → le transport rétrograde Golgi → RE est bloqué, mais paradoxalement le Golgi 'fusionne' avec le RE et disparaît. Les enzymes golgiennes retournent dans le RE. Utilisé expérimentalement pour étudier le trafic vésiculaire."
+        "explanation": "Le brefeldine A (BFA) inhibe l'assemblage du manteau COP I → le transport rétrograde Golgi → RE est bloqué, mais paradoxalement le Golgi 'fusionne' avec le RE et disparaît. Les enzymes golgiennes retournent dans le RE."
+      }
+    ],
+    "infernal": [
+      {
+        "question": "Which of the following are TRUE about the endomembrane system ? (Plusieurs réponses possibles)",
+        "options": [
+          {"id": "a", "text": "It includes the ER, Golgi, lysosomes and plasma membrane"},
+          {"id": "b", "text": "Mitochondria are part of it"},
+          {"id": "c", "text": "Vesicles mediate transport between compartments"},
+          {"id": "d", "text": "The nuclear envelope is continuous with the ER"}
+        ],
+        "correct": ["a", "c", "d"],
+        "explanation": "Le système endomembranaire inclut RE, Golgi, lysosomes, vésicules, membrane plasmique et enveloppe nucléaire (continue avec le RE). Les mitochondries N'EN FONT PAS PARTIE (origine endosymbiotique distincte)."
+      },
+      {
+        "question": "Quelles affirmations sur le trafic vésiculaire sont CORRECTES ?",
+        "options": [
+          {"id": "a", "text": "COP II assure le transport RE → Golgi"},
+          {"id": "b", "text": "COP I assure le transport rétrograde Golgi → RE"},
+          {"id": "c", "text": "La clathrine est impliquée dans l'endocytose et le tri vers les lysosomes"},
+          {"id": "d", "text": "Les vésicules COP II transportent les protéines du Golgi vers la membrane plasmique"}
+        ],
+        "correct": ["a", "b", "c"],
+        "explanation": "COP II = RE → Golgi (antérograde). COP I = Golgi → RE (rétrograde, récupération KDEL). Clathrine = endocytose + tri Golgi → lysosomes (via M6P). Le transport Golgi → membrane plasmique est assuré par des vésicules de sécrétion (pas COP II)."
+      },
+      {
+        "question": "About mitochondria, which statements are TRUE ?",
+        "options": [
+          {"id": "a", "text": "They have their own circular DNA"},
+          {"id": "b", "text": "They contain 70S ribosomes"},
+          {"id": "c", "text": "They replicate by binary fission"},
+          {"id": "d", "text": "Their proteins are all encoded by mitochondrial DNA"}
+        ],
+        "correct": ["a", "b", "c"],
+        "explanation": "Les mitochondries ont leur propre ADN circulaire, des ribosomes 70S et se divisent par fission binaire (preuves de l'endosymbiose). Cependant, la MAJORITÉ de leurs protéines (~99%) sont codées par l'ADN nucléaire et importées."
+      },
+      {
+        "question": "Concernant la glycosylation, quelles affirmations sont VRAIES ?",
+        "options": [
+          {"id": "a", "text": "La N-glycosylation débute dans le RE"},
+          {"id": "b", "text": "La O-glycosylation a lieu dans le Golgi"},
+          {"id": "c", "text": "Le dolichol-PP sert de support pour l'oligosaccharide"},
+          {"id": "d", "text": "La N-glycosylation se fait sur la sérine"}
+        ],
+        "correct": ["a", "b", "c"],
+        "explanation": "La N-glycosylation débute dans le RE (sur l'asparagine, pas la sérine) avec transfert depuis le dolichol-PP. La O-glycosylation a lieu dans le Golgi (sur sérine/thréonine)."
+      },
+      {
+        "question": "Which organelles are involved in protein quality control ?",
+        "options": [
+          {"id": "a", "text": "Endoplasmic reticulum (chaperones, ERAD)"},
+          {"id": "b", "text": "Proteasome (cytosol)"},
+          {"id": "c", "text": "Lysosomes (autophagy)"},
+          {"id": "d", "text": "Golgi (glycosylation only)"}
+        ],
+        "correct": ["a", "b", "c"],
+        "explanation": "Le contrôle qualité implique le RE (chaperonnes BiP/calnexine, ERAD), le protéasome (dégradation des protéines ubiquitinylées du cytosol) et les lysosomes (autophagie). Le Golgi ne fait PAS du contrôle qualité (juste de la maturation)."
+      },
+      {
+        "question": "Quelles structures sont spécifiques aux cellules eucaryotes ?",
+        "options": [
+          {"id": "a", "text": "Noyau avec enveloppe nucléaire"},
+          {"id": "b", "text": "Ribosomes"},
+          {"id": "c", "text": "Appareil de Golgi"},
+          {"id": "d", "text": "ADN"}
+        ],
+        "correct": ["a", "c"],
+        "explanation": "Spécifiques aux eucaryotes : noyau membranaire, Golgi, RE, lysosomes, mitochondries. Les ribosomes et l'ADN sont présents chez TOUS les êtres vivants (procaryotes ET eucaryotes)."
+      },
+      {
+        "question": "About lysosomes, which statements are CORRECT ?",
+        "options": [
+          {"id": "a", "text": "They contain acid hydrolases"},
+          {"id": "b", "text": "Their internal pH is maintained by V-ATPases"},
+          {"id": "c", "text": "They receive enzymes marked with mannose-6-phosphate"},
+          {"id": "d", "text": "They are part of the endomembrane system"}
+        ],
+        "correct": ["a", "b", "c", "d"],
+        "explanation": "Toutes sont vraies : les lysosomes contiennent des hydrolases acides, leur pH (~4,5-5) est maintenu par des V-ATPases, les enzymes y sont triées via le signal M6P, et ils font partie du système endomembranaire."
+      },
+      {
+        "question": "Si on inhibe les pompes V-ATPases lysosomales, quelles conséquences observe-t-on ?",
+        "options": [
+          {"id": "a", "text": "Le pH lysosomal augmente (devient moins acide)"},
+          {"id": "b", "text": "Les hydrolases acides deviennent inefficaces"},
+          {"id": "c", "text": "Accumulation de substrats non dégradés"},
+          {"id": "d", "text": "Le lysosome devient plus acide"}
+        ],
+        "correct": ["a", "b", "c"],
+        "explanation": "Sans V-ATPases, le pH lysosomal remonte vers la neutralité → les hydrolases acides (optimales à pH 4,5-5) deviennent inefficaces → accumulation de substrats non dégradés (phénotype similaire aux maladies lysosomales)."
       }
     ]
   }

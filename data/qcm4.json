@@ -1,6 +1,6 @@
 {
   "title": "QCM - La Transcription",
-  "subtitle": "3 niveaux : Facile (10Q) • Moyen (12Q) • Vicieux (10Q)",
+  "subtitle": "4 niveaux : Facile (10Q) • Moyen (12Q) • Vicieux (10Q) • Infernal (8Q)",
   "levels": {
     "facile": [
       {
@@ -358,6 +358,96 @@
         ],
         "correct": "a",
         "explanation": "La DRB inhibe le facteur d'élongation P-TEFb, empêchant la phosphorylation de la CTD et bloquant l'ARN Pol II en pause promotrice."
+      }
+    ],
+    "infernal": [
+      {
+        "question": "Which statements about eukaryotic RNA polymerases are TRUE ? (Plusieurs réponses possibles)",
+        "options": [
+          {"id": "a", "text": "RNA Pol I synthesizes rRNA (28S, 18S, 5.8S)"},
+          {"id": "b", "text": "RNA Pol II synthesizes mRNA"},
+          {"id": "c", "text": "RNA Pol III synthesizes mRNA"},
+          {"id": "d", "text": "RNA Pol II is highly sensitive to α-amanitin"}
+        ],
+        "correct": ["a", "b", "d"],
+        "explanation": "L'ARN Pol I fait les grands ARNr, l'ARN Pol II fait les ARNm (et est très sensible à l'α-amanitine), et l'ARN Pol III fait les ARNt et l'ARNr 5S (pas les ARNm)."
+      },
+      {
+        "question": "Concernant l'épissage des ARNm eucaryotes, quelles affirmations sont VRAIES ?",
+        "options": [
+          {"id": "a", "text": "Le spliceosome est composé de snRNP"},
+          {"id": "b", "text": "Les séquences consensus sont GU en 5' et AG en 3' de l'intron"},
+          {"id": "c", "text": "L'épissage alternatif augmente la diversité protéique"},
+          {"id": "d", "text": "Les introns sont conservés dans l'ARNm mature"}
+        ],
+        "correct": ["a", "b", "c"],
+        "explanation": "Le spliceosome (snRNP) élimine les introns (règle GU-AG) via un intermédiaire en lasso. L'épissage alternatif permet de générer plusieurs protéines à partir d'un seul gène. Les introns sont éliminés, pas conservés."
+      },
+      {
+        "question": "About the 5' cap and 3' poly-A tail, which are CORRECT ?",
+        "options": [
+          {"id": "a", "text": "The cap is a 7-methylguanosine added co-transcriptionally"},
+          {"id": "b", "text": "The poly-A tail is added by poly(A) polymerase"},
+          {"id": "c", "text": "The cap is added in the cytoplasm"},
+          {"id": "d", "text": "Both protect the mRNA from exonuclease degradation"}
+        ],
+        "correct": ["a", "b", "d"],
+        "explanation": "La coiffe (7-méthylguanosine) et la queue poly-A sont ajoutées dans le NOYAU (pas le cytoplasme) et protègent l'ARNm. La poly-A polymérase n'a pas besoin de matrice."
+      },
+      {
+        "question": "Quelles affirmations sur la terminaison de la transcription sont CORRECTES ?",
+        "options": [
+          {"id": "a", "text": "Chez les procaryotes, elle peut être Rho-dépendante"},
+          {"id": "b", "text": "Chez les procaryotes, elle peut être Rho-indépendante (structure tige-boucle)"},
+          {"id": "c", "text": "Chez les eucaryotes (ARN Pol II), elle est couplée à la polyadénylation"},
+          {"id": "d", "text": "Elle nécessite toujours la reconnaissance d'un codon stop"}
+        ],
+        "correct": ["a", "b", "c"],
+        "explanation": "Les codons stop (UAA, UAG, UGA) servent à la TERMINAISON DE LA TRADUCTION, pas de la transcription. La terminaison de la transcription procaryote est Rho-dépendante ou indépendante, et chez les eucaryotes elle est couplée au clivage/poly-A."
+      },
+      {
+        "question": "If you treat cells with a low dose of α-amanitin, which RNA synthesis will be directly blocked ?",
+        "options": [
+          {"id": "a", "text": "Synthesis of pre-mRNA"},
+          {"id": "b", "text": "Synthesis of 5S rRNA"},
+          {"id": "c", "text": "Synthesis of snRNA (small nuclear RNA)"},
+          {"id": "d", "text": "Synthesis of 28S rRNA"}
+        ],
+        "correct": ["a", "c"],
+        "explanation": "À faible dose, l'α-amanitine inhibe spécifiquement l'ARN Pol II. Or, l'ARN Pol II synthétise les pré-ARNm ET les snRNA (composants du spliceosome). La 5S rRNA est faite par Pol III, et la 28S rRNA par Pol I."
+      },
+      {
+        "question": "Concernant le promoteur eucaryote, quels éléments sont VRAIS ?",
+        "options": [
+          {"id": "a", "text": "La boîte TATA est reconnue par la TBP (sous-unité de TFIID)"},
+          {"id": "b", "text": "L'élément Inr (Initiator) entoure le site de transcription +1"},
+          {"id": "c", "text": "Les enhancers peuvent agir à plusieurs kilobases du promoteur"},
+          {"id": "d", "text": "Le promoteur est situé en aval (3') du gène"}
+        ],
+        "correct": ["a", "b", "c"],
+        "explanation": "Le promoteur est situé en AMONT (5') du gène. La TBP reconnaît la TATA, l'Inr est autour de +1, et les enhancers agissent à distance via des boucles d'ADN."
+      },
+      {
+        "question": "Which components are part of the pre-initiation complex (PIC) in eukaryotes ?",
+        "options": [
+          {"id": "a", "text": "TFIID"},
+          {"id": "b", "text": "TFIIH"},
+          {"id": "c", "text": "Sigma factor (σ)"},
+          {"id": "d", "text": "RNA Polymerase II"}
+        ],
+        "correct": ["a", "b", "d"],
+        "explanation": "Le facteur Sigma (σ) est spécifique à la transcription PROCARYOTE. Chez les eucaryotes, le PIC contient les facteurs TFIID, TFIIB, TFIIF, TFIIE, TFIIH et l'ARN Pol II."
+      },
+      {
+        "question": "Si on mute le signal de polyadénylation (AAUAAA) d'un gène eucaryote, quelles seront les conséquences ?",
+        "options": [
+          {"id": "a", "text": "La queue poly-A ne sera pas ajoutée"},
+          {"id": "b", "text": "L'ARNm sera instable et rapidement dégradé"},
+          {"id": "c", "text": "La transcription ne pourra pas s'initier"},
+          {"id": "d", "text": "L'export de l'ARNm vers le cytoplasme sera fortement réduit"}
+        ],
+        "correct": ["a", "b", "d"],
+        "explanation": "Le signal AAUAAA est reconnu pour le clivage et l'ajout de la poly-A. Sans lui, pas de poly-A → pas de protection, pas d'export efficace. L'INITIATION de la transcription (promoteur) n'est pas affectée."
       }
     ]
   }
